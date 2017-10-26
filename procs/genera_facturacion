@@ -1,0 +1,91 @@
+#!/bin/sh
+PROVEEDOR=$1
+OPCION=$2
+
+FECHA=`date +%Y%m`
+MES=`date +%B`
+ANIO=`date +%Y`
+
+MYSQLHOST="10.160.130.155"
+MYSQLDB="enlaces"
+MYSQLUSER="nagios"
+MYSQLPASS="n4g10s"
+MYSQLOPTS="--user=${MYSQLUSER} --password=${MYSQLPASS} --host=${MYSQLHOST} ${MYSQLDB}"
+LOG="/etc/procs/Facturacion/reportes.log"
+MYSQLDUMP="/etc/procs/Facturacion/${FECHA}-${PROVEEDOR}.csv"
+
+
+print_help(){
+echo ""
+echo "  genera_facturacion  version 1.0 "
+echo ""
+echo "     Genera los reportes de enlaces para respectiva revision contra la facturacion"
+echo ""
+echo "     Sintaxis: "
+echo ""
+echo '		genera_facturacion <PROVEEDOR> [<-m>|<-l>]'
+echo ""
+echo "          <PROVEEDOR>: 	el proveedor del cual deseamos sacar el reporte (MAYUSCULAS)."
+echo "		<-m>:		si desea enviar por mail la informacion generada"
+echo "		<-l>:		si desea guardar unicamente de modo local la informacion generada"
+echo "		"
+echo "          Los proveedores validos son :"
+echo "                   NAVEGA"
+echo "                   CLARO"
+echo "                   TELNOR"
+echo "                   CESA"
+echo "                   AMNET"
+echo "                   ATM"
+echo "                   REDYTEC"
+echo "                   INNOTECHSA"
+echo ""
+echo "          Desarrollado por:   Telecomunicaciones"
+echo ""
+
+}
+
+
+genera_reportes(){
+
+echo "Report Begin ${PROVEEDOR}: $(date)"
+ echo "MySQL Dump Begin ${PROVEEDOR}: $(date)" >> ${LOG}
+  echo "SELECT en_enlace as Enlace, rm_oficinacontable as Oficina_Contable, rm_remoto as Remoto, rm_Descripcion as Descripcion, en_proveedor as Proveedor, en_codigo_proveedor as ID, en_ancho_banda as AnchoBanda, en_costo_mensual as Costo_Dolares FROM enlace,remoto WHERE en_proveedor = '${PROVEEDOR}' and en_estado=7 and en_remoto = rm_remoto ORDER BY rm_oficinacontable" | mysql ${MYSQLOPTS} > ${MYSQLDUMP}
+ echo "MySQL Dump End ${PROVEEDOR}: $(date)" >> ${LOG}
+echo "Report Successful: $(date)"
+}
+
+envio_correo(){
+PROVSUBJECT=$PROVEEDOR
+PROVBODY="Se Adjunta Facturacion De $PROVEEDOR"
+if [ "$PROVEEDOR" = "CLARO" ]; then
+	PROVSUBJECT="CLARO"
+	PROVBODY="Se Adjunta Facturacion de CLARO"
+fi
+if [ "$PROVEEDOR" = "NAVEGA" ]; then
+	PROVSUBJECT="TIGO"
+	PROVBODY="Se Adjunta Facturacion de TIGO"
+fi
+
+echo "Enviando correo electronico"
+echo "$PROVBODY" \
+| mutt -s "Cargos Factura ${MES} ${ANIO} : ${PROVSUBJECT}" \
+-a /etc/procs/Facturacion/${FECHA}-${PROVEEDOR}.csv \
+-- facturacion@banrural.com.gt
+##-- mario.garcia@banrural.com.gt
+}
+
+if [ "$#" -lt 2 ]; then
+        print_help
+        exit  0
+fi
+
+if [ "$#" -eq 2 ]; then
+	if [ "$OPCION" = "-m" ]; then 
+        	genera_reportes
+		envio_correo
+	fi
+        if [ "$OPCION" = "-l" ]; then
+                genera_reportes
+        fi
+        exit  0
+fi

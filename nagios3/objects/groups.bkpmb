@@ -1,0 +1,218 @@
+################################################################################
+# Sample object config file for Nagios 1.0
+#
+# Read the documentation for more information on this configuration file.  I've
+# provided some comments here, but things may not be so clear without further
+# explanation, so make sure to read the HTML documentation!
+# 
+# Last Modified: 21-sept-2011
+#
+################################################################################
+
+
+################################################################################
+# HOST GROUP DEFINITIONS
+#
+# SYNTAX:
+#
+################################################################################
+
+define hostgroup{
+        hostgroup_name  a_telered 
+        alias           Telered - Banrural
+	members 	age001b, age005, age005b, age006b, age009, age010b, age011, age013, age014, age016, age017, age018, age018b, age020, age020b, age021, age024, age025, age029,age030, age031, age031b, age035, age036, age036b, age038, age040, age041,age042, age044, age044b, age045, age045b, age046, age047, age049, age049b, age050, age052, age053, age054,age055, age056, age057, age058, age059, age060, age061, age063, age063b, age064, age065, age066, age068, age069, age070, age071, age072, age073, age074, age075, age078, age079, age079b, age080, age081b, age082, age087, age088, age089, age090, age092, age092b, age093, age093b, age095, age095b, age098, age099b, age100, age101b, age103, age104, age105, age106, age109, age109b, age109c, age111, age113, age114, age116, age117, age118, age119, age120, age121, age124b, age125, age126, age127, age128, age129, age130, age131, age132, age133, age134, age135, age136, age137, age137b, age138, age139, age140, age140b, age141, age142, age145, age146, age147, age147b, age148, age149, age150,age151, age153, age154, age155, age156, age157, age158, age159, age163, age164, age164c, age165, age165b, age166, age167b, age168, age169, age170, age172, age173, age174, age175, age177, age178, age178b, age178c,  age179b, age180, age181, age183, age184, age184d, age185, age187, age188, age190, age192, age193, age194, age195, age196, age197, age198, age199, age200, age201, age201b, age202, age203, age204, age207, age209, age209b, age211, age213, age216, age218b, age219, age220, age221c, age222, age227, age228, age228b, age229d, age231, age232, age233, age234b, age235, age237, age238, age240, age241, age242, age242b, age244, age251, age256, age257, age259b, age260, age263, age265, age266, age272, age273, age276, age279, age280, age284, age285b, age286, age288, age289b, age290, age292, age293, age294, age295,age296, age297, age298, age300, age301, age301b, age302, age303, age304, age306, age308, age309, age312b, age314, age315, age316,age319b, age321, age324, age325, age326, age326b, age329b, age330, age332, age333, age334, age334b, age335, age336, age337,age338, age339, age341, age342, age343, age344, age345,  age348, age349, age352, age353, age355, age356, age356b, age357, age358, age361, age362, age363, age365, age366,age367, age370, age376, age378, age379, age381, age382, age386, age389, age390, age391, age395, age396, age397, age398, age400,age401, age402, age405, age407, age409, age410, age411, age412, age412b, age413, age415, age417, age420, age422, age424, age425, age426, age427, age431, age432, age433, age434, age436, age438, age441, age443, age444, age446, age447, age448, age449, age452, age455, age456, age457, age458, age460, age464, age465, age467, age467b, age469, age470, age471, age474, age475, age476, age478, age479, age480, age482, age483, age484, age485, age486b, age487, age488, age490, age491c, age494, age496, age498, age500, age503, age504, age505, age507, age508, age509, age510, age512, age515, age517, age518, age520, age521, age522, age523, age525, age527, age530c, age531, age532, age534, age535, age536, age537, age540, age542, age543, age544, age545, age546, age551, age554, age555, age557, age558, age560, age568, age569, age571, age572, age572b, age574, age575, age576, age577, age579, age580, age582, age583, age584b, age589, age590, age591, age592, age593, age594, age595, age596, age601, age613, age614, age615, age615b, age622, age623, age624b, age629, age630, age634, age635, age637, age638, age639, age643, age644, age645, age646, age649, age652, age654, age654b, age656, age657, age659, age660, age661b, age662, age663b, age664, age667, age671, age675, age677, age679, age681, age683, age684, age687, age690, age691, age692, age693, age696, age697, age698, age699, age700, age703, age704, age705, age706, age707, age716, age718, age719, age720, age722, age723, age725, age726, age727, age728, age730, age731, age732, age734, age735, age736, age737, age738, age739, age739d, age739e, age740, age741, age743, age744, age745, age747, age749, age749b, age750, age751, age752, age753, age754, age755, age756, age757, age761, age762, age763, age765, age766, age767, age768, age769, age770, age771, age772, age773, age774, age776, age778, age779, age780, age781, age782, age785, age786, age787, age788, age791b, age792, age793, age794, age795, age799, age801, age802, age803, age804, age805, age807, age808, age809, age810, age811, age812, age813, age814, age815, age816, age819, age822, age823, age824, age825, age827, age828, age830, age831, age832, age832b, age834, age837, age838, age839, age841, age844, age845, age848, age849, age850, age852, age853, age854, age856, age857, age858, age859, age860, age861, age863, age865, age870, age871, age872, age875, age876, age877, age877b, age878, age879, age881, age882, age883, age886, age890, age891, age892, age893, age895, age896, age1001, age1003, age1005, age1007, age1011, ageprueba2ips            
+        } 
+
+define hostgroup{
+        hostgroup_name  a_navega 
+        alias           Navega - Banrural
+        members         age002, age002b, age003, age003b, age006,age007,age008,age010,age012, age019, age023, age025b, age025c, age026,age027,age028,age034,age034b,  age037, age039, age040b, age043,age048,age051, age067,age077,age076, age081,age083,age084,age085,age086,age091,age094, age096,age097,age102, age104b, age107, age108, age109d, age110, age143, age144, age151, age161, age164b, age167,age171,age176,age179,age541, age184b, age186, age191, age198b, age202b, age205,age208,age210,age212, age218, age221, age223, age224, age225, age226, age227b, age229, age232b, age234, age236, age245, age246, age247, age248, age248b, age250,age252, age253, age254, age258, age259, age261,age262,age264,age267,age268,age269, age270,age271, age273b, age274, age277, age281, age282, age285,age287, age289, age291, age292b, age307, age309c, age312,age313, age319,age320, age322, age322b, age327, age328, age331,age347,age350,age359, age360, age368,age369,age371, age372, age372b, age374,age375,age377, age385,age387, age392,age393, age403, age416, age418, age419, age421, age423, age428b, age429, age435, age437, age442, age445, age451, age454, age459, age461, age462, age463, age468, age472, age486, age489, age491, age492, age495, age497, age499, age511, age513, age516, age519, age526, age533, age538, age539, age547, age548, age549, age553, age556, age559, age561, age562, age563,age564, age565,age566, age567, age570, age573, age578, age582b, age586, age587, age588, age597, age598, age599, age600, age602, age603, age604, age605, age606, age607, age608, age610, age611, age616, age618, age619, age620, age621, age624, age625, age626, age628, age631, age633, age636, age640, age641, age642, age647, age648, age648b, age650, age653, age655, age658, age612, age661, age663, age665, age666, age668, age670, age672, age673, age674, age676, age682, age686, age688, age689, age694, age701, age702, age704b, age708, age709, age710, age711, age712, age713, age714, age717, age720b, age724, age729, age731b, age739b, age742, age746, age748, age758, age759, age760, age764, age784, age789, age790, age797, age798, age800, age817, age818, age820, age821, age826, age829, age855, age867, age868, age869, age880, age884, age1009, agemaycomdatacenter, anexoSRP 
+        }
+
+define hostgroup{
+        hostgroup_name  a_telnor 
+        alias           Telnor - Banrural
+        members         age122, age123, age182, age243, age354, age383, age529, age581, age584, age609, age617, age897, monitor_telecom
+        } 
+
+#define hostgroup{
+#        hostgroup_name  a_telnor_copper_link
+#        alias           Telnor Banda C - Banrural
+#        members         age040, age058,age116,age122,age123,age125,age209,age243,age254,age290,age337,age343,age354
+#        }
+
+define hostgroup{
+	hostgroup_name	a_innotechsa 
+	alias		Innotechsa - Banrural
+	members		age001, age002, age004, age015, age022, age032, age033b, age062, age101, age124, age139b, age152, age160, age162, age189, age205b, age206, age206b, age225b, age229c, age236b, age249, age275, age278, age283, age309b, age329, age339b, age340, age340b, age364, age384, age403b, age404, age406, age408, age414, age428, age430, age432b, age440, age453, age477, age481, age493, age506, age514, age530, age458b, age528, age562c, age633, age633b, age669, age695, age721, age726b, age733, age777, age783, age791, age806, age833, age836, age842, age843, age884b, age885, age887, age888,age888b, age1009
+	}
+
+define hostgroup{
+        hostgroup_name  a_atc
+        alias           ATC
+        members         age473
+        }
+
+define hostgroup{
+        hostgroup_name  a_munis
+        alias           Munis - Banrural
+        members         age214, age305, age310, age311, age323, age524 
+        } 
+
+
+#define hostgroup{
+#        hostgroup_name  a_telgua 
+#        alias           Telgua - Banrural
+#        members         anexoUV
+#        }
+
+define hostgroup{
+        hostgroup_name  a_cesa
+        alias           Cesa - Banrural
+        members         age450, age466, age582c, age627, age632, age680, age840, age847, age862, age864, monitor_telecom  
+        }
+
+
+define hostgroup{
+        hostgroup_name  a_local
+        alias           Fibra (local) - Banrural
+        members         age005c, age033, age099, age445, age078b, age256b, age296b, age115, age341b, age347b, age473b, age495b   
+        }
+
+define hostgroup{
+        hostgroup_name  a_cajeros 
+        alias           Agencias con Cajeros en Red Banrural
+        members         age002b,age295,age648,age545,age633,age307,age177,age823,age330,age335,age137,age536,age127,age452,age744,age142,age714,age282,age861,age877,age887,age012,age445,age445,age020,age024,age028,age037,age044,age047,age050,age054,age059,age061,age064,age067,age079,age084,age090,age091,age092,age095,age098,age111,age116,age117,age121,age123,age129,age103,age133,age139,age153,age158,age159,age169,age171,age171,age176,age221,age231,age236,age238,age240,age256,age258,age206,age267,age272,age273,age274,age286,age288,age286,age297,age302,age320,age332,age304,age340,age340b,age364,age368,age369,age308,age396,age398,age413,age415,age423,age424,age426,age427,age429,age430,age431,age432,age436,age437,age438,age404,age440,age442,age443,age443,age445,age453,age456,age461,age464,age468,age471,age475,age488,age795,age799,age511,age517,age525,age526,age529,age530,age537,age557,age560,age507,age578,age588,age594,age597,age601,age613,age614,age630,age649,age605,age659,age606,age664,age669,age684,age702,age721,age724,age733,age735,age749,age753,age757,age759,age706,age760,age769,age707,age770,age782,age789,age791,age814,age811,age817,age828,age829,age832,age804,age845,age806,age860,age869,age872,age875,age879,age883,age1005
+        }
+
+define hostgroup{
+        hostgroup_name  a_ascenlink
+        alias           Agencias con ASCENLINK en Red Banrural
+	members		age001,age002,age004,age015,age032,age055,age062,age124,age132,age152,age155,age160,age162,age206,age221,age232,age275,age283,age326,age329,age340,age340b,age364,age384,age404,age406,age408,age414,age428,age430,age440,age477,age493,age497,age530,age623,age669,age721,age733,age747,age777,age791,age806,age887
+	}
+
+define hostgroup{
+        hostgroup_name  b_kioskos
+        alias           Kioskos en Agencias
+	members		age013-kiosko,age033-kiosko,age071-kiosko,age078-kiosko,age099-kiosko,age109-kiosko,age115-kiosko,age132-kiosko,age134-kiosko,age135-kiosko,age136-kiosko,age139-kiosko,age173-kiosko,age178-kiosko,age185-kiosko,age189-kiosko,age190-kiosko,age194-kiosko,age206-kiosko,age236-kiosko,age242-kiosko,age257-kiosko,age264-kiosko,age282-kiosko,age309-kiosko,age322-kiosko, age334-kiosko, age339-kiosko,age340-kiosko,age345-kiosko,age357-kiosko,age364-kiosko,age366-kiosko,age368-kiosko,age375-kiosko,age384-kiosko,age394-kiosko,age402-kiosko,age405-kiosko,age408-kiosko,age410-kiosko,age412-kiosko,age414-kiosko,age415-kiosko,age416-kiosko,age443-kiosko, age445-kiosko,age447-kiosko,age509-kiosko,age604-kiosko,age726-kiosko,age371-kiosko,age235-kiosko,age403-kiosko,age138-kiosko,age153-kiosko,age192-kiosko,age411-kiosko,age490-kiosko,age603-kiosko,age659-kiosko,age705-kiosko,age148-kiosko,age281-kiosko,age543-kiosko,age229-kiosko,age234-kiosko,age607-kiosko,age137-kiosko,age164-kiosko,age237-kiosko,age245-kiosko,age287-kiosko,age298-kiosko,age424-kiosko,age561-kiosko,age019-kiosko,age083-kiosko,age195-kiosko,age221-kiosko,age306-kiosko,age562-kiosko,age028-kiosko,age158-kiosko,age186-kiosko,age187-kiosko,age275-kiosko,age432-kiosko,age569-kiosko,age027-kiosko,age265-kiosko,age326-kiosko,age539-kiosko,age568-kiosko,age624-kiosko,age034-kiosko,age165-kiosko,age202-kiosko,age329-kiosko,age429-kiosko,age446-kiosko,age648-kiosko,age002-kiosko,age015-kiosko,age080-kiosko,age111-kiosko,age023-kiosko,age024-kiosko,age025-kiosko,age092-kiosko,age291-kiosko,age425-kiosko,age004-kiosko,age048-kiosko,age068-kiosko,age086-kiosko,age169-kiosko,age184-kiosko,age021-kiosko,age031-kiosko,age032-kiosko,age426-kiosko,age005-kiosko,age180-kiosko,age003-kiosko,age067-kiosko,age269-kiosko,age378-kiosko,age207-kiosko,age010-kiosko,age065-kiosko,age428-kiosko,age133-kiosko,age009-kiosko,age036-kiosko,age094-kiosko,age381-kiosko,age017-kiosko,age039-kiosko,age144-kiosko,age440-kiosko,age812-kiosko,age878-kiosko,age404-kiosko,age227-kiosko,age417-kiosko,age401-kiosko,age723-kiosko,age532-kiosko,age183-kiosko,age142-kiosko,age232-kiosko,age289-kiosko,age001-kiosko,age006-kiosko,age007-kiosko,age030-kiosko,age037-kiosko,age042-kiosko,age062-kiosko,age075-kiosko,age085-kiosko,age177-kiosko,age198-kiosko,age204-kiosko,age220-kiosko,age254-kiosko,age324-kiosko,age347-kiosko,age372-kiosko,age435-kiosko,age475-kiosko,age530-kiosko,age540-kiosko,age586-kiosko,age661-kiosko,age748-kiosko,age072-kiosko,age749-kiosko
+	}
+
+
+# 'partners de  Negocios' host group definition
+define hostgroup{
+        hostgroup_name  partners 
+        alias           Partners de Negocios
+        members         municipalidad, igss, paynexus, qapp_prod, qapp_prod2, vmwatches, vmmsqapp01, natserver,vmmsqapp02,agemaycomdatacenter,age229d, widefense1, widefense2, mingob
+       }
+
+# 'Unix-servers' host group definition
+define hostgroup{
+        hostgroup_name  servers_unix
+        alias           Servers Core, SAN
+        members         bilbo,gandalf,smaug,robb
+        }
+
+# 'Cobis-servers' host group definition
+# jlet - 20111010: Se omitira el monitoreo del servidor age99srv
+define hostgroup{
+	hostgroup_name	servers_cobis
+	alias		Cobis Servers
+	members		age33srv,db_bv,VMCapaSrv,VMCobis01,VMCobis02,VMCobis03,VMCobis04,VMCobis05,VMCobis06,VMCobis07,VMCobis08,VMCobis09,VMCobis10,VMCobis11,VMCobis12,VMCobis13,VMCobis14,VMCobis15,torre01srv,torre02srv
+	}
+
+define hostgroup {
+        hostgroup_name  servers_back_office
+        alias           Servidores Banrural
+	members		Abmsrv, AdmonDCR, backupsrv, CrmApp01, rrhhweb, TorreDC, VMAdmonDC, VMAsistenciaApp, VMDatosDB, VMDBProduccion, VMDBProd12, VMDatosLight, vmnod32, VMEstadosDeCuenta, VMFTP, VMFTPMunis, VMGestionRiesgo, VMImageDB, VMImageSRV, VMImageWebSrv,  VMIntranet, vmIntranetNew, vmrrhh2000, VMRRHHSEL,  VMSuministros2, VMWinPHP, VMYotta, VMYottaWeb, VMAperWeb, VMAsistenciaDB,VMPTCsrv,vmcrea01, vmcrea02, vmcreadb,vgfag0033dcf001,vmImageProc,vgfag0115dcf004, vgfag0033dcf001, vgfag0445dcf003, vmsasdb,VMSDmdbSrv,VMSDBoxiSrv,VMSDAppSrv,VMSharePoint,vifag0445dcf002,vifag0033dcf001,sifag0115dcf003,sgfag0115dcf002,VMActivosfijos,VMAlertast,VMEchatProd,vmsqlinfra,vmsqlinfra12,SGFAG0115RSG164,VMCA-ITCM-01,VMCA-ITCM-02,VMPresupuestos,VMrti,VMSqlDesa,vmges, vmBiometricossrv, VMsplan-BSC, vmchqrchz, vmAsistenciaAdmin, vmAsistencia, VMESET02, vmlyncTMG, vmLyncEdge, vmIMCApp, vmEFactGes, VMEncuestas, vmEnvioEstCta, vmDepoExp, vmIbpm, vmRepBPM, vmBPM, vmACLServer, VMTeamMateApp, VMESET01, vmCallAccounting, vmPumaEngy, vmLyncFE, vmArmstrongApp, VMsimpana, vmFileServices, vmbpmi02, VMEMM, VMTeamMate2012, VMESET04, vmsirpeju, VMESET03, vmIntegSrv, VMCoopeNew, VMCoope, VMESETBK, VMTeamMateDB, vmImgDb, vmImgApp, vmRepSrv12, vmControlyCuadre, VMBiometricos
+}        
+
+define hostgroup {
+        hostgroup_name  servers_monitor_byte
+        alias           Monitor Byte - Banrural
+        members         plus_acrm_db,VMPlusACRMalertas,VMPlusACRManls01,VMPlusACRManls02,VMPlusACRMworkflow,vmMonitorCoreDB,vmMonitorCoreAnaliza01,vmMonitorCoreAnaliza02,vmMonitorCoreColector,vmMonitorCoreAlarma
+}        
+
+define hostgroup{
+        hostgroup_name  servers_linux
+        alias           Servidores Banrural Linux
+        members         proxy,proxy-adm,proxy-adm-VM6,referencias, segurosd, segurosp, segurospr, proxy-age02, sasolap, directorio.bdr
+}        
+
+define hostgroup{
+        hostgroup_name  servers_aix
+        alias           Servidores Banrural AIX
+        members         ffprodihs01, ffprodihs02, robb, bilbo
+}        
+
+define hostgroup{
+        hostgroup_name  mail-servers 
+        alias           Servidores Banrural Linux
+        members         mailprivado,mailexterno,mailarchive, mail_seguros,mail_financiera  
+}        
+
+define hostgroup{
+        hostgroup_name  gw_servers 
+        alias           Firewalls y Gateways 
+        members         gw_torre, natserver, fwz1, fwz11, gw_agencias, gw-branch , gw_tarjetas, gw_portuaria, vpnsrv, gw_vnc, nagios, gw_sascim, fwz04 
+}        
+
+define hostgroup{
+        hostgroup_name  gw_munis
+        alias           Munis Firewalls y Gateways 
+        members          gw_munimixco_nmontserrat, gw_munimixco_san_francisco, gw_muni_chimaltenango, gw_muni_quetzaltenango,   gw_muni_sanjuan_sacatepequez,  gw_muni_quiche, gw_muni_san_pedro_sacatepequez,  gw_muni_villa_hermosa,  gw_portuaria, gw_muni_mixco, gw_muni_villa_canales,  gw_muni_san_vicente_pacaya, gw_portuaria, gw_muni_amatitlan, gw_muni_paseo_los_campeones, gw_san_cristobal, gw_muni_retalhuleu, gw_ciudad_satelite, gw_milagro, gw_muni_ccmonserat, gw_gualan
+}        
+
+# 'routers' host group definition
+define hostgroup{
+	hostgroup_name	routers
+	alias		Routers
+	members	        telered_dsl,   extreme,prt_zona1,telnor_prt,isp_navega,isp_telered,isp_columbus, telnor_navega,telnor_cablenet, Nivel-PBVC1, Nivel-PBVC2, Nivel-1VC1, Nivel-2VC1, Nivel-3VC1, Nivel-4DST-VC1, Nivel-4VC1, Nivel-4VC2, Nivel-5VC1, Nivel-6VC1, Nivel-7VC1, Nivel-8VC1, Nivel-9VC1, Switch-PTC, extreme-115, sw-core-primario, sw-core-alterno, sw-core-torre, sw-core-ptc, sw-core-z1, sw-core-z4, linkproof-1, fw-cp-1, fw-cp-2, fw-cp-management, switch-checkpoint, Anexo-Sotano, Anexo-PlantaBaja, Anexo-Nivel-1, sw-z4-acceso1, sw-z4-acceso2, sw-z4-acceso3, ups-z4-acceso1, ups-z4-acceso2, ups-z4-acceso3
+	}
+
+# 'aseguradora' host group definition
+define hostgroup{
+        hostgroup_name  aseguradora
+        alias           Aseguradora
+        members         VMSeguros-DC, segurosweb, vmsegemgr, siniestro,VMSegurosSP, vmsegdc2, VMSegSitio, vmSegurosWebSite, vmsegdesrv, vmSegSAP, vmSegurosWeb
+        }
+
+# 'produccion' host group definition
+# jlet - 20120118: Se corrige la duplicacion del servidor 10.160.202.11
+# jlet - 20140414: Se agregaron el servidor vmtktadmin utilizado por Canales Gerenciales
+define hostgroup{
+        hostgroup_name  servers_produccion
+        alias           Server_Produccion
+	members		fep,fep_db,qapp_prod,qapp_prod2,qdb_prod,VMACH,VMCAS,VMColasWeb,VMDatos,VMFHA,vmmsqapp01,vmmsqapp02,VMPayCorp,VMQlickView,VMQlickView64,VMRiesgos,VMSourceSafe,VMSQRSRV,vmwatches,vmwservices,vmwservices02,web_bv,web_bv2,web_bv4,NVABancaVirtual,ivr,VMSWIFT,VMCompeOld,VMWebServicios,banca_amigo,compe1,vmmsgbrk,VMDatosWeb02,VMBVInterna,VMFFwww1,VMFFwww2,VMFFwww3,vmffws,vmffws2,vmffws3,SGFAG0115RSG164,vmtktadmin,VMChkPntBV01,VMChkPntBV02,vmctlm,vmffwsIOS,vmffwsAndroid,vmAppBMProd01,vmAppBMProd02, vmwebcomercial2, vmBancaMovil, vmAppProd
+       } 
+
+# 'desarrollo' host group definition
+define hostgroup{
+        hostgroup_name  servers_desarrollo
+        alias           Server_Desarrollo
+        members         fep_desa, fep_desa_db, VMBVDesa, VMNetDesa, VMRepoDigital, vmcargas, VMServiciosWeb, vmcobisbrch, VMSourceSafe, qapp_desa, fep_test, fep_test_db, VMSVN02
+        }
+
+define hostgroup{
+        hostgroup_name  servers_exchange
+        alias           Servers_Exchange
+        members         vmExchCAS01,vmExchCas02,vmExchMlbx01,vmExchMlbx02
+        }
+
+define hostgroup{
+        hostgroup_name  servers_Banca_Virtual
+        alias           Servers_Banca_Virtual
+        members         VMBVInterna,vmffws,vmffws2,vmffws3,web_bv,web_bv2,web_bv4,VMFFwww1,VMFFwww2,VMFFwww3,VMWebComercial,NVABancaVirtual,ffprodihs02,ffprodihs01,VMChkPntBV01,VMChkPntBV02
+        }
+# 'voip' host group definition
+define hostgroup{
+	hostgroup_name	servers_voip
+	alias		Server_Voip
+	members		vCA, vMCD_01, MCD_Trunk_DC, VMCD_01, vCC, MCD_Trunk_L2, vMBG_Telefonia, vNupoint_Operadora, vMAS_Aplicaciones, VMCD_03_MSL, VMCD_03_ESM, vOAISYS, SQLServer, vMCD_02_MSL, vMCD_02_ESM, MCD_TRUNK, MCD_L2_SWITCH, MCD_Switch_Sotano1_Torre, MCD_TRUNK_Sotano1_Torre, MCD_TRUNK_Gateway2_Sotano1_Torre, vmVACC02, vmExtera2, vmExtera3, vmExtera4, vmExteraRep
+	}
+
+# 'biometricos' host group definition
+define hostgroup{
+        hostgroup_name  biometricos
+        alias           Huellas
+        members         T445S1CC023, T445PBCC022, T445APBCC024, T445AN1CC025, T445N1CC001, T445N2CC002, T445N3CC003, T445N4CC004, T445IN4CC040, T445N5CC005, T445N6CC006, T445N7CC007, T445N8CC008, T445N9CC009, E115N1IN115, E115N2IN116, E115N2INDC117, E115N2INDC118, E115N2CCA119, E115N2DC120, E115N2CCB121
+	}

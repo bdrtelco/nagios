@@ -1,0 +1,38 @@
+#Base-directory for nagios:
+NAGIOSDIR=/usr/local/nagios
+
+#The directory where apan is installed
+APANDIR=$NAGIOSDIR/apan-sql
+
+#The directory where Nagios plugins resides
+PLUGINSDIR=$NAGIOSDIR/libexec
+
+#The directory where Nagios .cfg-files resides
+ETCDIR=$NAGIOSDIR/etc
+
+# The directory where apans plugins resides
+PLUGSDIR=$APANDIR/plugs-sql
+
+# Path to rrdtool
+RRDTOOL=/usr/bin/rrdtool
+
+# Set DEBUG to 1 and define a DEBUGFILE to get debug-info from apan
+DEBUG=1
+DEBUGFILE=/tmp/apan.debug
+
+# Set CGIDEBUG to 1 and define a CGIDEBUGFILE to get debug-info from the cgi's
+CGIDEBUG=1
+CGIDEBUGFILE=/tmp/apancgi.debug
+
+# A list of colors that are used to draw the lines in the graphs.
+# Beware of the syntax!!
+
+# The type of image that is created. Valid values are PNG, GIF or GD
+IMGTYPE=PNG
+#
+
+# The path to the sql-configfile
+SQLCONF=$APANDIR/sql.conf
+
+# Config file for apanconf
+APANCONFCONF=$APANDIR/apanconf.defs

@@ -1,0 +1,38 @@
+Changelog for Apan
+
+##### 0.3.0-sql, 20031216 #####
+* Apans configuration is stored in an SQL-database
+* Some cleanups in the plugins.
+* Cleanups in the debug- and error-handling
+* A new plugin, http, that records response-time of an http-server.
+
+##### 0.2.2, 20031031 #####
+* nt_disk changed to put results from all disks in one graph. Unit is %
+* New plugin, tcp
+
+##### 0.2.1, 20030116 #####
+* An extra argument to the checkcommand
+* New plugin, ping_any
+* snmpget-plugin fixed to accept more 'generic' results
+* Spaces in server-names should be handled correctly - 
+  See the README-file for more info.
+* A bug in nt_disk fixed
+
+##### 0.2.0, 20021122 #####
+* Global config moved from the scripts to one file
+* Some cleanups in the CGI's
+* ping-plugin uses specified warning and critical levels
+
+##### 0.1.1, 20021028 #####
+* Included statement suggested by Ethan Galstat to meet the
+  requirements of a Nagios-addon.
+
+##### 0.1.0, 20021023 #####
+* A few clenups are made
+* The docs on apan.sourceforge.net is almost complete
+* Added a a DEBUG and DEBUGFILE option to apan.sh
+* The sourcing of plugs are restricted to *.sh files
+
+
+##### 0.0.1, 20021014 #####
+This is the very first release of Apan

@@ -1,0 +1,124 @@
+################################################################################
+# Sample object config file for Nagios 1.0
+#
+# Read the documentation for more information on this configuration file.  I've
+# provided some comments here, but things may not be so clear without further
+# explanation, so make sure to read the HTML documentation!
+# 
+# Last Modified: 10-03-2002
+#
+################################################################################
+
+
+################################################################################
+# CONTACT GROUP DEFINITIONS
+#
+# SYNTAX:
+#
+################################################################################
+
+define contactgroup{
+        contactgroup_name       agencias 
+        alias                   personal de agencias
+        members                 sucursales, mcaballeros,soporte, eddy.lopez
+        }
+
+define contactgroup{
+        contactgroup_name       netadmins 
+        alias                   SysAdmins
+	members                 mario,fernando,carlos,karl,soporte
+        }
+
+define contactgroup{
+        contactgroup_name       sysadmins 
+        alias                   SysAdmins
+	members                 mario,fernando,carlos,juanca,jupaco,anuar,manuel,george,gilberto.yaxcal,soporte, eddy.lopez, isabel.guzman 
+        }
+
+define contactgroup{
+        contactgroup_name       webmaster 
+        alias                   Http Masters 
+        members                 julio,jose
+        }
+
+define contactgroup{
+        contactgroup_name       monitor_byte 
+        alias                   Adminstradores de Monitor Byte 
+        members                 dtellez, vcordova 
+        }
+
+define contactgroup{
+        contactgroup_name       sucursales_grp
+        alias                   Sucursales 
+        members                 sucursales 
+        }
+
+
+define contactgroup{
+        contactgroup_name       seguridad_grp
+        alias                   seguridad  
+        members                 camaras,alarmas,seguridad
+        }
+
+define contactgroup{
+        contactgroup_name       igss_group 
+        alias                   igss_group
+        members                 igsscontacto
+        }
+
+define contactgroup{
+        contactgroup_name       internacional
+        alias                   internacional
+	members                 internacional
+        }
+
+define contactgroup{
+        contactgroup_name       infraestructura
+        alias                   Infraestructura
+        members                 soporte,jupaco,juanca,gilberto.yaxcal,eddy.lopez,guillermo.sierra, isabel.guzman 
+        }
+
+define contactgroup{
+        contactgroup_name       aseguradora
+        alias                   Aseguradora
+        members                 soporte,michael
+        }
+
+define contactgroup{
+        contactgroup_name       telecom
+        alias                   Telecomunicaciones
+        members                 soporte,mario,karl,carlos,victor,fernando,rafael.castillo
+        }
+
+define contactgroup{
+        contactgroup_name       desarrollo
+        alias                   Desarrollo
+        members                 soporte,mario
+        }
+
+
+define contactgroup{
+        contactgroup_name       desa_captacion
+        alias                   Desarrollo Captacion
+        members                 soporte,juan.gonzalez
+        }
+
+define contactgroup{
+        contactgroup_name       soporte_grp
+        alias                   Soporte_Grupo
+        members                 soporte,henry
+        }
+
+
+define contactgroup{
+        contactgroup_name       comodin 
+        alias                   comodin 
+        members                 soporte 
+        }
+
+define contactgroup{
+        contactgroup_name       tyt
+        alias                   Comunicaciones TyT
+        members                 tytcomunicaciones,mtobias
+        }
+

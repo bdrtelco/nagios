@@ -1,0 +1,4 @@
+path=/usr/sbin/apache2
+webmin=1.820
+size=637528
+modules=core/2.47 mod_log_config/2.47 mod_alias/2.47 mod_auth_basic/2.47 mod_authn_file/2.47 mod_authz_host/2.47 mod_autoindex/2.47 mod_cgi/2.47 mod_dir/2.47 mod_env/2.47 mod_mime/2.47 mod_mpm_prefork/2.47 mod_negotiation/2.47 mod_perl/2.47 mod_php5/2.47 mod_rewrite/2.47 mod_setenvif/2.47 mod_status/2.47

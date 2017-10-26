@@ -1,0 +1,6 @@
+user mitel mitel2013
+pasv
+bin
+get directorio_mitel_CSVExport_vmcd_01_20170528170003.csv lastfile.csv
+get directorio_mitel_CSVExport_vmcd_01_20170528170003.csv mitel_20170528.csv
+exit

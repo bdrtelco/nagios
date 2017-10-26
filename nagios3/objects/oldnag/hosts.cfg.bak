@@ -1,0 +1,1381 @@
+# Sample object config file for Nagios 1.0
+#
+# Read the documentation for more information on this configuration file.  I've
+# provided some comments here, but things may not be so clear without further
+# explanation, so make sure to read the HTML documentation!
+# 
+# Last Modified: 03-10-2002
+#
+################################################################################
+
+
+################################################################################
+# HOST DEFINITIONS
+#
+# SYNTAX:
+#
+################################################################################
+
+# Generic host definition template
+	define host{
+		name				generic-host	; The name of this host template - referenced in other host definitions, used for template recursion/resolution
+		notifications_enabled		1	; Host notifications are enabled
+		event_handler_enabled		1	; Host event handler is enabled
+		flap_detection_enabled		1	; Flap detection is enabled
+		process_perf_data		1	; Process performance data
+		retain_status_information	1	; Retain status information across program restarts
+		retain_nonstatus_information	1	; Retain non-status information across program restarts
+		max_check_attempts              5	
+		contact_groups		 	telecom,infraestructura,comodin,mantenimiento
+		normal_check_interval           6
+		notification_interval   	120
+		notification_period     	24x7
+		notification_options    	d,u,r
+		register			0	; DONT REGISTER THIS DEFINITION - ITS NOT A REAL HOST, JUST A TEMPLATE!
+		}
+
+############################################################################3
+###########    HOSTS CENTRALES DEL BANCO ############################
+
+
+# 'Rural1' host definition
+	define host{
+		use                     generic-host            ; Name of host template to use
+		host_name               rural1 
+		alias                   Unix Server 1
+		address                 10.160.0.5
+		contact_groups		infraestructura
+		parents			extreme
+		check_command           check-host-alive
+		}
+
+		define host{
+		use                     generic-host            ; Name of host template to use
+		host_name               rural2
+		alias                   Unix Server 2
+		address                 10.160.0.162
+		contact_groups		infraestructura
+		parents			extreme
+		check_command           check-host-alive
+		}
+
+		define host {
+		use			generic-host		; Name of host template to use
+		host_name		backup
+		alias			Backup
+		address			10.160.0.21
+		contact_groups		infraestructura
+		parents			extreme
+		check_command		check-host-alive
+		}
+
+###########    HOSTS CENTRALES DEL BANCO ############################
+
+
+
+# 'bdr3' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               bdr3
+			alias                   Cobis Server #3
+			address                 10.160.0.83
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+
+# 'bdr4' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               bdr4
+			alias                   Cobis Server #4
+			address                 10.160.0.84
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+# 'bdr5' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               bdr5
+			alias                   Cobis Server #5
+			address                 10.160.0.85
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# 'bdr9' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               bdr9
+			alias                   Cobis Server #9
+			address                 10.160.0.89
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# 'bdr07' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               VMCobis07
+			alias                   Cobis Server #07
+			address                 10.160.0.87
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# 'bdr11' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               bdr11
+			alias                   Cobis Server #11
+			address                 10.160.0.91
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+# 'bdr12' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               bdr12
+			alias                   Cobis Server #12
+			address                 10.160.0.92
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# 'bdr13' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               bdr13
+			alias                   Cobis Server #13
+			address                 10.160.0.93
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+# '' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               vmcobisbrch 
+			alias                   vmcobisbrch 
+			address                 10.160.255.25 
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# 'age33srv' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               age33srv 
+			alias                   Servidor Cobis Agencia 33
+			address                 10.160.33.123
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+## 'admonsrv' host definition
+#		define host{
+#			use                     generic-host            ; Name of host template to use
+#			host_name               admonsrv 
+#			alias                   Servidor de Administracion 
+#			address                 140.222.0.1
+#			contact_groups		infraestructura
+#			parents                 extreme
+#			check_command           check-host-alive
+#			}
+
+# 'age99srv' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               age99srv 
+			alias                   Servidor de la agencia  99 
+			address                 10.160.99.123
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+
+# 'Capasrv' host definition
+#		define host{
+#			use                     generic-host            ; Name of host template to use
+#			host_name               capasrv
+#			alias                   Servidor  de capacitaciones
+#			address                 140.254.33.40
+#			contact_groups		infraestructura
+#			parents                 extreme
+#			check_command           check-host-alive
+#			}
+
+# 'bdrcapasrv' host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCapaSrv
+                        alias                   Servidor  de BDRCAPASRV
+                        address                 140.254.1.40
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+# 'bdr01' host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCobis01
+                        alias                   Cobis Server #1
+                        address                 10.160.0.81
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+# 'bdr02' host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCobis02
+                        alias                   Cobis Server #2
+                        address                 10.160.0.82
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+# 'bdr06' host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCobis06
+                        alias                   Cobis Server #6
+                        address                 10.160.0.86
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+# 'torre 01' host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               torre01srv
+                        alias                   Cobis Torre #1
+                        address                 10.161.254.10
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+# 'torre 02' host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               torre02srv
+                        alias                   Cobis Torre #2
+                        address                 10.161.254.11
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+####################################################################################
+####################     OTROS  SERVIDORES DEL BANCO  ###############################
+
+# '' host definition
+#		define host{
+#			use                     generic-host            ; Name of host template to use
+#			host_name               chequeras 
+#			alias                   Servidor de Chequeras 
+#			address                 10.160.152.60
+#			contact_groups		infraestructura
+#			parents                 extreme
+#			check_command           check-host-alive
+#			}
+
+# '' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               compe1 
+			alias                   Servidor de Compensacion  
+			address                 140.223.50.2
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# '' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               Abmsrv 
+			alias                   Servidor de ABC  
+			address                 140.254.1.149
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# '' host definition
+#		define host{
+#			use                     generic-host            ; Name of host template to use
+#			host_name               CrmProdSrv 
+#			alias                   SERVIDOR DE CRM - BASE DE DATOS
+#			address                 140.254.1.151
+#			contact_groups			infraestructura
+#			parents                 extreme
+#			check_command           check-host-alive
+#			}
+
+#  host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               CrmApp01
+			alias                   SERVIDOR DE CRM - App 01 
+			address                 140.254.1.152
+			contact_groups			infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMAntivirus
+                        alias                   SERVIDOR DE ANTIVIRUS
+                        address                 10.160.255.67
+	                contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               vmwservices
+                        alias                   SERVICIOS PAGINA WEB
+                        address                 10.160.255.74
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMACH
+                        alias                   ACH - Compe Electronica
+                        address                 10.160.255.9
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMAdmonDC
+                        alias                   DOMAIN CONTROLLER - ADMON
+                        address                 10.160.255.46                       		        
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMAdmonDHCP
+                        alias                   DHCP - ADMON
+                        address                 140.222.0.1
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCAS
+                        alias                   SERVIDOR DE COBROS
+                        address                 10.160.255.28
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMDatos
+                        alias                   Datos
+                        address                 10.160.255.72
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMImageSRV
+                        alias                   IMAGENES DE EXPEDIENTES Y CHEQUES
+                        address                 10.160.255.59
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMImageDB
+                        alias                   DB DE EXPEDIENTES Y CHEQUES
+                        address                 10.160.255.58
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMIMG_ced
+                        alias                   IMAGENES DE CEDULAS
+                        address                 10.160.255.15
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMInfoDC2
+                        alias                   CONTROLADOR DE DOMINIO INFORMATICA
+                        address                 10.160.255.161
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMIntranet
+                        alias                   INTRANET
+                        address                 10.160.255.53
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMQlickView
+                        alias                   ESTADISTICAS DE COBROS
+                        address                 10.160.255.29
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMSQRSRV
+                        alias                   SQR - REPORTES Y HELPDESK
+                        address                 10.160.255.13
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMAsistenciaApp
+                        alias                   SQR - REPORTES Y HELPDESK
+                        address                 10.160.255.49
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMRiesgos
+                        alias                   BASE DE DATOS DE RIESGOS
+                        address                 10.160.255.70
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMSourceSafe
+                        alias                   SOURCE SAFE
+                        address                 10.160.255.12
+                        contact_groups          infraestructura,mantenimiento
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+#                define host{
+#                        use                     generic-host            ; Name of host template to use
+#                        host_name               VMRemesasDB
+#                        alias                   REMESAS DB
+#                        address                 10.160.255.55
+#                        contact_groups          infraestructura
+#                        parents                 extreme
+#                        check_command           check-host-alive
+#                        }
+
+#  host definition
+#                define host{
+#                        use                     generic-host            ; Name of host template to use
+#                        host_name               vmntsuc
+#                        alias                   NT SUCURSALES
+#                        address                 10.160.255.66
+#                        contact_groups          infraestructura
+#                        parents                 extreme
+#                        check_command           check-host-alive
+#                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               SWIFT
+                        alias                   SWIFT
+                        address                 140.254.1.4
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMWinPHP
+                        alias                   INVENTARIO SOPORTE - HELPDESK SOPORTE
+                        address                 10.160.255.52
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMBVDesa
+                        alias                   BANCA VIRTUAL DESARROLLO
+                        address                 140.254.1.15
+                        contact_groups          infraestructura 
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMSeguros-DC
+                        alias                   CONTROLADOR DEL DOMINIO SEGUROS
+                        address                 10.160.255.50
+                        contact_groups          infraestructura,aseguradora
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               vmsegemgr
+                        alias                   ADMINISTRACION DE LA ASEGURADORA
+                        address                 10.160.255.71
+                        contact_groups          infraestructura,aseguradora
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               segurosweb
+                        alias                   SERVICIOS WEB
+                        address                 10.160.255.60
+                        contact_groups          infraestructura,aseguradora
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               segurosd
+                        alias                   SEGUROS DESARROLLO
+                        address                 10.160.255.68
+                        contact_groups          infraestructura,aseguradora
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               GatewayAdmon
+                        alias                   GATEWAY ADMON
+                        address                 10.160.236.2
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               segurosp
+                        alias                   SEGUROS PRODUCCION
+                        address                 10.160.255.69
+                        contact_groups          infraestructura,aseguradora
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#  host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               Command-view
+			alias                   Admin de Eva y VMware
+			address                 10.160.255.153
+			contact_groups			infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+
+#  host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               central3 
+			alias                   SERVIDOR DE Central  - Manuales BDR
+			address                 140.254.1.105
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# 'FEP' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               fep
+			alias                   SERVIDOR DE TARJETA DE DEBITO 
+			address                 140.254.1.107
+			parents                 extreme
+			check_command           check-host-alive
+			contact_groups		telecom,infraestructura,comodin,mantenimiento
+			}
+
+# 'FEP DESA' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               fep_desa
+			alias                   SERVIDOR DE TARJETA DE DEBITO DESAROLLO
+			address                 140.254.1.100
+			parents                 extreme
+			check_command           check-host-alive
+			contact_groups		telecom,infraestructura,comodin,mantenimiento
+			}
+
+# 'IVR' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               ivr 
+			alias                   SERVIDOR DE BANCA TELEFONICA 
+			address                 10.160.226.20           
+			parents                 extreme
+			check_command           check-host-alive
+			contact_groups		 	telecom,infraestructura,comodin,mantenimiento
+			}
+
+# 'IVR' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               ivrfax
+			alias                   SERVIDOR DE BANCA TELEFONICA FAX
+			address                 10.160.226.25
+			parents                 extreme
+			check_command           check-host-alive
+			contact_groups		telecom,infraestructura,comodin,mantenimiento
+			}
+
+# 'QAPP PROD' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               qapp_prod
+			alias                   MQ APLICACIONES - BDR_ONLINE 
+			address                 140.254.1.1
+			parents                 extreme
+			check_command           check-host-alive
+                        contact_groups          telecom,infraestructura,comodin,mantenimiento
+			}
+
+		
+			                                
+			               
+			                      
+			                 
+					
+			                 
+			           
+			
+
+		
+			                                       
+			               
+			                     
+			                 
+					
+			                 
+			           
+			
+
+
+
+ #'QAPP PROD' host definition
+		define host{
+		use                     generic-host            ; Name of host template to use
+			host_name               qapp_prod2
+			alias                   MQ APLICACIONES - BDR_ONLINE 2
+			address                 140.254.1.3
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+ #'QAPP PROD' host definition
+                define host{
+                use                     generic-host            ; Name of host template to use
+                        host_name               vmwatches
+                        alias                   VM WATCHES
+                        address                 140.254.1.5
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#'QAPP PROD' host definition
+                define host{
+                use                     generic-host            ; Name of host template to use
+                host_name               qapp_prod3
+                alias                   MQ APLICACIONES - BDR_ONLINE 3
+                address                 10.160.209.3
+                contact_groups          infraestructura
+                parents                 extreme
+                check_command           check-host-alive
+                        }
+
+
+# 'QDB PROD' host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               qdb_prod
+			alias                   MQ BASE DE DATOS - BDR_ONLINE 
+			address                 140.254.1.2
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+#  ASEGURADORA RURAL  ASRURAL  host definition
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               asrural_win 
+			alias                   Servidor de Dominio Aseguradora Rural
+			address                 10.161.254.16
+			contact_groups		infraestructura,aseguradora
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+# Mail de Seguros
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               mail_seguros
+			alias                   LINUX - POSTFIX Correo Aseguradora Externo 
+			address           	10.160.255.3
+			contact_groups		infraestructura,telecom
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+
+#Linux Nagios
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               nagios 
+			alias                   Nagios 
+			address           	127.0.0.1
+			contact_groups		telecom
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+
+#Linux Mail Server
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               mailprivado
+			alias                   LINUX - POSTFIX Correo Interno
+			address           	10.160.255.2
+			contact_groups		infraestructura,telecom
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+#Linux Mail Server
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               mailexterno
+			alias                   LINUX - POSTFIX Correo Externo 
+			address           	10.160.255.1
+			contact_groups		infraestructura,telecom
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+
+# Mail de Financiera
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               mail_financiera
+                        alias                   LINUX - POSTFIX Correo Financiera Externo
+                        address                 10.160.255.4
+                        contact_groups          infraestructura,telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+		define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMTrixBox
+                        alias                   VoiP (x-Lite)
+                        address                 10.160.255.130
+                        contact_groups          infraestructura,telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               elearning 
+			alias                   Capacitacion - E-learning 
+			address           	10.160.255.7
+			contact_groups		infraestructura
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               natserver 
+			alias                   LINUX - NAT server 
+			address           	140.254.1.82
+			contact_groups		telecom
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               netadminco  
+			alias                   Nagios  Net Monitor 
+			address            	127.0.0.1	
+			contact_groups		telecom
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               monitor_telecom
+                        alias                   Net Monitor Telecom
+                        address                 10.160.100.65
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               proxy
+			alias                   SERVIDOR PROXY (Squid) 
+			address           	10.160.255.6
+			contact_groups		infraestructura,telecom
+			parents                 extreme 
+			check_command           check-host-alive
+			}
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               proxy-adm
+                        alias                   SERVIDOR PROXY (Squid)
+                        address                 10.160.255.150
+                        contact_groups          infraestructura,telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               gw_renap
+                        alias                   Gateway Renap
+                        address                 10.160.236.10
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+                
+		define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               vpnsrv
+                        alias                   Servidor VPN
+                        address                 10.160.204.2
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               gw_torre 
+                        alias                   Gateway Torre 
+                        address                 10.160.236.74
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               gw_tarjetas 
+                        alias                   Gateway Tarjetas
+                        address                 10.163.55.254 
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               gw_portuaria
+                        alias                   Gateway Portuaria
+                        address                 10.166.62.127
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               gw_munivica
+                        alias                   Gateway Muni Villa Canales
+                        address                 10.162.187.127
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               referencias
+                        alias                   REFERENCIAS CREDITICIAS
+                        address                 10.160.255.8
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+                
+		define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               jabber
+                        alias                   RURALMSG
+                        address                 10.160.255.10
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#se quito el dia 25/3/09		define host{
+#                        use                     generic-host            ; Name of host template to use
+#                        host_name               fwadmon
+#                        alias                   FIREWALL ADMINISTRACION (ANEXO) 	
+#                        address                 140.222.0.251
+#                        contact_groups          telecom
+#                        parents                 extreme
+#                        check_command           check-host-alive
+#                        }
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               fwz1
+                        alias                   FIREWALL ZONA 1
+                        address                 140.99.0.250
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+                
+		define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               gw_agencias
+                        alias                   Gateway Agencias
+                        address                 10.160.235.2
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+#                define host{
+#                        use                     generic-host            ; Name of host template to use
+#                        host_name               fwz11
+#                        alias                   FIREWALL ZONA 11
+#                        address                 10.160.236.35
+#                        contact_groups          telecom
+#                        parents                 extreme
+#                        check_command           check-host-alive
+#                        }
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               gw_munimixco
+                        alias                   GATEWAY MUNI MIXCO 
+                        address                 10.167.4.200
+                        contact_groups          telecom
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               web_bv
+			alias                  	SERVIDOR DE WEB
+			address                 10.1.2.12
+			contact_groups		infraestructura,webmaster
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               db_bv 
+			alias                   SERVIDOR DE WEB
+			address                 140.254.2.2 
+			contact_groups		infraestructura,webmaster
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               monitor_byte_alarmas 
+			alias                   SERVIDOR BYTE ALARMAS 
+			address                 10.160.253.2
+			contact_groups		infraestructura,monitor_byte
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               monitor_byte_analizador
+			alias                   SERVIDOR BYTE ANALIZADOR
+			address                 10.160.253.3
+			contact_groups		infraestructura,monitor_byte
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               monitor_byte_db
+			alias                   SERVIDOR BYTE BASE DE DATOS
+			address  		10.160.253.1
+			contact_groups		infraestructura,monitor_byte
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               plus_acrm_db
+			alias                   SERVIDOR ACRM BASE DE DATOS
+			address  		10.160.255.121
+			contact_groups		infraestructura,monitor_byte
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+		define host{
+			use                     generic-host            ; Name of host template to use
+			host_name               backupsrv 
+			alias                   Servidor de BackUp 
+			address                 140.254.1.20
+			contact_groups		infraestructura
+			parents                 extreme
+			check_command           check-host-alive
+			}
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMFTP
+                        alias                   Servidor de FTP
+                        address                 10.160.255.31
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMNetDesa
+                        alias                   Servidor de .NET
+                        address                 10.160.255.103
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+#  Info-DC
+#                define host{
+#                        use                     generic-host            ; Name of host template to use
+#                        host_name               Info-DC
+#                        alias                   Servidor de DNS
+#                        address                 140.254.33.1
+#                        contact_groups          infraestructura
+#                        parents                 extreme
+#                        check_command           check-host-alive
+#                        }
+
+                define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMRepoDigital
+                        alias                   Repositorio Digital
+                        address                 10.160.209.7
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+		define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name		castest               
+                        alias			castest     
+                        address			10.160.255.75                 
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+			define host{
+                        use                     generic-host            ; Name of host template to use
+                        host_name		vmcargas               
+                        alias			vmcargas	                   
+                        address			10.160.255.90                 
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+			define host	{
+                        use                     generic-host            ; Name of host template to use
+                        host_name		VMSuministros2               
+                        alias			VMSuministros2                   
+                        address			10.160.255.107                 
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+			define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name		VMInfoDC              
+                        alias			VMInfoDC                   
+                        address			10.160.255.76	                 
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+			define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name		vmrrhh2000               
+                        alias			vmrrh2000                   
+                        address			10.160.255.82                
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+
+#			define host     {
+#                       use                     generic-host            ; Name of host template to use
+#                       host_name		VMAntivirus02               
+#                       alias			VMAntivirus02	                   
+#                       address			10.160.255.93	                 
+#                       contact_groups          infraestructura
+#                       parents                 extreme
+#                       check_command           check-host-alive
+#                       }
+
+#			define host     {
+#                       use                     generic-host            ; Name of host template to use
+#                       host_name		VMAntivirus03               
+#                       alias			VMAntivirus03                   
+#                       address			10.160.255.94                 
+#                       contact_groups          infraestructura
+#                       parents                 extreme
+#                       check_command           check-host-alive
+#                      }
+
+#			define host     {
+#                       use                     generic-host            ; Name of host template to use
+#                       host_name               VMAntivirus04
+#                       alias                   VMAntivirus04
+#                       address			10.160.255.95                 
+#                       contact_groups          infraestructura
+#                        parents                 extreme
+#                        check_command           check-host-alive
+#                        }
+
+			define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name		VMColasWeb               
+                        alias			VMColasWeb                   
+                        address			10.160.255.96                 
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+			define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name		VMServiciosWeb               
+                        alias			VMServiciosWeb                   
+                        address			10.160.255.83                 
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+ 			
+			define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name		VMEstadosDeCuenta		               
+                        alias			VMEstadosDeCuenta                   
+                        address			10.160.255.51                 
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+			 define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               rrhhweb
+                        alias                   Pagina RRHH
+                        address                 10.160.255.101
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               siniestro
+                        alias                   siniestro
+                        address                 10.160.255.88
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMTFS
+                        alias                   Team Foundation 2008
+                        address                 10.160.209.1
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMWebServicios
+                        alias                   Web Servicios
+                        address                 10.160.202.13
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMAeronautica
+                        alias                   Aeronautica Civil
+                        address                 10.160.255.92
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMQlickView02
+                        alias                   Qlick View 02
+                        address                 10.160.255.30
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCompeOld
+                        alias                   Antiguo Compensacion
+                        address                 140.223.50.4
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCobis08
+                        alias                   Cobis 008
+                        address                 10.160.0.88
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }
+
+                        define host     {
+                        use                     generic-host            ; Name of host template to use
+                        host_name               VMCobis10
+                        alias                   Cobis 010
+                        address                 10.160.0.90
+                        contact_groups          infraestructura
+                        parents                 extreme
+                        check_command           check-host-alive
+                        }

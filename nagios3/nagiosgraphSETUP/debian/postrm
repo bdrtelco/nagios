@@ -1,0 +1,35 @@
+#!/bin/sh
+
+ars=n
+nrs=y
+
+stag="# begin nagiosgraph configuration"
+etag="# end nagiosgraph configuration"
+ts=`date +"%Y%m%d.%H%M"`
+
+remove_changes() {
+    sed "/$stag/,/$etag/d" $1 > $1.tmp
+    mv $1.tmp $1
+}
+
+# remove apache configuration changes
+if [ -f /etc/apache2/conf.d/nagiosgraph.conf ]; then
+  rm /etc/apache2/conf.d/nagiosgraph.conf
+  ars=y
+fi
+
+# archive any previous state
+cp /etc/nagios3/nagios.cfg /etc/nagios3/nagios.cfg-$ts
+cp /etc/nagios3/commands.cfg /etc/nagios3/commands.cfg-$ts
+
+# remove any previous nagios changes, if any
+remove_changes /etc/nagios3/nagios.cfg
+remove_changes /etc/nagios3/commands.cfg
+
+# restart apache and nagios
+if [ "$ars" = "y" ]; then
+  /etc/init.d/apache2 restart
+fi
+if [ "$nrs" = "y" ]; then
+  /etc/init.d/nagios3 restart
+fi

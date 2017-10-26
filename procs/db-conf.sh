@@ -1,0 +1,3 @@
+DBSRV="10.160.130.155"
+RUSER="nagios"
+RPSS="n4g10s"

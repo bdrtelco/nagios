@@ -1,0 +1,40 @@
+Serial  nombre dominio          		Paswd/challege
+------  ----------------------  		----------------------------
+001     puntos.bdr              		puntos
+002     nagios.bdr              		nagiosj00d34df00
+003     mail.banrural.com.gt    		mailj00d34df00
+004     servicios2.bdr          		s3r2y41mj00d34df00
+005     servicios.banrural.com.gt       	s3rv1c10sj00d34df00
+006     mailprivado.bdr         		m41lprivj00d34df00
+007     archive.bdr         			m41larchj00d34df00
+008     mail.aseguradorarural.com.gt		m41lasegj00d34df00
+009     mail.financierarural.com.gt		m41lfinj00d34df00
+010     metrotech.bdr				m3tr0t3ch
+011     keys.banrural.com.gt			pgpj00d34df00
+012     cobrojudicial.bdr			c0br0jud1c14l867
+013	compesrv.bdr				c0mp3s3rv3r
+014	lyncserver				j00d34df00
+015	correo.banrural.com.gt 			j00d34df00
+016	vgfag0445xch061.gfbanrural.local	j00d34df00
+017	vgfag0115xch061.gfbanrural.local	j00d34df00
+018	autodiscover.gfbanrural.local		j00d34df00
+019	autodiscover.banrural.com.gt		j00d34df00
+020 	www.banrural.com.gt 			w3bj00d34df00	
+021 	correo.banrural.com.gt 			m41lj00d34df00	
+022	VMLYNCEDGE.informatica.banrural.com.gt	lyncj00d34df00
+023	rrhh.banrural.com.gt		 	RHum4nosy41m	
+024	ides.gfbanrural.com.gt		 	IDESJ00d34df00	
+25	mailexterno.banrural.com.gt	  	m41lj00d34df0	
+026	im.banrural.com.gt			lyncj00d34df00
+027	vmlyncfe.banrural.com.gt		lyncfej00d34df00
+027	sip.banrural.com.gt			sipj00d34df00
+028	test.banrural.com.gt			testj00d34df00
+029	bancaff.banrural.com.gt			bffj00d34df00
+030	serviciosin.banrural.com.gt		servj00d34df00
+031	ides.gfbanrural.com.gt			idesj00d34df00 pfx: GFB@4nrur2020!
+032	servicios.banrural.com.gt		servj00d34df00
+033	remesas.banrural.com.gt			remej00d34df00 pfx: remj00d34df00
+034	www.banrural.com.gt			w3bj00d34df00 pfx: w3bj00d34df00
+035	servicios.banrural.com.hn		servhnj00d34df00 pfx: servhnj00d34df00
+036	bancamovil.banrural.com.gt		bancaj00d34df00 pfx: bancaj00d34df00
+

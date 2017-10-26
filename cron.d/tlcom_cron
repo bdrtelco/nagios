@@ -1,0 +1,10 @@
+#MIN =  Minute 0-60
+#    HOUR = Hour [24-hour clock] 0-23
+#       MDAY = Day of Month 1-31
+#          MON = Month 1-12 OR jan,feb,mar,apr ...
+#              DOW =  Day of Week 0-6 OR sun,mon,tue,wed,thu,fri,sat
+#                 User
+#                       COMMAND = Command to be run Any valid command-line
+
+ 0  3  6  *   *  root  /etc/procs/cron_facturacion
+

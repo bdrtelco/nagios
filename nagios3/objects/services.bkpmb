@@ -1,0 +1,1064 @@
+	# Sample object config file for Nagios 1.0
+	#
+	# Read the documentation for more information on this configuration file.  I've
+	# provided some comments here, but things may not be so clear without further
+	# explanation, so make sure to read the HTML documentation!
+	# 
+	# Last Modified: 09-17-2002
+	#
+	################################################################################
+	# SERVICE DEFINITIONS
+	# SYNTAX:
+	################################################################################
+
+	# Generic service definition template
+
+
+
+	# Service definition
+		define service{
+			use				generic-service		; Name of service template to use
+			hostgroup_name 			servers_cobis,aseguradora, servers_back_office, servers_desarrollo, servers_unix, servers_produccion, servers_monitor_byte, servers_exchange, servers_aix
+			service_description		PING
+			is_volatile			0
+			check_period			24x7
+			max_check_attempts		3
+			normal_check_interval		6
+			retry_check_interval		3
+			contact_groups			infraestructura	,comodin
+			notification_interval		6
+			notification_period		24x7
+			notification_options		c,r
+			check_command			check_ping!200.0,20%!500.0,40%
+			}
+
+	# Service definition
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             Check_FTP 
+			host_name                  	VMIntranet,VMImageSRV,VMFTP,VMFTPMunis 
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           10 
+			retry_check_interval            3
+			contact_groups                  infraestructura,telecom ,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_ftp 
+			}
+
+
+	#########################################################################################
+	#########################################################################################
+
+
+		# jlet - 20111110: Se cambio el umbral de criticidad 0-93: Ok, 94 - 95: Warning, 96 - 100: Critical
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_C 
+			hostgroup_name 			        servers_cobis,servers_monitor_byte,aseguradora, servers_back_office, servers_desarrollo, servers_produccion, servers_exchange
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!C!92%!95%
+		}
+
+		# jlet - 20111220: Se reemplazo el nombre web_bv por web_bv1
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_D 
+			host_name 			web_bv,web_bv2,VMAperWeb,plus_acrm_db,VMBVInterna,VMFFwww1,VMFFwww2,VMFFwww3,web_bv4,NVABancaVirtual,siniestro,plus_acrm_db,vmsegemgr,VMSuministros2,VMSegurosSP,VMSeguros-DC,VMSWIFT,VMEchatProd,VMPresupuestos,VMrti,VMFHA, VMCoopeNew, VMCoope,vmControlyCuadre, VMAsistenciaApp
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!D!90%!95%
+		}
+
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_D_EXT
+			host_name 			backupsrv
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10 
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!D!96%!98%
+		}
+
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_E
+			host_name                 	vmcargas,VMFTP,VMRiesgos,VMIntranet,VMSQRSRV,qdb_prod,VMBVDesa,VMSDmdbSrv,VMSDBoxiSrv,VMSDAppSrv,vmMonitorCoreDB,VMPlusACRManls01,VMPlusACRManls02,vmwservices,vmrrhh2000,VMACH,db_bv,vmsqlinfra,vmsqlinfra12,vmsasdb,VMCAS,vmExchMlbx01,vmExchMlbx02,ivr,VMDBProduccion, VMDBProd12, VMESET03, vmIntegSrv, VMESETBK, vmSegurosWeb, VMTeamMateDB, vmVACC02, vmImgDb, vmImgApp, vmRepSrv12, vmControlyCuadre, VMBiometricos, vgfag0445dcf003, VMCA-ITCM-01, VMCA-ITCM-02, VMSqlDesa, vmcobisbrch, vmmsgbrk, vmcreadb, vgfag0115dcf004
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!E!90%!95%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_E_EXT
+			host_name                 	VMImageSRV,backupsrv,VMImageDB,vmcreadb
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!E!98%!99%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_F
+			host_name                 	plus_acrm_db,VMIntranet,vmExchMlbx01,vmExchMlbx02,VMDatos,VMDBProduccion,vmMonitorCoreDB, vmControlyCuadre, VMImageDB,
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!F!96%!98%
+		}
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_G
+			host_name                 	VMImageSRV,plus_acrm_db,vmExchMlbx01,vmExchMlbx02,VMDBProduccion,vmMonitorCoreDB, VMImageDB
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!G!96%!98%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_H
+			host_name                 	VMImageSRV,vmExchMlbx01,vmExchMlbx02
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!H!96%!98%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_I
+			host_name                 	VMImageSRV,vmExchMlbx01,vmExchMlbx02
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!I!97%!98%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_J
+			host_name                 	VMImageSRV
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!J!96%!98%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_K
+			host_name                       VMImageSRV
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!K!96%!98%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_L
+			host_name                       VMImageSRV
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            5
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!L!97%!99%
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             muni_procs 
+			host_name                       municipalidad	
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           4
+			retry_check_interval            2
+			contact_groups                  mantenimiento
+			notification_interval           8
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!runmqtrm.exe
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             oracle
+			host_name                       vmrrhh2000
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           4
+			retry_check_interval            2
+			contact_groups                  infraestructura,comodin
+			notification_interval           4
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!oracle.exe
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             qvs
+			host_name                       VMQlickView
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           5
+			retry_check_interval            3
+			contact_groups                  infraestructura,comodin
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!qvs.exe
+		}
+
+	#        define service{
+	#                use                             generic-service         ; Name of service template to use
+	#                service_description             RMService
+	#                host_name                       VMSQRSRV
+	#                is_volatile                     0
+	#                check_period                    24x7
+	#                max_check_attempts              3
+	#                normal_check_interval           3
+	#                retry_check_interval            1
+	#                contact_groups                  infraestructura,comodin
+	#                notification_interval           3
+	#                notification_period             24x7
+	#                notification_options            c,r
+	#                check_command                   check_nt_process!rmservice8.exe
+	#        }
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             VER_MEM
+			hostgroup_name 			servers_cobis,  servers_monitor_byte,aseguradora,servers_back_office,servers_desarrollo, servers_produccion,servers_exchange
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  infraestructura,mantenimiento,comodin  
+			notification_interval           20
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_memuse!85!93
+		}
+
+
+	#Chequeo de procesos cobis
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             cobis_procs
+			hostgroup_name                  servers_cobis 
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           4 
+			retry_check_interval            2
+			contact_groups                  infraestructura,comodin
+			notification_interval           4 
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!aplserve.exe,ckcs.exe,cobis.exe,DistSrv.exe,logger.exe,mux.exe,rntrysrv.exe,trannp.exe
+		}
+
+		# jlet - 20120223: Se agrego entre el grupo de contactos a Mantenimiento de Software
+		define service{ 
+			use                             generic-service         ; Name of service template to use
+			service_description             Web_service 
+			host_name                  	mailprivado, CrmApp01, elearning, elearning2, mail_seguros, referencias, VMImageWebSrv, segurosweb, VMSegSitio, VMIntranet, vmIntranetNew, VMWinPHP, VMSQRSRV, VMBVDesa, vmsegemgr, vmwservices, vmwservices02, VMNetDesa, VMColasWeb, VMServiciosWeb, VMAsistenciaApp, VMBVInterna, VMPayCorp, VMYottaWeb, VMAperWeb, qapp_prod, vmcrea01, vmcrea02, vmImageProc,VMSharePoint,VMEchatProd, vmges,vmapppreprod, vmAppBMProd01, vmAppBMProd02, vmAppProd, VMDatos, VMACH, VMDatosWeb02
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           4
+			retry_check_interval            2
+			contact_groups                  infraestructura,telecom,comodin,mantenimiento
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_http
+		}
+
+		define service{ 
+			use                             generic-service         ; Name of service template to use
+			service_description             Web_service_fqdn 
+			host_name                       rrhhweb	
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           4
+			retry_check_interval            2
+			contact_groups                  infraestructura,telecom,comodin,mantenimiento
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_http_fqdn!rrhh.bdr
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             Web_service_Expedientes_TomCat
+			host_name                       VMImageSRV 
+		       is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+		       normal_check_interval            6 
+			retry_check_interval            2
+			contact_groups                  infraestructura,telecom,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_http_variable!$HOSTADDRESS$!"/axis/services/WSExpedientes"!8080!
+
+	       }
+
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             Web_service_siniestros
+			host_name                       siniestro 
+		        is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+		        normal_check_interval           10 
+			retry_check_interval            5
+			contact_groups                  infraestructura,telecom,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_http_url!$HOSTADDRESS$!/GestionesWeb/Login.aspx!83!
+	       }
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             Web_service
+			host_name                       VMWebServicios
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            5
+			contact_groups                  infraestructura,telecom,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_https_url!servicios.banrural.com.gt!/dgac/!443!
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             ldap_service
+			host_name                       directorio.bdr
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            5
+			contact_groups                  infraestructura,telecom,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_ldap_bdr
+		}
+
+#		define service{ 
+#			use                             generic-service         ; Name of service template to use
+#			service_description             squirrel 
+#			host_name                  	mailexterno	
+#			is_volatile                     0
+#			check_period                    24x7
+#			max_check_attempts              5
+#			normal_check_interval           4 
+#			retry_check_interval            2
+#			contact_groups                  infraestructura,comodin
+#			notification_interval           120
+#			notification_period             24x7
+#			notification_options            c,r
+#			check_command                   check_https_variable!$HOSTADDRESS$!"/squirrelmail/src/!8080!
+#		}
+
+
+		define service{ 
+			use                             generic-service         ; Name of service template to use
+			service_description             Web_http 
+			hostgroup_name                  servers_Banca_Virtual  
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           4
+			retry_check_interval            2
+			contact_groups                  infraestructura,telecom,comodin,mantenimiento
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_http
+		}
+
+
+		# jlet - 20120223: Se agrego entre el grupo de contactos a Mantenimiento de Software
+		define service{ 
+			use                             generic-service         ; Name of service template to use
+			service_description             Secure_Web_Service 
+			host_name                  	web_bvbal, web_bv, web_bv2, web_bv4, VMBVInterna
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           4
+			retry_check_interval            2
+			contact_groups                  infraestructura,webmaster,telecom,comodin,mantenimiento
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_https
+		}
+
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             ping_5b 
+			host_name                       fep 
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           4 
+			retry_check_interval            2
+			contact_groups                  telecom, mantenimiento
+			notification_interval           4 
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nrpe!check_ping_5b
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             check_win_upd
+			host_name                       VMImageSRV
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           5 
+			retry_check_interval            2
+			contact_groups                  telecom, mantenimiento
+			notification_interval           20 
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nrpe!check_win_upd
+		}
+
+		# jlet - 20130326: Se omite el monitoreo del servicio
+		#define service{
+		#	use                             generic-service         ; Name of service template to use
+		#	service_description             fep_status 
+		#	host_name                       fep 
+		#	is_volatile                     0
+		#	check_period                    24x7
+		#	max_check_attempts              3
+		#	normal_check_interval           4 
+		#	retry_check_interval            2
+		#	contact_groups                  infraestructura, mantenimiento, comodin
+		#	notification_interval           4 
+		#	notification_period             24x7
+		#	notification_options            c,r
+		#	check_command                   check_fep_status!04!22!fepsql
+		#}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             fep_trans
+			host_name                       fep 
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5 
+			retry_check_interval            2
+			contact_groups                  infraestructura, mantenimiento, comodin
+			notification_interval           10 
+			notification_period             24x7
+			notification_options            w,c,r
+			check_command                   check_fep_trans!95!90!fepsql
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             proc_fep
+			host_name                       fep
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           4 
+			retry_check_interval            2
+			contact_groups                  infraestructura, mantenimiento, comodin
+			notification_interval           4 
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!admhnd.exe,switchreentry.exe,vctp4.exe,iso5bhnd.exe,sybhnd3.exe,mscrmmonitor.exe
+		}
+
+	       define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             proc_ivr
+			host_name                       ivr  
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           4
+			retry_check_interval            2
+			contact_groups                  infraestructura,comodin
+			notification_interval           4
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!vozhnd.exe,vctp3.exe,sybhnd2.exe
+		}
+
+
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             proc_recibe
+			host_name                       vmMonitorCoreAnaliza01,vmMonitorCoreAnaliza02
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            3
+			contact_groups                  monitor_byte
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!vwrecibe.exe
+		}
+
+		# jlet - 20111123: Se agrego el host 'qdb_prod'
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             pto_sql 
+			host_name                       fep_desa_db,fep_db,VMACH,VMCAS,VMBVDesa,vmsegemgr,VMSuministros2,siniestro,VMQlickView,VMPayCorp, VMFHA, VMDatosLight, VMGestionRiesgo,VMAsistenciaDB, qdb_prod,vmsasdb,VMSDmdbSrv,vmsqlinfra,vmsqlinfra12,vmMonitorCoreDB,VMPresupuestos,VMrti,fep_test_db
+			hostgroup_name                  servers_cobis
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5 
+			retry_check_interval            2
+			contact_groups                  infraestructura, comodin, mantenimiento
+			notification_interval           5 
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_tcp!1433
+		}
+
+
+	define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             pto_mysql
+			host_name                       VMImageDB,VMSQRSRV,VMIntranet, vmcreadb
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5
+			retry_check_interval            2
+			contact_groups                  infraestructura,comodin
+			notification_interval           5
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_tcp!3306
+	}
+
+	define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             png_capasrv
+			host_name                       VMCapaSrv
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5
+			retry_check_interval            2
+			contact_groups                  infraestructura,comodin
+			notification_interval           5
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_ping_ip!140.254.33.40!1600,30%!3000,30%
+
+	}
+
+	   define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             trans_diarias 
+			host_name                       bilbo
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           60  
+			retry_check_interval            6 
+			contact_groups                  infraestructura,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_cobistrans
+		}
+
+	    define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             cobis_queue 
+			host_name                       bilbo
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5 
+			retry_check_interval            5  
+			contact_groups                  infraestructura,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command			check_cobisqueue!80!70
+	       }
+		
+	 define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             cobis_ssn
+			host_name                       bilbo
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            5 
+			contact_groups                  infraestructura,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_cobis_ssn
+	       }
+
+#	 define service{
+#			use                             generic-service         ; Name of service template to use
+#			service_description            	check_sybase_space 
+#			host_name                       rural1
+#			is_volatile                     0
+#			check_period                    24x7
+#			max_check_attempts              3
+#			normal_check_interval           120
+#			retry_check_interval            60
+#			contact_groups                  infraestructura,mantenimiento, comodin
+#			notification_interval           120
+#			notification_period             24x7
+#			notification_options            c,w,r
+#			check_command                   check_sybase_space
+#	       }
+
+
+	define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             check_dns
+			host_name                       vgfag0033dcf001,vifag0033dcf001,vifag0445dcf002,sifag0115dcf003,sgfag0115dcf002,vgfag0115dcf004,vgfag0445dcf003,VMAdmonDC,TorreDC,AdmonDCR
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5
+			retry_check_interval            60
+			contact_groups                  infraestructura,telecom,comodin
+			notification_interval           5 
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_dns!www.banrural.com.gt 
+		}
+
+	define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             check_dns_claro
+			host_name                       web_bv  
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5
+			retry_check_interval            60
+			contact_groups                  infraestructura,telecom,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_dns_br!www.banrural.com.gt!216.230.128.33 
+		}
+
+
+	define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             check_dns_tigo
+			host_name                       web_bv  
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           5
+			retry_check_interval            60
+			contact_groups                  infraestructura,telecom,comodin
+			notification_interval           120
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_dns_br!www.banrural.com.gt!dns1.navega.net.gt
+		}
+
+
+	#	define service{
+#			use                             generic-service         ; Name of service template to use
+#			service_description             check_claro_smpp
+##			host_name                       monitor_byte_alarmas
+#			is_volatile                     0
+#			check_period                    24x7
+#			max_check_attempts              3
+#			normal_check_interval           5
+#			retry_check_interval            2
+#			contact_groups                  infraestructura,telecom,mantenimiento, monitor_byte
+#			notification_interval           5
+#			notification_period             24x7
+#			notification_options            c,r
+#			check_command                   check_nrpe!check_claro_smpp
+#		}
+
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             monitor_alrm_procs
+			host_name                       vmMonitorCoreAlarma
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           5
+			retry_check_interval            2
+			contact_groups                  infraestructura,telecom,mantenimiento,comodin
+			notification_interval           5
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!Amonitor.exe,POSTSMS_C.exe,GeneraReportes.exe,PVWverifica.exe,vweventwrite.exe
+		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             monitor_colector_procs
+			host_name                       vmMonitorCoreColector
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           5
+			retry_check_interval            2
+			contact_groups                  infraestructura,telecom,mantenimiento,comodin
+			notification_interval           5
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_process!Tireg.exe
+		}
+
+
+#		define service{
+#			use                             generic-service         ; Name of service template to use
+#			service_description             proc_sconnect
+#			host_name                       VMSWIFT
+#			is_volatile                     0
+#			check_period                    24x7
+#			max_check_attempts              3
+#			normal_check_interval           4
+#			retry_check_interval            2
+#			contact_groups                  infraestructura
+#			notification_interval           4
+#			notification_period             24x7
+#			notification_options            c,r
+#			check_command                   check_nt_process!sconnect5070.exe
+#		}
+
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_M
+			host_name                       VMImageSRV
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            5
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!M!96%!98%
+			}
+
+		#JCC - 20111124 - se agrega el disco N al VMImageSRV		
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_N
+			host_name                       VMImageSRV
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            5
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!N!97%!98%
+			}
+			
+		#JCC - 20120104 - se agrega el disco O al VMImageSRV		
+		define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             DISCO_O
+			host_name                       VMImageSRV
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              3
+			normal_check_interval           10
+			retry_check_interval            5
+			contact_groups                  infraestructura,mantenimiento
+			notification_interval           10
+			notification_period             24x7
+			notification_options            c,r
+			check_command                   check_nt_disk!O!96%!98%
+			}
+			
+		#WGY - 20130704 - se agrega el disco P al VMImageSRV
+                define service{
+                        use                             generic-service         ; Name of service template to use
+                        service_description             DISCO_P
+                        host_name                       VMImageSRV
+                        is_volatile                     0
+                        check_period                    24x7
+                        max_check_attempts              3
+                        normal_check_interval           10
+                        retry_check_interval            5
+                        contact_groups                  infraestructura,mantenimiento
+                        notification_interval           10
+                        notification_period             24x7
+                        notification_options            c,r
+                        check_command                   check_nt_disk!P!98%!99%
+                        }
+
+                define service{
+                        use                             generic-service         ; Name of service template to use
+                        service_description             DISCO_Q
+                        host_name                       VMImageSRV
+                        is_volatile                     0
+                        check_period                    24x7
+                        max_check_attempts              3
+                        normal_check_interval           10
+                        retry_check_interval            5
+                        contact_groups                  infraestructura,mantenimiento
+                        notification_interval           10
+                        notification_period             24x7
+                        notification_options            c,r
+                        check_command                   check_nt_disk!Q!97%!98%
+                        }
+                define service{
+                        use                             generic-service         ; Name of service template to use
+                        service_description             DISCO_R
+                        host_name                       VMImageSRV
+                        is_volatile                     0
+                        check_period                    24x7
+                        max_check_attempts              3
+                        normal_check_interval           10
+                        retry_check_interval            5
+                        contact_groups                  infraestructura,mantenimiento
+                        notification_interval           10
+                        notification_period             24x7
+                        notification_options            c,r
+                        check_command                   check_nt_disk!R!90%!96%
+                        }
+			# jlet - 20111028: Se agrega el monitoreo del servicio SQLAgent2000 en el hostname VMSourceSafe
+			define service{
+			use                             generic-service         ; Name of service template to use
+			service_description             SQLAgent2000
+			host_name			age33srv,db_bv,VMCobis01,VMCobis02,VMCobis03,VMCobis04,VMCobis05,VMCobis06,VMCobis07,VMCobis08,VMCobis09,VMCobis10,VMCobis11,VMCobis12,VMCobis13,VMCobis14,VMCobis15,torre01srv,torre02srv,VMFHA,vmMonitorCoreDB
+			is_volatile                     0
+			check_period                    24x7
+			max_check_attempts              2
+			normal_check_interval           6
+                	retry_check_interval            3
+                contact_groups                  infraestructura
+                notification_interval           10
+                notification_period             24x7
+                notification_options            c,r
+                check_command                   check_nt_process!sqlagent.exe
+		}
+		#jlet - 20111117: Se ha agregado el servidor qdb_prod
+        define service{
+                use                             generic-service         ; Name of service template to use
+                service_description             SQLAgent2005
+                host_name                       VMCapaSrv, VMYotta, VMGestionRiesgo, VMAsistenciaDB, qdb_prod,vmsasdb
+                is_volatile                     0
+                check_period                    24x7
+                max_check_attempts              3
+                normal_check_interval           6
+                retry_check_interval            2
+                contact_groups                  infraestructura, mantenimiento
+                notification_interval           6
+                notification_period             24x7
+                notification_options            c,r
+                check_command                   check_nt_process!SQLAGENT90.EXE
+        }
+
+        define service{
+                use                             generic-service         ; Name of service template to use
+                service_description             SQLAgent2008
+                host_name                       VMDatosDB, VMDBProduccion, VMDBProd12, VMDatosLight,fep_desa_db,fep_db,VMSDmdbSrv,vmsqlinfra,vmsqlinfra12,VMPresupuestos,VMrti,VMSqlDesa,fep_test_db, VMPayCorp
+                is_volatile                     0
+                check_period                    24x7
+                max_check_attempts              3
+                normal_check_interval           6
+                retry_check_interval            3
+                contact_groups                  infraestructura, mantenimiento
+                notification_interval           6
+                notification_period             24x7
+                notification_options            c,r
+                check_command                   check_nt_process!SQLAGENT.EXE
+        }
+
+	# Puerto Cobis
+	define service{
+                use                             generic-service         ; Name of service template to use
+                service_description             pto_cobis 
+                host_name                       VMCobis01 
+                hostgroup_name                  servers_cobis
+                is_volatile                     0
+                check_period                    24x7
+                max_check_attempts              3
+                normal_check_interval           5 
+                retry_check_interval            2
+                contact_groups                  infraestructura,comodin,telecom
+                notification_interval           5 
+                notification_period             24x7
+                notification_options            c,r
+                check_command                   check_tcp!3000
+	}
+
+        define service{
+                use                             generic-service         ; Name of service template to use
+                service_description             Exchange_Services
+                host_name                       vmExchCAS01,vmExchCas02,vmExchMlbx01,vmExchMlbx02
+                is_volatile                     0
+                check_period                    24x7
+                max_check_attempts              3
+                normal_check_interval           6
+                retry_check_interval            3
+                contact_groups                  infraestructura
+                notification_interval           6
+                notification_period             24x7
+                notification_options            c,r
+#                check_command                   check_nt_process!MSExchangeADTopologyService.exe,MSExchangeTransportLogSearch.exe,Microsoft.Exchange.RpcClientAccess.Service.exe,Microsoft.Exchange.ServiceHost.exe
+                check_command                   check_nt_process!MSExchangeADTopologyService.exe
+        }
+
+# Service definition
+                define service{
+                        use                             generic-service         ; Name of service template to use
+                        hostgroup_name                  servers_voip
+                        service_description             PING
+                        is_volatile                     0
+                        check_period                    24x7
+                        max_check_attempts              3
+                        normal_check_interval           6
+                        retry_check_interval            3
+                        contact_groups                  telecom
+                        notification_interval           6
+                        notification_period             24x7
+                        notification_options            c,r
+                        check_command                   check_ping!200.0,20%!500.0,40%
+                        }
+
+# Service definition
+                define service{
+                        use                             generic-service         ; Name of service template to use
+                        hostgroup_name                  biometricos
+                        service_description             PING
+                        is_volatile                     0
+                        check_period                    24x7
+                        max_check_attempts              3
+                        normal_check_interval           6
+                        retry_check_interval            3
+                        contact_groups                  telecom
+                        notification_interval           6
+                        notification_period             24x7
+                        notification_options            c,r
+                        check_command                   check_ping!200.0,20%!500.0,40%
+                        }
+
+

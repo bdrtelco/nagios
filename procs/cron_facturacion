@@ -1,0 +1,8 @@
+/etc/procs/genera_facturacion CLARO -m
+/etc/procs/genera_facturacion NAVEGA -m
+/etc/procs/genera_facturacion TELNOR -m
+/etc/procs/genera_facturacion REDYTEC -m
+/etc/procs/genera_facturacion COLUMBUS -m
+/etc/procs/genera_facturacion OPTEL -m
+/etc/procs/cargos_exinda EXINDA -m
+/etc/procs/correo_facturacion

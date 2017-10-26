@@ -1,0 +1,176 @@
+[02.12.2015 11:27:19] checking required PERL modules
+[02.12.2015 11:27:19]   Carp...1.29
+[02.12.2015 11:27:19]   CGI...3.64
+[02.12.2015 11:27:20]   Data::Dumper...2.145
+[02.12.2015 11:27:20]   Digest::MD5...2.52
+[02.12.2015 11:27:20]   File::Basename...2.84
+[02.12.2015 11:27:20]   File::Find...1.23
+[02.12.2015 11:27:20]   MIME::Base64...3.13
+[02.12.2015 11:27:20]   POSIX...1.32
+[02.12.2015 11:27:20]   RRDs...1.4007
+[02.12.2015 11:27:20]   Time::HiRes...1.9725
+[02.12.2015 11:27:20] checking optional PERL modules
+[02.12.2015 11:27:20]   GD...2.46
+[02.12.2015 11:27:20]   Nagios::Config...36
+[02.12.2015 11:27:20] checking nagios installation
+[02.12.2015 11:27:20]   found nagios exectuable at /usr/sbin/nagios3
+[02.12.2015 11:27:20]   found nagios init script at /etc/init.d/nagios3
+[02.12.2015 11:27:20] checking web server installation
+[02.12.2015 11:27:20]   found apache executable at /usr/sbin/apache2
+[02.12.2015 11:27:20]   found apache init script at /etc/init.d/apache2
+[02.12.2015 11:33:02] configuration:
+[02.12.2015 11:33:02]   ng_prefix            /etc/nagiosgraph
+[02.12.2015 11:33:02]   ng_etc_dir           /etc/nagiosgraph/etc
+[02.12.2015 11:33:02]   ng_bin_dir           /etc/nagiosgraph/bin
+[02.12.2015 11:33:02]   ng_cgi_dir           /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:02]   ng_doc_dir           /etc/nagiosgraph/doc
+[02.12.2015 11:33:02]   ng_examples_dir      /etc/nagiosgraph/examples
+[02.12.2015 11:33:02]   ng_www_dir           /usr/share/nagios3/htdocs/nagiosgraph
+[02.12.2015 11:33:02]   ng_util_dir          /etc/nagiosgraph/util
+[02.12.2015 11:33:02]   ng_var_dir           /srv/var/nagiosgraph
+[02.12.2015 11:33:02]   ng_rrd_dir           /srv/var/nagiosgraph/rrd
+[02.12.2015 11:33:02]   ng_log_dir           /srv/var/nagiosgraph/log
+[02.12.2015 11:33:02]   ng_log_file          /srv/var/nagiosgraph/log/nagiosgraph.log
+[02.12.2015 11:33:02]   ng_cgilog_file       /srv/var/nagiosgraph/log/nagiosgraph-cgi.log
+[02.12.2015 11:33:02]   ng_url               /nagiosgraph
+[02.12.2015 11:33:02]   ng_cgi_url           /nagiosgraph/cgi-bin
+[02.12.2015 11:33:02]   ng_css_url           /nagiosgraph/nagiosgraph.css
+[02.12.2015 11:33:02]   ng_js_url            /nagiosgraph/nagiosgraph.js
+[02.12.2015 11:33:02]   nagios_cgi_url       /nagios3/cgi-bin
+[02.12.2015 11:33:02]   nagios_perfdata_file /srv/tmp/perfdata.log
+[02.12.2015 11:33:02]   nagios_user          nagios
+[02.12.2015 11:33:02]   www_user             www-data
+[02.12.2015 11:33:02]   modify_nagios_config y
+[02.12.2015 11:33:02]   nagios_config_file   /etc/nagios3/nagios.cfg
+[02.12.2015 11:33:02]   nagios_commands_file /etc/nagios3/objects/commands.cfg
+[02.12.2015 11:33:02]   modify_apache_config y
+[02.12.2015 11:33:02]   apache_config_dir    /etc/apache2/
+[02.12.2015 11:33:02]   apache_config_file   
+[02.12.2015 11:33:36] mkdir /etc/nagiosgraph
+[02.12.2015 11:33:36] mkdir /etc/nagiosgraph/etc
+[02.12.2015 11:33:36] copy etc/nagiosgraph_fr.conf to /etc/nagiosgraph/etc/nagiosgraph_fr.conf
+[02.12.2015 11:33:36] copy etc/hostdb.conf to /etc/nagiosgraph/etc/hostdb.conf
+[02.12.2015 11:33:36] copy etc/nagiosgraph_es.conf to /etc/nagiosgraph/etc/nagiosgraph_es.conf
+[02.12.2015 11:33:36] copy etc/labels.conf to /etc/nagiosgraph/etc/labels.conf
+[02.12.2015 11:33:36] copy etc/nagiosgraph_de.conf to /etc/nagiosgraph/etc/nagiosgraph_de.conf
+[02.12.2015 11:33:36] copy etc/servdb.conf to /etc/nagiosgraph/etc/servdb.conf
+[02.12.2015 11:33:36] copy etc/datasetdb.conf to /etc/nagiosgraph/etc/datasetdb.conf
+[02.12.2015 11:33:36] copy etc/nagiosgraph.conf to /etc/nagiosgraph/etc/nagiosgraph.conf
+[02.12.2015 11:33:36] copy etc/rrdopts.conf to /etc/nagiosgraph/etc/rrdopts.conf
+[02.12.2015 11:33:36] copy etc/groupdb.conf to /etc/nagiosgraph/etc/groupdb.conf
+[02.12.2015 11:33:36] copy etc/access.conf to /etc/nagiosgraph/etc/access.conf
+[02.12.2015 11:33:36] copy etc/map to /etc/nagiosgraph/etc/map
+[02.12.2015 11:33:36] copy etc/ngshared.pm to /etc/nagiosgraph/etc
+[02.12.2015 11:33:36] replace text in /etc/nagiosgraph/etc/nagiosgraph.conf
+[02.12.2015 11:33:36] move /etc/nagiosgraph/etc/nagiosgraph.conf-bak to /etc/nagiosgraph/etc/nagiosgraph.conf
+[02.12.2015 11:33:36] replace text in /etc/nagiosgraph/etc/nagiosgraph.conf
+[02.12.2015 11:33:36] move /etc/nagiosgraph/etc/nagiosgraph.conf-bak to /etc/nagiosgraph/etc/nagiosgraph.conf
+[02.12.2015 11:33:36] write stub to /etc/nagiosgraph/etc/nagiosgraph-nagios.cfg
+[02.12.2015 11:33:36] write stub to /etc/nagiosgraph/etc/nagiosgraph-commands.cfg
+[02.12.2015 11:33:36] write stub to /etc/nagiosgraph/etc/nagiosgraph-apache.conf
+[02.12.2015 11:33:36] mkdir /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] copy cgi/testcolor.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/testcolor.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/testcolor.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/testcolor.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/testcolor.cgi
+[02.12.2015 11:33:36] copy cgi/showhost.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/showhost.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/showhost.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/showhost.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/showhost.cgi
+[02.12.2015 11:33:36] copy cgi/showservice.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/showservice.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/showservice.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/showservice.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/showservice.cgi
+[02.12.2015 11:33:36] copy cgi/show.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/show.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/show.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/show.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/show.cgi
+[02.12.2015 11:33:36] copy cgi/showconfig.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/showconfig.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/showconfig.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/showconfig.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/showconfig.cgi
+[02.12.2015 11:33:36] copy cgi/showgraph.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/showgraph.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/showgraph.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/showgraph.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/showgraph.cgi
+[02.12.2015 11:33:36] copy cgi/export.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/export.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/export.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/export.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/export.cgi
+[02.12.2015 11:33:36] copy cgi/showgroup.cgi to /usr/share/nagios3-cgi/nagiosgraph
+[02.12.2015 11:33:36] replace text in /usr/share/nagios3-cgi/nagiosgraph/showgroup.cgi
+[02.12.2015 11:33:36] move /usr/share/nagios3-cgi/nagiosgraph/showgroup.cgi-bak to /usr/share/nagios3-cgi/nagiosgraph/showgroup.cgi
+[02.12.2015 11:33:36] chmod 755 on /usr/share/nagios3-cgi/nagiosgraph/showgroup.cgi
+[02.12.2015 11:33:36] mkdir /etc/nagiosgraph/bin
+[02.12.2015 11:33:36] copy lib/insert.pl to /etc/nagiosgraph/bin
+[02.12.2015 11:33:36] replace text in /etc/nagiosgraph/bin/insert.pl
+[02.12.2015 11:33:36] move /etc/nagiosgraph/bin/insert.pl-bak to /etc/nagiosgraph/bin/insert.pl
+[02.12.2015 11:33:36] chmod 755 on /etc/nagiosgraph/bin/insert.pl
+[02.12.2015 11:33:36] mkdir /usr/share/nagios3/htdocs/nagiosgraph
+[02.12.2015 11:33:36] copy share/nagiosgraph.css to /usr/share/nagios3/htdocs/nagiosgraph/nagiosgraph.css
+[02.12.2015 11:33:36] copy share/nagiosgraph.js to /usr/share/nagios3/htdocs/nagiosgraph
+[02.12.2015 11:33:36] mkdir /etc/nagiosgraph/doc
+[02.12.2015 11:33:36] copy AUTHORS to /etc/nagiosgraph/doc
+[02.12.2015 11:33:36] copy CHANGELOG to /etc/nagiosgraph/doc
+[02.12.2015 11:33:36] copy INSTALL to /etc/nagiosgraph/doc
+[02.12.2015 11:33:36] copy README to /etc/nagiosgraph/doc
+[02.12.2015 11:33:36] copy TODO to /etc/nagiosgraph/doc
+[02.12.2015 11:33:36] mkdir /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/map_minimal to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/map_mwall to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/map_examples to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/map_1_3 to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/nagiosgraph.2.css to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/map_1_4_4 to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/map_1_4_5 to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/map_1_4_3 to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/graphed-service.cfg to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/nagiosgraph-apache.conf to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/nagiosgraph.1.css to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/graphed-host.cfg to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/nagiosgraph-nagios.cfg to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/nagiosgraph-commands.cfg to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/insert.sh to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy examples/nagiosgraph-logrotate to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy share/graph.gif to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] copy share/nagiosgraph.ssi to /etc/nagiosgraph/examples
+[02.12.2015 11:33:36] mkdir /etc/nagiosgraph/util
+[02.12.2015 11:33:36] copy utils/testentry.pl to /etc/nagiosgraph/util
+[02.12.2015 11:33:36] copy utils/flat2hier.pl to /etc/nagiosgraph/util
+[02.12.2015 11:33:36] chmod 755 on /etc/nagiosgraph/util/testentry.pl
+[02.12.2015 11:33:36] chmod 755 on /etc/nagiosgraph/util/flat2hier.pl
+[02.12.2015 11:33:36] mkdir /srv/var/nagiosgraph/rrd
+[02.12.2015 11:33:36] chmod 755 on /srv/var/nagiosgraph/rrd
+[02.12.2015 11:33:36] chown nagios,- on /srv/var/nagiosgraph/rrd
+[02.12.2015 11:33:36] touching /srv/var/nagiosgraph/log/nagiosgraph.log
+[02.12.2015 11:33:36] chmod 644 on /srv/var/nagiosgraph/log/nagiosgraph.log
+[02.12.2015 11:33:36] chown nagios,- on /srv/var/nagiosgraph/log/nagiosgraph.log
+[02.12.2015 11:33:36] touching /srv/var/nagiosgraph/log/nagiosgraph-cgi.log
+[02.12.2015 11:33:36] chmod 644 on /srv/var/nagiosgraph/log/nagiosgraph-cgi.log
+[02.12.2015 11:33:36] chown www-data,- on /srv/var/nagiosgraph/log/nagiosgraph-cgi.log
+[02.12.2015 11:33:36] append to /etc/nagios3/nagios.cfg
+[02.12.2015 11:33:36] copy /etc/nagios3/nagios.cfg to /etc/nagios3/nagios.cfg.tmp
+[02.12.2015 11:33:36] move /etc/nagios3/nagios.cfg to /etc/nagios3/nagios.cfg-20151202.1133
+[02.12.2015 11:33:36] move /etc/nagios3/nagios.cfg.tmp to /etc/nagios3/nagios.cfg
+[02.12.2015 11:33:36] append to /etc/nagios3/objects/commands.cfg
+[02.12.2015 11:33:36] copy /etc/nagios3/objects/commands.cfg to /etc/nagios3/objects/commands.cfg.tmp
+[02.12.2015 11:33:36] move /etc/nagios3/objects/commands.cfg to /etc/nagios3/objects/commands.cfg-20151202.1133
+[02.12.2015 11:33:36] move /etc/nagios3/objects/commands.cfg.tmp to /etc/nagios3/objects/commands.cfg
+[02.12.2015 11:33:36] move /etc/nagiosgraph/etc/nagiosgraph-apache.conf to /etc/apache2//nagiosgraph.conf
+[02.12.2015 11:33:36] 
+[02.12.2015 11:33:36]   * Check the nagios configuration:
+[02.12.2015 11:33:36] 
+[02.12.2015 11:33:36] /usr/sbin/nagios3 -v /etc/nagios3/nagios.cfg
+[02.12.2015 11:33:36] 
+[02.12.2015 11:33:36]   * Restart nagios to start data collection:
+[02.12.2015 11:33:36] 
+[02.12.2015 11:33:36] /etc/init.d/nagios3 restart
+[02.12.2015 11:33:36] 
+[02.12.2015 11:33:36]   * Restart apache to enable display of graphs:
+[02.12.2015 11:33:36] 
+[02.12.2015 11:33:36] /etc/init.d/apache2 restart
+[02.12.2015 11:33:36] 
+[02.12.2015 11:33:36]   * To enable graph links and mouseovers, see README sections:
+[02.12.2015 11:33:36]        Displaying Per-Service and Per-Host Graph Icons and Links
+[02.12.2015 11:33:36]        Displaying Graphs in Nagios Mouseovers
+[02.12.2015 11:33:36] 

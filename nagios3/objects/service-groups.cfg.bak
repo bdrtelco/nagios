@@ -1,0 +1,49 @@
+################################################################################
+# Sample object config file for Nagios 1.0
+#
+# Read the documentation for more information on this configuration file.  I've
+# provided some comments here, but things may not be so clear without further
+# explanation, so make sure to read the HTML documentation!
+# 
+# Last Modified: 03-07-2002
+#
+################################################################################
+
+
+################################################################################
+# HOST GROUP DEFINITIONS
+#
+# SYNTAX:
+#
+################################################################################
+
+
+###################################################### SERVICIOS  #################################################
+# jlet - 20130326: Se omitio el monitoreo del servicio "fep,fep_status"
+define servicegroup{
+        servicegroup_name       TopServices 
+        alias                   Servicios criticos de TI 
+        members        		fep, fep_trans, fep,proc_fep, fep, ping_5b, cobis_queue #, trans_diarias
+}
+
+define servicegroup{
+        servicegroup_name       BancaRedServices 
+        alias                   Servicios brindados por BancaRed 
+        members        		fep,ping_5b,qapp_prod2,https_sib,natserver,check_ping_pida
+}
+
+define servicegroup{
+        servicegroup_name       BancaVirtualServices 
+        alias                   Servicios brindados por Banca Virtual
+        members        		db_bv,cobis_procs, db_bv,dif_usuarios_conectados_bv, db_bv,pto_sql, db_bv,SQLAgent2000, VMBVInterna,Secure_Web_Service, VMBVInterna,Web_service, VMAperWeb,Web_service, web_bv,Secure_Web_Service, web_bv,Web_http, web_bv2,Secure_Web_Service, web_bv2,Web_http, vmmsqapp01,bv_desde_balanceador, vmmsqapp01,bv_desde_was, vmmsqapp01,bv_desde_ihs41, vmmsqapp01,bv_desde_ihs43, vmmsqapp01,bv_ws_checkusertype_desde_was, vmmsqapp01,bv_ws_checkusertype_desde_ihs41, vmmsqapp01,bv_ws_checkusertype_desde_ihs43, VMFFwww1,bv_desde_b_individivual141, VMFFwww2,bv_desde_b_individivual142
+}
+
+# jlet - 20120711: Inhabilitacion del servicio vmmsqapp02-ping_visanet.
+# jlet - 20120924: Inhabilitacion del servicio vmmsqapp02-ping_oriflamegw
+define servicegroup{
+        servicegroup_name       MantSoftServices
+        alias                   Servicios brindados por Mantenimiento de Software
+        members        		qapp_prod,ping_eegsa, qapp_prod,ping_eegsa, qapp_prod,ping_oj, qdb_prod,pto_sql, qdb_prod,remesas_pendientes, qdb_prod,SQLAgent2005, qapp_prod2,https_sib, qapp_prod2,http_agexpront, qapp_prod2,ping_telefonica, qapp_prod2,ping_telgua, qapp_prod2,ping_unitelyego, qapp_prod2,pto_fenosa, VMSWIFT,proc_sconnect, vmwatches,ping_igss, vmwatches,ping_portuaria, vmwatches,ping_usac, vmmsqapp01,ftp_dolex, vmmsqapp01,ftp_lac,  vmmsqapp01,ftp_orderexpress, vmmsqapp01,ftp_viamericas, vmmsqapp01,ping_bts, vmmsqapp01,ws_moneygram, vmmsqapp01,sql_bts, vmmsqapp02,ping_comcel, vmmsqapp02,ping_oriflamesrv, vmcargas,DISCO_E, vmwservices,pools_iis, vmwservices,Web_service, vmwservices,Web_service, vmwservices,ws_money_wallet, vmwservices,ws_remesas, vmwservices,ws_moneygram, vmmsqapp02, pto_intecap, vmmsqapp01, check_https_declaraguate, proxy-adm, check_ping_utiba 
+}
+
+

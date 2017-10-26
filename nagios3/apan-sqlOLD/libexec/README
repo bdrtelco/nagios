@@ -1,0 +1,7 @@
+This dir contains different contributed Nagios-plugins.
+Some of them is needed by Apan, other can be used as
+'normal' plugins in Nagios.
+For more info, look in the files or at Apan homepage,
+apan.sourceforge.net.
+
+/FredrikW

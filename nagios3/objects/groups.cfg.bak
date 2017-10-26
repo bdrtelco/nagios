@@ -1,0 +1,224 @@
+################################################################################
+# Sample object config file for Nagios 1.0
+#
+# Read the documentation for more information on this configuration file.  I've
+# provided some comments here, but things may not be so clear without further
+# explanation, so make sure to read the HTML documentation!
+# 
+# Last Modified: 21-sept-2011
+#
+################################################################################
+
+
+################################################################################
+# HOST GROUP DEFINITIONS
+#
+# SYNTAX:
+#
+################################################################################
+
+define hostgroup{
+        hostgroup_name  a_telered 
+        alias           Telered - Banrural
+	members 	age001b, age005, age005b, age006b, age009, age010b, age011, age013, age014, age016, age017, age018, age018b, age020, age020b, age021, age024, age025, age029,age030, age031, age031b, age035, age036, age036b, age038, age040, age041, age044, age044b, age045, age045b, age046, age047, age049, age049b, age050, age052, age053, age054,age055, age056, age057, age058, age059, age060, age061, age063, age063b, age064, age065, age066, age068, age069, age070, age071, age072, age073, age074, age075, age078, age079, age079b, age080, age081b, age082, age086b, age087, age088, age089, age090, age092, age092b, age093, age093b, age095, age095b, age098, age099b, age100, age101b, age103, age104, age105, age106, age109, age109b, age109c, age111, age113, age114, age116, age117, age118, age119, age119b, age120, age121, age124b, age125, age126, age127, age128, age129, age130, age131, age132, age133, age134, age135, age136, age137, age137b, age138, age139, age140, age140b, age141, age142, age145, age146, age147, age147b, age148, age149, age150,age151, age153, age154, age155, age156, age157, age158, age159, age163, age164, age164c, age165, age165b, age166, age167b, age168, age169, age170, age172, age173, age174, age175, age177, age178, age178b, age178c,  age179b, age180, age181, age183, age184, age184d, age185, age187, age188, age190, age192, age193, age194, age195, age196, age197, age198, age199, age200, age201, age201b, age202, age203, age204, age207, age209, age211, age213, age216, age218b, age219, age220, age221c, age222, age227, age228, age228b, age229d, age231, age232, age233, age234b, age235, age237, age238, age240, age241, age242, age242b, age244, age249b, age251, age256, age257, age259b, age260, age263, age265, age266, age272, age273, age276, age279, age280, age284, age285b, age286, age288, age289b, age290, age292, age293, age294, age295,age296, age297, age298, age300, age301, age301b, age302, age303, age304, age306, age308, age309, age312b, age314, age315, age316, age321, age324, age325, age326, age326b, age329b, age330, age332, age333, age334, age334b, age335, age335b, age336, age337,age338, age339, age341, age342, age343, age344, age345,  age348, age349, age352, age353, age355, age356, age356b, age357, age358, age361, age362, age363, age365, age366,age367, age370, age376, age378, age379, age381, age382, age386, age389, age390, age391, age395, age396, age397, age398, age400,age401, age402, age405, age407, age409, age410, age411, age412, age412b, age413, age415, age417, age420, age422, age424, age425, age426, age427, age431, age432, age433, age434, age435b, age436, age438, age441, age443, age444, age446, age447, age448, age449, age452, age455, age456, age457, age458, age460, age464, age465, age467, age467b, age469, age470, age471, age474, age475, age476, age478, age479, age480, age482, age483, age484, age485, age486b, age487, age488, age490, age491c, age494, age496, age498, age500, age503, age504, age505, age507, age508, age509, age510, age512, age515, age517, age518, age520, age521, age522, age523, age525, age527, age530c, age531, age532, age534, age536, age537, age540, age542, age543, age544, age545, age546, age551, age552, age554, age555, age557, age558, age560, age568, age569, age571, age572, age572b, age574, age575, age576, age577, age579, age580, age582, age583, age584b, age589, age590, age591, age592, age593, age595, age596, age601, age613, age614, age615, age615b, age622, age623, age624b, age629, age630, age634, age635, age637, age638, age639, age643, age644, age645, age646, age649, age652, age654, age654b, age656, age657, age659, age660, age662, age663b, age664, age667, age671, age675, age677, age679, age681, age683, age684, age687, age690, age691, age692, age693, age696, age697, age698, age699, age700, age703, age704, age705, age706, age707, age716, age718, age719, age720, age722, age723, age725, age726, age727, age728, age730, age731, age732, age734, age735, age736, age737, age738, age739, age739d, age740, age741, age743, age744, age745, age747, age749, age749b, age750, age751, age752, age753, age754, age755, age756, age757, age761, age762, age763, age765, age766, age767, age768, age769, age770, age771, age772, age773, age774, age776, age778, age779, age780, age781, age782, age785, age786, age787, age788, age791b, age792, age793, age794, age795, age799, age801, age802, age803, age804, age805, age807, age808, age809, age810, age811, age812, age813, age814, age815, age816, age819, age822, age823, age824, age825, age827, age828, age830, age831, age832, age832b, age834, age837, age838, age839, age841, age844, age845, age848, age849, age850, age852, age853, age854, age856, age857, age858, age859, age860, age861, age863, age865, age871, age872, age875, age876, age877, age878, age879, age881, age882, age883, age886, age890, age891, age892, age893, age895, age896, age1001, ageprueba2ips            
+        } 
+
+define hostgroup{
+        hostgroup_name  a_navega 
+        alias           Navega - Banrural
+        members         age002, age002b, age003, age003b, age006,age007,age008,age010,age012, age019, age023, age025b, age025c, age026,age027,age028,age034,age034b,  age037, age039, age040b, age043,age048,age051, age067,age077,age076, age081,age083,age084,age085,age086,age091,age094, age096,age097,age102, age104b, age107, age108, age109d, age110, age143, age144, age151, age161, age164b, age167,age171,age176,age179,age541, age184b, age186, age191, age198b, age202b, age205,age208,age210,age212, age218, age221, age223, age224, age225, age226, age227b, age229, age230, age232b, age234, age236, age245, age246, age247, age248, age248b, age250,age252, age253, age254, age258, age259, age261,age262,age264,age267,age268,age269, age270,age271, age273b, age274, age277, age281, age282, age285,age287, age289, age291, age292b, age307, age312,age313, age319,age320, age322, age322b, age327, age328, age331,age347,age350,age359, age360, age368,age369,age371, age372, age372b, age374,age375,age377, age385,age387, age392,age393, age403, age416, age418, age419, age421, age423, age428b, age429, age435, age437, age442, age445, age451, age454, age459, age461, age462, age463, age468, age472, age486, age489, age491, age492, age495, age497, age499, age511, age513, age516, age519, age526, age533, age538, age539, age547, age548, age549, age553, age556, age559, age561, age562, age563,age564, age565,age566, age567, age570, age573, age578, age582b, age586, age587, age588, age597, age598, age599, age600, age602, age603, age604, age605, age606, age607, age608, age610, age611, age616, age618, age619, age620, age621, age624, age625, age628, age631, age633, age636, age640, age641, age642, age647, age648, age648b, age650, age653, age655, age658, age612, age663, age665, age666, age668, age670, age672, age673, age674, age676, age682, age686, age688, age689, age694, age701, age702, age704b, age708, age709, age710, age711, age712, age713, age714, age717, age720b, age724, age729, age731b, age739b, age742, age746, age748, age758, age759, age760, age764, age784, age789, age790, age797, age798, age800, age817, age818, age820, age821, age826, age829, age855, age867, age868, age869, age880, age884, agemaycomdatacenter, anexoSRP 
+        }
+
+define hostgroup{
+        hostgroup_name  a_telnor 
+        alias           Telnor - Banrural
+        members         age122, age123, age182, age243, age354, age383, age529, age581, age584, age609, age617, age897, monitor_telecom
+        } 
+
+#define hostgroup{
+#        hostgroup_name  a_telnor_copper_link
+#        alias           Telnor Banda C - Banrural
+#        members         age040, age058,age116,age122,age123,age125,age209,age243,age254,age290,age337,age343,age354
+#        }
+
+define hostgroup{
+	hostgroup_name	a_innotechsa 
+	alias		Innotechsa - Banrural
+	members		age001, age002, age004, age015, age022, age032, age033b, age062, age101, age124, age139b, age152, age160, age162, age189, age205b, age206, age225b, age229c, age236b, age249, age275, age278, age283, age329, age334c, age339b, age340, age340b, age364, age384, age402b, age403b, age404, age406, age408, age414, age428, age430, age432b, age440, age453, age477, age481, age493, age506, age514, age530, age458b, age528, age562c, age633, age661, age669, age695, age721, age726b, age733, age777, age783, age791, age806, age833, age836, age842, age843, age885, age887, age888   
+	}
+
+define hostgroup{
+        hostgroup_name  a_atc
+        alias           ATC
+        members         age473
+        }
+
+define hostgroup{
+        hostgroup_name  a_munis
+        alias           Munis - Banrural
+        members         age214, age305, age310, age311, age323, age524 
+        } 
+
+
+#define hostgroup{
+#        hostgroup_name  a_telgua 
+#        alias           Telgua - Banrural
+#        members         anexoUV
+#        }
+
+define hostgroup{
+        hostgroup_name  a_cesa
+        alias           Cesa - Banrural
+        members         age450, age466, age535, age582c, age594, age626, age627, age632, age680, age840, age847, age862, age864, monitor_telecom  
+        }
+
+
+define hostgroup{
+        hostgroup_name  a_local
+        alias           Fibra (local) - Banrural
+        members         age005c, age033, age099, age445, age078b, age256b, age296b, age115, age341b, age347b, age473b, age495b   
+        }
+
+define hostgroup{
+        hostgroup_name  a_cajeros 
+        alias           Agencias con Cajeros en Red Banrural
+        members         age002b,age295,age648,age545,age633,age307,age177,age823,age330,age335,age137,age536,age127,age452,age744,age142,age714,age282,age861,age877,age887,age012,age445,age445,age020,age024,age028,age037,age044,age047,age050,age054,age059,age061,age064,age067,age079,age084,age090,age091,age092,age095,age098,age111,age116,age117,age121,age123,age129,age103,age133,age139,age153,age158,age159,age169,age171,age171,age176,age221,age231,age236,age238,age240,age256,age258,age206,age267,age272,age273,age274,age286,age288,age286,age297,age302,age320,age332,age304,age340,age340b,age364,age368,age369,age308,age396,age398,age413,age415,age423,age424,age426,age427,age429,age430,age431,age432,age436,age437,age438,age404,age440,age442,age443,age443,age445,age453,age456,age461,age464,age468,age471,age475,age488,age795,age799,age511,age517,age525,age526,age529,age530,age537,age557,age560,age507,age578,age588,age594,age597,age601,age613,age614,age630,age649,age605,age659,age606,age664,age669,age684,age702,age721,age724,age733,age735,age749,age753,age757,age759,age706,age760,age769,age707,age770,age782,age789,age791,age814,age811,age817,age828,age829,age832,age804,age845,age806,age860,age869,age872,age875,age879,age883
+        }
+
+define hostgroup{
+        hostgroup_name  a_xtera
+        alias           Agencias con Xtera en Red Banrural
+	members		age001,age002,age004,age015,age032,age055,age062,age124,age132,age152,age155,age160,age162,age206,age221,age232,age275,age283,age326,age329,age340,age340b,age364,age384,age404,age406,age408,age414,age428,age430,age477,age497,age530,age623,age669,age721,age733,age747,age777,age791,age806,age887
+	}
+
+define hostgroup{
+        hostgroup_name  camaras
+        alias           PCs CAMARAS AGENCIAS - Banrural
+        members         cam001, cam001B, cam001C, cam002, cam002B, cam003, cam003B, cam004, cam004B, cam005, cam006, cam007, cam008, cam009, cam010, cam010B, cam011, cam012, cam013, cam014, cam015, cam015B, cam016, cam017, cam017B, cam018, cam019, cam020, cam020B, cam021, cam022, cam023, cam024, cam025, cam025B, cam026, cam027, cam028, cam028B, cam029, cam030, cam031, cam031B, cam032, cam032B, cam033, cam033B, cam033C, cam033D, cam033E, cam033F, cam033G, cam033H, cam033I, cam033J, cam033K, cam033L, cam033M, cam034, cam035,cam036,cam037,cam038,cam039,cam040,cam041,cam042,cam043,cam044, cam044B, cam045, cam046, cam047,cam048, cam049, cam050, cam051, cam052,cam053,cam054,cam055,cam056,cam057,cam058,cam059, cam060, cam061, cam062, cam063, cam063B, cam064, cam065, cam066, cam067, cam067B, cam068, cam069, cam070, cam071, cam071B, cam072, cam072B, cam073, cam074, cam075,cam076, cam077, cam078, cam078B, cam079, cam079B, cam080, cam081, cam082, cam083, cam084, cam085, cam086, cam087, cam088, cam089, cam090, cam091, cam092, cam092B, cam093, cam093B, cam094, cam095, cam095B, cam096, cam097, cam098, cam099, cam099B, cam099D, cam099E, cam099H, cam099I, cam100, cam101, cam102, cam103, cam104, cam104B, cam106, cam107, cam108, cam109, cam110, cam111, cam112, cam113, cam114, cam115, cam115B, cam115C, cam115D, cam116, cam117, cam118, cam119, cam119B, cam120, cam121, cam122, cam123, cam124, cam124B, cam125, cam126, cam127, cam128, cam129, cam130, cam131, cam132, cam133, cam134, cam135, cam136, cam136B, cam137, cam137B, cam138, cam139, cam140, cam140B, cam141, cam141B, cam142, cam143, cam144, cam145, cam146, cam147, cam148, cam149, cam150, cam151, cam152, cam153, cam154, cam155, cam156, cam157, cam158, cam159, cam160, cam161, cam162, cam162b, cam163, cam164, cam164B, cam164C, cam165, cam165B, cam166, cam167, cam167B, cam168, cam169, cam170, cam171, cam172, cam173, cam174, cam176, cam177, cam178, cam178B, cam178C, cam178D, cam179, cam179B, cam180, cam181, cam182, cam183, cam184, cam184b, cam185, cam186, cam187, cam188, cam189, cam190, cam191, cam192, cam193, cam194, cam195, cam196, cam197, cam198, cam199, cam200, cam201, cam201B, cam202, cam203, cam203B, cam204, cam205, cam206, cam206B, cam206C, cam207, cam208, cam209, cam210, cam211, cam212, cam212B, cam213, cam216, cam218, cam218B, cam219, cam220, cam221, cam221B, cam221C, cam222, cam223, cam224, cam225, cam225B, cam227, cam228, cam229, cam229B, cam230, cam231, cam232, cam232B, cam232C, cam233, cam234, cam234B, cam235, cam236, cam236B, cam237, cam238, cam240, cam241, cam242, cam243, cam244, cam245, cam246, cam247, cam248, cam248B, cam249, cam249B, cam250, cam251, cam252, cam253, cam254, cam256, cam256B, cam257, cam258, cam259, cam259B, cam260, cam261, cam262, cam263, cam264, cam265, cam266, cam267, cam268, cam269, cam269B, cam269C, cam270, cam271, cam272, cam273, cam274, cam274B, cam275, cam276, cam277, cam278, cam279, cam280, cam281, cam282, cam283, cam284, cam285, cam286, cam287, cam288, cam289, cam289B, cam290, cam291, cam292, cam293, cam294, cam295, cam296, cam297, cam298, cam300, cam301, cam301B, cam302, cam303, cam304, cam306, cam307, cam308, cam309, cam312, cam312B, cam313, cam314, cam315, cam316, cam317, cam318, cam319, cam320, cam321, cam322, cam322B, cam324, cam325, cam326, cam326B, cam327, cam328, cam329, cam329B, cam329C, cam330, cam331, cam332, cam333, cam334, cam334B, cam335, cam336, cam337, cam338, cam339, cam339B, cam340, cam340b, cam341, cam342, cam343, cam344, cam345, cam347, cam348, cam349, cam350, cam352, cam353, cam354, cam355, cam356, cam357, cam358, cam359, cam360, cam361, cam362, cam363, cam364, cam365, cam366, cam367, cam368, cam369, cam370, cam371, cam372, cam373, cam374, cam375, cam376, cam378, cam379, cam381, cam381B, cam382, cam383, cam384, cam385, cam386, cam389, cam390, cam391, cam392, cam393, cam394, cam395, cam396, cam397, cam398, cam399, cam400, cam401, cam402, cam402B, cam403, cam404, cam405, cam406, cam407, cam408 ,cam409, cam410, cam411, cam412, cam413, cam414, cam415, cam416, cam417, cam418, cam420, cam421, cam424, cam425, cam426, cam426b, cam427, cam427B, cam428, cam428B, cam429, cam430, cam431, cam432, cam432B, cam432C, cam433, cam434, cam435, cam435B, cam436, cam437, cam438, cam440, cam441, cam442, cam442B, cam443, cam444, cam445, cam445B, cam445C, cam445D,cam445E, cam445F, cam445G, cam445H, cam445I, cam445J, cam445K, cam445L, cam445M, cam445N, cam445O, cam445P, cam445Q, cam445R, cam445S, cam445T, cam445U, cam445V, cam445W, cam445X, cam445Y, cam445Z, cam446, cam447, cam448, cam449, cam450, cam451, cam452, cam453, cam454, cam455, cam456, cam457, cam458, cam458B, cam459, cam460, cam461, cam462, cam463, cam464, cam465, cam466, cam467, cam467B, cam469, cam470, cam471, cam472, cam473, cam474, cam475, cam476, cam477, cam477B, cam478, cam482, cam483, cam484, cam485, cam486, cam486B, cam487, cam488, cam489, cam489b, cam490, cam491, cam491B, cam491C, cam491D, cam492, cam493, cam494, cam495, cam496, cam497, cam498, cam499, cam500, cam503, cam504, cam505, cam506, cam507, cam508, cam509, cam510, cam511, cam512, cam513, cam514, cam515, cam515B, cam517, cam518, cam519, cam520, cam521, cam522, cam523, cam525, cam526, cam527, cam528, cam529, cam530, cam530b, cam530C, cam531, cam532, cam533, cam534, cam534B, cam535, cam536, cam537, cam538, cam539, cam540, cam541, cam542, cam543, cam544, cam545, cam546, cam547, cam548, cam549, cam551, cam552, cam554, cam555, cam556, cam557, cam558, cam559, cam560, cam561, cam561B, cam562, cam563, cam564, cam565, cam566, cam567, cam568, cam569, cam570, cam571, cam572, cam572B, cam573, cam574, cam575, cam576, cam578, cam579, cam580, cam581, cam582, cam582B, cam582C, cam583, cam584, cam584B, cam585, cam586, cam587, cam588, cam589, cam590, cam591, cam592, cam593, cam594, cam595, cam596, cam597, cam598, cam599, cam600, cam601, cam602, cam603, cam604, cam605, cam606, cam607, cam608, cam609, cam610, cam611, cam612, cam613, cam614, cam615, cam615B, cam616, cam617, cam618, cam619, cam621, cam622, cam623, cam624, cam624B, cam625, cam627, cam628, cam629, cam630, cam631, cam632, cam633, cam634, cam635, cam636, cam637, cam638, cam639, cam640, cam641, cam642, cam643, cam644, cam645, cam646, cam647, cam648, cam648B, cam649, cam650, cam652, cam653, cam654, cam654B, cam655, cam656, cam657, cam658, cam658B, cam659, cam659B, cam660, cam661, cam661B, cam662, cam663, cam664, cam665, cam666, cam667, cam668, cam669, cam669C, cam670, cam671, cam672, cam673, cam674, cam675, cam676, cam677, cam678, cam679, cam680, cam681, cam682, cam683, cam684, cam686, cam687, cam688, cam689, cam690, cam691, cam692, cam693, cam694, cam695, cam696, cam697, cam698, cam699, cam700, cam701, cam702, cam703, cam704, cam704B, cam705, cam706, cam707, cam708, cam709, cam710, cam711, cam712, cam716, cam717, cam718, cam719, cam720, cam720B, cam721, cam722, cam723, cam724, cam725, cam726, cam726B, cam727, cam728, cam729, cam730, cam731, cam732, cam733, cam734, cam735, cam736, cam737, cam738, cam739, cam739b, cam739C, cam740, cam741, cam742, cam743, cam745, cam747, cam748, cam749, cam749B, cam750, cam751, cam752, cam753, cam754, cam755, cam756, cam757, cam758, cam759, cam760, cam761, cam762, cam763, cam764, cam765, cam766, cam769, cam770, cam771, cam772, cam773, cam773B, cam774, cam776, cam777, cam777B, cam778, cam779, cam780, cam781, cam782, cam783, cam784, cam785, cam786, cam787, cam787, cam788, cam789, cam790, cam791, cam792, cam793, cam794, cam795, cam797, cam798, cam799, cam800, cam801, cam802, cam803, cam804, cam805, cam806, cam807, cam808, cam809, cam810, cam811, cam812, cam813, cam814, cam815, cam816, cam817, cam818, cam819, cam820, cam821, cam822, cam823, cam824, cam825, cam827, cam828, cam829, cam830, cam831, cam832, cam834, cam836, cam837, cam838, cam839, cam840, cam841, cam844, cam845, cam847, cam849, cam850, cam852, cam854, cam856, cam857, cam858, cam859, cam860, cam861, cam863, cam865, cam867, cam868, cam869, cam871, cam872, cam875, cam876, cam877, cam878, cam879, cam880, cam881, cam882, cam883, cam884, cam885, cam886, cam887, cam890, cam891, cam892, cam895, cam896, cam897, cam972 
+      }
+
+
+#define hostgroup{
+#        hostgroup_name  z_alarmas
+#        alias           ALARMAS DE AGENCIAS - Banrural
+#        members  alarma001,alarma002,alarma7002,alarma002b,alarma003,alarma004,alarma005,alarma006,alarma006b,alarma7006,alarma007,alarma008,alarma7008,alarma009,alarma7009,alarma010,alarma7010,alarma010b,alarma011,alarma012,alarma013,alarma014,alarma015,alarma7015,alarma015b,alarma016,alarma017,alarma018,alarma019,alarma020,alarma021,alarma022,alarma023,alarma024,alarma025,alarma7025,alarma026,alarma027,alarma028,alarma029,alarma030,alarma031,alarma032,alarma7032,alarma034,alarma7034,alarma035,alarma036,alarma038,alarma039,alarma040,alarma041,alarma042,alarma043,alarma044,alarma045,alarma046,alarma047,alarma047b,alarma048,alarma049,alarma050,alarma051,alarma052,alarma053,alarma054,alarma055,alarma056,alarma056b,alarma057,alarma058,alarma059,alarma060,alarma061,alarma063,alarma7063,alarma064,alarma064b,alarma065,alarma066,alarma067,alarma068,alarma069,alarma070,alarma071,alarma072,alarma073,alarma074,alarma075,alarma076,alarma077,alarma078,alarma078b,alarma079,alarma080,alarma080b,alarma081,alarma082,alarma083,alarma084,alarma085,alarma086,alarma087,alarma7087,alarma088,alarma089,alarma090,alarma090b,alarma091,alarma092,alarma093,alarma094,alarma095,alarma096,alarma097,alarma098,alarma100,alarma101,alarma102,alarma103,alarma104,alarma105,alarma106,alarma107,alarma108,alarma109,alarma110,alarma111,alarma112,alarma113,alarma114,alarma115,alarma7115,alarma115C,alarma116,alarma117,alarma7117,alarma118,alarma119,alarma120,alarma121,alarma122,alarma123,alarma124,alarma7124,alarma124b,alarma125,alarma126,alarma127,alarma7127,alarma128,alarma129,alarma130,alarma131,alarma132,alarma133,alarma134,alarma135,alarma7135,alarma136,alarma7136,alarma136b,alarma137,alarma138,alarma139,alarma140,alarma141,alarma142,alarma143,alarma7143,alarma144,alarma145,alarma146,alarma147,alarma148,alarma149,alarma150,alarma7151,alarma152,alarma153,alarma154,alarma155,alarma156,alarma157,alarma158,alarma159,alarma7159,alarma160,alarma161,alarma162,alarma162b,alarma163,alarma164,alarma165,alarma165b,alarma166,alarma167,alarma167b,alarma168,alarma169,alarma169b,alarma170,alarma171,alarma172,alarma173,alarma174,alarma175,alarma176,alarma177,alarma179,alarma180,alarma181,alarma182,alarma183,alarma183b,alarma184,alarma185,alarma186,alarma187,alarma188,alarma189,alarma190,alarma191,alarma192,alarma193,alarma194,alarma195,alarma7195,alarma196,alarma197,alarma7197,alarma198,alarma7198,alarma199,alarma200,alarma201,alarma202,alarma203b,alarma7204,alarma205,alarma206,alarma7206,alarma207,alarma208,alarma209,alarma7209,alarma210,alarma211,alarma212,alarma213,alarma216,alarma218,alarma219,alarma220,alarma221,alarma222,alarma223,alarma224,alarma225,alarma226,alarma227,alarma7227,alarma228,alarma229,alarma230,alarma231,alarma233,alarma234,alarma235,alarma236,alarma237,alarma238,alarma240,alarma241,alarma241b,alarma243,alarma244,alarma245,alarma246,alarma247,alarma248,alarma249,alarma250,alarma251,alarma252,alarma253,alarma253b,alarma254,alarma256,alarma256b,alarma257,alarma258,alarma259,alarma260,alarma261,alarma262,alarma262b,alarma263,alarma264,alarma265,alarma266,alarma267,alarma268,alarma269,alarma270,alarma271,alarma272,alarma273,alarma274,alarma7274,alarma275,alarma276,alarma277,alarma278,alarma279,alarma280,alarma281,alarma282,alarma283,alarma284,alarma285,alarma286,alarma287,alarma7287,alarma288,alarma289,alarma290,alarma291,alarma292,alarma293,alarma7293,alarma294,alarma295,alarma296,alarma297,alarma298,alarma300,alarma301,alarma302,alarma7302,alarma303,alarma304,alarma306,alarma307,alarma308,alarma309,alarma309b,alarma310b,alarma312,alarma313,alarma314,alarma315,alarma316,alarma317,alarma318,alarma319,alarma320,alarma321,alarma322,alarma324,alarma324b,alarma325,alarma325b,alarma326,alarma327,alarma328,alarma329,alarma330,alarma331,alarma332,alarma333,alarma334,alarma335,alarma336,alarma337,alarma338,alarma7338,alarma339,alarma340,alarma341,alarma342,alarma343,alarma344,alarma345,alarma347,alarma348,alarma349,alarma7349,alarma350,alarma352,alarma353,alarma354,alarma355,alarma356,alarma357,alarma358,alarma359,alarma360,alarma361,alarma362,alarma362b,alarma363,alarma364,alarma365,alarma366,alarma367,alarma7367,alarma368,alarma7368,alarma369,alarma370,alarma371,alarma372,alarma372b,alarma373,alarma374,alarma374b,alarma376,alarma378,alarma378b,alarma380,alarma381,alarma381b,alarma382,alarma7382,alarma383,alarma383b,alarma384,alarma7384,alarma385,alarma386,alarma387,alarma7387,alarma388,alarma389,alarma7389,alarma390,alarma391,alarma392,alarma393,alarma395,alarma396,alarma396b,alarma397,alarma398,alarma399,alarma400,alarma401,alarma402,alarma403,alarma404,alarma405,alarma406,alarma407,alarma408,alarma409,alarma410,alarma411,alarma413,alarma414,alarma415,alarma416,alarma416b,alarma417,alarma420,alarma422,alarma424,alarma425,alarma426,alarma427,alarma428,alarma429,alarma430,alarma431,alarma7431,alarma432,alarma433,alarma434,alarma7434,alarma435,alarma436,alarma437,alarma438,alarma440,alarma442,alarma443,alarma444,alarma445b,alarma446,alarma7446,alarma447,alarma448,alarma450,alarma451,alarma452,alarma453,alarma454,alarma455,alarma7455,alarma456,alarma457,alarma458,alarma459,alarma459b,alarma460,alarma7460,alarma463,alarma463b,alarma465,alarma466,alarma466b,alarma467,alarma467b,alarma468,alarma469,alarma470,alarma471,alarma473,alarma474,alarma7474,alarma476,alarma7476,alarma477,alarma477b,alarma478,alarma479,alarma480,alarma482,alarma483,alarma484,alarma485,alarma7485,alarma486,alarma489,alarma7489,alarma489b,alarma490,alarma7490,alarma491,alarma7491,alarma492,alarma7492,alarma493,alarma7493,alarma494,alarma495,alarma498,alarma499,alarma500,alarma503,alarma504,alarma504b,alarma505,alarma507,alarma7507,alarma508,alarma509,alarma510,alarma7510,alarma513,alarma7513,alarma514,alarma516,alarma517,alarma7517,alarma518,alarma519,alarma522,alarma523,alarma526,alarma7526,alarma528,alarma529,alarma530,alarma7530,alarma531,alarma532,alarma533,alarma7533,alarma534,alarma7534,alarma536,alarma7536,alarma537,alarma538,alarma539,alarma540,alarma7540,alarma542,alarma543,alarma544,alarma546,alarma547,alarma548,alarma549,alarma550,alarma554,alarma558,alarma560,alarma561,alarma7561,alarma561b,alarma563,alarma565,alarma566,alarma568,alarma7568,alarma571,alarma572,alarma573,alarma574,alarma585,alarma586,alarma7586,alarma587 
+#       }
+
+
+# 'partners de  Negocios' host group definition
+define hostgroup{
+        hostgroup_name  partners 
+        alias           Partners de Negocios
+        members         municipalidad, igss, paynexus, qapp_prod, qapp_prod2, vmwatches, vmmsqapp01, natserver,vmmsqapp02,agemaycomdatacenter,age229d
+       }
+
+# 'Unix-servers' host group definition
+define hostgroup{
+        hostgroup_name  servers_unix
+        alias           Servers Core, SAN
+        members         bilbo,gandalf, fc_switch_1, fc_switch_2,smaug,robb
+        }
+
+# 'Cobis-servers' host group definition
+# jlet - 20111010: Se omitira el monitoreo del servidor age99srv
+define hostgroup{
+	hostgroup_name	servers_cobis
+	alias		Cobis Servers
+	members		age33srv,db_bv,VMCapaSrv,VMCobis01,VMCobis02,VMCobis03,VMCobis04,VMCobis05,VMCobis06,VMCobis07,VMCobis08,VMCobis09,VMCobis10,VMCobis11,VMCobis12,VMCobis13,VMCobis14,VMCobis15,torre01srv,torre02srv
+	}
+
+define hostgroup {
+        hostgroup_name  servers_back_office
+        alias           Servidores Banrural
+	members		Abmsrv, AdmonDCR, backupsrv, Command-view, CrmApp01, rrhhweb, TorreDC, VMAdmonDC, VMAsistenciaApp, VMDatosDB, VMDBProduccion, VMDBProd12, VMDatosLight, vmnod32, VMEstadosDeCuenta, VMFTP, VMFTPMunis, VMGestionRiesgo, VMImageDB, VMImageSRV, VMImageWebSrv,  VMIntranet, vmrrhh2000, VMRRHHSEL,  VMSuministros2, VMWinPHP, VMYotta, VMYottaWeb, VMAperWeb, VMAsistenciaDB,VMPTCsrv,vmcrea01, vmcrea02, vmcreadb,vgfag0033dcf001,vmImageProc,vgfag0115dcf004, vgfag0033dcf001, vgfag0445dcf003, vmsasdb,VMSDmdbSrv,VMSDBoxiSrv,VMSDAppSrv,VMSharePoint,vifag0445dcf002,vifag0033dcf001,sifag0115dcf003,sgfag0115dcf002,VMActivosfijos,VMAlertast,VMEchatProd,vmsqlinfra,vmsqlinfra12,SGFAG0115RSG164,VMCA-ITCM-01,VMCA-ITCM-02,VMPresupuestos,VMrti,VMSqlDesa,vmges
+}        
+
+define hostgroup {
+        hostgroup_name  servers_monitor_byte
+        alias           Monitor Byte - Banrural
+        members         plus_acrm_db,VMPlusACRMalertas,VMPlusACRManls01,VMPlusACRManls02,VMPlusACRMworkflow,vmMonitorCoreDB,vmMonitorCoreAnaliza01,vmMonitorCoreAnaliza02,vmMonitorCoreColector,vmMonitorCoreAlarma
+}        
+
+define hostgroup{
+        hostgroup_name  servers_linux
+        alias           Servidores Banrural Linux
+        members         proxy,proxy-adm,referencias, segurosd, segurosp, vmctlm, bl9sybiq, proxy-age02, sasolap
+}        
+
+define hostgroup{
+        hostgroup_name  servers_aix
+        alias           Servidores Banrural AIX
+        members         ffprodihs01, ffprodihs02, robb, bilbo
+}        
+
+define hostgroup{
+        hostgroup_name  mail-servers 
+        alias           Servidores Banrural Linux
+        members         mailprivado,mailexterno,mailarchive, mail_seguros,mail_financiera  
+}        
+
+define hostgroup{
+        hostgroup_name  gw_servers 
+        alias           Firewalls y Gateways 
+        members         gw_torre, natserver, fwz1, fwz11, gw_agencias, gw-branch , gw_tarjetas, gw_portuaria, vpnsrv, gw_vnc, nagios, gw_sascim 
+}        
+
+define hostgroup{
+        hostgroup_name  gw_munis
+        alias           Munis Firewalls y Gateways 
+        members          gw_munimixco_nmontserrat, gw_munimixco_san_francisco, gw_muni_chimaltenango, gw_muni_quetzaltenango,   gw_muni_sanjuan_sacatepequez,  gw_muni_quiche, gw_muni_san_pedro_sacatepequez,  gw_muni_atescatempa, gw_muni_villa_hermosa,  gw_portuaria, gw_muni_mixco, gw_muni_villa_canales,  gw_muni_san_vicente_pacaya, gw_portuaria, gw_muni_amatitlan, gw_muni_paseo_los_campeones, gw_san_cristobal  
+}        
+
+# 'routers' host group definition
+define hostgroup{
+	hostgroup_name	routers
+	alias		Routers
+	members	        telered_dsl,   extreme,prt_zona1,telnor_prt,isp_navega,isp_telered,isp_columbus, telnor_navega,telnor_cablenet, Nivel-pbJ1, Nivel-pbJ2, Nivel-1C1, Nivel-2C3, Nivel-3C1, Nivel-4C2, Nivel-5C1, Nivel-6C1, Nivel-7C1, Nivel-8C1, Nivel-9C1, Switch-PTC, extreme-115, sw-core-primario, sw-core-alterno, sw-core-torre, sw-core-ptc, sw-core-z1,  linkproof-1, fw-cp-1, fw-cp-2, fw-cp-management, switch-checkpoint, Anexo-Sotano, Anexo-PlantaBaja, Anexo-Nivel-1, Distribucion1-1
+	}
+
+# 'aseguradora' host group definition
+define hostgroup{
+        hostgroup_name  aseguradora
+        alias           Aseguradora
+        members         VMSeguros-DC, segurosweb, vmsegemgr, siniestro,VMSegurosSP, vmsegdc2, VMSegSitio
+        }
+
+# 'produccion' host group definition
+# jlet - 20120118: Se corrige la duplicacion del servidor 10.160.202.11
+define hostgroup{
+        hostgroup_name  servers_produccion
+        alias           Server_Produccion
+	members		fep,fep_db,ivrfax,qapp_prod,qapp_prod2,qdb_prod,VMACH,VMCAS,VMColasWeb,VMDatos,VMFHA,vmmsqapp01,vmmsqapp02,VMPayCorp,VMQlickView,VMRiesgos,VMSourceSafe,VMSQRSRV,vmwatches,vmwservices,vmwservices02,web_bv,web_bv2,web_bv4,NVABancaVirtual,ivr,VMSWIFT,VMCompeOld,VMWebServicios,banca_amigo,compe1,vmmsgbrk,VMDatosWeb02,VMBVInterna,VMFFwww1,VMFFwww2,vmffws,vmffws2,SGFAG0115RSG164
+       } 
+
+# 'desarrollo' host group definition
+define hostgroup{
+        hostgroup_name  servers_desarrollo
+        alias           Server_Desarrollo
+        members         fep_desa, fep_desa_db, VMBVDesa, VMNetDesa, VMRepoDigital, vmcargas, VMServiciosWeb, vmcobisbrch, VMSourceSafe, qapp_desa, fep_test, fep_test_db
+        }
+
+define hostgroup{
+        hostgroup_name  servers_exchange
+        alias           Servers_Exchange
+        members         vmExchCAS01,vmExchCas02,vmExchMlbx01,vmExchMlbx02
+        }
+
+define hostgroup{
+        hostgroup_name  servers_Banca_Virtual
+        alias           Servers_Banca_Virtual
+        members         VMBVInterna,vmffws,vmffws2,web_bv,web_bv2,web_bv4,VMFFwww1,VMFFwww2,VMWebComercial,NVABancaVirtual,ffprodihs02,ffprodihs01
+        }
+# 'voip' host group definition
+define hostgroup{
+	hostgroup_name	servers_voip
+	alias		Server_Voip
+	members		vCA, vMCD_01, MCD_Trunk_DC, VMCD_01, vCC, MCD_Trunk_L2, MCD_Trunk_E2T, vMBG_Telefonia, vNupoint_Operadora, vMAS_Aplicaciones, VMCD_03_MSL, VMCD_03_ESM, vOAISYS, SQLServer, vMCD_02_MSL, vMCD_02_ESM, MCD_TRUNK, MCD_L2_SWITCH, MCD_TRUNK_E2T_SWITCH, MCD_TRUNK_Sotano1_Torre, MCD_Switch_Sotano1_Torre, MCD_TRUNK_E2T_Sotano1_Torre, MCD_TRUNK_Gateway2_Sotano1_Torre, voip001, voip004, voip015, voip022, voip032, voip062, voip124, voip148, voip152, voip160, voip162, voip189, voip232, voip275, voip283, voip309, voip326, voip329, voip340, voip367, voip384, voip404, voip406, voip408, voip414, voip424, voip428, voip430, voip477, voip530, voip669, voip721, voip747, voip777, voip887
+	}
+
+# 'biometricos' host group definition
+define hostgroup{
+        hostgroup_name  biometricos
+        alias           Huellas
+        members         T445S1CC023, T445PBCC022, T445APBCC024, T445AN1CC025, T445N1CC001, T445N2CC002, T445N3CC003, T445N4CC004, T445IN4CC040, T445N5CC005, T445N6CC006, T445N7CC007, T445N8CC008, T445N9CC009, E115N1IN115, E115N2IN116, E115N2INDC117, E115N2INDC118, E115N2CCA119, E115N2DC120, E115N2CCB121
+	}

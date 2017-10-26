@@ -1,0 +1,679 @@
+#!/bin/sh
+
+. /usr/local/nagios/apan-sql/apan.defs
+. $APANCONFCONF
+. $SQLCONF
+
+DIRTY=0
+trap quit_all 3 2
+main_menu() {
+
+printf "$SETNORM$SETBLUEBG$CLEARSCR$GOTOTOP"
+#printf "$SETNORM$SETBLUEBG"
+printf "$SETGREY$SETBOLD  -------------- ApanConfig Main menu ---------------$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG       $SETYELLOW${SETBOLD}1${SETGREY}) Add a service$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG       $SETYELLOW${SETBOLD}2${SETGREY}) edit a service$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG       $SETYELLOW${SETBOLD}3${SETGREY}) delete a service$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG       $SETYELLOW${SETBOLD}4${SETGREY}) Rebuild serviceextinfo$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG       $SETYELLOW${SETBOLD}q${SETGREY}) quit$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG$CLEARTOEL$SETNORM\n"
+printf "$SETNORM$SETBLUEBG$CLEARTOEL$SETNORM\n"
+
+printf "$SETNORM$SETBLUEBG$SETWHITE       What do you want to do? $SETBOLD$CLEARTOEL"
+}
+
+wrong_input() {
+	printf "$SETNORM$SETBLUEBG$SETRED$SETBOLD$CLEARTOEL\nWrong selection. Press a key. $CLEARTOEL$SETNORM"
+	
+	read
+}
+
+quit_all() {
+trap -p
+trap - 3 2
+trap -p
+	if [ $DIRTY != 0 ]; then
+		printf "\n$SETNORM$SETBLUEBG$SETRED${SETBOLD}Configuration have changed. Serviceextinfo must be rebuilt.$CLEARTOEL\n"
+		printf "$SETNORM$SETBLUEBG${SETWHITE}Press enter ro continue $SETYELLOW"
+		read
+		rebuild_extinfo
+	fi
+	printf "$SETNORM$CLEARSCR$GOTOTOP\nWelcome back...$CLEARTOEL\n"
+exit 0
+}
+
+getval() {
+LABEL=$1
+CANBENULL=$2
+OLDVAL=$3
+DEFVAL=$4
+
+TVAL=""
+while [ "$TVAL" = "" ]; do
+	PROMPTSTR="$LABEL"
+	if [ "$OLDVAL" != "" ]; then
+		PROMPTSTR2="($OLDVAL)"
+	elif [ "$DEFVAL" != "" ]; then
+		PROMPTSTR2="($DEFVAL)"
+	else
+		PROMPTSTR2=""
+	fi
+	CHARS=`echo "$PROMPTSTR $PROMPTSTR2"|wc -c|tr -c -d "[0-9]"`
+	POS=`echo "20-$CHARS"|bc`
+	if [ $POS -gt 0 ]; then
+		ISTR=`echo "                                                   "|cut -b 1-$POS`
+		printf "$SETBLUEBG$ISTR$SETWHITE$PROMPTSTR $SETYELLOW$PROMPTSTR2$SETWHITE: $SETYELLOW$CLEARTOEL"
+	else
+		printf "$SETBLUEBG$SETWHITE$PROMPTSTR $SETYELLOW$PROMPTSTR2$SETWHITE: $SETYELLOW$CLEARTOEL"
+	fi
+
+	read TVAL
+	if [ "$TVAL" = "" ]; then
+		if [ "$OLDVAL" != "" ]; then
+			TVAL=$OLDVAL
+		elif [ "$DEFVAL" != "" ]; then
+			TVAL=$DEFVAL
+		fi
+	fi
+	if [ "$TVAL" = "_" ]; then
+		TVAL=""
+	fi
+	if [ $CANBENULL != 0 ]; then
+		break
+	fi
+		
+done
+#echo $TVAL
+}
+##########################################################
+####                                                  ####
+####   del_svc - The function that deletes a service  ####
+####                                                  ####
+##########################################################
+del_svc() {
+printf "$SETBLUEBG$SETGREY$SETBOLD$CLEARTOEL\n  ----------------- Delete a service -----------------$CLEARTOEL$SETNORM\n"
+
+# Get host and servicenames
+getval "Hostname" 0 "$HNAME"
+OLDHNAME=$HNAME
+HNAME=$TVAL
+
+
+#Check if this host/service exist in the database
+SVCIDS=`echo "select idx from apanservices where host='$HNAME' order by idx"|$SQLCOMM`
+
+#echo "IDS: '$SVCIDS'"
+if [ "$SVCIDS" = "" ]; then
+	printf "$SETNORM$SETBLUEBG$SETRED${SETBOLD}The host $SETYELLOW'$HNAME'$SETRED does not exist.$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG${SETWHITE}Press a key to continue. $SETYELLOW$CLEARTOEL"
+	read
+	HNAME=""
+	return
+fi
+N=1
+ERR=1
+while [ $ERR = 1 ]; do
+printf "$SETNORM$SETBLUEBG$SETGREY$CLEARTOEL\nServices on host $HNAME:$CLEARTOEL\n$SETNORM$SETBLUEBG$SETGREY"
+	for SVCID in $SVCIDS; do
+		SERVICE=`echo "select service from apanservices where idx=$SVCID"|$SQLCOMM`
+		COMMENT=`echo "select comment from apanservices where idx=$SVCID"|$SQLCOMM`
+		printf "$SETBLUEBG$SETYELLOW$SETBOLD%8d$SETNORM$SETBLUEBG$SETGREY) $SERVICE" $N
+		if [ "$COMMENT" != "" ]; then
+			printf " ($COMMENT)$CLEARTOEL\n"
+		else
+			printf "$CLEARTOEL\n"
+		fi
+		N=`expr $N + 1`
+	done
+	printf "$SETNORM$SETBLUEBG$CLEARTOEL\n${SETWHITE}Enter the number for the service you want to delete or 'q' to abort: $SETYELLOW"
+	read INDEX
+	if [ "$INDEX" = "q" ]; then
+		SERVICE=""
+		return
+	fi
+	INDEX=`echo $INDEX|tr -c -d "[0-9]"`
+	if [ "$INDEX" = "" ]; then
+		INDEX=0
+	fi
+	if [ $INDEX -lt 1 ] || [ $INDEX -ge $N ]; then
+		wrong_input
+		#printf "$SETNORM$SETBLUEBG$CLEARTOEL\n$SETRED${SETBOLD}Services on host '$HNAME':\n\n"
+		ERR=1
+		N=1
+	else
+		ERR=0
+	fi
+done
+INDEX=`expr $INDEX - 1`
+SVCID=`echo "select idx from apanservices where host='$HNAME' order by idx limit $INDEX,1"|$SQLCOMM`
+SERVICE=`echo "select service from apanservices where idx=$SVCID"|$SQLCOMM`
+RRDFILE=`echo "select rrdfile from apanservices where idx=$SVCID;"|$SQLCOMM`
+printf "$SETNORM$SETBLUEBG$SETRED${SETBOLD}Service $SETYELLOW'$SERVICE'$SETRED on host $SETYELLOW'$HNAME'$SETRED will be deleted.$CLEARTOEL\n"
+printf "$SETNORM$SETBLUEBG${SETWHITE}Are you sure? $SETYELLOW$CLEARTOEL"
+read ANSW
+if [ "$ANSW" != "y" ]; then
+	printf "$SETNORM$SETBLUEBG${SETGREY}Aborted.$CLEARTOEL\n"
+	return
+fi
+DIRTY=1
+#echo "    Deleting service $SVCID..."
+printf "$SETNORM$SETBLUEBG$SETGREEN${SETBOLD}    Deleting service $SETYELLOW$SVCID$SETGREEN...$CLEARTOEL\n"
+echo "delete from apanservices where idx=$SVCID"|$SQLCOMM 2>&1
+printf "$SETNORM$SETBLUEBG$SETGREEN${SETBOLD}    Deleting file $SETYELLOW'$RRDFILE'$SETGREEN...$CLEARTOEL\n"
+/bin/rm -f $RRDFILE
+printf "$SETNORM$SETBLUEBG$SETGREEN${SETBOLD}    Deleting Args...$CLEARTOEL\n"
+echo "delete from apanserviceargs where apanservice=$SVCID;"|$SQLCOMM
+printf "$SETNORM$SETBLUEBG$SETGREEN${SETBOLD}    Done.$CLEARTOEL\n"
+printf "$SETNORM$SETBLUEBG${SETWHITE}Service deleted. Press enter to continue. $SETYELLOW$CLEARTOEL"
+read
+}
+
+
+########################################################
+####                                                ####
+####   add_svc - The function that adds a service   ####
+####                                                ####
+########################################################
+add_svc() {
+printf "$SETBLUEBG$SETGREY$SETBOLD$CLEARTOEL\n  ------------------ Add a service -------------------$CLEARTOEL$SETNORM\n"
+
+# Get host and servicenames
+getval "Hostname" 0 "$HNAME"
+OLDHNAME=$HNAME
+HNAME=$TVAL
+getval "Service" 0 "$SERVICE"
+OLDSERVICE=$SERVICE
+SERVICE=$TVAL
+
+#Check if this host/service already exist in the database
+SVCID=`echo "select idx from apanservices where host='$HNAME' and service='$SERVICE' limit 1;"|$SQLCOMM`
+#echo "ID: '$SVCID'"
+if [ "$SVCID" != "" ]; then
+	printf "$SETRED${SETBOLD}Service $SETYELLOW$SERVICE$SETRED on host $SETYELLOW$HNAME$SETRED already exist.$CLEARTOEL\n"
+	printf "Press a key to continue. $CLEARTOEL$SETNORM"
+	read
+	return
+fi
+
+getval "Comment" 1 "$COMMENT"
+COMMENT=$TVAL
+
+if [ "$OLDHNAME" != "$HNAME" ] || [ "$OLDSERVICE" != "$SERVICE" ]; then
+	RRDFILE=""
+fi
+#getval "RRD-file" 0 "$RRDFILE" `echo "$RRDDIR/$HNAME-$SERVICE.rrd"|tr " " "_"|sed -e 's/\/\//\//g'`
+#getval "RRD-file" 0 "$RRDFILE" `echo "$RRDDIR/$HNAME-$SERVICE.rrd"|tr " " "_"|sed -e 's/\/\//\//g'`
+getval "RRD-file" 0 "$RRDFILE" `echo "$HNAME-$SERVICE.rrd"|tr " " "_"|sed -e 's/\/\//\//g'`
+RRDFILE=$TVAL
+
+echo "Host: $HNAME, Svc: $SERVICE, Comm: $COMMENT, File: $RRDFILE"
+
+SLASH=`echo $RRDFILE|cut -b 0-1`
+if [ "$SLASH" != "/" ]; then
+	RRDFILE="$RRDDIR/$RRDFILE"
+fi
+RRDFILE=`echo $RRDFILE|tr -s "/"`
+
+if [ $HINTS -gt 0 ]; then
+	printf "$SETNORM$SETBLUEBG$SETGREY$CLEARTOEL\n    Last Graph-labels/Units:$CLEARTOEL\n"
+	printf "$CLEARTOEL\n"
+	printf "    ${SETUL}Label                          Unit          $CLEARTOEL\n$SETNORM$SETBLUEBG$SETGREY"
+	echo "select distinct label,unit from apanservices order by changed,created;"|$SQLCOMM|egrep -v -e "^$"|tail -$HINTS|tr " " "¤"|awk -v A="$CLEARTOEL\n" '{ORS=A;printf "    %-30s %-21s", $1, $2;print $7}'|tr "¤" " "
+	printf "$CLEARTOEL\n"
+fi
+
+getval "Graph-label" 0 "$GLABEL"
+GLABEL=$TVAL
+getval "Graph-unit" 0 "$GUNIT"
+GUNIT=$TVAL
+getval "Step" 0 "$RRDSTEP"
+STEP=$TVAL
+if [ $HINTS -gt 0 ]; then
+	printf "$SETNORM$SETBLUEBG$SETGREY$CLEARTOEL\n    Last extra rrdtool-arguments:$CLEARTOEL\n"
+	printf "$CLEARTOEL\n"
+	printf "    ${SETUL}Argument            $CLEARTOEL\n$SETNORM$SETBLUEBG$SETGREY"
+	echo "select distinct extraargs from apanservices order by changed,created;"|$SQLCOMM|egrep -v -e "^$"|tail -$HINTS|tr " " "¤"|awk -v A="$CLEARTOEL\n" '{ORS=A;print "   ",$1}'|tr "¤" " "
+	printf "$CLEARTOEL\n"
+fi
+getval "Extra rrdtool args" 1 "$EXTRAARGS"
+EXTRAARGS=$TVAL
+#echo "Label: $GLABEL, Unit: $GUNIT, Args: $EXTRAARGS"
+printf "$CLEARTOEN\n"
+if [ "$COMMENT" = "" ]; then
+	printf "$SETNORM$SETBLUEBG$SETBOLD${SETGREEN}Adding service $SETYELLOW'$SERVICE'$SETGREEN on host $SETYELLOW'$HNAME'$SETGREEN to the database...$CLEARTOEL\n"
+else
+	printf "$SETNORM$SETBLUEBG$SETBOLD${SETGREEN}Adding service $SETYELLOW'$SERVICE'$SETGREEN on host $SETYELLOW'$HNAME' ($COMMENT)$SETGREEN to the database...$CLEARTOEL\n"
+fi
+ERR=`echo "insert into apanservices values(NULL,'$HNAME','$SERVICE','$RRDFILE','$GLABEL','$GUNIT','$EXTRAARGS','$COMMENT',NULL,NULL);"|$SQLCOMM 2>&1`
+RES=$?
+#echo "res: $RES"
+if [ $RES != 0 ]; then
+	printf "$SETNORM$SETBLUEBG$CLEARTOEL\n$SETRED${SETBOLD}Database error:$SETYELLOW $ERR.$CLEARTOEL\n"
+	printf "${SETRED}Press enter to continue $CLEARTOEL"
+	read
+	return
+fi
+SVCID=`echo "select idx from apanservices where host='$HNAME' and service='$SERVICE';"|$SQLCOMM`
+#echo "ID: $SVCID"
+
+printf "$CLEARTOEL\n"
+
+N=0
+M=1
+ARG="-"
+DSSTRING=""
+while [ "$ARG" != "" ]; do
+	printf "$SETNORM$SETBLUEBG${SETWHITE}Argument #$M $SETNORM$SETBLUEBG$SETGREY(Blank when you are ready)$SETWHITE: $SETYELLOW$CLEARTOEL"
+	read ARG
+	if [ "$ARG" != "" ]; then
+		getval "DS-name" 0
+		DSNAME=$TVAL
+		DSIDS=`echo "select count(*) from apanserviceargs where apanservice=$SVCID and dsname='$DSNAME';"|$SQLCOMM`
+		#echo "DSIDS: $DSIDS"
+		if [ $DSIDS -gt 0 ]; then
+			printf "$SETNORM$SETBLUEBG$SETRED${SETBOLD}ERROR: There is already a DS named $SETYELLOW'$DSNAME'$CLEARTOEL\n"
+		else
+			ERR=1
+			while [ $ERR != 0 ]; do
+				getval "DS-type, 1=GAUGE, 2=COUNTER" 0
+				DSTYPE=$TVAL
+				if [ "$DSTYPE" = 1 ]; then
+					DSTYPE="GAUGE"
+					ERR=0
+				elif [ "$DSTYPE" = 2 ]; then
+					DSTYPE="COUNTER"
+					ERR=0
+				else
+					printf "$SETRED${SETBOLD}Enter 1 or 2.$CLEARTOEL\n"
+				fi
+			done
+			getval "heartbeat" 0 $RRDDSHB
+			DSHEARTBEAT=$TVAL
+			getval "Min" 0 $RRDDSMIN
+			DSMIN=$TVAL
+			getval "Max" 0 $RRDDSMAX
+			DSMAX=$TVAL
+			getval "Drawing type" 0 $RRDDRAWTYPE
+			DRAWTYPE=$TVAL
+			DSSTRING="$DSSTRING DS:$DSNAME:$DSTYPE:$DSHEARTBEAT:$DSMIN:$DSMAX"
+			printf "$SETNORM$SETBLUEBG$SETBOLD${SETGREEN}Adding arguments to the database...$CLEARTOEL\n"
+			echo "insert into apanserviceargs values(NULL,$SVCID,$M,'$ARG','$DSNAME','$DRAWTYPE');"|$SQLCOMM
+			N=`expr $N + 1`
+			M=`expr $M + 1`
+		fi
+	else
+		if [ $N = 0 ]; then
+			printf "$SETNORM$SETBLUEBG$SETRED${SETBOLD}You must have at least one DS!$CLEARTOEL\n"
+			ARG="-"
+		fi
+	fi
+done
+
+printf "$SETNORM$SETBLUEBG$SETBOLD${SETGREEN}Creating RRD-file...$CLEARTOEL\n"
+ERR=`$RRDTOOL create $RRDFILE -s $STEP $DSSTRING $RRAS 2>&1`
+RES=$?
+
+if [ "$ERR" != "" ]; then
+	printf "$SETNORM$SETBLUEBG$SETRED${SETBOLD}Error while creating RRD-file: $ERR$CLEARTOEL\n"
+	printf "Delete service and try to add it again.$CLEARTOEL\nPress enter to continue $CLEARTOEL"
+	read
+	return
+fi
+
+chown $NAGIOSUSERGROUP $RRDFILE
+
+DIRTY=1
+
+printf "$SETNORM$SETBLUEBG$SETBOLD${SETGREEN}Done.$CLEARTOEL\n$CLEAROTEL\n${SETWHITE}Service added successfully. Press enter to continue. $CLEARTOEL"
+read
+
+}
+
+##########################################################
+####                                                  ####
+####   edit_svc - The function that edits a service   ####
+####                                                  ####
+##########################################################
+edit_svc() {
+
+printf "$SETBLUEBG$SETGREY$SETBOLD$CLEARTOEL\n  ----------------- Edit a service -------------------$CLEARTOEL$SETNORM\n"
+
+# Get host and servicenames
+getval "Hostname" 0 "$HNAME"
+OLDHNAME=$HNAME
+HNAME=$TVAL
+
+
+#Check if this host/service exist in the database
+SVCIDS=`echo "select idx from apanservices where host='$HNAME' order by idx"|$SQLCOMM`
+
+#echo "IDS: '$SVCIDS'"
+if [ "$SVCIDS" = "" ]; then
+	printf "$SETNORM$SETBLUEBG$SETRED${SETBOLD}The host $SETYELLOW'$HNAME'$SETRED does not exist.$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG${SETWHITE}Press a key to continue. $SETYELLOW$CLEARTOEL"
+	read
+	HNAME=""
+	return
+fi
+N=1
+ERR=1
+while [ $ERR = 1 ]; do
+	printf "$SETNORM$SETBLUEBG$CLEARTOEL\nServices on host $HNAME:$CLEARTOEL\n$SETNORM$SETBLUEBG$SETGREY"
+	for SVCID in $SVCIDS; do
+		SERVICE=`echo "select service from apanservices where idx=$SVCID"|$SQLCOMM`
+		COMMENT=`echo "select comment from apanservices where idx=$SVCID"|$SQLCOMM`
+		printf "$SETBLUEBG$SETYELLOW$SETBOLD%8d$SETNORM$SETBLUEBG$SETGREY) $SERVICE" $N
+		if [ "$COMMENT" != "" ]; then
+			printf " ($COMMENT)$CLEARTOEL\n"
+		else
+			printf "$CLEARTOEL\n"
+		fi
+		N=`expr $N + 1`
+	done
+	printf "$SETNORM$SETBLUEBG$CLEARTOEL\n${SETWHITE}Enter the number for the service you want to edit or 'q' to abort: "
+	read INDEX
+	if [ "$INDEX" = "q" ]; then
+		SERVICE=""
+		return
+	fi
+	INDEX=`echo $INDEX|tr -c -d "[0-9]"`
+	if [ "$INDEX" = "" ]; then
+		INDEX=0
+	fi
+	if [ $INDEX -lt 1 ] || [ $INDEX -ge $N ]; then
+		wrong_input
+		ERR=1
+		N=1
+	else
+		ERR=0
+	fi
+done
+
+
+INDEX=`expr $INDEX - 1`
+SVCID=`echo "select idx from apanservices where host='$HNAME' order by idx limit $INDEX,1"|$SQLCOMM`
+ANSW=""
+while [ "$ANSW" != "q" ]; do
+
+	HNAME=`echo "select host from apanservices where idx=$SVCID"|$SQLCOMM`
+	SERVICE=`echo "select service from apanservices where idx=$SVCID"|$SQLCOMM`
+	RRDFILE=`echo "select rrdfile from apanservices where idx=$SVCID;"|$SQLCOMM`
+	GLABEL=`echo "select label from apanservices where idx=$SVCID;"|$SQLCOMM`
+	GUNIT=`echo "select unit from apanservices where idx=$SVCID;"|$SQLCOMM`
+	EXTRAARGS=`echo "select extraargs from apanservices where idx=$SVCID;"|$SQLCOMM`
+	COMMENT=`echo "select comment from apanservices where idx=$SVCID;"|$SQLCOMM`
+	#printf "\nMain configuration for service '$SERVICE' on host '$HNAME':\n\n"
+	printf "$SETNORM$SETBLUEBG$CLEARTOEL\n${SETWHITE}Configuration for service $SETYELLOW'$SERVICE'$SETWHITE on host $SETYELLOW'$HNAME'$SETWHITE:$CLEARTOEL\n$SETNORM$SETBLUEBG$SETGREY"
+	printf "$SETNORM$SETBLUEBG$SETYELLOW$SETBOLD       1"
+	printf "$SETNORM$SETBLUEBG$SETGREY) Hostname:     $SETWHITE$HNAME$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG$SETYELLOW$SETBOLD       2"
+	printf "$SETNORM$SETBLUEBG$SETGREY) Service:      $SETWHITE$SERVICE$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG$SETYELLOW$SETBOLD       3"
+	printf "$SETNORM$SETBLUEBG$SETGREY) Comment:      $SETWHITE$COMMENT$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG$SETYELLOW$SETBOLD       4"
+	printf "$SETNORM$SETBLUEBG$SETGREY) Graph-Label:  $SETWHITE$GLABEL$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG$SETYELLOW$SETBOLD       5"
+	printf "$SETNORM$SETBLUEBG$SETGREY) Graph-Unit:   $SETWHITE$GUNIT$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG$SETYELLOW$SETBOLD       6"
+	printf "$SETNORM$SETBLUEBG$SETGREY) Extra args:   $SETWHITE$EXTRAARGS$CLEARTOEL\n"
+	printf "$SETNORM$SETBLUEBG$SETYELLOW$SETBOLD       7"
+	printf "$SETNORM$SETBLUEBG$SETGREY) RRD-file:     $SETWHITE$RRDFILE$CLEARTOEL\n"
+	
+	printf "$SETNORM$SETBLUEBG$CLEARTOEL\n${SETWHITE}Wich parameter do you want to change (q to quit)? $SETYELLOW$CLEARTOEL"
+	read ANSW
+	if [ "$ANSW" = "q" ]; then
+		break
+	fi
+	case $ANSW in
+		1)
+			getval "New hostname: " 0 "$HNAME"
+			OLDHNAME=$HNAME
+			HNAME=$TVAL
+			if [ "$OLDHNAME" != "$HNAME" ]; then
+				UNIQ=`echo "select count(*) from apanservices where host='$HNAME' and service='$SERVICE';"|$SQLCOMM`
+				if [ $UNIQ != 0 ]; then
+					printf "$SETNORM$SETBLUEBG$SETRED${SETBOLD}The service $SETYELLOW'$SERVICE'$SETRED is already defined on host $SETYELLOW'$HNAME'$SETRED.$CLEARTOEL\n"
+					printf "${SETWHITE}Press enter to continue $SETYELLOW"
+					HNAME=$OLDHNAME
+					read
+				else
+					ERR=`echo "update apanservices set host='$HNAME' where idx=$SVCID;"|$SQLCOMM 2>&1`
+					RES=$?
+					if [ $RES != 0 ]; then
+						echo "Database ERROR: $ERR"
+						printf "Press enter to continue "
+						read
+						return
+					fi
+					echo "Changed."
+					DIRTY=1
+				fi
+			fi
+			
+		;;
+		2)
+			getval "New servicename: " 0 "$SERVICE"
+			OLDSERVICE=$SERVICE
+			SERVICE=$TVAL
+			if [ "$OLDSERVICE" != "$SERVICE" ]; then
+				UNIQ=`echo "select count(*) from apanservices where host='$HNAME' and service='$SERVICE';"|$SQLCOMM`
+				if [ $UNIQ != 0 ]; then
+					echo "The service '$SERVICE' is already defined on host '$HNAME'"
+					printf "Press enter to continue "
+					SERVICE=$OLDSERVICE
+					read
+				else
+					ERR=`echo "update apanservices set service='$SERVICE' where idx=$SVCID;"|$SQLCOMM 2>&1`
+					RES=$?
+					if [ $RES != 0 ]; then
+						echo "Database ERROR: $ERR"
+						printf "Press enter to continue "
+						read
+						return
+					fi
+					echo "Changed."
+					DIRTY=1
+				fi
+			fi
+		;;
+		3)
+			getval "New Comment" 1 "$COMMENT"
+			COMMENT=$TVAL
+			ERR=`echo "update apanservices set comment='$COMMENT' where idx=$SVCID;"|$SQLCOMM 2>&1`
+			RES=$?
+			if [ $RES != 0 ]; then
+				echo "Database ERROR: $ERR"
+				printf "Press enter to continue "
+				read
+				return
+			fi
+			echo "Changed."
+			DIRTY=1
+		;;
+		4)
+			getval "New graph-label" 0 "$GLABEL"
+			GLABEL=$TVAL
+			ERR=`echo "update apanservices set label='$GLABEL' where idx=$SVCID;"|$SQLCOMM 2>&1`
+			RES=$?
+			if [ $RES != 0 ]; then
+				echo "Database ERROR: $ERR"
+				printf "Press enter to continue "
+				read
+				return
+			fi
+			echo "Changed."
+			DIRTY=1
+		;;
+		5)
+			getval "New graph-unit" 0 "$GUNIT"
+			GUNIT=$TVAL
+			ERR=`echo "update apanservices set unit='$GUNIT' where idx=$SVCID;"|$SQLCOMM 2>&1`
+			RES=$?
+			if [ $RES != 0 ]; then
+				echo "Database ERROR: $ERR"
+				printf "Press enter to continue "
+				read
+				return
+			fi
+			echo "Changed."
+			DIRTY=1
+		;;
+		6)
+			getval "New extra arguments" 1 "$EXTRAARGS"
+			EXTRAARGS=$TVAL
+			ERR=`echo "update apanservices set extraargs='$EXTRAARGS' where idx=$SVCID;"|$SQLCOMM 2>&1`
+			RES=$?
+			if [ $RES != 0 ]; then
+				echo "Database ERROR: $ERR"
+				printf "Press enter to continue "
+				read
+				return
+			fi
+			echo "Changed."
+			DIRTY=1
+		;;
+		7)
+			getval "New RRD-filename: " 0 "$RRDFILE"
+			OLDRRDFILE=$RRDFILE
+			RRDFILE=$TVAL
+			SLASH=`echo $RRDFILE|cut -b 1`
+			if [ "$SLASH" != "/" ]; then
+				RRDFILE="$RRDDIR/$RRDFILE"
+			fi
+			RRDFILE=`echo $RRDFILE|tr -s "/"`
+			if [ "$RRDFILE" != "$OLDRRDFILE" ]; then
+				if [ ! -f $OLDRRDFILE ]; then
+					echo "The file '$OLDRRDFILE' does not xist."
+						printf "Press enter to continue "
+						read
+				else
+					if [ -f $RRDFILE ]; then
+						echo "The file '$RRDFILE' already exist"
+						printf "Press enter to continue "
+						read
+					else
+						ERR=`mv $OLDRRDFILE $RRDFILE 2>&1`
+						RES=$?
+						if [ $RES != 0 ]; then
+							echo "ERROR: $ERR"
+						else
+							ERR=`echo "update apanservices set rrdfile='$RRDFILE' where idx=$SVCID;"|$SQLCOMM 2>&1`
+							RES=$?
+							if [ $RES != 0 ]; then
+								echo "Database ERROR: $ERR"
+								printf "Press enter to continue "
+								read
+								return
+							fi
+							echo "Changed."
+							DIRTY=1
+						fi
+					fi
+				fi
+			fi
+		;;
+		'')
+		;;
+		*)
+			printf "Wrong selection, press enter to continue"
+			read
+		;;
+	esac
+done
+
+}
+gettywidth() {
+
+SIZE=`stty size 2>/dev/null`
+RES=$?
+                                                                                                          
+if [ $RES = 0 ]; then
+        #stty size is known by the system..."
+        WIDTH=`echo $SIZE|awk '{print $NF}'`
+else
+        #stty size is NOT known by the system..."
+        WIDTH=`stty -a 2>/dev/null|grep -i "columns"|sed -e 's/olumns/¤/'|cut -d "¤" -f 2-|cut -d ";" -f 1|tr -c -d "[0-9]"`
+        RES=$?
+fi
+if [ "$WIDTH" = "" ]; then
+        #Unable to get width, assuming 80 chars."
+        WIDTH=80
+fi
+return $WIDTH
+}
+
+outptextinfo() {
+        if [ "$COMMENT" != "" ]; then
+                echo "# $COMMENT"
+        fi
+        echo "define serviceextinfo  {"
+        echo "host_name              $HOST"
+	echo "service_description    $SERVICE"
+        echo "notes_url             $CGIURL/apan-sql.cgi?host=$HOST&service=$HTSERVICE"
+        echo "icon_image             ./bdr/graph.png"
+        echo "icon_image_alt         Ver Apan-graphs"
+        echo "                       }"
+        echo ""
+}
+
+rebuild_extinfo() {
+
+gettywidth
+WIDTH=$?
+
+NSERVICES=`echo "select count(*) from apanservices;"|$SQLCOMM`
+SVCIDS=`echo "select idx from apanservices order by comment,host,service;"|$SQLCOMM`
+TMPFILE=/tmp/createextinfo.$$
+/bin/rm -f $TMPFILE
+
+printf "$SETNORM$SETBLUEBG${SETGREY}Creating serviceextinfo for $SETYELLOW$SETBOLD$NSERVICES$SETNORM$SETBLUEBG${SETGREY} services:$CLEARTOEL\n"
+N=0
+POS=-1
+for SVCID in $SVCIDS; do
+        NPOS=`echo "($N*$WIDTH)/$NSERVICES"|bc`
+        if [ $NPOS != $POS ]; then
+                printf "."
+                POS=$NPOS
+        fi
+        N=`expr $N + 1`
+        HOST=`echo "select host from apanservices where idx=$SVCID;"|$SQLCOMM`
+        SERVICE=`echo "select service from apanservices where idx=$SVCID;"|$SQLCOMM`
+        HTSERVICE=`echo $SERVICE|sed -e 's/¤/%20/g'`
+        COMMENT=`echo "select comment from apanservices where idx=$SVCID;"|$SQLCOMM`
+        outptextinfo >> $TMPFILE
+done
+DIRTY=0
+echo /bin/mv $TMPFILE $EXTINFOFILE
+/bin/mv $TMPFILE $EXTINFOFILE
+printf "$SETNORM$SETBLUEBG$SETGREEN${SETBOLD}Done.$CLEARTOEL\n"
+printf "${SETWHITE}Press enter to continue $SETYELLOW"
+read
+
+}
+
+
+# Main-loop
+
+A=0
+while [ "$A" != q ]; do
+	main_menu
+	read A
+	#echo "A: $A"
+	case $A in
+		1) add_svc
+		;;
+		2) edit_svc
+		;;
+		3) del_svc
+		;;
+		4) rebuild_extinfo
+		;;
+		q) quit_all
+		;;
+		*) wrong_input
+		;;
+	esac
+		
+done
+

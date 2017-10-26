@@ -1,0 +1,2954 @@
+################################################################################################
+# MANTENIMIENTO DE SOFTWARE
+# DESCRIPCION: Especificaciones de Mantenimiento de Software
+# FECHA CREACION: 2011-10-26
+# MODIFICADO POR: Jose Luis Elias
+#################################################################################################
+
+#############################################
+##                CONTACTOS                ##
+#############################################
+define contact{
+        contact_name                    miguel.lemus
+        alias                           Miguel Lemus 
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,u,r
+        service_notification_commands   notify-by-email
+        host_notification_commands      host-notify-by-email
+        email                           miguel.lemus@banrural.com.gt
+        }
+
+define contact{
+        contact_name                    joseluis.elias
+        alias                           Jose Luis Elias
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,u,r
+        service_notification_commands   notify-by-email
+        host_notification_commands      host-notify-by-email
+        email                           jose.elias@banrural.com.gt
+        }
+
+define contact{
+        contact_name                    patricia.ramirez
+        alias                           Patricia Ramirez
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,u,r
+        service_notification_commands   notify-by-email
+        host_notification_commands      host-notify-by-email
+        email                           patricia.ramirez@banrural.com.gt
+        }
+
+define contact{
+        contact_name                    luis.gonzalez
+        alias                           Luis Enrique Gonzalez
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,u,r
+        service_notification_commands   notify-by-email
+        host_notification_commands      host-notify-by-email
+        email                           luis.gonzalez@banrural.com.gt
+        }
+
+define contact{
+        contact_name                    bayron.cua
+        alias                           Bayron Cua
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,u,r
+        service_notification_commands   notify-by-email
+        host_notification_commands      host-notify-by-email
+        email                           bayron.cua@banrural.com.gt
+        }
+		
+define contact{
+        contact_name                    lista_banca_virtual
+        alias                           Lista Banca Virtual
+        service_notification_period     24x7
+        host_notification_period        24x7
+        service_notification_options    w,u,c,r
+        host_notification_options       d,u,r
+        service_notification_commands   notify-by-email
+        host_notification_commands      host-notify-by-email
+        email                           tic-desa-belectronica@banrural.com.gt
+        }
+#######################################################
+##                GRUPOS DE CONTACTOS                ##
+#######################################################
+# jlet - 20120110: Grupo para Banca Virtual
+define contactgroup{
+        contactgroup_name       banca_virtual
+        alias                   Banca Virtual
+        members                 lista_banca_virtual
+        }
+
+# jlet - 20120110: Se omitio el contacto soporte
+define contactgroup{
+        contactgroup_name       mantenimiento
+        alias                   Mantenimiento Software
+        members                 anuar,manuel,miguel.lemus,joseluis.elias,patricia.ramirez,operadores,luis.gonzalez,bayron.cua
+        }	
+		
+##############################################
+##                HOSTGROUPS                ##
+##############################################
+# jlet - 20120118: Se corrigio la duplicacion del servidor 10.160.202.11
+define hostgroup{
+        hostgroup_name  mant_software
+        alias           Mantenimiento de Software
+        members         banca_amigo, web_bv, web_bv2, bilbo, VMCobis01, VMCobis02, VMCobis03, VMCobis04, VMCobis05, VMCobis06, VMCobis07, VMCobis08, VMCobis09, VMCobis11, VMCobis12, VMCobis13, age33srv, vmmsqapp01, vmmsqapp02, vmcargas, VMWebServicios, ivr, VMPlusACRMalertas, VMPlusACRManls01, VMPlusACRManls02, VMPlusACRMworkflow, VMSourceSafe, VMSQRSRV, VMCAS, VMQlickView, VMYotta, VMYottaWeb, VMIntranet, VMImageWebSrv, VMImageDB, VMImageSRV, VMDatos, vmwservices, vmwservices02, VMGestionRiesgo, VMServiciosWeb, VMCobis14, VMCobis15, vmctlm, VMSuministros2, VMDatosDB, VMDatosDB02, plus_acrm_db, torre01srv, torre02srv, VMFHA,  VMCompeOld, qapp_prod, fep, fep_db, CrmApp01, qdb_prod, qapp_prod2, db_bv,VMSWIFT,VMCapaSrv, vmwatches, VMAperWeb, VMBVInterna, vmffws, vmffws2,vmMonitorCoreAlarma,vmMonitorCoreAnaliza01,vmMonitorCoreAnaliza02,vmMonitorCoreColector,vmMonitorCoreDB
+        }
+
+define hostgroup {
+        hostgroup_name	Implementaciones-Servers
+        alias           Windows Servers
+        members			vmmsqapp01, vmmsqapp02, qapp_prod, qapp_prod2, vmwatches 
+        }
+
+##############################################
+##                COMANDOS                  ##
+##############################################
+# jlet - 20120124: Monitoreo desde un servidor Windows remoto
+define command {
+	command_name	check_url_remoto
+	command_line    $USER1$/check_nrpe -H $HOSTADDRESS$ -c check_url 
+}
+
+# jlet - 20111216: Chequeo de logins de Banca Virtual		
+define command{
+    command_name    check_loginbv
+	command_line    $USER1$/check_loginbv $HOSTADDRESS$ 1433 sa bvj00d34df00
+}
+
+# jlet - 20110920: Chequeo de transacciones de remesas pendientes de procesar		
+define command{
+    command_name    check_remesa_pend
+	command_line    $USER1$/check_remesa $HOSTADDRESS$ 1433 sa msmqj00d34df00
+}
+
+# jlet - 20111028: Aumento de tiempo de espera a 30 segundos
+define command {
+	command_name	check_pools_iis
+	command_line    $USER1$/check_nrpe -H $HOSTADDRESS$ -c check_pools_iis 
+}
+		
+# jlet - 20120620: Chequeo de una URL en el protocolo http.
+# ARG1: host  
+# ARG2: URL
+# ARG3: Puerto
+define command{
+	command_name 	check_http_url
+	command_line	/usr/local/nagios/libexec/check_http -H $ARG1$ -u $ARG2$ -p $ARG3$ 
+}
+# jlet - 20120620: Chequeo de una URL en el protocolo https.
+# ARG1: Host 
+# ARG2: URL
+# ARG3: Puerto
+define command{
+	command_name 	check_https_url
+	command_line	/usr/local/nagios/libexec/check_http -H $ARG1$  -u $ARG2$ -p $ARG3$ --ssl
+}
+
+# jlet - 20111110: Monitoreo de la informacion contenida en un archivo generada por
+# el comando DF en Linux/Unix
+# ARG1: Ruta donde se encuentra el archivo generado por el comando DF
+define command{
+	command_name    check_filesystem
+	command_line    $USER1$/check_filesystem $HOSTADDRESS$ $ARG1$
+}		
+
+
+##############################################
+##                SERVICIOS                 ##
+##############################################
+
+
+# jlet - 20120124: Monitoreo de una URL desde un servidor windows remoto
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             url_utiba
+    host_name                       web_bv 
+	is_volatile                 0
+    check_period		    24x7
+    max_check_attempts              2
+	normal_check_interval       6
+    retry_check_interval            3
+    contact_groups                  mantenimiento, banca_virtual
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_url_remoto
+}
+
+
+# jlet - 20120110: Monitoreo del Servicio Web de Utiba
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_money_wallet
+    host_name                       vmwservices 
+    is_volatile                     0
+    check_period		    24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento, banca_virtual
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/WsUtiba/MoneyWallet.asmx!80
+}
+
+# jlet - 20111216: Servicio que monitorea el diferencial entre un monitoreo y otro de logins de la Banca Virtual
+define service{
+	use                         generic-service         ; Name of service template to use
+    service_description             dif_usuarios_conectados_bv 
+    host_name                       db_bv 
+    is_volatile                     0
+    check_period                    24x7
+    max_check_attempts              3
+    normal_check_interval           5  
+    retry_check_interval            2 
+    contact_groups                  mantenimiento
+    notification_interval           5
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_loginbv
+}
+
+# jlet - 20110920: Servicio de monitoreo de transacciones de remesas pendientes de procesar
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             remesas_pendientes 
+    host_name                       qdb_prod 
+    is_volatile                     0
+    check_period                    24x7
+    max_check_attempts              2
+    normal_check_interval           6  
+    retry_check_interval            3 
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_remesa_pend
+}
+
+# jlet - 20111010: Monitoreo del Servicio Web de Remesas
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_remesas
+    host_name                       vmwservices 
+    is_volatile                     0
+    check_period	            24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/Remesadores/Remesas.asmx!80
+}
+
+# jlet - 20120621: Monitoreo del Servicio Web de Moneygram
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_moneygram
+    host_name                       vmmsqapp01, vmwservices
+    is_volatile                     0
+    check_period				24x7
+    max_check_attempts              3
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_https_url!ws.moneygram.com!/wsprod/services/AgentConnect76!443!
+}
+
+# jlet - 20111010: Monitoreo del Servicio Web de Remesas
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             pools_iis
+    host_name                       vmwservices, qapp_prod
+	is_volatile                  0
+    check_period			24x7
+    max_check_attempts              2
+	normal_check_interval       6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_pools_iis
+}
+
+# jlet - 20111110: Monitoreo del sistema de archivos a traves de un archivo generado por el comando DF en Linux/Unix
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             sistema_archivos
+    host_name                       bilbo
+    is_volatile                     0
+    check_period		    24x7
+    max_check_attempts              2
+    normal_check_interval           60
+    retry_check_interval            15
+    contact_groups                  mantenimiento
+    notification_interval           120
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_filesystem!/home/jose.elias/fsrural1.txt
+}
+
+#
+# SERVICIOS DE MONITOREO DE ARQUITECTURA DE BANCA VIRTUAL
+#
+define service{
+    use                             generic-service
+    service_description             bv_desde_balanceador
+    host_name                       vmmsqapp01 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!10.160.202.61!/cobisbv/login/login_ff.asp!80
+}
+define service{
+    use                             generic-service
+    service_description             bv_desde_was
+    host_name                       vmmsqapp01 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_https_url!10.161.206.37!/efs/servlet/efs/jsp-ns/login.jsp!9443
+}
+define service{
+    use                             generic-service
+    service_description             bv_desde_ihs41
+    host_name                       vmmsqapp01 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!10.160.202.41!/efs/servlet/efs/jsp-ns/login.jsp!80
+}
+define service{
+    use                             generic-service
+    service_description             bv_desde_ihs43
+    host_name                       vmmsqapp01 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!10.160.202.43!/efs/servlet/efs/jsp-ns/login.jsp!80
+}
+define service{
+    use                             generic-service
+    service_description             bv_ws_checkusertype_desde_was
+    host_name                       vmmsqapp01 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_https_url!10.161.206.37!/usuario/services/CheckUserType!9443
+}
+define service{
+    use                             generic-service
+    service_description             bv_ws_checkusertype_desde_ihs41
+    host_name                       vmmsqapp01 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!10.160.202.41!/usuario/services/CheckUserType!80
+}
+define service{
+    use                             generic-service
+    service_description             bv_ws_checkusertype_desde_ihs43
+    host_name                       vmmsqapp01 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!10.160.202.43!/usuario/services/CheckUserType!80
+}
+define service{
+    use                             generic-service
+    service_description             bv_desde_b_individivual141
+    host_name                       VMFFwww1 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/cobisbv/login/login_ff.asp!80
+}
+define service{
+    use                             generic-service
+    service_description             bv_desde_b_individivual142
+    host_name                       VMFFwww2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/cobisbv/login/login_ff.asp!80
+}
+#
+# SERVICIOS WEB DE FINANCIAL FUSION
+#
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_consultas
+    host_name                       vmffws, vmffws2 
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/BV_financial_fusion/ws_ff_consultas/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_asocia_cta
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_asocia_cta/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_autentica
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_autentica/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_bancamigo
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_bancamigo/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_consulta_cheques
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_consulta_cheques/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_consulta_productos
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_consulta_productos/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_consultas_accionistas
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_consultas_accionistas/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_consultas_transferencias
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_consultas_transferencias/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_cotizadores
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_cotizadores/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_estado_cta_productos
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_estado_cta_productos/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_gst_bancasat
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_gst_bancasat/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_gst_bloqueo_productos
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_gst_bloqueo_productos/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_gst_chequeras
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_gst_chequeras/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_gst_desbloqueo_productos
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_gst_desbloqueo_productos/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_gst_est_cta_correo
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_gst_est_cta_correo/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_gst_pcheqs
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_gst_pcheqs/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_gst_tctd_extranjero
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_gst_tctd_extranjero/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_menu
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_menu/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_operaciones
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_operaciones/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_agua
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_agua/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_donyapor
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_donyapor/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_ee
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_ee/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_empresas_privadas
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_empresas_privadas/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_fa
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_fa/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_instituciones
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_instituciones/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_ior
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_ior/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_productos
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_productos/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_servicio_claro
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_servicio_claro/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_servicio_ms
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_servicio_ms/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_servicio_tigo
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_servicio_tigo/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_servicio_yego
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_servicio_yego/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pago_universidad
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pago_universidad/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_pagos_masivos
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_pagos_masivos/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_tasa_cambio
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_tasa_cambio/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_transferencias
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_transferencias/!80
+}
+
+define service{
+    use                             generic-service         ; Name of service template to use
+    service_description             ws_ff_trns_cpa
+    host_name                       vmffws, vmffws2
+    is_volatile                     0
+    check_period		    		24x7
+    max_check_attempts              2
+    normal_check_interval           6
+    retry_check_interval            3
+    contact_groups                  mantenimiento
+    notification_interval           6
+    notification_period             24x7
+    notification_options            c,r
+    check_command                   check_http_url!$HOSTADDRESS$!/ws_ff_trns_cpa/pago_colegios_cpa.asmx!80
+}
+
+
+###############################################################################
+#
+# 20130730 - MONITOREO DE APLICACIONES DE SERVIDORES DE COLAS
+#
+##############################################################################
+
+
+define service{
+        host_name                       vmmsqapp01, vmmsqapp02, qapp_prod, qapp_prod2, vmwatches
+        service_description             Monitor de Aplicaciones
+        use                             generic-service        ; Name of service template to use
+        is_volatile                     0
+        check_period                    24x7
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             24x7
+        notification_options            c,r
+        check_command                   check_nt_process!MonitorDeAplicaciones.exe
+        register                        1
+        }
+
+
+###############################################################################
+#
+# Grupo de Servicios 10.160.201.1
+#
+#
+##############################################################################
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             BTS Abono Cuenta
+        use                             generic-service
+        is_volatile                     0
+        check_period                    AbonosBTS
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             AbonosBTS
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchBTSAbonoCuenta.exe
+        register                        1
+        }
+
+		define service{
+        host_name                       vmmsqapp01
+        service_description             Replica CRM Prepago
+        use                             generic-service
+        is_volatile                     0
+        check_period                    ReplicaTPP
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             ReplicaTPP
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchSQL_ReplicaPrepago.exe
+        register                        1
+        }
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Replica CRM Firmas
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSQL_Firmas.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Watch Replica CRM
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchCRM.exe
+        register                        1
+        }		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Watch Replica CRM2
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchCRM2.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Concentrador Remesadores
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Remesadores
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Remesadores
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!ConcentradorRemesadores.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             SMT Remesas
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!SMT_Remesas.exe
+		register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Watch Vigo RyT
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatch_VigoRyT.exe
+		register                        1
+        }
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Tigo PostPago
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command					check_nt_process!BDRWatchTigoPostPago.exe
+        register                        1
+        }
+		
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Banca SAT NITS
+        use                             generic-service
+        is_volatile                     0
+        check_period                    24x7
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             24x7
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command           		check_nt_process!BDRWatchNITS.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Wells Fargo Parser
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Wellsfargo
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Wellsfargo
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command					check_nt_process!WFParser.exe
+        register                        1
+        }
+		
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Referencias SIB 00
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command		 			check_nt_process!BDRWatchWebServiceSIB00.exe
+        register 						1
+		}
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Referencias SIB 01
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command		 			check_nt_process!BDRWatchWebServiceSIB01.exe
+        register 						1
+		}
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Referencias SIB 02
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command		 			check_nt_process!BDRWatchWebServiceSIB02.exe
+        register 						1
+		}
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Usuarios SIB
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command		 			check_nt_process!BDRWatchUsuariosSIB.exe
+        register 						1
+		}
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             SIB PRE
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command		 			check_nt_process!BDRWatchSIB_PRE.exe
+        register 						1
+		}
+		
+
+#####APLICACION SAT DECLARA GUATE		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Sat Declara Guate
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command     		        check_nt_process!BDRWatchSATdG.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Sat DGuate Plan B
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command     		        check_nt_process!WatchSATDG_PlanB.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Sat DGuate Plan C
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command     		        check_nt_process!WatchSATDG_PlanC.exe
+        register                        1
+        }		
+
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             SAT DGuate Reetry
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                  check_nt_process!BDRWatchSATdGR.exe
+        register                        1
+        }
+		
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Money Gram
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatchMG.exe
+        register                        1
+        }
+		
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Money Gram 2
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatchMG2.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Money Gram 3
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatchMG3.exe
+        register                        1
+        }
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Money Gram 4
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatchMG4.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Money Gram 5
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatchMG5.exe
+        register                        1
+        }
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Money Gram 6
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatchMG6.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Banca Amigo
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command           		check_nt_process!BDRWatchBancaAmigo.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             RENAP
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchRENAP.exe
+        register                        1
+        }		
+		
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Logic Mesa Cambio
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command					check_nt_process!BDRWatchLogicMesaCambio.exe
+		        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             SWIFT
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command		 			check_nt_process!BDRWatchFromSWIFT.exe
+        register                        1
+		}
+
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Colegio Medicos
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               	check_nt_process!BDRWatchColMed.exe
+        register                        1
+        }	
+
+
+define service{
+        host_name                       vmmsqapp01
+        service_description             Colegio Ingenieros
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               	check_nt_process!BDRWatchColIng.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Maycom
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command           		check_nt_process!BDRWatchMaycom.exe
+        register                        1
+        }
+	
+define service{
+        host_name                       vmmsqapp01
+        service_description             UPANA
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command					check_nt_process!BDRWatchUPANA.exe
+        register                        1
+        }		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Colegio Auditores
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               	check_nt_process!BDRWatchColAuditores.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Cooperativa Proyeccion 2K
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               	check_nt_process!BDRWatchCooperativa.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       vmmsqapp01
+        service_description             Colegio Psicologos
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               	check_nt_process!BDRWatchColPsicologos.exe
+        register                        1
+        }
+		
+
+		
+###############################################################################
+#
+# Grupo de Servicios 10.160.201.2
+#
+#
+##############################################################################
+
+
+define service{
+        host_name                       vmmsqapp02
+        service_description             SMT Remesadores
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!SMTRemesadores.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             Watch Union Fenosa
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchUnionFenosa.exe
+        register                        1
+        }
+	
+define service{
+        host_name                       vmmsqapp02
+        service_description             Reciber Union Fenosa
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!MqReciberUnionFenosa.exe
+        register                        1
+        }	
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             Watch BellSouth
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           60
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchBellSouth.exe
+        register                        1
+        }	
+
+	
+define service{
+        host_name                       vmmsqapp02
+        service_description             SMT Predeclaraciones
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!SMTBVPredeclaraciones.exe
+        register                        1
+        }		
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             SMT PIDA
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!SMT_PIDA.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             SMT PTC Abastos
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!SMT_PTCAbastos.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             MQ Oriflame PopPush
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!MQOriflamePopPush.exe
+        register                        1
+        }	
+
+
+define service{
+        host_name                       vmmsqapp02
+        service_description             Watch Oriflame
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchOriflame.exe
+        register                        1
+        }		
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             Reciber Oriflame
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!MqReciberOriflame.exe
+        register                        1
+        }		
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             SMT Sosep
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTSosep.exe
+        register                        1
+        }
+		
+
+define service{
+        host_name                       vmmsqapp02
+        service_description             Watch Intecap
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchINTECAP.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmmsqapp02
+        service_description             Reciber Intecap
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!MqReciberINTECAP.exe
+        register                        1
+        }
+	
+
+###############################################################################
+#
+# Grupo de Servicios 140.254.1.1
+#
+#
+##############################################################################
+
+define service{
+        host_name               qapp_prod
+        service_description             Reciber EEGSA
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!MqReciberEEGSA.exe
+        register                        1
+        }
+
+define service{
+        host_name               qapp_prod
+        service_description             Watch EEGSA
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchEEGSA.exe
+        register                        1
+        }
+
+
+
+define service{
+        host_name               qapp_prod
+        service_description             Banca SAT Queue
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BancaSATQueue.exe
+        register                        1
+        }
+		
+define service{
+        host_name               qapp_prod
+        service_description             Watch Banca SAT
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchBancaSAT.exe
+        register                        1
+        }
+
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 1
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_1.exe
+        register                        1
+        }
+
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 2
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_2.exe
+        register                        1
+        }
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 3
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                    check_nt_process!BDRWatchSAT2_3.exe
+        register                        1
+        }
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 4
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_4.exe
+        register                        1
+        }
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 5
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_5.exe
+        register                        1
+        }		
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 6
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_6.exe
+        register                        1
+        }	
+
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 7
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_7.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 8
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_8.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 9
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_9.exe
+        register                        1
+        }		
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 10
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_10.exe
+        register                        1
+        }		
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 11
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_11.exe
+        register                        1
+        }		
+		
+		
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 12
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_12.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 13
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_13.exe
+        register                        1
+        }	
+
+
+define service{
+        host_name               qapp_prod
+        service_description             SAT2 instancia 14
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-23
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-23
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command               check_nt_process!BDRWatchSAT2_14.exe
+        register                        1
+        }	
+
+
+
+###############################################################################
+#
+# Grupo de Servicios 140.254.1.3
+#
+#
+##############################################################################		
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Concentrador FTP
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Remesadores
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Remesadores
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!ConcentradorFTP.exe
+        register                        1
+        }	
+
+
+##Aplicaciones Telgua
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Watch Telgua
+        use                             generic-service
+        is_volatile                     0
+        check_period                    24x7
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             24x7
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchTelgua.exe
+        register                        1
+        }	
+		
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Reciber Telgua
+        use                             generic-service
+        is_volatile                     0
+        check_period                    24x7
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             24x7
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!MqReciberTelgua.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Telgua PrePago
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchPP.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Telgua PrePago BV
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchPP_BV.exe
+        register                        1
+        }		
+		
+		
+##Aplicaciones Municipalidades
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Watch Muni
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchMuni.exe
+        register                        1
+        }		
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Reciber Muni
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!MqReciberMuni.exe
+        register                        1
+        }
+		
+##Aplicaciones PTC
+
+define service{
+        host_name                       qapp_prod2
+        service_description             PTC Socket Pop Push
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!PTCPopPush.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Watch PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchPTC.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Reciber PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!MqReciberPTCAutorizacion.exe
+        register                        1
+        }
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Saldos Tr Autorizaciones PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!MqReciberPTCAutorizacion.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Reciber Aplicacion PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!MqReciberPTCSalTrAuto.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Compras Tr Autorizaciones PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTComprasTC.exe
+        register                        1
+        }		
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Tran Reciber PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!TrReceiver.exe
+        register                        1
+        }	
+
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Tran Sender PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!TRSender.exe
+        register                        1
+        }	
+
+##Aplicaciones PTC Referencias
+
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Reciber Buro Interno
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Buro
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           10
+        notification_period             Buro
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!MqReciberPTC-SIB.exe
+        register                        1
+        }	
+
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Watch Buro Interno
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Buro
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           10
+        notification_period             Buro
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchPTC-SIB.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       qapp_prod2
+        service_description             Watch PTC Caut
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchPreAuto.exe
+        register                        1
+        }		
+
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Reciber PTC Caut
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!MqReciberPreAuto.exe
+        register                        1
+        }
+
+define service{
+        host_name                       qapp_prod2
+        service_description             Recolector HTML PTC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!RecolectorPreAuto.exe
+        register                        1
+        }			
+		
+
+###############################################################################
+#
+# Grupo de Servicios 140.254.1.5
+#
+#
+##############################################################################
+
+define service{
+        host_name                       vmwatches
+        service_description             Concentrador FTP
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!ConcentradorFTP.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmwatches
+        service_description             ASRURAL SMT Consola
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTAsrural.exe
+        register                        1
+        }
+
+define service{
+        host_name                       vmwatches
+        service_description             Generador de Reportes
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTRepAuto.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmwatches
+        service_description             Sybase Fep
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTFep.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       vmwatches
+        service_description             Interfaces Varias SMT
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMT_InterfacesVarias.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmwatches
+        service_description             Portuaria Q. SMT
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTPortuariaQ.exe
+        register                        1
+        }
+	
+
+define service{
+        host_name                       vmwatches
+        service_description             USAC SMT
+        use                             generic-service
+        is_volatile                     0
+        check_period                    UsacSmt
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             UsacSmt
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTUsac.exe
+        register                        1
+        }
+
+define service{
+        host_name                       vmwatches
+        service_description             Watch USAC Pagos
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchUSAC.exe
+        register                        1
+        }		
+	
+	
+define service{
+        host_name                       vmwatches
+        service_description             Watch Spid Online
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-18
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-18
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchSPID.exe
+        register                        1
+        }	
+		
+define service{
+        host_name                       vmwatches
+        service_description             Watch Spid Batch
+        use                             generic-service
+        is_volatile                     0
+        check_period                    6-9
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             6-9
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchSPID_Batch.exe
+        register                        1
+        }
+		
+define service{
+        host_name                       vmwatches
+        service_description             Watch Navega
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRNavega.exe
+        register                        1
+        }
+				
+				
+		
+		
+define service{
+        host_name                       vmwatches
+        service_description             Watch SIAF SAG
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchSiafSag.exe
+        register                        1
+        }
+		
+		
+define service{
+        host_name                       vmwatches
+        service_description             SMT SIAF SAG
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTSiafSag.exe
+        register                        1
+        }		
+			
+define service{
+        host_name                       vmwatches
+        service_description             SMT DGAC
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMT_DGAC.exe
+        register                        1
+        }
+
+			
+define service{
+        host_name                       vmwatches
+        service_description             SMT IGSS
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!SMTIgss.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name                       vmwatches
+        service_description             Watch IGSS Planillas
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchIGSSPlanillas.exe
+        register                        1
+        }		
+		
+		
+define service{
+        host_name                       vmwatches
+        service_description             Watch IGSS Planillas Papel
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchIGSSPlanillasPapel.exe
+        register                        1
+        }			
+		
+		
+define service{
+        host_name                       vmwatches
+        service_description             Watch IGSS Reentry
+        use                             generic-service
+        is_volatile                     0
+        check_period                    Diario
+        max_check_attempts              2
+        normal_check_interval           6
+        retry_check_interval            3
+        notification_interval           6
+        notification_period             Diario
+        notification_options            c,r
+		contact_groups                  mantenimiento
+        check_command                   check_nt_process!BDRWatchIGSSReentry.exe
+        register                        1
+        }

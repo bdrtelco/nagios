@@ -1,0 +1,121 @@
+This is APAN, Advanced Performance Addon for Nagios.
+
+Version 0.3.0-sql
+
+Introduction ----------------------------------------
+
+Apan is a addon to Nagios that is used to collect results from Nagios
+plugins and store it in RRD-files. You can the use Apan to view graphs
+of the data in Nagios web-interface.
+
+This version of Apan uses a MySQL-database to store its _configuration_.
+The table-structure is simple and there should be no big problems to
+port it to another database (look in sql.conf for hints).
+
+Why did I change from text-files to SQL?
+
+Here are some of the reasons:
+
+- Its much easier to write a config-tool.
+- Handling of parameters between the main program and the plugins is easier
+- There is no need for the array with color-strings which caused a lot of
+  problems in some shells. I think Apan now should run under a pure
+  bourne-shell, but I haven't tested it...
+- Performance? Hard to say. The overall load on my machine increased with
+  ~0.5, because of all calls to MySQL. But the check-duration have decreased
+  a little because you don't have to parse a 500-lines text-file on every call.
+  I think you will gain performance in a large environment. Especially if
+  you take some time and tune MySQL, or move it to a separate machine.
+
+
+System Requirements ---------------------------------
+
+To use this package you need Nagios (www.nagios.org), RRD-Tool
+(http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/), MySQL (www.mysql.com),
+a bourne-shell compatible UNIX-shell and the bc-command.
+
+
+For detailed information, look at http://apan.sourceforge.net.
+
+
+
+Changes ---------------------------------------------
+
+* Configuration is stored in a MySQL-database
+
+* Apan uses one extinfo-file
+
+* apanconf-sql, a simple ui that can be used to configure apanservices
+  See README.apanconf for more info.
+
+* Some new and some changed plugins
+
+For more info, look in CHANGELOG
+
+
+Installation ----------------------------------------
+
+Here is a short install-howto, for more info you should look at
+apan.sourceforge.net:
+
+1)  Unpack the distribution in Nagios base-directory (/usr/local/nagios)
+
+2)  Check that the file apan-sql.sh and the files in the directory plugs-sql is
+    executable by the Nagios-user.
+
+3)  Update the path's and vars in apan.defs. If you are installing apan
+    in a different location than /usr/local/nagios/apan-sql, then you have
+    to edit apan-sql.sh, apan-sql.cgi, generate-sql.cgi and apanconfig-sql as well.
+
+4)  Update sql.conf
+
+5)  Check the parameters in the script createdb.sh and run it to create the
+    needed database-tables.
+
+6)  If you are upgrading from an older text-based Apan installation you can use the
+    script import.sh to import the existing configuration into the database;
+    - check the parameters at the beginning of the script.
+    - Run the script and look for errors.
+
+7)  Copy apan-sql.cgi and generate-sql.cgi to Nagios cgi-bin directory
+    (/usr/local/nagios/sbin), and make them executable by the web-server.
+
+8)  Copy the graph-icon, graph.png, to Nagios logo-directory
+    (/usr/local/nagios/share/images/logos).
+
+9)  Link or copy the contributed plugins from apan's libexec-dir to Nagios
+    libexec-dir
+
+10)  Add apan-sql.sh to checkcommands.cfg;
+	define command {
+	command_name                   apan-sql
+	command_line                   /usr/local/nagios/apan-sql/apan-sql.sh $ARG1$ $HOSTNAME$ "$SERVICEDESC$" $TIMET$ $ARG2$ $ARG3$
+	}
+
+11)  Add sevices to nagios;
+	define service {
+	host_name                      host1,host2
+	service_description            Disk-usage
+	check_command                  apan-sql!nt-disk!150!100
+	use                            generic-test
+	normal_check_interval          5
+}
+
+12) Add the hosts/services to the database, create RRD-files and servicextinfo.
+    See README.apanconf for more info.
+
+13) Add the serviceextinfo-file to nagios cgi.cfg. The filename should be the
+    the same as EXTINFOFILE in apanconf.defs;
+	xedtemplate_config_file=/usr/local/nagios/etc/servicextinfo-apan
+
+14) Start Nagios and enjoy..
+
+
+
+-------------------------------------------------------
+For more info:
+apan.sourceforge.net
+Fredrik Wänglund, fredrik.wanglund@datavis.se
+
+Nagios is a registered trademark of Ethan Galstad.
+

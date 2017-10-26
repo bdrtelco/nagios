@@ -1,0 +1,8 @@
+if [ -n "$SSH_CLIENT" ]
+then
+  set $SSH_CLIENT
+  echo 
+  echo Se ha conectado desde:  $1 puerto $2
+  echo 
+fi
+echo 

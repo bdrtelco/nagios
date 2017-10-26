@@ -1,0 +1,705 @@
+drwxrwxrwx 5 nagios nagios 4096 2015 11 16 2
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 agencias
+drwxrwxrwx 3 nagios nagios 4096 2016 04 19 Bdr_network
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 cambios_en_proceso
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Cobit
+drwxrwxrwx 4 nagios nagios 4096 2016 04 28 diagramas
+drwxrwxrwx 3 nagios nagios 4096 2015 11 16 fuentes
+drwxrwxrwx 3 nagios nagios 4096 2015 11 16 GateWays
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 images
+drwxrwxrwx 3 nagios nagios 4096 2015 11 16 Mapas
+drwxrwxrwx 5 nagios nagios 4096 2016 04 20 mitel
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Old
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 pictures
+drwxrwxrwx 5 nagios nagios 4096 2016 02 02 reporte_agencias
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 servicios
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 socios
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 VPN_Docs
+-rwxrwxrwx 1 nagios nagios  1434 2010 11 22 config.cfg
+-rwxrwxrwx 1 nagios nagios 12079 2010 02 17 copyright
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 cron
+-rwxrwxrwx 1 nagios nagios  3929 2010 11 22 functions.php
+-rwxrwxrwx 1 nagios nagios  3867 2010 11 22 index.php
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 inst
+-rwxrwxrwx 1 nagios nagios  5786 2010 11 22 pic.php
+-rwxrwxrwx 1 nagios nagios  3547 2010 11 22 print.css
+-rwxrwxrwx 1 nagios nagios  2035 2011 03 08 print.php
+-rwxrwxrwx 1 nagios nagios  1645 2010 11 22 readme
+-rwxrwxrwx 1 nagios nagios  2060 2011 03 08 release
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 report
+-rwxrwxrwx 1 nagios nagios  4292 2010 11 22 style.css
+-rwxrwxrwx 1 nagios nagios 3368 2010 11 22 ping.php
+-rwxrwxrwx 1 nagios nagios 808 2010 02 25 db_ping.sql
+-rwxrwxrwx 1 nagios nagios  116178 2012 07 19 age006.pdf
+-rwxrwxrwx 1 nagios nagios  364146 2012 07 19 age019.pdf
+-rwxrwxrwx 1 nagios nagios  330975 2012 07 19 age023.pdf
+-rwxrwxrwx 1 nagios nagios  597592 2012 07 19 age025.pdf
+-rwxrwxrwx 1 nagios nagios  713420 2013 05 23 age027.pdf
+-rwxrwxrwx 1 nagios nagios  547955 2013 05 23 age039.pdf
+-rwxrwxrwx 1 nagios nagios  610382 2013 05 23 age063.pdf
+-rwxrwxrwx 1 nagios nagios  114672 2012 07 19 age065.pdf
+-rwxrwxrwx 1 nagios nagios  541935 2012 07 19 age072.pdf
+-rwxrwxrwx 1 nagios nagios  250191 2012 07 19 age090b.pdf
+-rwxrwxrwx 1 nagios nagios   85219 2012 07 19 age090.pdf
+-rwxrwxrwx 1 nagios nagios  653617 2012 07 19 age102.pdf
+-rwxrwxrwx 1 nagios nagios  884121 2013 05 23 age137.pdf
+-rwxrwxrwx 1 nagios nagios  788238 2012 07 19 age141.pdf
+-rwxrwxrwx 1 nagios nagios  614335 2013 05 23 age143.pdf
+-rwxrwxrwx 1 nagios nagios  190670 2012 07 19 age147.pdf
+-rwxrwxrwx 1 nagios nagios  458915 2012 07 19 age164.pdf
+-rwxrwxrwx 1 nagios nagios  200739 2012 07 19 age166.pdf
+-rwxrwxrwx 1 nagios nagios   95743 2012 07 19 age171.pdf
+-rwxrwxrwx 1 nagios nagios  616849 2012 07 19 age186.pdf
+-rwxrwxrwx 1 nagios nagios  473072 2013 05 23 age193.pdf
+-rwxrwxrwx 1 nagios nagios  162541 2012 07 19 age196.pdf
+-rwxrwxrwx 1 nagios nagios  310735 2011 06 15 age212.pdf
+-rwxrwxrwx 1 nagios nagios  651723 2012 07 19 age221.pdf
+-rwxrwxrwx 1 nagios nagios  571362 2013 05 23 age237.pdf
+-rwxrwxrwx 1 nagios nagios 1701593 2012 07 19 age247.pdf
+-rwxrwxrwx 1 nagios nagios  469096 2013 05 23 age265.pdf
+-rwxrwxrwx 1 nagios nagios   30768 2013 05 23 age275.pdf
+-rwxrwxrwx 1 nagios nagios  506204 2012 07 19 age276.pdf
+-rwxrwxrwx 1 nagios nagios 1281194 2012 07 19 age283.pdf
+-rwxrwxrwx 1 nagios nagios   86471 2012 07 19 age287.pdf
+-rwxrwxrwx 1 nagios nagios  625819 2012 07 19 age291.pdf
+-rwxrwxrwx 1 nagios nagios  417046 2012 07 19 age296b.pdf
+-rwxrwxrwx 1 nagios nagios  810161 2012 07 19 age296.pdf
+-rwxrwxrwx 1 nagios nagios  187620 2012 07 19 age306.pdf
+-rwxrwxrwx 1 nagios nagios  919640 2011 06 15 age316.pdf
+-rwxrwxrwx 1 nagios nagios  814342 2013 05 23 age319.pdf
+-rwxrwxrwx 1 nagios nagios  423908 2013 05 23 age326.pdf
+-rwxrwxrwx 1 nagios nagios  334541 2011 06 15 age339.pdf
+-rwxrwxrwx 1 nagios nagios  446361 2012 07 19 age341.pdf
+-rwxrwxrwx 1 nagios nagios  728941 2013 05 23 age360.pdf
+-rwxrwxrwx 1 nagios nagios  246488 2012 07 19 age361.pdf
+-rwxrwxrwx 1 nagios nagios  553312 2013 05 23 age382.pdf
+-rwxrwxrwx 1 nagios nagios  857378 2012 07 19 age390.pdf
+-rwxrwxrwx 1 nagios nagios  689641 2012 07 19 age415.pdf
+-rwxrwxrwx 1 nagios nagios   98284 2012 07 19 age424.pdf
+-rwxrwxrwx 1 nagios nagios  769383 2012 07 19 age425.pdf
+-rwxrwxrwx 1 nagios nagios  722319 2012 07 19 age426.pdf
+-rwxrwxrwx 1 nagios nagios  619319 2013 05 23 age431.pdf
+-rwxrwxrwx 1 nagios nagios  433217 2012 07 19 age458.pdf
+-rwxrwxrwx 1 nagios nagios   74195 2012 07 19 age459.pdf
+-rwxrwxrwx 1 nagios nagios   71743 2013 05 23 age474.pdf
+-rwxrwxrwx 1 nagios nagios  655681 2013 05 23 age477.pdf
+-rwxrwxrwx 1 nagios nagios  242610 2012 07 19 age479.pdf
+-rwxrwxrwx 1 nagios nagios  542290 2012 07 19 age486.pdf
+-rwxrwxrwx 1 nagios nagios  458587 2012 07 19 age491.pdf
+-rwxrwxrwx 1 nagios nagios  302182 2012 07 19 age493.pdf
+-rwxrwxrwx 1 nagios nagios 2727235 2012 07 19 age518.pdf
+-rwxrwxrwx 1 nagios nagios   95649 2012 07 19 age525.pdf
+-rwxrwxrwx 1 nagios nagios  358730 2013 05 23 age537.pdf
+-rwxrwxrwx 1 nagios nagios  958333 2013 05 23 age539.pdf
+-rwxrwxrwx 1 nagios nagios 1000820 2012 07 19 age556.pdf
+-rwxrwxrwx 1 nagios nagios  834827 2013 05 23 age568.pdf
+-rwxrwxrwx 1 nagios nagios   74656 2012 07 19 age573.pdf
+-rwxrwxrwx 1 nagios nagios  489787 2013 05 23 age578.pdf
+-rwxrwxrwx 1 nagios nagios  333406 2011 06 15 age590.pdf
+-rwxrwxrwx 1 nagios nagios  733432 2013 05 23 age605.pdf
+-rwxrwxrwx 1 nagios nagios   76397 2012 07 19 age613.pdf
+-rwxrwxrwx 1 nagios nagios  571241 2013 05 23 age623.pdf
+-rwxrwxrwx 1 nagios nagios  560549 2013 05 23 age624.pdf
+-rwxrwxrwx 1 nagios nagios  493304 2013 05 23 age631.pdf
+-rwxrwxrwx 1 nagios nagios  363373 2012 07 19 age636.pdf
+-rwxrwxrwx 1 nagios nagios  713731 2012 07 19 age650.pdf
+-rwxrwxrwx 1 nagios nagios  320877 2012 07 19 age661.pdf
+-rwxrwxrwx 1 nagios nagios  386384 2012 07 19 age669.pdf
+-rwxrwxrwx 1 nagios nagios  618271 2012 07 19 age679.pdf
+-rwxrwxrwx 1 nagios nagios  944555 2012 07 19 age684.pdf
+-rwxrwxrwx 1 nagios nagios  114346 2012 07 19 age686.pdf
+-rwxrwxrwx 1 nagios nagios  284555 2012 07 19 age694.pdf
+-rwxrwxrwx 1 nagios nagios  751803 2012 07 19 age697.pdf
+-rwxrwxrwx 1 nagios nagios  691276 2013 05 23 age704.pdf
+-rwxrwxrwx 1 nagios nagios   75816 2012 07 19 age705.pdf
+-rwxrwxrwx 1 nagios nagios   85268 2012 07 19 age717.pdf
+-rwxrwxrwx 1 nagios nagios  375874 2011 06 15 age723.pdf
+-rwxrwxrwx 1 nagios nagios  473091 2012 07 19 age750.pdf
+-rwxrwxrwx 1 nagios nagios  715646 2011 06 15 age758.pdf
+-rwxrwxrwx 1 nagios nagios  434672 2011 06 15 age760.pdf
+-rwxrwxrwx 1 nagios nagios 1930577 2011 06 15 age769.pdf
+-rwxrwxrwx 1 nagios nagios 1513450 2013 02 18 Banrural Agencia 001 Antigua Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1508962 2013 02 18 Banrural Agencia 002 Barberena.pdf
+-rwxrwxrwx 1 nagios nagios 1485348 2013 02 18 Banrural Agencia 004 Jutiapa.pdf
+-rwxrwxrwx 1 nagios nagios 1497289 2013 02 18 Banrural Agencia 015 Coatepeque.pdf
+-rwxrwxrwx 1 nagios nagios 1388488 2013 02 18 Banrural Agencia 022 Solol .pdf
+-rwxrwxrwx 1 nagios nagios 1275522 2013 02 18 Banrural Agencia 032 Huehuetenango.pdf
+-rwxrwxrwx 1 nagios nagios 1298237 2013 02 18 Banrural Agencia 062 San Luis Petn.pdf
+-rwxrwxrwx 1 nagios nagios 1536651 2013 02 18 Banrural Agencia 124 Coban.pdf
+-rwxrwxrwx 1 nagios nagios 1438819 2013 02 18 Banrural Agencia 148 Antigua Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1547355 2013 02 18 Banrural Agencia 152 El Progreso Jutiapa.pdf
+-rwxrwxrwx 1 nagios nagios 1521595 2013 02 18 Banrural Agencia 160 Esquipulas km 171.5.pdf
+-rwxrwxrwx 1 nagios nagios 1370184 2013 02 18 Banrural Agencia 162 la Democracia, Huehuetenango.pdf
+-rwxrwxrwx 1 nagios nagios 1300032 2013 02 18 Banrural Agencia 189 Zona 6, Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1285597 2013 02 18 Banrural Agencia 275 Mazatenango.pdf
+-rwxrwxrwx 1 nagios nagios 1288542 2013 02 18 Banrural Agencia 309 Zona 1, Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1268634 2013 02 18 Banrural Agencia 329 Coatepeque.pdf
+-rwxrwxrwx 1 nagios nagios 1390468 2013 02 18 Banrural Agencia 384 C. C. Montufar.pdf
+-rwxrwxrwx 1 nagios nagios 1504090 2013 02 18 Banrural Agencia 406, 20 Calle zona 10, Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1391468 2013 02 18 Banrural Agencia 428 Salam .pdf
+-rwxrwxrwx 1 nagios nagios 1314058 2013 02 18 Banrural Agencia 430 Santa Elena, Petn.pdf
+-rwxrwxrwx 1 nagios nagios 1429739 2013 02 18 Banrural Agencia 477 Aldea la Ruidosa, Puerto Barrios.pdf
+-rwxrwxrwx 1 nagios nagios 1327365 2013 02 18 Banrural Agencia 530 Chimaltenango.pdf
+-rwxrwxrwx 1 nagios nagios 1261488 2013 02 18 Banrural Agencia 669 Quetzaltenango.pdf
+-rwxrwxrwx 1 nagios nagios 1516415 2013 02 18 Banrural Agencia 721 Santa  Cruz del Quiche.pdf
+-rwxrwxrwx 1 nagios nagios 1439161 2013 02 18 Banrural Agencia 777 San Marcos.pdf
+-rwxrwxrwx 1 nagios nagios 1475234 2013 02 18 Banrural Agencia 887 Totonicap n.pdf
+-rwxrwxrwx 1 nagios nagios   52573 2010 08 16 Admon_SitioAlterno.JPG
+-rwxrwxrwx 1 nagios nagios   56003 2008 10 27 Admon_zona11.JPG
+-rwxrwxrwx 1 nagios nagios   53605 2008 10 27 Admon_zona1.JPG
+-rwxrwxrwx 1 nagios nagios   30599 2015 01 16 ap_banrural.htm
+-rwxrwxrwx 1 nagios nagios  165217 2011 01 25 Bdr_DCPropuesta2011.JPG
+-rwxrwxrwx 1 nagios nagios 1225773 2011 01 25 Bdr_NetDiagram_200100712-problema.JPG
+-rwxrwxrwx 1 nagios nagios  806860 2009 08 06 Bdr_NetDiagram_200908.jpg
+-rw-r--r-- 1 root   root    545324 2016 04 19 Bdr-NetDiagram-Core-Redundante-201603.JPG
+-rwxrwxrwx 1 nagios nagios  305668 2011 01 25 Bdr-NetDiagram-Fisico-201007.JPG
+-rwxrwxrwx 1 nagios nagios 1104651 2011 01 25 Bdr-NetDiagram-Fisico-201007-probema.JPG
+-rwxrwxrwx 1 nagios nagios  255414 2011 01 25 Bdr_NetDiagram_SitioB_15Sept.JPG
+-rwxrwxrwx 1 nagios nagios  299980 2011 01 25 Bdr_NetDiagram_SitioB_Managers_201009.JPG
+-rwxrwxrwx 1 nagios nagios   18462 2016 04 19 Bdr-tyt.htm
+-rwxrwxrwx 1 nagios nagios  368854 2008 09 24 conf_salidainternet.jpg
+-rwxrwxrwx 1 nagios nagios  357536 2013 05 13 dc-cat6-1.jpg
+-rwxrwxrwx 1 nagios nagios  454459 2013 05 13 dc-cat6-2.jpg
+-rwxrwxrwx 1 nagios nagios  159156 2008 09 24 Diagrama-age099-zona1-2008.jpg
+-rwxrwxrwx 1 nagios nagios 1017677 2008 09 24 Diagrama_AsRural.JPG
+-rwxrwxrwx 1 nagios nagios   50714 2008 09 24 Diagrama_IVR.JPG
+-rwxrwxrwx 1 nagios nagios  183791 2008 09 24 Diagrama_TarjetaCreditoPTC.JPG
+-rwxrwxrwx 1 nagios nagios  132314 2008 09 24 Email1.jpg
+-rwxrwxrwx 1 nagios nagios  228265 2008 09 24 EsquenaRedundancia.JPG
+-rwxrwxrwx 1 nagios nagios    3275 2009 12 04 Internet_CheckPoint_2.html
+-rwxrwxrwx 1 nagios nagios   75946 2010 03 17 Internet_CheckPoint_2.JPG
+-rwxrwxrwx 1 nagios nagios   92234 2008 10 27 Internet_CheckPoint.JPG
+-rwxrwxrwx 1 nagios nagios  101269 2009 05 07 Internet_Clientes_VPN.JPG
+-rwxrwxrwx 1 nagios nagios   32696 2015 07 24 Internet_General.htm
+-rwxrwxrwx 1 nagios nagios  174230 2014 11 20 Internet_General.jpg
+-rwxrwxrwx 1 nagios nagios  106692 2008 10 27 Internet_LinkProof.JPG
+-rwxrwxrwx 1 nagios nagios  132550 2016 04 18 Listado.htm
+drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
+-rwxrwxrwx 1 nagios nagios  671598 2008 09 24 Remesas.JPG
+-rwxrwxrwx 1 nagios nagios  646252 2008 09 24 Remesas_Noip.JPG
+-rwxrwxrwx 1 nagios nagios    2011 2009 12 04 Switch_BayStack1.htm
+-rwxrwxrwx 1 nagios nagios   40617 2009 12 04 Switch_BayStack1.JPG
+-rwxrwxrwx 1 nagios nagios    3257 2016 04 19 Switch_Xtreme_Dist.htm
+-rwxrwxrwx 1 nagios nagios 34009 2015 03 12 Internet_General.htm.20150312
+-rwxrwxrwx 1 nagios nagios  68250 2014 02 18 admon-zona1.jpg
+-rwxrwxrwx 1 nagios nagios 106989 2013 05 14 Agencias-Navega-Final.JPG
+-rwxrwxrwx 1 nagios nagios  82871 2013 05 13 Agencias-Navega.JPG
+-rwxrwxrwx 1 nagios nagios 102071 2013 05 14 Agencias-Navega-New.JPG
+-rwxrwxrwx 1 nagios nagios  81601 2013 05 14 Agencias-Telnor.JPG
+-rwxrwxrwx 1 nagios nagios  98953 2013 05 14 Agencias-Telnor-New.JPG
+-rwxrwxrwx 1 nagios nagios 107670 2013 05 16 Extera-General.JPG
+-rwxrwxrwx 1 nagios nagios 100814 2013 10 31 Gw_Navega-Cambio.JPG
+-rwxrwxrwx 1 nagios nagios 198656 2014 01 09 Internet-CheckPoint-New2.JPG
+-rwxrwxrwx 1 nagios nagios 151150 2014 01 09 Internet-CheckPoint-New.JPG
+-rwxrwxrwx 1 nagios nagios  52928 2013 05 14 Internet-Navega.JPG
+-rwxrwxrwx 1 nagios nagios  71317 2013 05 14 Internet-Navega-New.JPG
+-rwxrwxrwx 1 nagios nagios  97201 2013 05 14 Partners-Terceros-Tigo-Todos.JPG
+-rwxrwxrwx 1 nagios nagios 122036 2013 05 14 Partners-Terceros-Tigo-Todos-New.JPG
+-rwxrwxrwx 1 nagios nagios  2556 2014 11 12 admon-gw-branches1.html
+-rwxrwxrwx 1 nagios nagios  2567 2014 11 12 admon-gw-branches.html
+-rwxrwxrwx 1 nagios nagios  1463 2016 02 18 admon-gw-torre.html
+-rwxrwxrwx 1 nagios nagios  2737 2014 12 24 admon-gw-zona11.html
+-rwxrwxrwx 1 nagios nagios  2124 2014 10 14 admon-gw-zona4.html
+-rwxrwxrwx 1 nagios nagios  4503 2015 08 28 admon-wf-age33.html
+-rwxrwxrwx 1 nagios nagios  5365 2015 07 21 admon-wf-torre_060815.html
+-rwxrwxrwx 1 nagios nagios  3098 2015 04 20 admon-wf-torre__.html
+-rwxrwxrwx 1 nagios nagios  6566 2015 08 06 admon-wf-torre.html
+-rwxrwxrwx 1 nagios nagios  2324 2015 07 21 admon-wf-zona11.html
+-rwxrwxrwx 1 nagios nagios  1679 2013 07 10 age-claro.html
+-rwxrwxrwx 1 nagios nagios  1417 2013 07 10 age-columbus.html
+-rwxrwxrwx 1 nagios nagios  1987 2013 11 13 age-gw-agencias.html
+-rwxrwxrwx 1 nagios nagios  1898 2013 10 28 age-gw-agencias-sitio-alterno.html
+-rwxrwxrwx 1 nagios nagios   944 2014 10 14 age-muni-gualan.html
+-rwxrwxrwx 1 nagios nagios  2285 2013 07 10 age-telnor.html
+-rwxrwxrwx 1 nagios nagios  1553 2013 11 05 age-tigo.html
+-rwxrwxrwx 1 nagios nagios 88344 2014 05 02 Anillo-Zona1-4.JPG
+-rwxrwxrwx 1 nagios nagios  1911 2016 04 25 dc-anillo-fibra-edificios.html
+-rwxr-xr-x 1 root   root     185 2016 04 25 dc-anillo-fibra-edificios.html-orig
+-rwxrwxrwx 1 nagios nagios  2097 2014 08 05 dc-ascenlinkBK
+-rwxrwxrwx 1 nagios nagios  2293 2014 08 26 dc-ascenlink.html
+-rwxrwxrwx 1 nagios nagios  2188 2013 10 18 dc-netscaler.html
+-rwxrwxrwx 1 nagios nagios  2113 2014 08 05 dc-proxy.html
+-rwxrwxrwx 1 nagios nagios    87 2015 11 04 dc-seguridad-age115.html
+-rwxrwxrwx 1 nagios nagios  1493 2016 03 08 Diagrama_Interconexion.html
+-rwxrwxrwx 1 nagios nagios 11723 2014 06 17 Display.pdf
+drwxrwxrwx 3 nagios nagios  4096 2016 04 26 fuentes
+drwxrwxrwx 2 nagios nagios  4096 2016 04 28 images
+-rwxrwxrwx 1 nagios nagios   629 2014 08 05 index.html
+-rwxrwxrwx 1 nagios nagios   111 2015 06 15 InterconexionAlliedGlobal.html
+-rwxrwxrwx 1 nagios nagios   100 2015 11 19 InterconexionASR.html
+-rwxrwxrwx 1 nagios nagios    89 2015 07 21 InterconexionEMC.html
+-rwxrwxrwx 1 nagios nagios   126 2015 10 30 internet-ckeckpoint01.html
+-rwxrwxrwx 1 nagios nagios   126 2015 10 30 internet-ckeckpoint02.html
+-rwxrwxrwx 1 nagios nagios   126 2015 10 30 internet-ckeckpoint03.html
+-rwxrwxrwx 1 nagios nagios  9156 2016 04 28 Left.html
+-rwxrwxrwx 1 nagios nagios   401 2013 07 10 menu.html
+-rwxrwxrwx 1 nagios nagios   115 2014 07 31 socios-ciag.html
+-rwxrwxrwx 1 nagios nagios   123 2014 07 31 socios-cyberseg.htm
+-rwxrwxrwx 1 nagios nagios   942 2014 11 03 socios-dmz-gobierno.html
+-rwxrwxrwx 1 nagios nagios  1029 2013 12 16 socios-dmz-servicios.html
+-rwxrwxrwx 1 nagios nagios   949 2013 11 22 socios-eventoscatolicos.html
+-rwxrwxrwx 1 nagios nagios  1993 2014 09 11 socios-gw-socios.html
+-rwxrwxrwx 1 nagios nagios   956 2014 11 13 socios-igss.html
+-rwxrwxrwx 1 nagios nagios   941 2015 01 07 socios-intecap.html
+-rwxrwxrwx 1 nagios nagios   934 2014 09 11 socios-migracion.html
+-rwxrwxrwx 1 nagios nagios   947 2014 10 16 socios-mingob.html
+-rwxrwxrwx 1 nagios nagios   936 2014 10 14 socios-oj.html
+-rwxrwxrwx 1 nagios nagios  1624 2014 09 11 socios-ptc.html
+-rwxrwxrwx 1 nagios nagios   951 2013 12 16 socios-registromercantil.html
+-rwxrwxrwx 1 nagios nagios   926 2013 08 05 socios-renap.html
+-rwxrwxrwx 1 nagios nagios  1006 2013 07 25 socios-sascim.html
+-rwxrwxrwx 1 nagios nagios  1016 2013 07 25 socios-sat.html
+-rwxrwxrwx 1 nagios nagios  2279 2015 03 13 socios-sib-8nivel.html
+-rwxrwxrwx 1 nagios nagios  1449 2015 07 03 socios-sib-nat.html
+-rwxrwxrwx 1 nagios nagios  1714 2013 07 10 socios-terceros-tigo.html
+-rwxrwxrwx 1 nagios nagios  5621 2016 03 30 socios-tyt.html
+-rwxrwxrwx 1 nagios nagios   123 2014 09 12 socios-widefense.html
+-rwxrwxrwx 1 nagios nagios  1699 2016 03 08 switches_distribucionz09.html
+-rwxrwxrwx 1 nagios nagios   483 2016 02 12 Ubicacion-AP.html
+-rwxrwxrwx 1 nagios nagios   113 2015 10 30 www-cp01.html
+-rwxrwxrwx 1 nagios nagios   113 2015 10 30 www-cp02.html
+-rwxrwxrwx 1 nagios nagios   113 2015 10 30 www-cp03.html
+-rwxrwxrwx 1 nagios nagios   114 2016 04 28 www-cp04.html
+-rw-r--r-- 1 root    root   1201398 2016 02 18 admon-gw-torre.edg
+-rwxrwxrwx 1 nagios  nagios 1219480 2014 10 14 admon-gw-zona4.edg
+-rwxrwxrwx 1 nagios  nagios 1246415 2014 10 15 age-gw-agencias.edg
+-rwxrwxrwx 1 nagios  nagios 1217797 2015 03 16 age-gw-sitio-alterno.edg
+-rwxrwxrwx 1 nagios  nagios 1211361 2014 10 14 age-muni-gualan.edg
+-rwxrwxrwx 1 nagios  nagios 1310410 2015 12 17 bdr-global.edg
+-rw-r--r-- 1 root    root   1210776 2016 02 16 dc-anillo-edificios1.edg
+-rw-r--r-- 1 root    root   1220517 2016 02 16 dc-anillo-switches.edg
+-rw-r--r-- 1 telecom admsis 1222793 2016 04 22 dc-netscaler.edg
+drwxrwxrwx 2 nagios  nagios    4096 2016 04 26 old
+-rwxrwxrwx 1 nagios  nagios 1203264 2014 11 03 socios-dmz-gobierno.edg
+-rwxrwxrwx 1 nagios  nagios 1223499 2014 09 11 socios-gw.edg
+-rwxrwxrwx 1 nagios  nagios 1222501 2014 11 13 socios-igss.edg
+-rwxrwxrwx 1 nagios  nagios 1204629 2014 10 14 socios-intecap.edg
+-rwxrwxrwx 1 nagios  nagios 1207535 2014 09 11 socios-migracion.edg
+-rwxrwxrwx 1 nagios  nagios 1206320 2014 10 16 socios-mingob.edg
+-rwxrwxrwx 1 nagios  nagios 1213916 2014 10 14 socios-oj.edg
+-rwxrwxrwx 1 nagios  nagios 1222937 2014 09 11 socios-ptc.edg
+-rwxrwxrwx 1 nagios  nagios 1213040 2015 03 13 socios-sib-8nivel.edg
+-rwxrwxrwx 1 nagios  nagios 1210036 2015 07 03 socios-sib-nat.edg
+-rw-r--r-- 1 telecom admsis 1229282 2016 03 30 socios-tyt.edg
+-rwxrwxrwx 1 nagios nagios 1212307 2013 10 28 age-gw-sitio-alterno.edg-20150316
+-rwxrwxrwx 1 nagios nagios 1206693 2014 10 14 dc-anillo-edificios1.edg-20160216
+-rwxrwxrwx 1 nagios nagios 1210374 2015 03 13 dc-netscaler.edg
+-rwxrwxrwx 1 nagios nagios 1210860 2014 10 14 socios-sib-8nivel.edg-20150313
+-rwxrwxrwx 1 nagios nagios  128932 2013 11 15 admon-gw-branches1.jpg
+-rwxrwxrwx 1 nagios nagios  179593 2014 11 12 admon-gw-branches.jpg
+-rw-r--r-- 1 nagios nagios   55421 2016 02 18 admon-gw-torre.jpg
+-rwxrwxrwx 1 nagios nagios  113574 2014 12 24 admon-gw-zona11.jpg
+-rwxrwxrwx 1 nagios nagios  108773 2014 10 14 admon-gw-zona4.jpg
+-rwxrwxrwx 1 nagios nagios   84822 2015 08 28 admon-wf-age33.jpg
+-rwxrwxrwx 1 nagios nagios  136603 2015 02 26 admon-wf-torre.jpg
+-rwxrwxrwx 1 nagios nagios   96108 2015 02 26 admon-wf-zona11.jpg
+-rwxrwxrwx 1 nagios nagios   97088 2013 06 11 age-cesa.jpg
+-rwxrwxrwx 1 nagios nagios   79421 2013 06 12 age-claro.jpg
+-rwxrwxrwx 1 nagios nagios   64376 2013 06 12 age-columbus.jpg
+-rwxrwxrwx 1 nagios nagios  144779 2014 10 15 age-gw-agencias.jpg
+-rwxrwxrwx 1 nagios nagios  110545 2015 03 16 age-gw-agencias-sitio-alterno.jpg
+-rwxrwxrwx 1 nagios nagios  112235 2014 10 14 age-muni-gualan.jpg
+-rwxrwxrwx 1 nagios nagios   96671 2013 06 11 age-telnor.jpg
+-rwxrwxrwx 1 nagios nagios   91775 2013 10 31 age-tigo.jpg
+-rwxrwxrwx 1 nagios nagios   74696 2014 04 15 ASCENLINK_DC_Z11.JPG
+-rwxrwxrwx 1 nagios nagios   74615 2014 04 15 ASCENLINK_DC_Z9.JPG
+-rw-r--r-- 1 nagios nagios  450923 2015 12 17 bdr-global.jpg
+-rw-r--r-- 1 nagios nagios   85425 2016 02 16 dc-anillo-edificios1.jpg
+-rwxrwxrwx 1 nagios nagios  102933 2013 12 16 dc-anillo-fibra-wireless2.jpg
+-rwxrwxrwx 1 nagios nagios   99211 2013 12 16 dc-anillo-fibra-wireless.jpg
+-rw-r--r-- 1 nagios nagios  113015 2016 02 16 dc-anillo-switches.jpg
+-rw-r--r-- 1 nagios nagios  102620 2016 04 22 dc-netscaler.jpg
+-rwxrwxrwx 1 nagios nagios  294106 2015 11 03 dc-seg-age115.jpg
+-rwxrwxrwx 1 nagios nagios   73359 2015 06 15 InterconexionAlliedGlobal.JPG
+-rwxrwxrwx 1 nagios nagios  365342 2015 11 19 InterconexionASR.jpg
+-rwxrwxrwx 1 nagios nagios  325962 2016 02 24 Interconexion_Distribucion.jpg
+-rwxrwxrwx 1 nagios nagios  333407 2016 02 24 Interconexion_Distribucion_Z9.jpg
+-rwxrwxrwx 1 nagios nagios  118724 2015 07 21 InterconexionEMC.JPG
+-rwxrwxrwx 1 nagios nagios    8261 2013 06 11 logo.jpg
+-rwxrwxrwx 1 nagios nagios   93206 2014 07 31 socios-ciag.jpg
+-rwxrwxrwx 1 nagios nagios  203997 2016 02 29 socios-cyberseg.jpg
+-rwxrwxrwx 1 nagios nagios   92520 2014 11 03 socios-dmz-gobierno.jpg
+-rwxrwxrwx 1 nagios nagios  116898 2013 11 22 socios-eventoscatolicos.jpg
+-rwxrwxrwx 1 nagios nagios  105542 2014 09 11 socios-gw-socios.jpg
+-rwxrwxrwx 1 nagios nagios  119442 2014 11 13 socios-igss.jpg
+-rwxrwxrwx 1 nagios nagios  102116 2015 01 07 socios-intecap.jpg
+-rwxrwxrwx 1 nagios nagios  108078 2014 09 11 socios-migracion.jpg
+-rwxrwxrwx 1 nagios nagios  100811 2014 10 16 socios-mingob.jpg
+-rwxrwxrwx 1 nagios nagios  141136 2014 10 14 socios-oj.jpg
+-rwxrwxrwx 1 nagios nagios  102140 2014 09 11 socios-ptc.jpg
+-rwxrwxrwx 1 nagios nagios  118771 2013 12 16 socios-registromercantil.jpg
+-rwxrwxrwx 1 nagios nagios  106837 2013 08 05 socios-renap.jpg
+-rwxrwxrwx 1 nagios nagios   77383 2013 07 25 socios-sascim2.jpg
+-rwxrwxrwx 1 nagios nagios  116753 2013 07 25 socios-sascim.jpg
+-rwxrwxrwx 1 nagios nagios  112205 2013 07 25 socios-sat-primario.jpg
+-rwxrwxrwx 1 nagios nagios  108584 2013 07 25 socios-sat-secundario.jpg
+-rwxrwxrwx 1 nagios nagios  114143 2015 03 13 socios-sib-8nivel.jpg
+-rwxrwxrwx 1 nagios nagios   78706 2015 07 03 socios-sib-nat.jpg
+-rwxrwxrwx 1 nagios nagios   81762 2013 06 17 socios-terceros-tigo.jpg
+-rw-r--r-- 1 nagios nagios  104781 2016 03 30 socios-tyt.jpg
+-rwxrwxrwx 1 nagios nagios   89126 2014 09 12 socios-widefense.jpg
+-rwxrwxrwx 1 nagios nagios   72877 2014 08 05 srv_proxy_adm.JPG
+-rwxrwxrwx 1 nagios nagios 1280334 2016 02 12 Ubicacion-AP.jpg
+-rwxrwxrwx 1 nagios nagios   94694 2015 11 27 www-cp01.jpg
+-rwxrwxrwx 1 nagios nagios   80171 2015 11 27 www-cp02.jpg
+-rwxrwxrwx 1 nagios nagios   80386 2015 11 27 www-cp03.jpg
+-rwxrwxrwx 1 nagios nagios  303752 2016 04 28 www-cp04.jpg
+-rwxrwxrwx 1 nagios nagios  456890 2008 01 01 agencia.edg
+-rwxrwxrwx 1 nagios nagios  492019 2008 01 01 BanruralSimple.edg
+-rwxrwxrwx 1 nagios nagios  531249 2008 10 27 Bdr_NetDiagram_200808.edg
+-rwxrwxrwx 1 nagios nagios  534488 2009 08 06 Bdr_NetDiagram_200908.edg
+-rwxrwxrwx 1 nagios nagios 1241090 2008 01 01 Bdr_Online.edg
+-rwxrwxrwx 1 nagios nagios  505280 2008 01 01 Big_diagrama.edg
+-rwxrwxrwx 1 nagios nagios 1218920 2008 01 01 Conexion_Banrural_Renap_Torre.edg
+-rwxrwxrwx 1 nagios nagios  531809 2008 10 27 Conexion_BCG_Swift.edg
+-rwxrwxrwx 1 nagios nagios  443404 2008 01 01 Conexion_GBM.edg
+-rwxrwxrwx 1 nagios nagios  488143 2008 01 01 Conexion_IGSS.edg
+-rwxrwxrwx 1 nagios nagios  469434 2008 01 01 Conexion_Multi_5b.edg
+-rwxrwxrwx 1 nagios nagios 1219065 2008 01 01 Conexion_SIAF.edg
+-rwxrwxrwx 1 nagios nagios  450976 2008 01 01 Conf_ClusterSun.edg
+-rwxrwxrwx 1 nagios nagios 1151844 2008 01 01 Conf_Email_BDR.edg
+-rwxrwxrwx 1 nagios nagios 1200007 2008 01 01 conf iggs.edg
+-rwxrwxrwx 1 nagios nagios 1242613 2009 04 16 Conf_SalidaInternetNow.edg
+-rwxrwxrwx 1 nagios nagios 1204613 2008 01 01 Conf_seguridad_interna.edg
+-rwxrwxrwx 1 nagios nagios 1219225 2008 01 01 Conf_Telgua.edg
+-rwxrwxrwx 1 nagios nagios 1227765 2008 01 01 Conf_Uniteller.edg
+-rwxrwxrwx 1 nagios nagios 1200204 2008 01 01 Diag_PTC.edg
+-rwxrwxrwx 1 nagios nagios 1207978 2008 10 27 DIAGRAMA_ACH.edg
+-rwxrwxrwx 1 nagios nagios 1264304 2008 01 01 Diagrama_AsRural.edg
+-rwxrwxrwx 1 nagios nagios  485166 2008 01 01 diagrama.edg
+-rwxrwxrwx 1 nagios nagios 1205165 2008 01 01 Diagrama_IVR.edg
+-rwxrwxrwx 1 nagios nagios 1228592 2008 01 01 DiagramaMqSeries.edg
+-rwxrwxrwx 1 nagios nagios 1215279 2008 01 01 Diagrama_NavegaRedundancia.edg
+-rwxrwxrwx 1 nagios nagios 1204955 2008 01 01 diagramaRedytec.edg
+-rwxrwxrwx 1 nagios nagios  455523 2008 01 01 diagramas.edg
+-rwxrwxrwx 1 nagios nagios  462929 2008 01 01 Diagrama_TarjetaCreditoPTC.edg
+-rwxrwxrwx 1 nagios nagios  454224 2008 01 01 Digrama2.edg
+-rwxrwxrwx 1 nagios nagios   56754 2008 01 01 DigramadeFlujoBDRcolas.edg
+-rwxrwxrwx 1 nagios nagios 1246471 2008 01 01 Digrama_Isercosa_bdr.edg
+-rwxrwxrwx 1 nagios nagios 1205593 2008 01 01 DigramaRecibaOptional.edg
+-rwxrwxrwx 1 nagios nagios 1272488 2008 01 01 EdificioB_Reorganizacion.edg
+-rwxrwxrwx 1 nagios nagios  489700 2008 01 01 Email1.edg
+-rwxrwxrwx 1 nagios nagios  526434 2008 01 01 EsquemaEtapa2_UF.edg
+-rwxrwxrwx 1 nagios nagios 1210589 2008 01 01 EsquemaZona1.edg
+-rwxrwxrwx 1 nagios nagios 1240827 2008 01 01 EsquenaRedundancia.edg
+-rwxrwxrwx 1 nagios nagios   48747 2008 01 01 FlujoBDRcolas_Remoto.edg
+-rwxrwxrwx 1 nagios nagios  451274 2008 01 01 MqSockDiagram.edg
+-rwxrwxrwx 1 nagios nagios 1261797 2008 01 01 MultiCredit5bBanrural.edg
+-rwxrwxrwx 1 nagios nagios 1221282 2008 01 01 MuniGuatemala.edg
+drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
+-rwxrwxrwx 1 nagios nagios 1200350 2008 01 01 Partners-Oriflame.edg
+-rwxrwxrwx 1 nagios nagios 1200114 2008 01 01 Partners-Paynexus.edg
+-rwxrwxrwx 1 nagios nagios 1199924 2008 01 01 Partners-Renap-WebService.edg
+-rwxrwxrwx 1 nagios nagios 1199836 2008 01 01 Partners-USAC.edg
+-rwxrwxrwx 1 nagios nagios   44727 2008 01 01 Procs_Nueva_Agencia.edg
+-rwxrwxrwx 1 nagios nagios 1200362 2008 01 01 RedyTec.edg
+-rwxrwxrwx 1 nagios nagios 1215217 2008 01 01 ReferenciasSIB.edg
+-rwxrwxrwx 1 nagios nagios 1228075 2008 01 01 Remesas.edg
+-rwxrwxrwx 1 nagios nagios 1195479 2008 10 27 Socio_OJ.edg
+-rwxrwxrwx 1 nagios nagios 1216052 2008 01 01 Socio_UnionFenosa.edg
+-rwxrwxrwx 1 nagios nagios 1193422 2008 10 27 VPN_Sigue.edg
+-rwxrwxrwx 1 nagios nagios  485548 2008 01 01 WebDiagram.edg
+-rwxrwxrwx 1 nagios nagios 1241430 2008 08 26 Conf_SalidaInternetNow_20090416.edg
+-rwxrwxrwx 1 nagios nagios 1235499 2008 01 01 Conf_SalidaInternetNow_26082008.edg
+-rwxrwxrwx 1 nagios nagios 69132 2011 01 27 Check_Point.jpg
+-rwxrwxrwx 1 nagios nagios 15649 2010 02 15 conexion_admon_z1.htm
+-rwxrwxrwx 1 nagios nagios 14735 2010 02 16 conexion_fw_renap.htm
+-rwxrwxrwx 1 nagios nagios   288 2010 03 18 Extreme1.htm
+-rwxrwxrwx 1 nagios nagios   244 2010 03 03 Extreme2.htm
+-rwxrwxrwx 1 nagios nagios 81785 2011 01 27 GW_Agencias.jpg
+-rwxrwxrwx 1 nagios nagios 69280 2008 10 27 Gw_Cesa.JPG
+-rwxrwxrwx 1 nagios nagios 80719 2009 01 16 Gw_Navega.JPG
+-rwxrwxrwx 1 nagios nagios 65476 2013 06 05 GW_Socios-New.JPG
+-rwxrwxrwx 1 nagios nagios 76579 2009 01 16 Gw_Telered.JPG
+-rwxrwxrwx 1 nagios nagios  3542 2012 03 06 Gw_TorreBanrural.html
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 images
+-rwxrwxrwx 1 nagios nagios  8882 2010 02 02 muni_mixco.htm
+-rwxrwxrwx 1 nagios nagios  8242 2010 02 15 muni_villa_canales.htm
+-rwxrwxrwx 1 nagios nagios  8155 2010 02 02 portuaria_quetzal.htm
+-rwxrwxrwx 1 nagios nagios 13579 2011 06 17 switches_torre.htm
+-rwxrwxrwx 1 nagios nagios 13818 2010 02 02 tcredito_ptc.htm
+-rwxrwxrwx 1 nagios nagios 27365 2010 02 15 torre_bdr.htm
+-rwxrwxrwx 1 nagios nagios 349526 2008 09 24 Conexion_Banrural_Renap_Torre.JPG
+-rwxrwxrwx 1 nagios nagios 228624 2008 09 24 Conexion_Banrural_Tower.JPG
+-rwxrwxrwx 1 nagios nagios  92120 2011 06 17 diagrama_switches_torre.jpg
+-rwxrwxrwx 1 nagios nagios  89788 2012 03 06 Gw_TorreBanrural.JPG
+-rwxrwxrwx 1 nagios nagios  74070 2010 02 15 gw_torre.jpg
+-rwxrwxrwx 1 nagios nagios 170204 2010 02 15 net_admon_zona1.jpg
+-rwxrwxrwx 1 nagios nagios 174722 2010 02 02 net_muni_mixco.jpg
+-rwxrwxrwx 1 nagios nagios 195803 2010 02 02 net_mvc.jpg
+-rwxrwxrwx 1 nagios nagios 171117 2010 02 02 net_portuaria_quetzal.jpg
+-rwxrwxrwx 1 nagios nagios 235202 2010 02 02 net_ptc_tc.jpg
+-rwxrwxrwx 1 nagios nagios  84284 2011 05 20 Bdr-tyt.jpg
+-rwxrwxrwx 1 nagios nagios  34415 2006 11 20 ci_muni_guate_app.jpg
+-rwxrwxrwx 1 nagios nagios  41398 2006 11 20 ci_muni_guate_net.jpg
+-rwxrwxrwx 1 nagios nagios 368854 2008 02 15 conf_salidainternet.jpg
+-rwxrwxrwx 1 nagios nagios 161039 2010 03 18 Extreme1.jpg
+-rwxrwxrwx 1 nagios nagios  83162 2010 03 03 Extreme2.JPG
+-rwxrwxrwx 1 nagios nagios  72961 2010 01 04 GW_Branch.JPG
+-rwxrwxrwx 1 nagios nagios 365342 2015 09 16 InterconexionASR.JPG
+-rwxrwxrwx 1 nagios nagios 118723 2015 07 21 InterconexionEMC.JPG
+-rwxrwxrwx 1 nagios nagios 174230 2009 04 16 Internet_General.jpg
+-rwxrwxrwx 1 nagios nagios  64679 2011 08 23 Switch_Xtreme_Dist.JPG
+drwxrwxrwx 5 nagios nagios 4096 2015 11 16 Anexo Zona 9
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 1
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 2
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 3
+-rwxrwxrwx 1 nagios nagios 1224457 2007 12 10 cobros_1N.jpg
+-rwxrwxrwx 1 nagios nagios  812895 2007 11 16 conta_2N.jpg
+-rwxrwxrwx 1 nagios nagios  971940 2007 11 16 cca_depo.jpg
+-rwxrwxrwx 1 nagios nagios 1047705 2007 12 10 Fideicomisos_2N.jpg
+-rwxrwxrwx 1 nagios nagios 1040016 2007 12 10 UCC_3N.jpg
+-rwxrwxrwx 1 nagios nagios 969283 2007 11 16 cart_2doN.jpg
+-rwxrwxrwx 1 nagios nagios 646020 2007 11 16 depo_1erN.jpg
+-rwxrwxrwx 1 nagios nagios 767602 2007 11 16 Int_3erN.jpg
+-rwxrwxrwx 1 nagios  nagios  1612 2013 04 16 configuracion-switch.html
+drwxr-xr-x 5 telecom admsis  4096 2016 04 20 Documentacion
+drwxr-xr-x 4 telecom admsis  4096 2016 04 20 NotasResponsabilidad
+drwxr-xr-x 3 telecom admsis  4096 2016 04 20 Software
+-rwxrwxrwx 1 nagios  nagios 25901 2013 04 16 telefonos_consulta.php
+drwxr-xr-x 8 telecom admsis 4096 2016 04 20 BaseConocimientos
+drwxr-xr-x 2 telecom admsis 4096 2016 04 21 Procedimientos
+drwxr-xr-x 3 telecom admsis 4096 2016 04 27 Troubleshooting
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 CallAccounting
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 ContactCenter
+drwxr-xr-x 3 telecom admsis 4096 2016 04 20 CoreInstalationAndMaintenance
+drwxr-xr-x 3 telecom admsis 4096 2016 04 20 MAS
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Oaisys
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 UCA
+-rw-r--r-- 1 telecom admsis 18470562 2016 04 20 CallAccounting_ReportsGuide.pdf
+-rw-r--r-- 1 telecom admsis  7208971 2016 04 20 CallAccounting_UserGuide.pdf
+-rw-r--r-- 1 telecom admsis 50160556 2016 04 20 ContactCenterSolutions_ReportsGuide.pdf
+-rw-r--r-- 1 telecom admsis   127689 2016 04 20 Capacitacion-CCM-201504.pdf
+-rw-r--r-- 1 telecom admsis   253594 2016 04 20 CCS_PortDiagram.pdf
+-rw-r--r-- 1 telecom admsis    22293 2016 04 20 CCS_PortMapping.xlsx
+-rw-r--r-- 1 telecom admsis  6593771 2016 04 20 ContactCenterSolutions_ReportsGuide.pdf
+-rw-r--r-- 1 telecom admsis  2791560 2016 04 20 Contact Center Solutions Training spv.ppsx
+-rw-r--r-- 1 telecom admsis  3591468 2016 04 20 ContactCenterSolutions_UserGuide.eses.pdf
+-rw-r--r-- 1 telecom admsis 14449661 2016 04 20 ContactCenterSolutions_UserGuide.pdf
+-rw-r--r-- 1 telecom admsis  16102417 2016 04 20 3300 Primer.zip
+-rw-r--r-- 1 telecom admsis    496636 2016 04 20 Best_Practices_For_Troubleshooting.pdf
+-rw-r--r-- 1 telecom admsis  41017344 2016 04 20 MCD 6.0 SP1 Documentation Set.exe
+-rw-r--r-- 1 telecom admsis 152879104 2016 04 20 MiCollab Rls 6.0 Docs.exe
+-rw-r--r-- 1 telecom admsis   2204636 2016 04 20 Mitel_Connect_External_Manual.pdf
+-rw-r--r-- 1 telecom admsis  67665920 2016 04 20 MiVB 7.0SP1 Documentation Set.exe
+-rw-r--r-- 1 telecom admsis   3215131 2016 04 20 MiVoice Business Core_tech update_R7_0 iss_1.pdf
+-rw-r--r-- 1 telecom admsis   2127230 2016 04 20 MiVoice Business Core_tech update_R7_0 iss_2.pdf
+-rw-r--r-- 1 telecom admsis   2125847 2016 04 20 MiVoice Business Core_tech update_R7_0 iss_3.pdf
+-rw-r--r-- 1 telecom admsis   1163129 2016 04 20 MiVoice Business Core_tech update_R7.1 iss1.pdf
+-rw-r--r-- 1 telecom admsis   1341375 2016 04 20 MiVoice Business Core_tech update_R7.2 iss 1.pdf
+-rw-r--r-- 1 telecom admsis  26488832 2016 04 20 NPUM_7.0SP1_Docs.exe
+drwxr-xr-x 2 telecom admsis      4096 2016 04 20 Training MCD
+-rw-r--r-- 1 telecom admsis 155262689 2016 04 20 Video_editar audio y modificar hold en mitel 3300.wmv
+-rw-r--r-- 1 telecom admsis  18030903 2016 04 20 Video_programacion_planta_festivo.wmv
+-rw-r--r-- 1 telecom admsis  95358592 2016 04 20 5550IPConsole_4.2.1.9.exe
+-rw-r--r-- 1 telecom admsis    182451 2016 04 20 ars planner LETTER one page no top box.pdf
+-rw-r--r-- 1 telecom admsis      3905 2016 04 20 FACsForClass.csv
+-rw-r--r-- 1 telecom admsis     23040 2016 04 20 Gotchas for tech laptops and PCs.doc
+-rw-r--r-- 1 telecom admsis  41017344 2016 04 20 MCD 6.0 SP1 Documentation Set.exe
+-rw-r--r-- 1 telecom admsis  14899074 2016 04 20 MCD Basic I&M_6.0_2.pdf
+-rw-r--r-- 1 telecom admsis 110828250 2016 04 20 MCD Basic I&M Lab Workbook_6.0_1.pdf
+-rw-r--r-- 1 telecom admsis 969053288 2016 04 20 MCD_Installation_12.0.2.23.exe
+-rw-r--r-- 1 telecom admsis  56246392 2016 04 20 MCDSoftwareInstallerSetup_12.0.2.1.exe
+-rw-r--r-- 1 telecom admsis      3412 2016 04 20 MitelTraining_09122013.txt
+-rw-r--r-- 1 telecom admsis   4911916 2016 04 20 MOHFile.wav
+-rw-r--r-- 1 telecom admsis    457728 2016 04 20 NEWPRIHelper4.ppt
+-rw-r--r-- 1 telecom admsis     61952 2016 04 20 PLID.ppt
+-rw-r--r-- 1 telecom admsis   1521152 2016 04 20 ver6BasicMesa4WithAppRecs-And5320s.ppt
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Traininig MAS by Columbus
+-rw-r--r-- 1 telecom admsis 12646647 2016 04 20 zoom_0.mp4
+-rw-r--r-- 1 telecom admsis 15342274 2016 04 20 zoom_1.mp4
+-rw-r--r-- 1 telecom admsis 34272137 2016 04 20 zoom_2.mp4
+-rw-r--r-- 1 telecom admsis 39457538 2016 04 20 zoom_3.mp4
+-rw-r--r-- 1 telecom admsis 3792225 2016 04 20 Manual_del_usuario_de_OAISYS_Management_Studio.pdf
+-rw-r--r-- 1 telecom admsis 8894638 2016 04 20 UCA_Admin_Guide_6.0.pdf
+-rw-r--r-- 1 telecom admsis 2780885 2016 04 20 Unified Communicator Advanced Quick Reference Guide - UCA_QRG.pdf
+-rw-r--r-- 1 telecom admsis 1099402 2016 04 21 20140107-Manual de ingreso de solicitudes por usuarios mesa de ayuda.pdf
+-rw-r--r-- 1 telecom admsis  256150 2016 04 20 Proc_Entrega_Equipo_IP.pdf
+-rw-r--r-- 1 telecom admsis 1810669 2016 04 20 Documento Técnico Implementación Mitel.pdf
+drwxr-xr-x 2 telecom admsis    4096 2016 04 27 InterconexionAlliedGlobal_files
+-rw-r--r-- 1 telecom admsis   19677 2016 04 27 InterconexionAlliedGlobal.htm
+-rw-r--r-- 1 telecom admsis  17562 2016 04 27 08630AC0-D3A0-43BE-8E3E-D2407D958C0F.png
+-rw-r--r-- 1 telecom admsis  32825 2016 04 27 23A36E60-E7F1-4B61-849C-20C8DD00F6BA.png
+-rw-r--r-- 1 telecom admsis 193332 2016 04 27 3C7B2ED2-3EAA-614A-CC3D-505B1829734E.odttf
+-rw-r--r-- 1 telecom admsis  12776 2016 04 27 41295110-8DCE-49FC-8685-5D5A6278BDD9.jpg
+-rw-r--r-- 1 telecom admsis  98464 2016 04 27 67FEFCE8-0DF1-4EDA-BE79-91FCA640FDE9.png
+-rw-r--r-- 1 telecom admsis   5052 2016 04 27 7EA4FD1C-CBF4-490F-A6D8-1AE698FC7C30.jpg
+-rw-r--r-- 1 telecom admsis   5052 2016 04 27 947F8225-3F73-4442-A94F-F5341BCBB6F9.jpg
+-rw-r--r-- 1 telecom admsis  12776 2016 04 27 970EF9D4-2245-4796-BD79-41EEF2D42C7F.jpg
+-rw-r--r-- 1 telecom admsis   1499 2016 04 27 arrow.png
+-rw-r--r-- 1 telecom admsis  12565 2016 04 27 BEA6669F-E835-4459-920A-7DBBBB8B9CC7.png
+-rw-r--r-- 1 telecom admsis  80775 2016 04 27 data.xml
+-rw-r--r-- 1 telecom admsis  22457 2016 04 27 DEB3CF82-DF25-4AF8-8099-9D2A1B9B1B62.png
+-rw-r--r-- 1 telecom admsis   2058 2016 04 27 filelist.xml
+-rw-r--r-- 1 telecom admsis  13968 2016 04 27 find.js
+-rw-r--r-- 1 telecom admsis  16997 2016 04 27 frameset.js
+-rw-r--r-- 1 telecom admsis    263 2016 04 27 fullpage.gif
+-rw-r--r-- 1 telecom admsis    474 2016 04 27 go.gif
+-rw-r--r-- 1 telecom admsis   1033 2016 04 27 hatch7_0.png
+-rw-r--r-- 1 telecom admsis    837 2016 04 27 keys.js
+-rw-r--r-- 1 telecom admsis     66 2016 04 27 maximize.gif
+-rw-r--r-- 1 telecom admsis     65 2016 04 27 minimize.gif
+-rw-r--r-- 1 telecom admsis     63 2016 04 27 minus.gif
+-rw-r--r-- 1 telecom admsis    391 2016 04 27 panminus.gif
+-rw-r--r-- 1 telecom admsis    401 2016 04 27 panplus.gif
+-rw-r--r-- 1 telecom admsis     64 2016 04 27 plus.gif
+-rw-r--r-- 1 telecom admsis  48917 2016 04 27 png_1.htm
+-rw-r--r-- 1 telecom admsis   2069 2016 04 27 png_1.js
+-rw-r--r-- 1 telecom admsis  67603 2016 04 27 png_1.png
+-rw-r--r-- 1 telecom admsis   5521 2016 04 27 png_2.htm
+-rw-r--r-- 1 telecom admsis  72938 2016 04 27 png_2.png
+-rw-r--r-- 1 telecom admsis   3890 2016 04 27 png_3.htm
+-rw-r--r-- 1 telecom admsis  37632 2016 04 27 png_3.png
+-rw-r--r-- 1 telecom admsis   3895 2016 04 27 png_4.htm
+-rw-r--r-- 1 telecom admsis  52930 2016 04 27 png_4.png
+-rw-r--r-- 1 telecom admsis  28877 2016 04 27 Silverlight.js
+-rw-r--r-- 1 telecom admsis   4516 2016 04 27 Silverlight.supportedUserAgent.js
+-rw-r--r-- 1 telecom admsis    129 2016 04 27 tick-foc.gif
+-rw-r--r-- 1 telecom admsis     79 2016 04 27 tick-off.gif
+-rw-r--r-- 1 telecom admsis     99 2016 04 27 tick-on.gif
+-rw-r--r-- 1 telecom admsis    110 2016 04 27 toc2.gif
+-rw-r--r-- 1 telecom admsis    108 2016 04 27 toc.gif
+-rw-r--r-- 1 telecom admsis   1099 2016 04 27 toolbar.htm
+-rw-r--r-- 1 telecom admsis   3450 2016 04 27 visio.css
+-rw-r--r-- 1 telecom admsis  18290 2016 04 27 widgets.htm
+-rw-r--r-- 1 telecom admsis   4552 2016 04 27 xaml_1.htm
+-rw-r--r-- 1 telecom admsis  22455 2016 04 27 xaml_1.js
+-rw-r--r-- 1 telecom admsis 355372 2016 04 27 xaml_1.xaml
+-rw-r--r-- 1 telecom admsis   4552 2016 04 27 xaml_2.htm
+-rw-r--r-- 1 telecom admsis 196109 2016 04 27 xaml_2.xaml
+-rw-r--r-- 1 telecom admsis   4551 2016 04 27 xaml_3.htm
+-rw-r--r-- 1 telecom admsis   6640 2016 04 27 xaml_3.xaml
+-rw-r--r-- 1 telecom admsis   4552 2016 04 27 xaml_4.htm
+-rw-r--r-- 1 telecom admsis    564 2016 04 27 xaml_4.xaml
+-rw-r--r-- 1 telecom admsis  24303 2016 04 27 zoom.htm
+drwxr-xr-x 4 telecom admsis 4096 2016 04 20 Administracion
+drwxr-xr-x 4 telecom admsis 4096 2016 04 20 Agencias
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Abril
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 marzo
+-rw-r--r-- 1 telecom admsis 197330 2016 04 20 300326_ Sherlin Quiroa.pdf
+-rw-r--r-- 1 telecom admsis  53481 2016 04 20 300600_ Raquel Jimenez.pdf
+-rw-r--r-- 1 telecom admsis 450015 2016 04 20 301120_Estefany Monroy.pdf
+-rw-r--r-- 1 telecom admsis 643012 2016 04 20 301793_Heather Merida.pdf
+-rw-r--r-- 1 telecom admsis 612897 2016 04 20 301794_Clemente Pet.pdf
+-rw-r--r-- 1 telecom admsis 984380 2016 04 20 302779_Miguel Rios.pdf
+-rw-r--r-- 1 telecom admsis 984380 2016 04 20 302780_Rosa Castillo.pdf
+-rw-r--r-- 1 telecom admsis  89009 2016 04 20 303467_Cristian Josue Chij Amezquita.pdf
+-rw-r--r-- 1 telecom admsis  90609 2016 04 20 303485_Andrea Reyna Elisa Chen Salvatierra.pdf
+-rw-r--r-- 1 telecom admsis 693286 2016 04 20 301390_Daniel Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 778707 2016 04 20 301743_ Yadira Garcia.pdf
+-rw-r--r-- 1 telecom admsis 664271 2016 04 20 301758_Javier Gonzalez.pdf
+-rw-r--r-- 1 telecom admsis 420922 2016 04 20 303002_Astrid Rodas.pdf
+-rw-r--r-- 1 telecom admsis 269842 2016 04 20 303259_Ruth Dias.pdf
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 ABRIL
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 MARZO
+-rw-r--r-- 1 telecom admsis 548645 2016 04 20 300634_ Yadira Castellanos.pdf
+-rw-r--r-- 1 telecom admsis 190255 2016 04 20 Age 442 Ext 44225.pdf
+-rw-r--r-- 1 telecom admsis 453388 2016 04 20 Age56 ext  005612 y 005622.pdf
+-rw-r--r-- 1 telecom admsis 223186944 2016 04 20 ClientComponentPack.msi
+drwxr-xr-x 2 telecom admsis      4096 2016 04 20 Oaisys
+-rw-r--r-- 1 telecom admsis 100798464 2016 04 20 directxpackage.exe
+-rwxrwxrwx 1 nagios nagios 514811 2008 09 24 Bdr_NetDiagram_200808.jpg
+-rwxrwxrwx 1 nagios nagios   9997 2008 07 18 conf_internet.htm
+-rwxrwxrwx 1 nagios nagios 164331 2007 10 29 conf_salidainternet26082008.jpg
+-rwxrwxrwx 1 nagios nagios  11508 2008 08 26 Internet_General.htm_20090416
+-rwxrwxrwx 1 nagios nagios  28287 2012 12 27 Internet_General.htm_20121227
+-rwxrwxrwx 1 nagios nagios  30097 2013 04 11 Internet_General.htm_20130411.html
+-rwxrwxrwx 1 nagios nagios  57195 2009 01 30 Partners-CCLA.JPG
+-rwxrwxrwx 1 nagios nagios 1069192 2008 12 24 dscf1821.jpg
+-rwxrwxrwx 1 nagios nagios 1039089 2008 12 24 dscf1822.jpg
+-rwxrwxrwx 1 nagios nagios 1035053 2008 12 24 dscf1823.jpg
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 2014
+drwxrwxrwx 2 nagios nagios 4096 2016 01 26 2015
+drwxrwxrwx 2 nagios nagios 4096 2016 05 02 2016
+-rwxrwxrwx 1 nagios nagios 417569 2014 03 04 ReporteAgencias-201402.pdf
+-rwxrwxrwx 1 nagios nagios 358166 2014 04 01 ReporteAgencias-201403.pdf
+-rwxrwxrwx 1 nagios nagios  70587 2014 05 02 ReporteAgencias-201404.pdf
+-rwxrwxrwx 1 nagios nagios  84600 2014 06 04 ReporteAgencias-201405.pdf
+-rwxrwxrwx 1 nagios nagios  71013 2014 07 02 ReporteAgencias-201406.pdf
+-rwxrwxrwx 1 nagios nagios  89408 2014 08 01 ReporteAgencias-201407.pdf
+-rwxrwxrwx 1 nagios nagios  77737 2014 09 01 ReporteAgencias-201408.pdf
+-rwxrwxrwx 1 nagios nagios  78474 2014 10 02 ReporteAgencias-201409.pdf
+-rwxrwxrwx 1 nagios nagios  76971 2014 11 03 ReporteAgencias-201410.pdf
+-rwxrwxrwx 1 nagios nagios  77940 2014 12 01 ReporteAgencias-201411.pdf
+-rwxrwxrwx 1 nagios nagios  82481 2015 01 05 ReporteAgencias-201412.pdf
+-rwxrwxrwx 1 nagios nagios   82286 2015 02 02 ReporteAgencias-201501.pdf
+-rwxrwxrwx 1 nagios nagios  356664 2015 03 03 ReporteAgencias-201502.pdf
+-rwxrwxrwx 1 nagios nagios   75980 2015 04 01 ReporteAgencias-201503.pdf
+-rwxrwxrwx 1 nagios nagios   60719 2015 05 04 ReporteAgencias-201504.pdf
+-rwxrwxrwx 1 nagios nagios 1025270 2015 06 01 ReporteAgencias-201505.pdf
+-rwxrwxrwx 1 nagios nagios   75954 2015 07 01 ReporteAgencias-201506.pdf
+-rwxrwxrwx 1 nagios nagios  218976 2015 09 07 ReporteAgencias-201508.pdf
+-rwxrwxrwx 1 nagios nagios  206447 2015 10 01 ReporteAgencias-201509.pdf
+-rwxrwxrwx 1 nagios nagios  151211 2015 12 17 ReporteAgencias-201510.pdf
+-rwxrwxrwx 1 nagios nagios  284763 2015 12 17 ReporteAgencias-201511.pdf
+-rwxrwxrwx 1 nagios nagios  220567 2016 01 26 ReporteAgencias-201512.pdf
+-rw-r--r-- 1 root root 180216 2016 02 02 ReporteAgencias-201601.pdf
+-rw-r--r-- 1 root root 270271 2016 03 08 ReporteAgencias-201602.pdf
+-rw-r--r-- 1 root root 215727 2016 04 01 ReporteAgencias-201603.pdf
+-rw-r--r-- 1 root root 225820 2016 05 02 ReporteAgencias-201604.pdf
+-rwxrwxrwx 1 nagios nagios  4340 2013 04 16 dbcon.php
+-rwxrwxrwx 1 nagios nagios   900 2011 09 08 home.html
+-rwxrwxrwx 1 nagios nagios   614 2011 09 08 index.html
+-rwxrwxrwx 1 nagios nagios  1668 2011 09 06 Left.html
+-rwxrwxrwx 1 nagios nagios  3223 2011 09 06 Left_original.html
+-rwxrwxrwx 1 nagios nagios  8261 2013 06 11 logo.jpg
+-rwxrwxrwx 1 nagios nagios   315 2011 09 08 menu.html
+-rwxrwxrwx 1 nagios nagios 15776 2011 09 09 reporte_usuario.php
+-rwxrwxrwx 1 nagios nagios 142052 2008 09 24 aeronauticaCivil.JPG
+-rwxrwxrwx 1 nagios nagios  34415 2008 09 24 ci_muni_guate_app.jpg
+-rwxrwxrwx 1 nagios nagios  10398 2014 07 17 ci_muni_guate.htm
+-rwxrwxrwx 1 nagios nagios  41398 2008 09 24 ci_muni_guate_net.jpg
+-rwxrwxrwx 1 nagios nagios 297549 2008 10 27 conexion_BCG_Swift.jpg
+-rwxrwxrwx 1 nagios nagios 189971 2008 09 24 Conf_ClusterSun.JPG
+-rwxrwxrwx 1 nagios nagios 212360 2008 09 24 Conf_Email_BDR.jpg
+-rwxrwxrwx 1 nagios nagios 104437 2008 09 24 conf_iggs.jpg
+-rwxrwxrwx 1 nagios nagios  69493 2011 06 20 Conf_prop_muni_Chimal.jpg
+-rwxrwxrwx 1 nagios nagios  77851 2009 06 16 Conf_prop_Muni_VC.jpg
+-rwxrwxrwx 1 nagios nagios 107266 2009 06 16 Conf_prop_portQuetzal.jpg
+-rwxrwxrwx 1 nagios nagios 241541 2008 09 24 Conf_Telgua.JPG
+-rwxrwxrwx 1 nagios nagios 184246 2008 09 24 Conf_UnionFenosa.jpg
+-rwxrwxrwx 1 nagios nagios 337373 2008 09 24 Conf_Uniteller.JPG
+-rwxrwxrwx 1 nagios nagios 119157 2009 11 16 Diagrama_Muni_Mixco.jpg
+-rwxrwxrwx 1 nagios nagios  92673 2009 01 14 Partners-5b.JPG
+-rwxrwxrwx 1 nagios nagios 331085 2008 09 24 Partners-ACH.JPG
+-rwxrwxrwx 1 nagios nagios  70453 2009 08 24 Partners-Agexpront.JPG
+-rwxrwxrwx 1 nagios nagios  59257 2009 02 16 Partners-Bancomercio.JPG
+-rwxrwxrwx 1 nagios nagios  69960 2012 02 21 Partners-BTS.JPG
+-rwxrwxrwx 1 nagios nagios  71639 2010 08 10 Partners-Comcel.JPG
+-rwxrwxrwx 1 nagios nagios  58631 2010 08 16 Partners-Corfina.JPG
+-rwxrwxrwx 1 nagios nagios  56852 2009 01 22 Partners-Dolex.JPG
+-rwxrwxrwx 1 nagios nagios  91956 2009 01 23 Partners-Eegsa.JPG
+-rwxrwxrwx 1 nagios nagios  61910 2009 02 06 Partners-Fenosa.JPG
+-rwxrwxrwx 1 nagios nagios  71301 2009 08 24 Partners-Forstand.JPG
+-rwxrwxrwx 1 nagios nagios  84631 2010 06 07 Partners-GBM.JPG
+-rwxrwxrwx 1 nagios nagios  71900 2009 08 24 Partners-GrupoExpress.JPG
+-rwxrwxrwx 1 nagios nagios 129296 2009 01 14 Partners-ICG.JPG
+-rwxrwxrwx 1 nagios nagios 104296 2009 07 03 Partners-Igss.JPG
+-rwxrwxrwx 1 nagios nagios 843646 2013 02 27 Partners-Intecap.JPG
+-rwxrwxrwx 1 nagios nagios  76743 2010 02 23 Partners-IPM.JPG
+-rwxrwxrwx 1 nagios nagios  58716 2009 01 22 Partners-MiPueblo.JPG
+-rwxrwxrwx 1 nagios nagios  59689 2009 01 22 Partners-MoneyGram.JPG
+-rwxrwxrwx 1 nagios nagios  71518 2009 01 13 Partners-OJ.JPG
+-rwxrwxrwx 1 nagios nagios  60438 2009 01 22 Partners-OrderExpress.JPG
+-rwxrwxrwx 1 nagios nagios  70245 2009 01 14 Partners-Oriflame.JPG
+-rwxrwxrwx 1 nagios nagios  58960 2008 10 27 Partners-Paynexus.JPG
+-rwxrwxrwx 1 nagios nagios  77994 2009 02 02 Partners-Portuaria.JPG
+-rwxrwxrwx 1 nagios nagios  92348 2009 02 03 Partners-PTC.JPG
+-rwxrwxrwx 1 nagios nagios  58438 2011 03 10 Partners-RegProp.JPG
+-rwxrwxrwx 1 nagios nagios  41032 2008 10 27 Partners-Renap-WebService.JPG
+-rwxrwxrwx 1 nagios nagios 170724 2013 09 27 Partners-SAT-FTP.jpg
+-rwxrwxrwx 1 nagios nagios  90344 2009 01 14 Partners-SAT.JPG
+-rwxrwxrwx 1 nagios nagios  96082 2011 05 19 Partners-SAT-Navega.JPG
+-rwxrwxrwx 1 nagios nagios 154872 2008 09 24 Partners-SIAF.JPG
+-rwxrwxrwx 1 nagios nagios  63419 2009 01 14 Partners-SIB.JPG
+-rwxrwxrwx 1 nagios nagios  68514 2009 08 24 Partners-Sigue.JPG
+-rwxrwxrwx 1 nagios nagios  71301 2009 01 15 Partners-Telefonica.JPG
+-rwxrwxrwx 1 nagios nagios  77197 2009 01 13 Partners-Telgua.JPG
+-rwxrwxrwx 1 nagios nagios 175350 2008 09 24 Partners-UnionFenosa.JPG
+-rwxrwxrwx 1 nagios nagios  79986 2009 01 22 Partners-Uniteler.JPG
+-rwxrwxrwx 1 nagios nagios  71593 2009 08 24 Partners-UnitelYego.JPG
+-rwxrwxrwx 1 nagios nagios  65780 2009 02 03 Partners-USAC.JPG
+-rwxrwxrwx 1 nagios nagios  58930 2009 01 22 Partners-Viamericas.JPG
+-rwxrwxrwx 1 nagios nagios  74724 2010 02 23 Partners-Visanet.JPG
+-rwxrwxrwx 1 nagios nagios 393733 2008 09 24 ReferenciasSIB.JPG
+-rwxrwxrwx 1 nagios nagios  41904 2008 10 27 VPN_Sigue.JPG

@@ -1,0 +1,18 @@
+#!/bin/bash
+FECHA=`date +%Y%m`
+MES=`date +%B`
+ANIO=`date +%Y`
+PROVEEDOR=EXINDA
+
+LOG="/etc/procs/Facturacion/reportes.log"
+
+
+PROVSUBJECT=$PROVEEDOR
+PROVBODY="Se Adjunta Facturacion De $PROVEEDOR GRUPO QUATTRO " 
+
+echo "Enviando correo electronico $PROVEEDOR ${date} " >> $LOG
+echo "$PROVBODY" \
+| mutt -s "Cargos Factura ${MES} ${ANIO} : ${PROVSUBJECT}" \
+-a /etc/procs/Facturacion/${FECHA}-${PROVEEDOR}.csv \
+-- facturacion@banrural.com.gt
+##FIN

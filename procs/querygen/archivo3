@@ -1,0 +1,1116 @@
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age017
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age017
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age044
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age044
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age045
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age045
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age050
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age050
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age053
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age053
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age056
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age056
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age057
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age057
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age064
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age064
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age068
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age068
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age098
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age098
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age103
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age103
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age116
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age116
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age121
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age121
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age122
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age122
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age123
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age123
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age128
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age128
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age129
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age129
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age131
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age131
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age200
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age200
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age209
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age209
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age222
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age222
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age231
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age231
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age238
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age238
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age240
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age240
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age243
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age243
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age254
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age254
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age258
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age258
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age292
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age292
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age307
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age307
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age316
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age316
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age328
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age328
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age338
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age338
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age354
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age354
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age383
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age383
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age444
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age444
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age463
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age463
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age471
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age471
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age485
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age485
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age487
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age487
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age503
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age503
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age510
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age510
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age512
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age512
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age521
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age521
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age529
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age529
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age533
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age533
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age560
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age560
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age581
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age581
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age584
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age584
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age608
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age608
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age609
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age609
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age614
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age614
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age617
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age617
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age679
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age679
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age697
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age697
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age725
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age725
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age779
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age779
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age824
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age824
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age855
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age855
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age872
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age872
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age1012
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age1012
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             telnor_backup_age1010001
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!telnor_backup_age1010001
+               }
+
+# Service definition
+       define service{
+               use                             generic-service         ; Name of service template to use
+               service_description             
+               host_name                       monitor_telecom
+               is_volatile                     0 
+               check_period                    horario-age
+               max_check_attempts              3
+               normal_check_interval           5
+               retry_check_interval            2
+               contact_groups                  telecom
+               notification_interval           20
+               notification_period             horario-age
+               notification_options            c,r
+               notifications_enabled           0       ; Service notifications are enabled
+               check_command                   check_nrpe!
+               }
+

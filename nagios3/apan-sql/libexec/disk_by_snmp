@@ -1,0 +1,172 @@
+#!/bin/sh
+# 
+# 2003-01-17, Fredrik Wanglund
+#
+# This plugin will check the used-space on a particular disk via SNMP.
+# The plugin returns warning and critical status when the free space
+# drops below specified percentages. 
+# 
+# To use the plugin you need to set up a few things;
+# First, add the following check-command (typically in etc/checkcommands.cfg)
+#
+# define command {
+# command_name                    disk_by_snmp
+# command_line                    /usr/local/nagios/libexec/disk_by_snmp $HOSTADDRESS$ $ARG1$ $ARG2$ $ARG3$ $ARG4$
+# }
+#
+# If your Nagios-plugin is not located in /usr/local/nagios/libexec/, 
+# You have to change the path in the command-definition AND the
+# variable NAGIOSPLUGSDIR below.
+# 
+#
+# Second, find the index of the disk you would like to monitor. This is
+# easiest to do with snmpwalk.
+# Run the following command on your Nagios-server.
+#
+# snmpwalk -O n -c <community> <host-to-monitor> .1.3.6.1.2.1.25.2.3.1.3
+# (If you are using the old UCD-snmp, prior to net-snmp 5, the command
+# should be, snmpwalk -O n localhost public .1.3.6.1.2.1.25.2.3.1.3)
+#
+# an example output from a linux-system looks like:
+# 
+# [user@server]# snmpwalk -O n -c public localhost .1.3.6.1.2.1.25.2.3.1.3
+# .1.3.6.1.2.1.25.2.3.1.3.1 = STRING: /
+# .1.3.6.1.2.1.25.2.3.1.3.2 = STRING: /proc/bus/usb
+# .1.3.6.1.2.1.25.2.3.1.3.3 = STRING: /dev/pts
+# .1.3.6.1.2.1.25.2.3.1.3.4 = STRING: /dev/shm
+# .1.3.6.1.2.1.25.2.3.1.3.101 = STRING: Real Memory
+# .1.3.6.1.2.1.25.2.3.1.3.102 = STRING: Swap Space
+# .1.3.6.1.2.1.25.2.3.1.3.103 = STRING: Memory Buffers
+# [user@server]# 
+
+# And from a Windows-system:
+#
+# [user@server]# snmpwalk -O n -c public win-server .1.3.6.1.2.1.25.2.3.1.3
+# .1.3.6.1.2.1.25.2.3.1.3.1 = STRING: A:\
+# .1.3.6.1.2.1.25.2.3.1.3.2 = STRING: C:\ Label:  Serial Number 386ec682
+# .1.3.6.1.2.1.25.2.3.1.3.3 = STRING: D:\ Label:  Serial Number 8468ec06
+# .1.3.6.1.2.1.25.2.3.1.3.4 = STRING: E:\ Label:  Serial Number 6c0d9f08
+# .1.3.6.1.2.1.25.2.3.1.3.5 = STRING: F:\
+# .1.3.6.1.2.1.25.2.3.1.3.6 = STRING: Virtual Memory
+# [user@server]#
+# 
+# The interresting part is the last digit in the oid (the sequence of digits 
+# and dots) for the disk you want to monitor. If you for example want to 
+# monitor drive D: on the wWindows-system, the index you should use is 3, 
+# and for / on the linux-system, the index is 1.
+#
+#
+# Third, set up the service. Add the following service-definition (typically
+# in etc/services.cfg):
+#
+# define service {
+# host_name                      nagios
+# service_description            disk-usage
+# check_command                  disk_by_snmp!public!1!20!10
+# use                            generic-service
+# normal_check_interval          10
+# }
+#
+# Replace the 'use' statement with whatever template you would like to use,
+# or fill up the definition with required parameters if you dont want to
+# use any template.
+#
+# The arguments to the 'check_command' is:
+# 1) The command-name, disk_by_snmp
+# 2) The SNMP community-string
+# 3) The index if the drive
+# 4) The percentage-free at which the plugin will return warning
+# 5) The percentage-free at which the plugin will return critical
+#
+# READY.
+#
+#
+# Change this if you have installed NAgios in a non-default place:
+NAGIOSPLUGSDIR=/usr/local/nagios/libexec
+
+HOST=$1
+COMM=$2
+INDEX=$3
+WARN=$4
+CRIT=$5
+if [ $# -lt 5 ]; then
+	echo "Usage: $0 <hostname> <SNMP-comunity> <drive-index> <warning> <critical> [Scale]"
+	exit 127
+fi
+
+RETSTR="Disk usage:"
+RETVAL=0
+
+# Get the allocation units...
+UNIT=`$NAGIOSPLUGSDIR/check_snmp -t 30 -H $HOST -C $COMM -o .1.3.6.1.2.1.25.2.3.1.4.$INDEX`
+RES=$?
+
+
+#If all is good so far, get the total size...
+if [ $RES = 0 ]; then
+	SIZE=`$NAGIOSPLUGSDIR/check_snmp -t 30 -H $HOST -C $COMM -o .1.3.6.1.2.1.25.2.3.1.5.$INDEX`
+	RES=$?
+
+#Everything should be working. Get the used space...
+	if [ $RES = 0 ]; then
+		USED=`/usr/local/nagios/libexec/check_snmp -t 30 -H $HOST -C $COMM -o .1.3.6.1.2.1.25.2.3.1.6.$INDEX`
+	        RES=$?
+	fi
+fi
+
+#Bail out if anything went wrong...
+if [ $RES != 0 ]; then
+	RETSTR="$RETSTR SNMP problem, No data received from host."
+	RETVAL=2
+else
+
+#Else start the calculations...
+
+#Parse the arguments...
+	UNIT=`echo $UNIT|cut -d "-" -f 2|awk '{print $1}'`
+	SIZE=`echo $SIZE|awk '{print $NF}'`
+	USED=`echo $USED|awk '{print $NF}'`
+
+#Convert used and fre space to kB, MB and GB.
+	FREE=`echo "$SIZE $USED - p"|dc`
+	BFREE=`echo "$FREE $UNIT * p"|dc`
+	KFREE=`echo "$BFREE 1024 / p"|dc`
+	MFREE=`echo "$BFREE 1048576 / p"|dc`
+	GFREE=`echo "$BFREE 1073741824 / p"|dc`
+	BUSED=`echo "$USED $UNIT * p"|dc`
+        KUSED=`echo "$BUSED 1024 / p"|dc`
+        MUSED=`echo "$BUSED 1048576 / p"|dc`
+        GUSED=`echo "$BUSED 1073741824 / p"|dc`
+
+#Calculate percentage free
+	PROC=`echo "$FREE 10000 * $SIZE / 50 + 100 / p"|dc`
+
+#Print used space in the apropriate format.
+        if [ $KUSED -lt 5000 ] ; then
+                RETSTR="$RETSTR $KUSED kB used,"
+        elif [ $MUSED -lt 5000 ]; then
+                RETSTR="$RETSTR $MUSED MB used,"
+        else
+                RETSTR="$RETSTR $GUSED GB used,"
+        fi
+
+#Print used space in the apropriate format.
+	if [ $KFREE -lt 5000 ] ; then
+		RETSTR="$RETSTR $KFREE kB (${PROC}%) free."
+	elif [ $MFREE -lt 5000 ]; then
+		RETSTR="$RETSTR $MFREE MB (${PROC}%) free."
+	else
+		RETSTR="$RETSTR $GFREE GB (${PROC}%) free."
+	fi
+
+#Check warning and critical levels
+	if [ $PROC -lt $CRIT ]; then
+		RETVAL=2
+	elif [ $PROC -lt $WARN ] && [ $RETVAL = 0 ]; then
+		RETVAL=1
+	fi
+fi
+	
+
+echo $RETSTR
+exit $RETVAL

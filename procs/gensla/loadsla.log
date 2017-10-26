@@ -1,0 +1,23 @@
+\nCargando Datos hacia DB\n
+\nFin Carga datos\n...\n \n. Inicia Carga de Tabla SLA-Remoto...\n
+\nGenerando Multas\n
+\n...\n \n. Cargando Informacion de Multas..\n Update... \n
+ preprando query para generar informe
+select  rs_proveedor, rs_codigo_proveedor, 
+ rs_remoto as cod_age, rm_descripcion as nom_age,rs_prioridad, 
+ rs_uptime,  rs_costo_mensual,format(rs_porc_credito,2) as Porc, rs_costo_mensual * rs_porc_credito as Monto, 
+ (select mu_descripcion from enlaces.municipio where mu_codigo = mid(r.rm_municipio,1,2)) depto, 
+ (select mu_descripcion from enlaces.municipio where mu_codigo = r.rm_municipio ) as municipio 
+ from nagios_stats.remoto_sla, enlaces.remoto r 
+ where rs_remoto = rm_remoto 
+  and  rs_anio = 2017 
+ and  rs_mes = 09  
+ and rs_porc_credito > 0  order by rs_proveedor, rs_codigo_proveedor ; 
+\nGenerando Fork, para cargar Informe de Caidas \n
+1. gencaidas.sh :: Generando Informe de Caidas
+Mon Oct  2 07:36:49 CST 2017
+2. Cargando Informacion de Multas.. Update... 
+Mon Oct  2 11:23:10 CST 2017
+Mon Oct  2 11:23:30 CST 2017
+3. Update Informacion de Multas.. Update... 
+Mon Oct  2 11:23:33 CST 2017

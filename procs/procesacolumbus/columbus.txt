@@ -1,0 +1,50 @@
+----------------------- Page 1-----------------------
+
+                                        DETALLE DE ENLACES DE DATOS AGENCIAS BANRURAL                                       SEPTIEMBRE 
+               CID        No. Agencia   Nombre Agencia                     Direccion                                          Ancho Banda      Monto US$          Monto Q. 
+ 1       5001178.GT                408  CALZADA AGUILAR BATRES             Calzada Aguilar Batres 15-41 Zona 12  Ciudad de Gua6MBpstemala  Guatemala$1,075.20       Q8,418.82 
+ 2       5001179.GT                414  ROOSEVELT 2                        Calzada Roosevelt 24-58 Zona 7  Ciudad de Guatemala6MBps  Guatemala$1,075.20             Q8,418.82 
+ 3       5001268.GT                424  VILLA NUEVA 2                      1ª. CALLE 2-13 ZONA 1 VILLA NUEVA  GUATEMALA1MBps                         $257.60        Q2,017.01 
+ 4       5001269.GT                406  VILLA DE GUADALUPE                 20 CALLE 14 AVENIDA ESQUINA Z 10   Ciudad de Guatem6MBps       ala  Guatemala$1,075.20   Q8,418.82 
+ 5       5001271.GT                721 TERMINAL QUICHE                     10ª. CALLE 1-23 ZONA 5  SANTA CRUZ EL QUICHE6MBps                       $1,075.20        Q8,418.82 
+ 6       5001272.GT                 22 SOLOLA                              7ª AVENIDA 6-40 ZONA 2  Solola                       6MBps              $1,075.20        Q8,418.82 
+ 7       5001273.GT                430  SANTA ELENA 4A CALLE               4ª. CALLE 2-44 ZONA 1  SANTA ELENA  PETEN            6MBps              $1,075.20        Q8,418.82 
+ 8       5001274.GT                 62  SAN LUIS                           BARRIO VISTA HERMOSA  SAN LUIS PETEN                 6MBps              $1,075.20        Q8,418.82 
+ 9       5001276.GT                669  PASEO DE LAS AMERICAS XELA 9ª. CALLE 0-20 CENTRO COMERCIAL PASEO DE LAS AMERIC6MBps                  AS  QUETZALTENANGO.$1,075.20 Q8,418.82 
+ 10      5001278.GT                275  MAZATENANGO PLAZA AMERICAKILOMETRO 148 CARRETERA CA-2 FREESTANDINGS 401 ANEX6MBps                          $1,075.20        Q8,418.82 
+ 11      5001280.GT                309  IPM                                5ª. AVENIDA 6-06 ZONA 1  Ciudad de Guatemala  Guate1MBps mala             $257.60        Q2,017.01 
+ 12      5001281.GT                 32  HUEHUETENANGO                      7ª AVENIDA 4-53 ZONA 1  HUEHUETENANGO                6MBps              $1,075.20        Q8,418.82 
+ 13      5001283.GT                148 COLONIAL ANTIGUA                    3ª. CALLE PONIENTE NUMERO 19  SACATEPEQUEZ  ANTIGUA6MBps             GUATEMALA$1,075.20  Q8,418.82 
+ 14      5001284.GT                124 COBAN IMPERIAL                      2ª. CALLE 1-34 ZONA2  EDIFICIO TORRES GRIS  COBAN A6MBps  LTA VERAPAZ$1,075.20           Q8,418.82 
+ 15      5001285.GT                162 CAMOJA                              KM 327.5 CARRETERA INTERAMERICANA  ALDEA CAMOJA GRA6MBps              NDE   LA DEMOCRACIA  HUEHUETENANGO$1,075.20 Q8,418.82 
+ 16      5001287.GT                   2  BARBERENA                         4ª. CALLE Y 4ª. AVENIDA BARBERENA  SANTA ROSA6MBps                      $1,075.20        Q8,418.82 
+ 17      5001288.GT                404  AVENIDA PETAPA                     AVENIDA PETAPA 47-00 ZONA 12  Ciudad de Guatemala  6MBps        Guatemala$1,075.20       Q8,418.82 
+ 18      5001289.GT                283 AUTOBANCO ZACAPA TAMARINDAL16 AVENIDA Y 9ª CALLE ZONA 1 BARRIO TAMARINDAL  ZAC6MBps                   APA   $1,075.20        Q8,418.82 
+ 19      5001293.GT                152 AUTOBANCO PROGRESO JUTIAPACALZADA JULIO WAY BARRIO EL IMBA  EL PROGRESO  M JU6MBps                    TIAPA$1,075.20         Q8,418.82 
+ 20      5001290.GT                160 AUTOBANCO TEXACO CHIQUIMULAKM 171.5 RUTA A ESQUIPULAS  CHIQUIMULA                        6MBps              $1,075.20        Q8,418.82 
+ 21      5001292.GT                777 AUTOBANCO SAN MARCOS                CALZADA REVOLUCION DEL 71  2-69 ZONA1  SAN MARCOS6MBps                  $1,075.20        Q8,418.82 
+ 22      5001294.GT                477  AUTOBANCO LA RUIDOSA               ALDEA LA RUIDOSA  IZABAL  PUERTO BARRIOS             6MBps              $1,075.20        Q8,418.82 
+ 23      5001295.GT                530 AUTOBANCO CHIMALTENANGO1ª. CALLE 4-37 ZONA 4  CHIMALTENANGO                              6MBps              $1,075.20        Q8,418.82 
+ 24      5001297.GT                   1 ANTIGUA GUATEMALA                  1ª. AVENIDA DEL CHAJON No. 26 LA ANTIGUA  GUATEMALA6MBps                $1,075.20        Q8,418.82 
+ 25      5001298.GT                340  2 CALLE ZONA 9                     2 CALLE 4-38 ZONA 9    Ciudad de Guatemala  Guatema6MBps la             $1,075.20        Q8,418.82 
+ 26      5001299.GT                428  SALAMA 5A AVENIDA                  5ª. AVENIDA 6-21 ZONA 1  BAJA VERAPAZ  SALAMA6MBps                      $1,075.20        Q8,418.82 
+ 27      5001300.GT                384  CENTRO COMERCIAL MONTUFAR12 CALLE 0-29 ZONA 9  LOCAL 12B CENTRO COMERCIAL MO6MBps                     NTUFAR  Ciudad de Guatemala  Guatemala$1,075.20 Q8,418.82 
+ 28      5001301.GT                887  CONDADO SAN CRISTOBAL              CARRETERA INTERAMERICANA BARRIO LA CIENAGA  SAN CRI6MBps            STOBAL TOTONICAPAN$1,075.20 Q8,418.82 
+ 29      5001302.GT                329 AUTOBANCO COATEPEQUE                3ª AVENIDA 6-25 ZONA 2  LOTIFICACION CONCHITA  COAT6MBps         EPEQUE$1,075.20         Q8,418.82 
+ 30      5002269.GT                440  ESCUINTLA 3a. CALLE                4a. Av 3-19 Zona 1 Escuintla                         6MBps              $1,075.20        Q8,418.82 
+ 31      5001303.GT                189  IGSS ZONA 6                        19 AVENIDA 7-73 ZONA 6  Ciudad de Guatemala  Guatem1MBps        ala       $257.60        Q2,017.01 
+ 32      5001304.GT                 15 CHIQUIMULILLA                       1ª. CALLE Y 2ª. AVENIDA 01-47 ZONA 3  BARRIO SANTIA6MBps GO  SANTA CRUZ CHIQUIMULILLA$1,075.20 Q8,418.82 
+ 33      5001305.GT                   4 JUTIAPA                            6ª. CALLE 2-51 ZONA 1  JUTIAPA  FRENTE AL PARQUE CE6MBps      NTRAL     $1,075.20        Q8,418.82 
+ 34      5001511.GT                791 AUTOBANCO MEGAPLAZA                 C.C. MEGAPLAZA  KM. 140 RUTA AL ATLANTICO Estanzuel6MBps        a ZACAPA$1,075.20        Q8,418.82 
+ 35      5001846.GT                623  SANTA ANA PETEN                    Barrio Buena Vista a un costado de la Nueva Municip6MBpsalidad          $1,075.20        Q8,418.82 
+ 36      5001842.GT                 55  SOLOMA                             7a. Av 7-22 Zona 5 San Pedro Soloma Huehuetenango6MBps                  $1,075.20        Q8,418.82 
+ 37      5001843.GT                132  MARTI                              15 Av. 2-28 zona 6 Calle Marti                       6MBps              $1,075.20        Q8,418.82 
+ 38      5001844.GT                155 GASOLINERA TEXACO ESQUIPULASKm. 222.5 Ruta a Honduras Esquipulas Chiquimula Gas6MBpsolinera Texaco$1,075.20                  Q8,418.82 
+ 39      5001845.GT                497  AUTOBANCO LAS CHAMPAS              Km 85 Las Champas Aldea El Rancho Sn. Agustin Acasa6MBpsguastlan El Progreso$1,075.20    Q8,418.82 
+ 40      5001847.GT                806 TZOLOJYA                            11 Calle 8-10 Zona 2 Solola Solola                   6MBps              $1,075.20        Q8,418.82 
+ 41      5001468.GT                206  MEGA PRIMMA                        Calz San Juan 14-27 y 14-60 Z 7 CC Galerias Primma6MBps                 $1,075.20        Q8,418.82 
+ 42      5002268.GT                493  MERCADO DE VILLA NUEVA             16 AVENIDA 4-79 ZONA 4 LOCALES 1 2 Y 3               6MBps              $1,075.20        Q8,418.82 
+ 43      5001755.GT                249 AUTOBANCO QUETZALTENANGO7a. Av. 17-52 Zona 5 Las Rosas Quetzaltenango  4MBps                                  $918.40        Q7,191.07 
+ 44      5001431.GT               2236  Colegio de Psicologos              VILLA 5 4-50 ZONA 4 EDIFICIO MAYA 6TO NIVEL OFICINA2MBps        607       $492.80        Q3,858.62 
+
+

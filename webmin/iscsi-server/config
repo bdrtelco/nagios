@@ -1,0 +1,6 @@
+iscsi_server=/usr/sbin/iscsi-target
+auths_file=/etc/iscsi/auths
+targets_file=/etc/iscsi/targets
+opts_file=/etc/sysconfig/netbsd-iscsi
+pid_file=/var/run/iscsi-target.pid
+init_name=netbsd-iscsi

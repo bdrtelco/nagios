@@ -1,0 +1,106 @@
+#!/bin/bash
+#
+# 2002-12-16, Fredrik Wanglund
+#
+# This plugin checks the status on a Megaide RAID-controller. The plugin
+# have been tested on a Compaq ML-310 and ML-330 with RedHat 8.0 and 
+# megaide-driver from both HP/Compaq and LSI.
+# 
+# To use the plugin you must have snmp-support for your megaide-driver.
+# Check this with 'snmpwalk -c <community> <host> enterprises.3582'
+# (or 'snmpwalk <host> <community> enterprises.3582' if you are using
+# the old UCD-snmp).
+# If the command returns a bunch of lines everything is OK...
+#
+# Define a checkcommand:
+#
+# define command {
+# command_name                    megaide
+# command_line                    /usr/local/nagios/libexec/check_megaide $HOSTADDRESS$ $ARG1$
+# }
+#
+# Define a service
+#
+# define service {
+# host_name                      pistol
+# service_description            Raid
+# check_command                  megaide!public
+# use                            generic-service
+# normal_check_interval          10
+# }
+#
+# The argument to the check_command is the SNMP community-string
+#
+# If you have installed Nagios in a non-default location, you need
+# to change the path in the check-command and the variable below
+NAGIOSPLUGSDIR=/usr/local/nagios/libexec
+
+
+
+
+if [ $# -lt 2 ]; then
+	echo "Usage: $0 <hostnaname> <community>"
+	exit 127
+fi
+
+COMM=$2
+HOST=$1
+
+#
+#Base for the megaide mib
+#
+MIB=.1.3.6.1.4.1.3582
+
+RETSTR="Hardware RAID:"
+RETVAL=0
+
+#
+#Get the number of luns
+#
+NLUNS=`$NAGIOSPLUGSDIR/check_snmp -H $HOST -C $COMM -o ${MIB}.1.2.2.1.0`
+RES=$?
+if [ $RES != 0 ]; then
+	RETVAL=3
+	RETSTR="$RETSTR Unable to get information from host"
+else
+	NLUNS=`echo $NLUNS|awk '{print $NF}'`
+	N=0
+#
+#Get the status and mode for each LUN
+#
+	while [ $N != $NLUNS ]; do
+		STATUS=`$NAGIOSPLUGSDIR/check_snmp -H $HOST -C $COMM -o ${MIB}.1.2.2.2.1.4.$N|awk '{print $NF}'|tr -d "\""`
+		MODE=`$NAGIOSPLUGSDIR/check_snmp -H $HOST -C $COMM -o ${MIB}.1.2.2.2.1.3.$N|awk '{print $NF}'|tr -d "\""`
+		if [ "$STATUS" != "Optimal" ] && [ $RETVAL == 0 ]; then
+			RETVAL=1
+		fi
+		RETSTR="$RETSTR Lun #$N (RAID-$MODE) $STATUS, "
+		N=`expr $N + 1`
+
+	done
+
+#
+#Get the number of physical drives
+#
+	NDRIVES=`$NAGIOSPLUGSDIR/check_snmp -H $HOST -C $COMM -o ${MIB}.1.2.3.1.0` 
+	RES=$?
+	NDRIVES=`echo $NDRIVES|awk '{print $NF}'`
+	N=0
+
+#
+#Get the status and name of each drive
+#
+	while [ $N != $NDRIVES ]; do
+		NAME=`$NAGIOSPLUGSDIR/check_snmp -H $HOST -C $COMM -o ${MIB}.1.2.3.2.1.3.$N|cut -d ":" -f 2|tr -d "\""|sed -e 's/^ //'|sed -e 's/ $//'`
+		STATUS=`$NAGIOSPLUGSDIR/check_snmp -H $HOST -C $COMM -o ${MIB}.1.2.3.2.1.5.$N|awk '{print $NF}'|tr -d "\""`
+		if [ "$STATUS" != "Online" ] && [ $RETVAL == 0 ]; then
+                        RETVAL=1
+                fi
+
+		RETSTR="$RETSTR Drive #$N ($NAME) $STATUS, "
+		N=`expr $N + 1`
+	done
+fi
+
+echo $RETSTR
+exit $RETVAL

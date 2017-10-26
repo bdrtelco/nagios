@@ -1,0 +1,66 @@
+#!/bin/bash
+
+FEC=`/bin/date -I `
+OLDFEC=`/bin/date -I --date='28 days ago'`
+
+source /etc/procs/db-conf.sh
+
+
+DIR="/var/log/nag-back/"
+
+FILE1="nagios_conf"
+FILENEW1=$FILE1"_"$FEC".tar.gz"
+FILEOLD1=$FILE1"_"$OLDFEC".tar.gz"
+tar cvfz $DIR$FILENEW1 /nagios/etc /nagios/libexec  /nagios/apan-sql /nagios/rrd
+rm $DIR$FILEOLD1
+
+
+FILE6="nagios-db"
+FILENEWSQL6=$FILE6"_"$FEC".sql"
+mysqldump -h $DBSRV --user=$RUSER --password=$RPSS --complete-insert --opt --databases nagios > $DIR$FILENEWSQL6
+FILENEW6=$FILE6"-"$FEC".tar.gz"
+FILEOLD6=$FILE6"-"$OLDFEC".tar.gz"
+tar cvfz $DIR$FILENEW6 $DIR$FILENEWSQL6 
+rm $DIR$FILEOLD6
+rm  $DIR$FILENEWSQL6 
+
+
+FILE3="nagios_his"
+FILENEW3=$FILE3"_"$FEC".tar.gz"
+FILEOLD3=$FILE3"_"$OLDFEC".tar.gz"
+tar cvfz $DIR$FILENEW3  /nagios/bin  /nagios/sbin /nagios/share /nagios/var/*.l* /nagios/var/*.?a*  /nagios/var/archive/
+rm $DIR$FILEOLD3
+
+FILE4="nagios_srvconf"
+FILENEW4=$FILE4"_"$FEC".tar.gz"
+FILEOLD4=$FILE4"_"$OLDFEC".tar.gz"
+tar cvfz $DIR$FILENEW4  /etc/ssl /etc/apache2/conf.d /etc/hosts /etc/cron.d /etc/procs /etc/awstats /var/lib/awstats   
+rm $DIR$FILEOLD4
+
+
+FILE5="nagios_www"
+FILENEW5=$FILE5"_"$FEC".tar.gz"
+FILEOLD5=$FILE5"_"$OLDFEC".tar.gz"
+tar cvfz $DIR$FILENEW5  /srv/www/calendar /srv/www/cert /srv/www/enlace /srv/www/esquemas /srv/www/htdocs /srv/www/manuales
+  
+rm $DIR$FILEOLD5
+
+
+ftp -v -n -i  140.254.1.20  << EOF
+user linuxsrv serverlinux
+bin
+cd nagios
+put $DIR$FILENEW1 $FILENEW1
+delete $FILEOLD1
+put $DIR$FILENEW2 $FILENEW2
+delete $FILEOLD2
+put $DIR$FILENEW3 $FILENEW3
+delete $FILEOLD3
+put $DIR$FILENEW4 $FILENEW4
+delete $FILEOLD4
+put $DIR$FILENEW5 $FILENEW5
+delete $FILEOLD5
+put $DIR$FILENEW6 $FILENEW6
+delete $FILEOLD6
+bye
+EOF

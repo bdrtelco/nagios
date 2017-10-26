@@ -1,0 +1,47 @@
+#!/bin/sh
+#
+# This plugin is used by Apan to get CPU and swap usage from an
+# Unix-server
+# The plugin uses Nagios-statd (http://www.twoevils.org/html/files.php)
+#
+#
+# Change this if you don't have a default installation
+. /usr/local/nagios/apan-sql/apan.defs
+
+if [ $# -lt 2 ]; then
+	echo "Usage: $0 <host> <check>"
+	exit 17
+fi
+
+HOST=$1
+CHK=$2
+
+case $CHK in
+	CPULOAD)
+	VAL=`$PLUGINSDIR/nagios-stat -c 100 -w 100 load $HOST`
+	RES=$?
+	#echo $VAL
+	if [ $RES = 0 ]; then
+		VAL=`echo $VAL|grep ":"|awk '{print $NF}'|tr -d " "`
+	fi
+	;;
+
+
+	SWAPUSE)
+	VAL=`$PLUGINSDIR/nagios-stat -c 100 -w 100 swap $HOST`
+	RES=$?
+	if [ $RES = 0 ]; then
+		VAL=`echo $VAL|grep "%"|cut -d "-" -f 2|awk '{print $NF}'|tr -d "()% "`
+	else
+		VAL="Error: Something went wrong..."
+		RES=3
+	fi
+
+	;;
+	*)
+	RES=3
+	VAL="Unknown service $CHK"
+	;;
+esac
+
+echo "$RES:$VAL"

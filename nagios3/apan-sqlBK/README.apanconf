@@ -1,0 +1,39 @@
+
+Introduction -----------------------------------------
+
+Apanconf-sql is a simple text-based utility to manipulate Apans configuration
+in the SQL-database.
+
+Before you use it, make sure that all parameters in apanconf.defs have the
+right values.
+
+Importing data from an existing Apan-installation ----- 
+
+There is a script, import.sh, that imports data from an existing 
+- Check the script 
+
+When you start the program you will get the main-menu. I don't think I need
+to explain the choices...
+
+There are some features in Apanconfig to make it easier to work with;
+ - The last entries are remembered.
+ - There are default values for various RRD parameters.
+ - RRD-filenames are generated from the host- and servicename.
+ - The last Graph-labels/Units and extra arguments to rrdtool are displayed
+   when you add a service. You can then use copy/paste to reuse them.
+ - It uses colors... I'm not sure if this makes it easier to use or not :-)
+
+
+Limitations -------------------------------------------
+
+- Right now, apanconfig cant edit arguments and DS'es.
+- 
+
+-------------------------------------------------------
+For more info:
+apan.sourceforge.net
+Fredrik Wänglund, fredrik.wanglund@datavis.se
+
+Nagios is a registered trademark of Ethan Galstad.
+
+

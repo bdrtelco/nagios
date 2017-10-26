@@ -1,0 +1,1 @@
+/etc/ejabberd/bin/./start

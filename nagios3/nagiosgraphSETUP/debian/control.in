@@ -1,0 +1,19 @@
+Package: nagiosgraph
+Source: nagiosgraph
+Version: VERSION
+Homepage: http://nagiosgraph.sourceforge.net/
+Section: Application/System
+Priority: extra
+Maintainer: Alan Brenner
+Architecture: all
+Depends: nagios3, apache2, libcgi-pm-perl, librrds-perl
+Recommends: libgd-gd2-perl, libnagios-object-perl
+Pre-Depends: perl
+Enhances: nagios
+Provides: nagiosgraph
+Description: Nagios add-on for performance data storage and graphing
+ NagiosGraph is an add-on to Nagios.  Nagios monitors one or more services on
+ each host.  NagiosGraph extracts information from the Nagios output, processes
+ it, then inserts it into one or more round-robin database (RRD) files.  CGI
+ scripts display data from the RRD files as web pages.  The CGI output can be
+ embedded directly into Nagios so that graphs show up like other trend reports.

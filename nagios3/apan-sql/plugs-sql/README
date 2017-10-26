@@ -1,0 +1,2 @@
+The files in this directory contains functions that is a apan-plugin.
+The files is only read by apan if they have a .sh suffix.

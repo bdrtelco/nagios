@@ -1,0 +1,1313 @@
+drwxr-xr-x 5 nagios nagios 4096 2016 08 03 2
+drwxr-xr-x 2 nagios nagios 4096 2015 11 16 agencias
+drwxr-xr-x 3 nagios nagios 4096 2016 04 19 Bdr_network
+drwxr-xr-x 2 nagios nagios 4096 2015 11 16 cambios_en_proceso
+drwxr-xr-x 2 nagios nagios 4096 2015 11 16 Cobit
+drwxrwxrwx 5 nagios nagios 4096 2017 09 11 diagramas
+drwxr-xr-x 3 nagios nagios 4096 2016 10 12 fuentes
+drwxr-xr-x 3 nagios nagios 4096 2015 11 16 GateWays
+drwxr-xr-x 2 nagios nagios 4096 2016 10 12 images
+drwxr-xr-x 3 nagios nagios 4096 2015 11 16 Mapas
+drwxr-xr-x 5 nagios nagios 4096 2016 04 20 mitel
+drwxr-xr-x 2 nagios nagios 4096 2016 07 11 Old
+drwxr-xr-x 2 nagios nagios 4096 2015 11 16 pictures
+drwxr-xr-x 7 nagios nagios 4096 2017 09 22 reporte_agencias
+drwxr-xr-x 2 nagios nagios 4096 2015 11 16 servicios
+drwxr-xr-x 2 nagios nagios 4096 2015 11 16 socios
+drwxr-xr-x 2 nagios nagios 4096 2015 11 16 VPN_Docs
+-rwxrwxrwx 1 nagios nagios  1434 2010 11 22 config.cfg
+-rwxrwxrwx 1 nagios nagios 12079 2010 02 17 copyright
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 cron
+-rwxrwxrwx 1 nagios nagios  3929 2010 11 22 functions.php
+-rwxrwxrwx 1 nagios nagios  3867 2010 11 22 index.php
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 inst
+-rwxrwxrwx 1 nagios nagios  5786 2010 11 22 pic.php
+-rwxrwxrwx 1 nagios nagios  3547 2010 11 22 print.css
+-rwxrwxrwx 1 nagios nagios  2035 2011 03 08 print.php
+-rwxrwxrwx 1 nagios nagios  1645 2010 11 22 readme
+-rwxrwxrwx 1 nagios nagios  2060 2011 03 08 release
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 report
+-rwxrwxrwx 1 nagios nagios  4292 2010 11 22 style.css
+-rwxrwxrwx 1 nagios nagios 3368 2010 11 22 ping.php
+-rwxrwxrwx 1 nagios nagios 808 2010 02 25 db_ping.sql
+-rwxrwxrwx 1 nagios nagios  116178 2012 07 19 age006.pdf
+-rwxrwxrwx 1 nagios nagios  364146 2012 07 19 age019.pdf
+-rwxrwxrwx 1 nagios nagios  330975 2012 07 19 age023.pdf
+-rwxrwxrwx 1 nagios nagios  597592 2012 07 19 age025.pdf
+-rwxrwxrwx 1 nagios nagios  713420 2013 05 23 age027.pdf
+-rwxrwxrwx 1 nagios nagios  547955 2013 05 23 age039.pdf
+-rwxrwxrwx 1 nagios nagios  610382 2013 05 23 age063.pdf
+-rwxrwxrwx 1 nagios nagios  114672 2012 07 19 age065.pdf
+-rwxrwxrwx 1 nagios nagios  541935 2012 07 19 age072.pdf
+-rwxrwxrwx 1 nagios nagios  250191 2012 07 19 age090b.pdf
+-rwxrwxrwx 1 nagios nagios   85219 2012 07 19 age090.pdf
+-rwxrwxrwx 1 nagios nagios  653617 2012 07 19 age102.pdf
+-rwxrwxrwx 1 nagios nagios  884121 2013 05 23 age137.pdf
+-rwxrwxrwx 1 nagios nagios  788238 2012 07 19 age141.pdf
+-rwxrwxrwx 1 nagios nagios  614335 2013 05 23 age143.pdf
+-rwxrwxrwx 1 nagios nagios  190670 2012 07 19 age147.pdf
+-rwxrwxrwx 1 nagios nagios  458915 2012 07 19 age164.pdf
+-rwxrwxrwx 1 nagios nagios  200739 2012 07 19 age166.pdf
+-rwxrwxrwx 1 nagios nagios   95743 2012 07 19 age171.pdf
+-rwxrwxrwx 1 nagios nagios  616849 2012 07 19 age186.pdf
+-rwxrwxrwx 1 nagios nagios  473072 2013 05 23 age193.pdf
+-rwxrwxrwx 1 nagios nagios  162541 2012 07 19 age196.pdf
+-rwxrwxrwx 1 nagios nagios  310735 2011 06 15 age212.pdf
+-rwxrwxrwx 1 nagios nagios  651723 2012 07 19 age221.pdf
+-rwxrwxrwx 1 nagios nagios  571362 2013 05 23 age237.pdf
+-rwxrwxrwx 1 nagios nagios 1701593 2012 07 19 age247.pdf
+-rwxrwxrwx 1 nagios nagios  469096 2013 05 23 age265.pdf
+-rwxrwxrwx 1 nagios nagios   30768 2013 05 23 age275.pdf
+-rwxrwxrwx 1 nagios nagios  506204 2012 07 19 age276.pdf
+-rwxrwxrwx 1 nagios nagios 1281194 2012 07 19 age283.pdf
+-rwxrwxrwx 1 nagios nagios   86471 2012 07 19 age287.pdf
+-rwxrwxrwx 1 nagios nagios  625819 2012 07 19 age291.pdf
+-rwxrwxrwx 1 nagios nagios  417046 2012 07 19 age296b.pdf
+-rwxrwxrwx 1 nagios nagios  810161 2012 07 19 age296.pdf
+-rwxrwxrwx 1 nagios nagios  187620 2012 07 19 age306.pdf
+-rwxrwxrwx 1 nagios nagios  919640 2011 06 15 age316.pdf
+-rwxrwxrwx 1 nagios nagios  814342 2013 05 23 age319.pdf
+-rwxrwxrwx 1 nagios nagios  423908 2013 05 23 age326.pdf
+-rwxrwxrwx 1 nagios nagios  334541 2011 06 15 age339.pdf
+-rwxrwxrwx 1 nagios nagios  446361 2012 07 19 age341.pdf
+-rwxrwxrwx 1 nagios nagios  728941 2013 05 23 age360.pdf
+-rwxrwxrwx 1 nagios nagios  246488 2012 07 19 age361.pdf
+-rwxrwxrwx 1 nagios nagios  553312 2013 05 23 age382.pdf
+-rwxrwxrwx 1 nagios nagios  857378 2012 07 19 age390.pdf
+-rwxrwxrwx 1 nagios nagios  689641 2012 07 19 age415.pdf
+-rwxrwxrwx 1 nagios nagios   98284 2012 07 19 age424.pdf
+-rwxrwxrwx 1 nagios nagios  769383 2012 07 19 age425.pdf
+-rwxrwxrwx 1 nagios nagios  722319 2012 07 19 age426.pdf
+-rwxrwxrwx 1 nagios nagios  619319 2013 05 23 age431.pdf
+-rwxrwxrwx 1 nagios nagios  433217 2012 07 19 age458.pdf
+-rwxrwxrwx 1 nagios nagios   74195 2012 07 19 age459.pdf
+-rwxrwxrwx 1 nagios nagios   71743 2013 05 23 age474.pdf
+-rwxrwxrwx 1 nagios nagios  655681 2013 05 23 age477.pdf
+-rwxrwxrwx 1 nagios nagios  242610 2012 07 19 age479.pdf
+-rwxrwxrwx 1 nagios nagios  542290 2012 07 19 age486.pdf
+-rwxrwxrwx 1 nagios nagios  458587 2012 07 19 age491.pdf
+-rwxrwxrwx 1 nagios nagios  302182 2012 07 19 age493.pdf
+-rwxrwxrwx 1 nagios nagios 2727235 2012 07 19 age518.pdf
+-rwxrwxrwx 1 nagios nagios   95649 2012 07 19 age525.pdf
+-rwxrwxrwx 1 nagios nagios  358730 2013 05 23 age537.pdf
+-rwxrwxrwx 1 nagios nagios  958333 2013 05 23 age539.pdf
+-rwxrwxrwx 1 nagios nagios 1000820 2012 07 19 age556.pdf
+-rwxrwxrwx 1 nagios nagios  834827 2013 05 23 age568.pdf
+-rwxrwxrwx 1 nagios nagios   74656 2012 07 19 age573.pdf
+-rwxrwxrwx 1 nagios nagios  489787 2013 05 23 age578.pdf
+-rwxrwxrwx 1 nagios nagios  333406 2011 06 15 age590.pdf
+-rwxrwxrwx 1 nagios nagios  733432 2013 05 23 age605.pdf
+-rwxrwxrwx 1 nagios nagios   76397 2012 07 19 age613.pdf
+-rwxrwxrwx 1 nagios nagios  571241 2013 05 23 age623.pdf
+-rwxrwxrwx 1 nagios nagios  560549 2013 05 23 age624.pdf
+-rwxrwxrwx 1 nagios nagios  493304 2013 05 23 age631.pdf
+-rwxrwxrwx 1 nagios nagios  363373 2012 07 19 age636.pdf
+-rwxrwxrwx 1 nagios nagios  713731 2012 07 19 age650.pdf
+-rwxrwxrwx 1 nagios nagios  320877 2012 07 19 age661.pdf
+-rwxrwxrwx 1 nagios nagios  386384 2012 07 19 age669.pdf
+-rwxrwxrwx 1 nagios nagios  618271 2012 07 19 age679.pdf
+-rwxrwxrwx 1 nagios nagios  944555 2012 07 19 age684.pdf
+-rwxrwxrwx 1 nagios nagios  114346 2012 07 19 age686.pdf
+-rwxrwxrwx 1 nagios nagios  284555 2012 07 19 age694.pdf
+-rwxrwxrwx 1 nagios nagios  751803 2012 07 19 age697.pdf
+-rwxrwxrwx 1 nagios nagios  691276 2013 05 23 age704.pdf
+-rwxrwxrwx 1 nagios nagios   75816 2012 07 19 age705.pdf
+-rwxrwxrwx 1 nagios nagios   85268 2012 07 19 age717.pdf
+-rwxrwxrwx 1 nagios nagios  375874 2011 06 15 age723.pdf
+-rwxrwxrwx 1 nagios nagios  473091 2012 07 19 age750.pdf
+-rwxrwxrwx 1 nagios nagios  715646 2011 06 15 age758.pdf
+-rwxrwxrwx 1 nagios nagios  434672 2011 06 15 age760.pdf
+-rwxrwxrwx 1 nagios nagios 1930577 2011 06 15 age769.pdf
+-rwxrwxrwx 1 nagios nagios 1513450 2013 02 18 Banrural Agencia 001 Antigua Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1508962 2013 02 18 Banrural Agencia 002 Barberena.pdf
+-rwxrwxrwx 1 nagios nagios 1485348 2013 02 18 Banrural Agencia 004 Jutiapa.pdf
+-rwxrwxrwx 1 nagios nagios 1497289 2013 02 18 Banrural Agencia 015 Coatepeque.pdf
+-rwxrwxrwx 1 nagios nagios 1388488 2013 02 18 Banrural Agencia 022 Solol .pdf
+-rwxrwxrwx 1 nagios nagios 1275522 2013 02 18 Banrural Agencia 032 Huehuetenango.pdf
+-rwxrwxrwx 1 nagios nagios 1298237 2013 02 18 Banrural Agencia 062 San Luis Petn.pdf
+-rwxrwxrwx 1 nagios nagios 1536651 2013 02 18 Banrural Agencia 124 Coban.pdf
+-rwxrwxrwx 1 nagios nagios 1438819 2013 02 18 Banrural Agencia 148 Antigua Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1547355 2013 02 18 Banrural Agencia 152 El Progreso Jutiapa.pdf
+-rwxrwxrwx 1 nagios nagios 1521595 2013 02 18 Banrural Agencia 160 Esquipulas km 171.5.pdf
+-rwxrwxrwx 1 nagios nagios 1370184 2013 02 18 Banrural Agencia 162 la Democracia, Huehuetenango.pdf
+-rwxrwxrwx 1 nagios nagios 1300032 2013 02 18 Banrural Agencia 189 Zona 6, Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1285597 2013 02 18 Banrural Agencia 275 Mazatenango.pdf
+-rwxrwxrwx 1 nagios nagios 1288542 2013 02 18 Banrural Agencia 309 Zona 1, Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1268634 2013 02 18 Banrural Agencia 329 Coatepeque.pdf
+-rwxrwxrwx 1 nagios nagios 1390468 2013 02 18 Banrural Agencia 384 C. C. Montufar.pdf
+-rwxrwxrwx 1 nagios nagios 1504090 2013 02 18 Banrural Agencia 406, 20 Calle zona 10, Guatemala.pdf
+-rwxrwxrwx 1 nagios nagios 1391468 2013 02 18 Banrural Agencia 428 Salam .pdf
+-rwxrwxrwx 1 nagios nagios 1314058 2013 02 18 Banrural Agencia 430 Santa Elena, Petn.pdf
+-rwxrwxrwx 1 nagios nagios 1429739 2013 02 18 Banrural Agencia 477 Aldea la Ruidosa, Puerto Barrios.pdf
+-rwxrwxrwx 1 nagios nagios 1327365 2013 02 18 Banrural Agencia 530 Chimaltenango.pdf
+-rwxrwxrwx 1 nagios nagios 1261488 2013 02 18 Banrural Agencia 669 Quetzaltenango.pdf
+-rwxrwxrwx 1 nagios nagios 1516415 2013 02 18 Banrural Agencia 721 Santa  Cruz del Quiche.pdf
+-rwxrwxrwx 1 nagios nagios 1439161 2013 02 18 Banrural Agencia 777 San Marcos.pdf
+-rwxrwxrwx 1 nagios nagios 1475234 2013 02 18 Banrural Agencia 887 Totonicap n.pdf
+-rwxrwxrwx 1 nagios nagios   52573 2010 08 16 Admon_SitioAlterno.JPG
+-rwxrwxrwx 1 nagios nagios   56003 2008 10 27 Admon_zona11.JPG
+-rwxrwxrwx 1 nagios nagios   53605 2008 10 27 Admon_zona1.JPG
+-rwxrwxrwx 1 nagios nagios   30599 2015 01 16 ap_banrural.htm
+-rwxrwxrwx 1 nagios nagios  165217 2011 01 25 Bdr_DCPropuesta2011.JPG
+-rwxrwxrwx 1 nagios nagios 1225773 2011 01 25 Bdr_NetDiagram_200100712-problema.JPG
+-rwxrwxrwx 1 nagios nagios  806860 2009 08 06 Bdr_NetDiagram_200908.jpg
+-rw-r--r-- 1 root   root    545324 2016 04 19 Bdr-NetDiagram-Core-Redundante-201603.JPG
+-rwxrwxrwx 1 nagios nagios  305668 2011 01 25 Bdr-NetDiagram-Fisico-201007.JPG
+-rwxrwxrwx 1 nagios nagios 1104651 2011 01 25 Bdr-NetDiagram-Fisico-201007-probema.JPG
+-rwxrwxrwx 1 nagios nagios  255414 2011 01 25 Bdr_NetDiagram_SitioB_15Sept.JPG
+-rwxrwxrwx 1 nagios nagios  299980 2011 01 25 Bdr_NetDiagram_SitioB_Managers_201009.JPG
+-rwxrwxrwx 1 nagios nagios   18462 2016 04 19 Bdr-tyt.htm
+-rwxrwxrwx 1 nagios nagios  368854 2008 09 24 conf_salidainternet.jpg
+-rwxrwxrwx 1 nagios nagios  357536 2013 05 13 dc-cat6-1.jpg
+-rwxrwxrwx 1 nagios nagios  454459 2013 05 13 dc-cat6-2.jpg
+-rwxrwxrwx 1 nagios nagios  159156 2008 09 24 Diagrama-age099-zona1-2008.jpg
+-rwxrwxrwx 1 nagios nagios 1017677 2008 09 24 Diagrama_AsRural.JPG
+-rwxrwxrwx 1 nagios nagios   50714 2008 09 24 Diagrama_IVR.JPG
+-rwxrwxrwx 1 nagios nagios  183791 2008 09 24 Diagrama_TarjetaCreditoPTC.JPG
+-rwxrwxrwx 1 nagios nagios  132314 2008 09 24 Email1.jpg
+-rwxrwxrwx 1 nagios nagios  228265 2008 09 24 EsquenaRedundancia.JPG
+-rwxrwxrwx 1 nagios nagios    3275 2009 12 04 Internet_CheckPoint_2.html
+-rwxrwxrwx 1 nagios nagios   75946 2010 03 17 Internet_CheckPoint_2.JPG
+-rwxrwxrwx 1 nagios nagios   92234 2008 10 27 Internet_CheckPoint.JPG
+-rwxrwxrwx 1 nagios nagios  101269 2009 05 07 Internet_Clientes_VPN.JPG
+-rwxrwxrwx 1 nagios nagios   32696 2015 07 24 Internet_General.htm
+-rwxrwxrwx 1 nagios nagios  174230 2014 11 20 Internet_General.jpg
+-rwxrwxrwx 1 nagios nagios  106692 2008 10 27 Internet_LinkProof.JPG
+-rwxrwxrwx 1 nagios nagios  132550 2016 04 18 Listado.htm
+drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
+-rwxrwxrwx 1 nagios nagios  671598 2008 09 24 Remesas.JPG
+-rwxrwxrwx 1 nagios nagios  646252 2008 09 24 Remesas_Noip.JPG
+-rwxrwxrwx 1 nagios nagios    2011 2009 12 04 Switch_BayStack1.htm
+-rwxrwxrwx 1 nagios nagios   40617 2009 12 04 Switch_BayStack1.JPG
+-rwxrwxrwx 1 nagios nagios    3257 2016 04 19 Switch_Xtreme_Dist.htm
+-rwxrwxrwx 1 nagios nagios 34009 2015 03 12 Internet_General.htm.20150312
+-rwxrwxrwx 1 nagios nagios  68250 2014 02 18 admon-zona1.jpg
+-rwxrwxrwx 1 nagios nagios 106989 2013 05 14 Agencias-Navega-Final.JPG
+-rwxrwxrwx 1 nagios nagios  82871 2013 05 13 Agencias-Navega.JPG
+-rwxrwxrwx 1 nagios nagios 102071 2013 05 14 Agencias-Navega-New.JPG
+-rwxrwxrwx 1 nagios nagios  81601 2013 05 14 Agencias-Telnor.JPG
+-rwxrwxrwx 1 nagios nagios  98953 2013 05 14 Agencias-Telnor-New.JPG
+-rwxrwxrwx 1 nagios nagios 107670 2013 05 16 Extera-General.JPG
+-rwxrwxrwx 1 nagios nagios 100814 2013 10 31 Gw_Navega-Cambio.JPG
+-rwxrwxrwx 1 nagios nagios 198656 2014 01 09 Internet-CheckPoint-New2.JPG
+-rwxrwxrwx 1 nagios nagios 151150 2014 01 09 Internet-CheckPoint-New.JPG
+-rwxrwxrwx 1 nagios nagios  52928 2013 05 14 Internet-Navega.JPG
+-rwxrwxrwx 1 nagios nagios  71317 2013 05 14 Internet-Navega-New.JPG
+-rwxrwxrwx 1 nagios nagios  97201 2013 05 14 Partners-Terceros-Tigo-Todos.JPG
+-rwxrwxrwx 1 nagios nagios 122036 2013 05 14 Partners-Terceros-Tigo-Todos-New.JPG
+-rwxrwxrwx 1 nagios nagios   81020 2016 07 11 3G-Movil.jpg
+-rwxrwxrwx 1 nagios nagios    2556 2014 11 12 admon-gw-branches1.html
+-rwxrwxrwx 1 nagios nagios    2567 2014 11 12 admon-gw-branches.html
+-rwxrwxrwx 1 nagios nagios    1463 2016 02 18 admon-gw-torre.html
+-rwxrwxrwx 1 nagios nagios    2737 2014 12 24 admon-gw-zona11.html
+-rwxrwxrwx 1 nagios nagios    1830 2016 07 29 admon-gw-zona1.html
+-rwxrwxrwx 1 nagios nagios    2124 2014 10 14 admon-gw-zona4.html
+-rwxrwxrwx 1 nagios nagios    4503 2015 08 28 admon-wf-age33.html
+-rwxrwxrwx 1 nagios nagios    5365 2015 07 21 admon-wf-torre_060815.html
+-rwxrwxrwx 1 nagios nagios    3098 2015 04 20 admon-wf-torre__.html
+-rwxrwxrwx 1 nagios nagios    8486 2016 09 05 admon-wf-torre.html
+-rwxrwxrwx 1 nagios nagios    2335 2016 09 05 admon-wf-zona11.html
+-rwxrwxrwx 1 nagios nagios    1679 2013 07 10 age-claro.html
+-rwxrwxrwx 1 nagios nagios    1417 2013 07 10 age-columbus.html
+-rwxrwxrwx 1 nagios nagios    1987 2013 11 13 age-gw-agencias.html
+-rwxrwxrwx 1 nagios nagios    2132 2017 03 08 age-gw-agencias-sitio-alterno.html
+-rwxrwxrwx 1 nagios nagios     944 2014 10 14 age-muni-gualan.html
+-rwxrwxrwx 1 nagios nagios     106 2017 07 19 age-muni-villanueva.html
+-rwxrwxrwx 1 nagios nagios      93 2017 05 19 age-muni-xela.html
+-rwxrwxrwx 1 nagios nagios    2285 2013 07 10 age-telnor.html
+-rwxrwxrwx 1 nagios nagios    1553 2013 11 05 age-tigo.html
+-rwxrwxrwx 1 nagios nagios   88344 2014 05 02 Anillo-Zona1-4.JPG
+-rwxrwxrwx 1 nagios nagios    1911 2016 04 25 dc-anillo-fibra-edificios.html
+-rwxrwxrwx 1 nagios nagios     185 2016 04 25 dc-anillo-fibra-edificios.html-orig
+-rwxrwxrwx 1 nagios nagios    2097 2014 08 05 dc-ascenlinkBK
+-rwxrwxrwx 1 nagios nagios    2293 2014 08 26 dc-ascenlink.html
+-rwxrwxrwx 1 nagios nagios     100 2015 11 19 dc-interconexion-asr-z11.html
+-rwxrwxrwx 1 nagios nagios      89 2015 07 21 dc-interconexion-emc.html
+-rwxrwxrwx 1 nagios nagios    1851 2017 09 06 dc-interconexion-z11.html
+-rwxrwxrwx 1 nagios nagios    1877 2016 06 21 dc-interconexion-z9.html
+-rwxrwxrwx 1 nagios nagios   98433 2016 08 11 dc-Mikrotik-agencias.jpg
+-rwxrwxrwx 1 nagios nagios   75704 2016 08 11 dc-netscaler-diagrama.jpg
+-rwxrwxrwx 1 nagios nagios    2908 2017 05 12 dc-netscaler.html
+-rwxr-xr-x 1 root   root      1929 2017 05 15 dc-proxybdr.html
+-rwxrwxrwx 1 nagios nagios    2113 2014 08 05 dc-proxy.html
+-rwxrwxrwx 1 root   root        91 2017 01 30 dc-segurdidad-torre-z9.html
+-rwxrwxrwx 1 nagios nagios      87 2015 11 04 dc-seguridad-age115.html
+-rwxrwxrwx 1 root   root     87450 2017 09 11 diagramaAgenciasClaroHA.jpg
+-rwxrwxrwx 1 root   root     90004 2017 09 11 diagramaAgenciasTigoHA.jpg
+-rwxrwxrwx 1 nagios nagios   11723 2014 06 17 Display.pdf
+drwxr-xr-x 2 nagios nagios    4096 2017 07 04 documentos
+-rwxr-xr-x 1 root   root      2575 2017 03 07 exinda.html
+drwxrwxrwx 3 nagios nagios    4096 2016 09 06 fuentes
+drwxrwxrwx 2 nagios nagios    4096 2017 09 06 images
+-rwxrwxrwx 1 nagios nagios     629 2014 08 05 index.html
+-rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint01.html
+-rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint02.html
+-rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint03.html
+-rwxrwxrwx 1 nagios nagios   12049 2017 09 11 Left.html
+-rwxrwxrwx 1 nagios nagios     401 2013 07 10 menu.html
+-rwxrwxrwx 1 nagios nagios   59904 2017 02 10 Redytec3g.jpg
+-rwxrwxrwx 1 nagios nagios     111 2015 06 15 socios-allied.html
+-rwxrwxrwx 1 nagios nagios     115 2014 07 31 socios-ciag.html
+-rwxrwxrwx 1 nagios nagios     123 2014 07 31 socios-cyberseg.htm
+-rwxrwxrwx 1 nagios nagios     942 2014 11 03 socios-dmz-gobierno.html
+-rwxrwxrwx 1 nagios nagios    1029 2013 12 16 socios-dmz-servicios.html
+-rwxrwxrwx 1 root   root       958 2016 07 28 socios-eegsa.html
+-rwxrwxrwx 1 nagios nagios     949 2013 11 22 socios-eventoscatolicos.html
+-rwxrwxrwx 1 nagios nagios    1993 2014 09 11 socios-gw-socios.html
+-rwxrwxrwx 1 nagios nagios     956 2014 11 13 socios-igss.html
+-rwxrwxrwx 1 nagios nagios     939 2016 07 11 socios-intecap.html
+-rwxrwxrwx 1 root   root       928 2016 07 29 socios-maycom.html
+-rwxrwxrwx 1 nagios nagios     934 2014 09 11 socios-migracion.html
+-rwxrwxrwx 1 nagios nagios     947 2014 10 16 socios-mingob.html
+-rwxrwxrwx 1 nagios nagios     936 2014 10 14 socios-oj.html
+-rwxrwxrwx 1 nagios nagios     941 2016 07 11 socios-oriflame.html
+-rwxrwxrwx 1 nagios nagios    1624 2014 09 11 socios-ptc.html
+-rwxrwxrwx 1 nagios nagios     951 2013 12 16 socios-registromercantil.html
+-rwxrwxrwx 1 nagios nagios     926 2013 08 05 socios-renap.html
+-rwxrwxrwx 1 nagios nagios    1006 2013 07 25 socios-sascim.html
+-rwxrwxrwx 1 nagios nagios    1016 2013 07 25 socios-sat.html
+-rwxrwxrwx 1 nagios nagios    2279 2015 03 13 socios-sib-8nivel.html
+-rwxrwxrwx 1 nagios nagios    1449 2015 07 03 socios-sib-nat.html
+-rwxrwxrwx 1 root   root       926 2016 07 28 socios-swift.html
+-rwxrwxrwx 1 nagios nagios    1714 2013 07 10 socios-terceros-tigo.html
+-rwxrwxrwx 1 nagios nagios    5621 2016 03 30 socios-tyt.html
+-rwxrwxrwx 1 nagios nagios     123 2014 09 12 socios-widefense.html
+-rwxrwxrwx 1 nagios nagios     483 2016 02 12 Ubicacion-AP.html
+-rwxrwxrwx 1 nagios nagios  735004 2016 08 09 Wifi_Age115.jpg
+-rwxrwxrwx 1 nagios nagios  280277 2016 08 10 Wifi_Age33.jpg
+-rwxrwxrwx 1 nagios nagios  806081 2016 06 15 Wifi_Datos.jpg
+-rwxrwxrwx 1 nagios nagios 1019363 2017 02 22 Wifi-Torre1.jpg
+-rwxrwxrwx 1 nagios nagios  611112 2016 08 08 Wifi_Torre.jpg
+-rwxrwxrwx 1 nagios nagios  374910 2016 08 08 Wifi_Zona1.jpg
+-rwxrwxrwx 1 nagios nagios     104 2016 08 24 www-cp01.html
+-rwxrwxrwx 1 nagios nagios  205803 2016 08 24 www-cp01.jpg
+-rwxrwxrwx 1 nagios nagios     113 2015 10 30 www-cp02.html
+-rwxrwxrwx 1 nagios nagios     113 2015 10 30 www-cp03.html
+-rwxrwxrwx 1 nagios nagios     114 2016 04 28 www-cp04.html
+-rw-rw-r-- 1 admsis admsis 23268 2017 07 04 dc-netscaler-instancias.xlsx
+-rwxrwxrwx 1 nagios  nagios 1201398 2016 02 18 admon-gw-torre.edg
+-rwxrwxrwx 1 nagios  nagios 1207722 2016 07 27 admon-gw-zona1.edg
+-rwxrwxrwx 1 nagios  nagios 1219480 2014 10 14 admon-gw-zona4.edg
+-rwxrwxrwx 1 nagios  nagios 1237691 2016 06 15 age-gw-agencias.edg
+-rwxrwxrwx 1 nagios  nagios 1217797 2015 03 16 age-gw-sitio-alterno.edg
+-rwxrwxrwx 1 nagios  nagios 1211361 2014 10 14 age-muni-gualan.edg
+-rwxrwxrwx 1 nagios  nagios 1310410 2015 12 17 bdr-global.edg
+-rwxrwxrwx 1 nagios  nagios 1210776 2016 02 16 dc-anillo-edificios1.edg
+-rwxrwxrwx 1 nagios  nagios 1220517 2016 02 16 dc-anillo-switches.edg
+-rwxrwxrwx 1 telecom admsis 1222793 2016 04 22 dc-netscaler.edg
+drwxrwxrwx 2 nagios  nagios    4096 2016 08 09 old
+-rwxrwxrwx 1 nagios  nagios 1203264 2014 11 03 socios-dmz-gobierno.edg
+-rwxrwxrwx 1 telecom admsis 1212193 2016 07 28 socios-eegsa.edg
+-rwxrwxrwx 1 nagios  nagios 1223499 2014 09 11 socios-gw.edg
+-rwxrwxrwx 1 nagios  nagios 1222501 2014 11 13 socios-igss.edg
+-rwxrwxrwx 1 nagios  nagios 1204629 2014 10 14 socios-intecap.edg
+-rwxrwxrwx 1 telecom admsis 1205076 2016 07 29 socios-maycom.edg
+-rwxrwxrwx 1 nagios  nagios 1207535 2014 09 11 socios-migracion.edg
+-rwxrwxrwx 1 nagios  nagios 1206320 2014 10 16 socios-mingob.edg
+-rwxrwxrwx 1 nagios  nagios 1213916 2014 10 14 socios-oj.edg
+-rwxrwxrwx 1 nagios  nagios 1263957 2011 03 09 socios-oriflame.edg
+-rwxrwxrwx 1 nagios  nagios 1222937 2014 09 11 socios-ptc.edg
+-rwxrwxrwx 1 nagios  nagios 1213040 2015 03 13 socios-sib-8nivel.edg
+-rwxrwxrwx 1 nagios  nagios 1210036 2015 07 03 socios-sib-nat.edg
+-rwxrwxrwx 1 telecom admsis 1206043 2016 07 28 socios-swift.edg
+-rwxrwxrwx 1 telecom admsis 1229390 2016 09 06 socios-tyt.edg
+-rwxrwxrwx 1 nagios nagios 1246415 2014 10 15 age-gw-agencias20160615.edg
+-rwxrwxrwx 1 nagios nagios 1212307 2013 10 28 age-gw-sitio-alterno.edg-20150316
+-rwxrwxrwx 1 nagios nagios 1206693 2014 10 14 dc-anillo-edificios1.edg-20160216
+-rwxrwxrwx 1 nagios nagios 1222793 2016 04 22 dc-netscaler20160809.edg
+-rwxrwxrwx 1 nagios nagios 1210374 2015 03 13 dc-netscaler.edg
+-rwxrwxrwx 1 nagios nagios 1210860 2014 10 14 socios-sib-8nivel.edg-20150313
+-rwxrwxrwx 1 nagios  nagios  128932 2013 11 15 admon-gw-branches1.jpg
+-rwxrwxrwx 1 nagios  nagios  179593 2014 11 12 admon-gw-branches.jpg
+-rwxrwxrwx 1 nagios  nagios   55421 2016 02 18 admon-gw-torre.jpg
+-rwxrwxrwx 1 nagios  nagios  113574 2014 12 24 admon-gw-zona11.jpg
+-rwxrwxrwx 1 nagios  nagios   77575 2016 07 27 admon-gw-zona1.jpg
+-rwxrwxrwx 1 nagios  nagios  108773 2014 10 14 admon-gw-zona4.jpg
+-rwxrwxrwx 1 nagios  nagios   84822 2015 08 28 admon-wf-age33.jpg
+-rwxrwxrwx 1 nagios  nagios  136603 2015 02 26 admon-wf-torre.jpg
+-rwxrwxrwx 1 nagios  nagios   96108 2015 02 26 admon-wf-zona11.jpg
+-rwxrwxrwx 1 nagios  nagios   97088 2013 06 11 age-cesa.jpg
+-rwxrwxrwx 1 nagios  nagios   79421 2013 06 12 age-claro.jpg
+-rwxrwxrwx 1 nagios  nagios   64376 2013 06 12 age-columbus.jpg
+-rwxrwxrwx 1 nagios  nagios   98319 2016 06 15 age-gw-agencias.jpg
+-rwxrwxrwx 1 nagios  nagios  110545 2015 03 16 age-gw-agencias-sitio-alterno.jpg
+-rwxrwxrwx 1 nagios  nagios  112235 2014 10 14 age-muni-gualan.jpg
+-rwxrwxrwx 1 nagios  nagios   96671 2013 06 11 age-telnor.jpg
+-rwxrwxrwx 1 nagios  nagios   91775 2013 10 31 age-tigo.jpg
+-rwxrwxrwx 1 nagios  nagios   95566 2016 06 07 Ascenlink-Alterno-Zona11.jpg
+-rwxrwxrwx 1 nagios  nagios   74696 2014 04 15 ASCENLINK_DC_Z11.JPG
+-rwxrwxrwx 1 nagios  nagios   74615 2014 04 15 ASCENLINK_DC_Z9.JPG
+-rwxrwxrwx 1 nagios  nagios  545324 2016 10 17 bdr-global.jpg
+-rwxrwxrwx 1 nagios  nagios   85425 2016 02 16 dc-anillo-edificios1.jpg
+-rwxrwxrwx 1 nagios  nagios  102933 2013 12 16 dc-anillo-fibra-wireless2.jpg
+-rwxrwxrwx 1 nagios  nagios   99211 2013 12 16 dc-anillo-fibra-wireless.jpg
+-rwxrwxrwx 1 nagios  nagios  113015 2016 02 16 dc-anillo-switches.jpg
+-rwxrwxrwx 1 nagios  nagios  115578 2016 08 09 dc-netscaler.jpg
+-rwxrwxrwx 1 nagios  nagios  102620 2016 04 22 dc-netscaler-old.jpg
+-rwxrwxrwx 1 nagios  nagios  294106 2015 11 03 dc-seg-age115.jpg
+-rwxrwxrwx 1 nagios  nagios  255739 2017 09 06 dc-sw-z11.jpg
+-rw-r--r-- 1 telecom admsis   80105 2017 02 10 DIAGRAMA_CONCEPTUAL_GWAGEZ11_EXINDA.png
+-rw-r--r-- 1 telecom admsis  161919 2017 02 10 DIAGRAMA_CONEXION_GWAGEZ11_EXINDA.png
+-rw-r--r-- 1 telecom admsis   70303 2017 05 15 DiagramaproxyBDR.jpg
+-rwxrwxrwx 1 nagios  nagios   95992 2017 03 08 gwAgenciasAlterno.jpg
+-rwxrwxrwx 1 nagios  nagios  212637 2016 06 07 GW-Agencias-SitioAlterno.jpg
+-rwxrwxrwx 1 nagios  nagios   73359 2015 06 15 InterconexionAlliedGlobal.JPG
+-rwxrwxrwx 1 nagios  nagios  365342 2015 11 19 InterconexionASR.jpg
+-rwxrwxrwx 1 nagios  nagios  342612 2016 06 21 Interconexion_Distribucion_Z9.jpg
+-rwxrwxrwx 1 nagios  nagios  118724 2015 07 21 InterconexionEMC.JPG
+-rwxrwxrwx 1 nagios  nagios  279694 2017 07 19 InterconexionMuniVillaNueva_LAstt.jpg
+-rwxrwxrwx 1 nagios  nagios  310227 2017 07 18 InterconexionMuniXela.jpg
+-rwxrwxrwx 1 nagios  nagios    8261 2013 06 11 logo.jpg
+-rwxrwxrwx 1 nagios  nagios  330224 2017 01 30 Seguridad_TorreZ9.jpg
+-rwxrwxrwx 1 nagios  nagios   93206 2014 07 31 socios-ciag.jpg
+-rwxrwxrwx 1 nagios  nagios  203997 2016 02 29 socios-cyberseg.jpg
+-rwxrwxrwx 1 nagios  nagios   92520 2014 11 03 socios-dmz-gobierno.jpg
+-rwxrwxrwx 1 nagios  nagios   93652 2016 07 28 socios-eegsa.jpg
+-rwxrwxrwx 1 nagios  nagios  116898 2013 11 22 socios-eventoscatolicos.jpg
+-rwxrwxrwx 1 nagios  nagios  105542 2014 09 11 socios-gw-socios.jpg
+-rwxrwxrwx 1 nagios  nagios  119442 2014 11 13 socios-igss.jpg
+-rwxrwxrwx 1 nagios  nagios  102116 2015 01 07 socios-intecap.jpg
+-rwxrwxrwx 1 nagios  nagios   77517 2016 07 29 socios-maycom.jpg
+-rwxrwxrwx 1 nagios  nagios  108078 2014 09 11 socios-migracion.jpg
+-rwxrwxrwx 1 nagios  nagios  100811 2014 10 16 socios-mingob.jpg
+-rwxrwxrwx 1 nagios  nagios  141136 2014 10 14 socios-oj.jpg
+-rwxrwxrwx 1 nagios  nagios   63955 2011 03 09 socios-oriflame.jpg
+-rwxrwxrwx 1 nagios  nagios  102140 2014 09 11 socios-ptc.jpg
+-rwxrwxrwx 1 nagios  nagios  118771 2013 12 16 socios-registromercantil.jpg
+-rwxrwxrwx 1 nagios  nagios  106837 2013 08 05 socios-renap.jpg
+-rwxrwxrwx 1 nagios  nagios   77383 2013 07 25 socios-sascim2.jpg
+-rwxrwxrwx 1 nagios  nagios  116753 2013 07 25 socios-sascim.jpg
+-rwxrwxrwx 1 nagios  nagios  112205 2013 07 25 socios-sat-primario.jpg
+-rwxrwxrwx 1 nagios  nagios  108584 2013 07 25 socios-sat-secundario.jpg
+-rwxrwxrwx 1 nagios  nagios  114143 2015 03 13 socios-sib-8nivel.jpg
+-rwxrwxrwx 1 nagios  nagios   78706 2015 07 03 socios-sib-nat.jpg
+-rwxrwxrwx 1 nagios  nagios   77167 2016 07 28 socios-swift.jpg
+-rwxrwxrwx 1 nagios  nagios   81762 2013 06 17 socios-terceros-tigo.jpg
+-rwxrwxrwx 1 nagios  nagios  104794 2016 09 06 socios-tyt.jpg
+-rwxrwxrwx 1 nagios  nagios   89126 2014 09 12 socios-widefense.jpg
+-rwxrwxrwx 1 nagios  nagios   72877 2014 08 05 srv_proxy_adm.JPG
+-rwxrwxrwx 1 nagios  nagios 1280334 2016 02 12 Ubicacion-AP.jpg
+-rwxrwxrwx 1 nagios  nagios  205803 2016 08 24 www-cp01.jpg
+-rwxrwxrwx 1 nagios  nagios   94694 2015 11 27 www-cp01-old.jpg
+-rwxrwxrwx 1 nagios  nagios  204976 2016 08 24 www-cp02.jpg
+-rwxrwxrwx 1 nagios  nagios   80171 2015 11 27 www-cp02-old.jpg
+-rwxrwxrwx 1 nagios  nagios   82251 2016 08 24 www-cp03.jpg
+-rwxrwxrwx 1 nagios  nagios   80386 2015 11 27 www-cp03-old.jpg
+-rwxrwxrwx 1 nagios  nagios  303752 2016 04 28 www-cp04.jpg
+-rwxrwxrwx 1 nagios  nagios  362065 2016 10 14 Z1_Labs.jpg
+-rwxrwxrwx 1 nagios nagios  456890 2008 01 01 agencia.edg
+-rwxrwxrwx 1 nagios nagios  492019 2008 01 01 BanruralSimple.edg
+-rwxrwxrwx 1 nagios nagios  531249 2008 10 27 Bdr_NetDiagram_200808.edg
+-rwxrwxrwx 1 nagios nagios  534488 2009 08 06 Bdr_NetDiagram_200908.edg
+-rwxrwxrwx 1 nagios nagios 1241090 2008 01 01 Bdr_Online.edg
+-rwxrwxrwx 1 nagios nagios  505280 2008 01 01 Big_diagrama.edg
+-rwxrwxrwx 1 nagios nagios 1218920 2008 01 01 Conexion_Banrural_Renap_Torre.edg
+-rwxrwxrwx 1 nagios nagios  531809 2008 10 27 Conexion_BCG_Swift.edg
+-rwxrwxrwx 1 nagios nagios  443404 2008 01 01 Conexion_GBM.edg
+-rwxrwxrwx 1 nagios nagios  488143 2008 01 01 Conexion_IGSS.edg
+-rwxrwxrwx 1 nagios nagios  469434 2008 01 01 Conexion_Multi_5b.edg
+-rwxrwxrwx 1 nagios nagios 1219065 2008 01 01 Conexion_SIAF.edg
+-rwxrwxrwx 1 nagios nagios  450976 2008 01 01 Conf_ClusterSun.edg
+-rwxrwxrwx 1 nagios nagios 1151844 2008 01 01 Conf_Email_BDR.edg
+-rwxrwxrwx 1 nagios nagios 1200007 2008 01 01 conf iggs.edg
+-rwxrwxrwx 1 nagios nagios 1242613 2009 04 16 Conf_SalidaInternetNow.edg
+-rwxrwxrwx 1 nagios nagios 1204613 2008 01 01 Conf_seguridad_interna.edg
+-rwxrwxrwx 1 nagios nagios 1219225 2008 01 01 Conf_Telgua.edg
+-rwxrwxrwx 1 nagios nagios 1227765 2008 01 01 Conf_Uniteller.edg
+-rwxrwxrwx 1 nagios nagios 1200204 2008 01 01 Diag_PTC.edg
+-rwxrwxrwx 1 nagios nagios 1207978 2008 10 27 DIAGRAMA_ACH.edg
+-rwxrwxrwx 1 nagios nagios 1264304 2008 01 01 Diagrama_AsRural.edg
+-rwxrwxrwx 1 nagios nagios  485166 2008 01 01 diagrama.edg
+-rwxrwxrwx 1 nagios nagios 1205165 2008 01 01 Diagrama_IVR.edg
+-rwxrwxrwx 1 nagios nagios 1228592 2008 01 01 DiagramaMqSeries.edg
+-rwxrwxrwx 1 nagios nagios 1215279 2008 01 01 Diagrama_NavegaRedundancia.edg
+-rwxrwxrwx 1 nagios nagios 1204955 2008 01 01 diagramaRedytec.edg
+-rwxrwxrwx 1 nagios nagios  455523 2008 01 01 diagramas.edg
+-rwxrwxrwx 1 nagios nagios  462929 2008 01 01 Diagrama_TarjetaCreditoPTC.edg
+-rwxrwxrwx 1 nagios nagios  454224 2008 01 01 Digrama2.edg
+-rwxrwxrwx 1 nagios nagios   56754 2008 01 01 DigramadeFlujoBDRcolas.edg
+-rwxrwxrwx 1 nagios nagios 1246471 2008 01 01 Digrama_Isercosa_bdr.edg
+-rwxrwxrwx 1 nagios nagios 1205593 2008 01 01 DigramaRecibaOptional.edg
+-rwxrwxrwx 1 nagios nagios 1272488 2008 01 01 EdificioB_Reorganizacion.edg
+-rwxrwxrwx 1 nagios nagios  489700 2008 01 01 Email1.edg
+-rwxrwxrwx 1 nagios nagios  526434 2008 01 01 EsquemaEtapa2_UF.edg
+-rwxrwxrwx 1 nagios nagios 1210589 2008 01 01 EsquemaZona1.edg
+-rwxrwxrwx 1 nagios nagios 1240827 2008 01 01 EsquenaRedundancia.edg
+-rwxrwxrwx 1 nagios nagios   48747 2008 01 01 FlujoBDRcolas_Remoto.edg
+-rwxrwxrwx 1 nagios nagios  451274 2008 01 01 MqSockDiagram.edg
+-rwxrwxrwx 1 nagios nagios 1261797 2008 01 01 MultiCredit5bBanrural.edg
+-rwxrwxrwx 1 nagios nagios 1221282 2008 01 01 MuniGuatemala.edg
+drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
+-rwxrwxrwx 1 nagios nagios 1200350 2008 01 01 Partners-Oriflame.edg
+-rwxrwxrwx 1 nagios nagios 1200114 2008 01 01 Partners-Paynexus.edg
+-rwxrwxrwx 1 nagios nagios 1199924 2008 01 01 Partners-Renap-WebService.edg
+-rwxrwxrwx 1 nagios nagios 1199836 2008 01 01 Partners-USAC.edg
+-rwxrwxrwx 1 nagios nagios   44727 2008 01 01 Procs_Nueva_Agencia.edg
+-rwxrwxrwx 1 nagios nagios 1200362 2008 01 01 RedyTec.edg
+-rwxrwxrwx 1 nagios nagios 1215217 2008 01 01 ReferenciasSIB.edg
+-rwxrwxrwx 1 nagios nagios 1228075 2008 01 01 Remesas.edg
+-rwxrwxrwx 1 nagios nagios 1195479 2008 10 27 Socio_OJ.edg
+-rwxrwxrwx 1 nagios nagios 1216052 2008 01 01 Socio_UnionFenosa.edg
+-rwxrwxrwx 1 nagios nagios 1193422 2008 10 27 VPN_Sigue.edg
+-rwxrwxrwx 1 nagios nagios  485548 2008 01 01 WebDiagram.edg
+-rwxrwxrwx 1 nagios nagios 1241430 2008 08 26 Conf_SalidaInternetNow_20090416.edg
+-rwxrwxrwx 1 nagios nagios 1235499 2008 01 01 Conf_SalidaInternetNow_26082008.edg
+-rwxrwxrwx 1 nagios nagios 69132 2011 01 27 Check_Point.jpg
+-rwxrwxrwx 1 nagios nagios 15649 2010 02 15 conexion_admon_z1.htm
+-rwxrwxrwx 1 nagios nagios 14735 2010 02 16 conexion_fw_renap.htm
+-rwxrwxrwx 1 nagios nagios   288 2010 03 18 Extreme1.htm
+-rwxrwxrwx 1 nagios nagios   244 2010 03 03 Extreme2.htm
+-rwxrwxrwx 1 nagios nagios 81785 2011 01 27 GW_Agencias.jpg
+-rwxrwxrwx 1 nagios nagios 69280 2008 10 27 Gw_Cesa.JPG
+-rwxrwxrwx 1 nagios nagios 80719 2009 01 16 Gw_Navega.JPG
+-rwxrwxrwx 1 nagios nagios 65476 2013 06 05 GW_Socios-New.JPG
+-rwxrwxrwx 1 nagios nagios 76579 2009 01 16 Gw_Telered.JPG
+-rwxrwxrwx 1 nagios nagios  3542 2012 03 06 Gw_TorreBanrural.html
+drwxrwxrwx 2 nagios nagios  4096 2015 11 16 images
+-rwxrwxrwx 1 nagios nagios  8882 2010 02 02 muni_mixco.htm
+-rwxrwxrwx 1 nagios nagios  8242 2010 02 15 muni_villa_canales.htm
+-rwxrwxrwx 1 nagios nagios  8155 2010 02 02 portuaria_quetzal.htm
+-rwxrwxrwx 1 nagios nagios 13579 2011 06 17 switches_torre.htm
+-rwxrwxrwx 1 nagios nagios 13818 2010 02 02 tcredito_ptc.htm
+-rwxrwxrwx 1 nagios nagios 27365 2010 02 15 torre_bdr.htm
+-rwxrwxrwx 1 nagios nagios 349526 2008 09 24 Conexion_Banrural_Renap_Torre.JPG
+-rwxrwxrwx 1 nagios nagios 228624 2008 09 24 Conexion_Banrural_Tower.JPG
+-rwxrwxrwx 1 nagios nagios  92120 2011 06 17 diagrama_switches_torre.jpg
+-rwxrwxrwx 1 nagios nagios  89788 2012 03 06 Gw_TorreBanrural.JPG
+-rwxrwxrwx 1 nagios nagios  74070 2010 02 15 gw_torre.jpg
+-rwxrwxrwx 1 nagios nagios 170204 2010 02 15 net_admon_zona1.jpg
+-rwxrwxrwx 1 nagios nagios 174722 2010 02 02 net_muni_mixco.jpg
+-rwxrwxrwx 1 nagios nagios 195803 2010 02 02 net_mvc.jpg
+-rwxrwxrwx 1 nagios nagios 171117 2010 02 02 net_portuaria_quetzal.jpg
+-rwxrwxrwx 1 nagios nagios 235202 2010 02 02 net_ptc_tc.jpg
+-rwxrwxrwx 1 nagios nagios  84284 2011 05 20 Bdr-tyt.jpg
+-rwxrwxrwx 1 nagios nagios  34415 2006 11 20 ci_muni_guate_app.jpg
+-rwxrwxrwx 1 nagios nagios  41398 2006 11 20 ci_muni_guate_net.jpg
+-rwxrwxrwx 1 nagios nagios 368854 2008 02 15 conf_salidainternet.jpg
+-rwxrwxrwx 1 nagios nagios 161039 2010 03 18 Extreme1.jpg
+-rwxrwxrwx 1 nagios nagios  83162 2010 03 03 Extreme2.JPG
+-rwxrwxrwx 1 nagios nagios  72961 2010 01 04 GW_Branch.JPG
+-rwxrwxrwx 1 nagios nagios 365342 2015 09 16 InterconexionASR.JPG
+-rwxrwxrwx 1 nagios nagios 118723 2015 07 21 InterconexionEMC.JPG
+-rwxrwxrwx 1 nagios nagios 174230 2009 04 16 Internet_General.jpg
+-rwxrwxrwx 1 nagios nagios  64679 2011 08 23 Switch_Xtreme_Dist.JPG
+drwxrwxrwx 5 nagios nagios 4096 2015 11 16 Anexo Zona 9
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 1
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 2
+drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 3
+-rwxrwxrwx 1 nagios nagios 1224457 2007 12 10 cobros_1N.jpg
+-rwxrwxrwx 1 nagios nagios  812895 2007 11 16 conta_2N.jpg
+-rwxrwxrwx 1 nagios nagios  971940 2007 11 16 cca_depo.jpg
+-rwxrwxrwx 1 nagios nagios 1047705 2007 12 10 Fideicomisos_2N.jpg
+-rwxrwxrwx 1 nagios nagios 1040016 2007 12 10 UCC_3N.jpg
+-rwxrwxrwx 1 nagios nagios 969283 2007 11 16 cart_2doN.jpg
+-rwxrwxrwx 1 nagios nagios 646020 2007 11 16 depo_1erN.jpg
+-rwxrwxrwx 1 nagios nagios 767602 2007 11 16 Int_3erN.jpg
+-rwxrwxrwx 1 nagios  nagios  1612 2013 04 16 configuracion-switch.html
+drwxr-xr-x 5 telecom admsis  4096 2016 05 11 Documentacion
+drwxr-xr-x 4 telecom admsis  4096 2016 04 20 NotasResponsabilidad
+drwxr-xr-x 3 telecom admsis  4096 2016 04 20 Software
+-rwxrwxrwx 1 nagios  nagios 25901 2013 04 16 telefonos_consulta.php
+-rw-r--r-- 1 telecom admsis 68995 2016 05 11 5330e_QRG_SPE.pdf
+drwxr-xr-x 9 telecom admsis  4096 2016 05 12 BaseConocimientos
+drwxr-xr-x 2 telecom admsis  4096 2016 04 21 Procedimientos
+drwxr-xr-x 3 telecom admsis  4096 2016 04 27 Troubleshooting
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 CallAccounting
+drwxr-xr-x 2 telecom admsis 4096 2016 05 05 ContactCenter
+drwxr-xr-x 6 telecom admsis 4096 2017 01 23 CoreInstalationAndMaintenance
+drwxr-xr-x 2 telecom admsis 4096 2016 05 12 Equipos
+drwxr-xr-x 3 telecom admsis 4096 2016 04 20 MAS
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Oaisys
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 UCA
+-rw-r--r-- 1 telecom admsis 18470562 2016 04 20 CallAccounting_ReportsGuide.pdf
+-rw-r--r-- 1 telecom admsis  7208971 2016 04 20 CallAccounting_UserGuide.pdf
+-rw-r--r-- 1 telecom admsis 50160556 2016 04 20 ContactCenterSolutions_ReportsGuide.pdf
+-rw-r--r-- 1 telecom admsis   127689 2016 04 20 Capacitacion-CCM-201504.pdf
+-rw-r--r-- 1 telecom admsis   253594 2016 04 20 CCS_PortDiagram.pdf
+-rw-r--r-- 1 telecom admsis    22293 2016 04 20 CCS_PortMapping.xlsx
+-rw-r--r-- 1 telecom admsis  6593771 2016 04 20 ContactCenterSolutions_ReportsGuide.pdf
+-rw-r--r-- 1 telecom admsis  2791560 2016 04 20 Contact Center Solutions Training spv.ppsx
+-rw-r--r-- 1 telecom admsis  3591468 2016 04 20 ContactCenterSolutions_UserGuide.eses.pdf
+-rw-r--r-- 1 telecom admsis 14449661 2016 04 20 ContactCenterSolutions_UserGuide.pdf
+-rw-r--r-- 1 telecom admsis   147213 2016 05 05 Manual_Usuario_ACD_Agente-v1.1.pdf
+-rw-r--r-- 1 telecom admsis  16102417 2016 04 20 3300 Primer.zip
+drwxr-xr-x 3 telecom admsis      4096 2017 01 23 6.0
+drwxr-xr-x 2 telecom admsis      4096 2017 01 23 7.0
+drwxr-xr-x 4 telecom admsis      4096 2017 01 23 7.2
+drwxr-xr-x 3 telecom admsis      4096 2017 01 23 8.0
+-rw-r--r-- 1 telecom admsis    496636 2016 04 20 Best_Practices_For_Troubleshooting.pdf
+-rw-r--r-- 1 telecom admsis  41017344 2016 04 20 MCD 6.0 SP1 Documentation Set.exe
+-rw-r--r-- 1 telecom admsis 152879104 2016 04 20 MiCollab Rls 6.0 Docs.exe
+-rw-r--r-- 1 telecom admsis   2204636 2016 04 20 Mitel_Connect_External_Manual.pdf
+-rw-r--r-- 1 telecom admsis 155262689 2016 04 20 Video_editar audio y modificar hold en mitel 3300.wmv
+-rw-r--r-- 1 telecom admsis  18030903 2016 04 20 Video_programacion_planta_festivo.wmv
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Training MCD
+-rw-r--r-- 1 telecom admsis  95358592 2016 04 20 5550IPConsole_4.2.1.9.exe
+-rw-r--r-- 1 telecom admsis    182451 2016 04 20 ars planner LETTER one page no top box.pdf
+-rw-r--r-- 1 telecom admsis      3905 2016 04 20 FACsForClass.csv
+-rw-r--r-- 1 telecom admsis     23040 2016 04 20 Gotchas for tech laptops and PCs.doc
+-rw-r--r-- 1 telecom admsis  41017344 2016 04 20 MCD 6.0 SP1 Documentation Set.exe
+-rw-r--r-- 1 telecom admsis  14899074 2016 04 20 MCD Basic I&M_6.0_2.pdf
+-rw-r--r-- 1 telecom admsis 110828250 2016 04 20 MCD Basic I&M Lab Workbook_6.0_1.pdf
+-rw-r--r-- 1 telecom admsis 969053288 2016 04 20 MCD_Installation_12.0.2.23.exe
+-rw-r--r-- 1 telecom admsis  56246392 2016 04 20 MCDSoftwareInstallerSetup_12.0.2.1.exe
+-rw-r--r-- 1 telecom admsis      3412 2016 04 20 MitelTraining_09122013.txt
+-rw-r--r-- 1 telecom admsis   4911916 2016 04 20 MOHFile.wav
+-rw-r--r-- 1 telecom admsis    457728 2016 04 20 NEWPRIHelper4.ppt
+-rw-r--r-- 1 telecom admsis     61952 2016 04 20 PLID.ppt
+-rw-r--r-- 1 telecom admsis   1521152 2016 04 20 ver6BasicMesa4WithAppRecs-And5320s.ppt
+-rw-r--r-- 1 telecom admsis 67665920 2016 04 20 MiVB 7.0SP1 Documentation Set.exe
+-rw-r--r-- 1 telecom admsis  3215131 2016 04 20 MiVoice Business Core_tech update_R7_0 iss_1.pdf
+-rw-r--r-- 1 telecom admsis  2127230 2016 04 20 MiVoice Business Core_tech update_R7_0 iss_2.pdf
+-rw-r--r-- 1 telecom admsis  2125847 2016 04 20 MiVoice Business Core_tech update_R7_0 iss_3.pdf
+-rw-r--r-- 1 telecom admsis  1163129 2016 04 20 MiVoice Business Core_tech update_R7.1 iss1.pdf
+-rw-r--r-- 1 telecom admsis  1341375 2016 04 20 MiVoice Business Core_tech update_R7.2 iss 1.pdf
+-rw-r--r-- 1 telecom admsis 26488832 2016 04 20 NPUM_7.0SP1_Docs.exe
+drwxr-xr-x 3 telecom admsis 4096 2017 01 23 Core Administration 7.2
+drwxr-xr-x 2 telecom admsis 4096 2017 01 23 NCR-7.2.1
+-rw-r--r-- 1 telecom admsis   1469113 2017 01 23 Classical Gas.wav
+drwxr-xr-x 2 telecom admsis      4096 2017 01 23 Core72
+-rw-r--r-- 1 telecom admsis   1328128 2017 01 23 COREEXAMGRAF-2016g.ppt
+-rw-r--r-- 1 telecom admsis      3725 2017 01 23 FeatureAccessCodes.csv
+-rw-r--r-- 1 telecom admsis   1378208 2017 01 23 IP Phone Analyzer.exe
+-rw-r--r-- 1 telecom admsis    212480 2017 01 23 Lab56789+911.ppt
+-rw-r--r-- 1 telecom admsis 977615744 2017 01 23 MiVB_3300Installation_13.2.0.17.exe
+-rw-r--r-- 1 telecom admsis  13508635 2017 01 23 MiVoice Business NCR I&M_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis   1370480 2017 01 23 MiVoice Business NCR I&M Lab Workbook with Cover_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis   2972160 2017 01 23 NCRPractice-Jax1015x.ppt
+-rw-r--r-- 1 telecom admsis   2971648 2017 01 23 NCRPractice-Jax1016b.ppt
+-rw-r--r-- 1 telecom admsis    438784 2017 01 23 NEWPRIHelper71.ppt
+-rw-r--r-- 1 telecom admsis   6429696 2017 01 23 NOSIPTRUNKv28a.ppt
+-rw-r--r-- 1 telecom admsis     69632 2017 01 23 SIPUSERCLC.ppt
+-rw-r--r-- 1 telecom admsis    438272 2017 01 23 Smolka+Intro-MiVBCore-Oct10.ppt
+-rw-r--r-- 1 telecom admsis    104960 2017 01 23 UpgradeGraf.ppt
+-rw-r--r-- 1 telecom admsis   3096576 2017 01 23 Welcome to MiVB NCR Remote Training Class Prep_Rev1.doc
+-rw-r--r-- 1 telecom admsis  1469113 2017 01 23 Classical Gas.wav
+-rw-r--r-- 1 telecom admsis  2521088 2017 01 23 CLOUDYSIP.ppt
+-rw-r--r-- 1 telecom admsis     3725 2017 01 23 FeatureAccessCodes.csv
+-rw-r--r-- 1 telecom admsis 20336188 2017 01 23 MiVoice Business Core I&M_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis  3538720 2017 01 23 MiVoice Business Core I&M Lab Workbook with Cover_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis 13508635 2017 01 23 MiVoice Business NCR I&M_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis  1370480 2017 01 23 MiVoice Business NCR I&M Lab Workbook with Cover_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis  2972160 2017 01 23 NCRPractice-Jax1015x.ppt
+-rw-r--r-- 1 telecom admsis  2971648 2017 01 23 NCRPractice-Jax1016b.ppt
+-rw-r--r-- 1 telecom admsis   438784 2017 01 23 NEWPRIHelper71.ppt
+-rw-r--r-- 1 telecom admsis  3096576 2017 01 23 Welcome to MiVB NCR Remote Training Class Prep_Rev1.doc
+-rw-r--r-- 1 telecom admsis 13508635 2017 01 23 MiVoice Business NCR I&M_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis  1370480 2017 01 23 MiVoice Business NCR I&M Lab Workbook with Cover_7.2_1.pdf
+-rw-r--r-- 1 telecom admsis   289792 2017 01 23 NCR-2P-Day1-Grafic.ppt
+-rw-r--r-- 1 telecom admsis  2297344 2017 01 23 NCR-Day1-DBS-GRAFIC-ver72-b.ppt
+drwxr-xr-x 2 telecom admsis 4096 2017 01 23 MBR 8.0
+-rw-r--r-- 1 telecom admsis 1852339 2017 01 23 MiVoice Business Core_tech update_R8.0 iss 1.pdf
+-rw-r--r-- 1 telecom admsis 1862037 2017 01 23 MiVoice Business NCR_tech update_R8.0 iss 1.pdf
+-rw-r--r-- 1 telecom admsis 1076257 2016 05 12 33_5330-5340_UG_EN.pdf
+-rw-r--r-- 1 telecom admsis 1217582 2016 05 12 Mitel 5320e5330e5340e_UG_5.1_SP1.pdf
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Traininig MAS by Columbus
+-rw-r--r-- 1 telecom admsis 12646647 2016 04 20 zoom_0.mp4
+-rw-r--r-- 1 telecom admsis 15342274 2016 04 20 zoom_1.mp4
+-rw-r--r-- 1 telecom admsis 34272137 2016 04 20 zoom_2.mp4
+-rw-r--r-- 1 telecom admsis 39457538 2016 04 20 zoom_3.mp4
+-rw-r--r-- 1 telecom admsis 3792225 2016 04 20 Manual_del_usuario_de_OAISYS_Management_Studio.pdf
+-rw-r--r-- 1 telecom admsis 8894638 2016 04 20 UCA_Admin_Guide_6.0.pdf
+-rw-r--r-- 1 telecom admsis 2780885 2016 04 20 Unified Communicator Advanced Quick Reference Guide - UCA_QRG.pdf
+-rw-r--r-- 1 telecom admsis 1099402 2016 04 21 20140107-Manual de ingreso de solicitudes por usuarios mesa de ayuda.pdf
+-rw-r--r-- 1 telecom admsis  256150 2016 04 20 Proc_Entrega_Equipo_IP.pdf
+-rw-r--r-- 1 telecom admsis 1810669 2016 04 20 Documento Técnico Implementación Mitel.pdf
+drwxr-xr-x 2 telecom admsis    4096 2016 04 27 InterconexionAlliedGlobal_files
+-rw-r--r-- 1 telecom admsis   19677 2016 04 27 InterconexionAlliedGlobal.htm
+-rw-r--r-- 1 telecom admsis  17562 2016 04 27 08630AC0-D3A0-43BE-8E3E-D2407D958C0F.png
+-rw-r--r-- 1 telecom admsis  32825 2016 04 27 23A36E60-E7F1-4B61-849C-20C8DD00F6BA.png
+-rw-r--r-- 1 telecom admsis 193332 2016 04 27 3C7B2ED2-3EAA-614A-CC3D-505B1829734E.odttf
+-rw-r--r-- 1 telecom admsis  12776 2016 04 27 41295110-8DCE-49FC-8685-5D5A6278BDD9.jpg
+-rw-r--r-- 1 telecom admsis  98464 2016 04 27 67FEFCE8-0DF1-4EDA-BE79-91FCA640FDE9.png
+-rw-r--r-- 1 telecom admsis   5052 2016 04 27 7EA4FD1C-CBF4-490F-A6D8-1AE698FC7C30.jpg
+-rw-r--r-- 1 telecom admsis   5052 2016 04 27 947F8225-3F73-4442-A94F-F5341BCBB6F9.jpg
+-rw-r--r-- 1 telecom admsis  12776 2016 04 27 970EF9D4-2245-4796-BD79-41EEF2D42C7F.jpg
+-rw-r--r-- 1 telecom admsis   1499 2016 04 27 arrow.png
+-rw-r--r-- 1 telecom admsis  12565 2016 04 27 BEA6669F-E835-4459-920A-7DBBBB8B9CC7.png
+-rw-r--r-- 1 telecom admsis  80775 2016 04 27 data.xml
+-rw-r--r-- 1 telecom admsis  22457 2016 04 27 DEB3CF82-DF25-4AF8-8099-9D2A1B9B1B62.png
+-rw-r--r-- 1 telecom admsis   2058 2016 04 27 filelist.xml
+-rw-r--r-- 1 telecom admsis  13968 2016 04 27 find.js
+-rw-r--r-- 1 telecom admsis  16997 2016 04 27 frameset.js
+-rw-r--r-- 1 telecom admsis    263 2016 04 27 fullpage.gif
+-rw-r--r-- 1 telecom admsis    474 2016 04 27 go.gif
+-rw-r--r-- 1 telecom admsis   1033 2016 04 27 hatch7_0.png
+-rw-r--r-- 1 telecom admsis    837 2016 04 27 keys.js
+-rw-r--r-- 1 telecom admsis     66 2016 04 27 maximize.gif
+-rw-r--r-- 1 telecom admsis     65 2016 04 27 minimize.gif
+-rw-r--r-- 1 telecom admsis     63 2016 04 27 minus.gif
+-rw-r--r-- 1 telecom admsis    391 2016 04 27 panminus.gif
+-rw-r--r-- 1 telecom admsis    401 2016 04 27 panplus.gif
+-rw-r--r-- 1 telecom admsis     64 2016 04 27 plus.gif
+-rw-r--r-- 1 telecom admsis  48917 2016 04 27 png_1.htm
+-rw-r--r-- 1 telecom admsis   2069 2016 04 27 png_1.js
+-rw-r--r-- 1 telecom admsis  67603 2016 04 27 png_1.png
+-rw-r--r-- 1 telecom admsis   5521 2016 04 27 png_2.htm
+-rw-r--r-- 1 telecom admsis  72938 2016 04 27 png_2.png
+-rw-r--r-- 1 telecom admsis   3890 2016 04 27 png_3.htm
+-rw-r--r-- 1 telecom admsis  37632 2016 04 27 png_3.png
+-rw-r--r-- 1 telecom admsis   3895 2016 04 27 png_4.htm
+-rw-r--r-- 1 telecom admsis  52930 2016 04 27 png_4.png
+-rw-r--r-- 1 telecom admsis  28877 2016 04 27 Silverlight.js
+-rw-r--r-- 1 telecom admsis   4516 2016 04 27 Silverlight.supportedUserAgent.js
+-rw-r--r-- 1 telecom admsis    129 2016 04 27 tick-foc.gif
+-rw-r--r-- 1 telecom admsis     79 2016 04 27 tick-off.gif
+-rw-r--r-- 1 telecom admsis     99 2016 04 27 tick-on.gif
+-rw-r--r-- 1 telecom admsis    110 2016 04 27 toc2.gif
+-rw-r--r-- 1 telecom admsis    108 2016 04 27 toc.gif
+-rw-r--r-- 1 telecom admsis   1099 2016 04 27 toolbar.htm
+-rw-r--r-- 1 telecom admsis   3450 2016 04 27 visio.css
+-rw-r--r-- 1 telecom admsis  18290 2016 04 27 widgets.htm
+-rw-r--r-- 1 telecom admsis   4552 2016 04 27 xaml_1.htm
+-rw-r--r-- 1 telecom admsis  22455 2016 04 27 xaml_1.js
+-rw-r--r-- 1 telecom admsis 355372 2016 04 27 xaml_1.xaml
+-rw-r--r-- 1 telecom admsis   4552 2016 04 27 xaml_2.htm
+-rw-r--r-- 1 telecom admsis 196109 2016 04 27 xaml_2.xaml
+-rw-r--r-- 1 telecom admsis   4551 2016 04 27 xaml_3.htm
+-rw-r--r-- 1 telecom admsis   6640 2016 04 27 xaml_3.xaml
+-rw-r--r-- 1 telecom admsis   4552 2016 04 27 xaml_4.htm
+-rw-r--r-- 1 telecom admsis    564 2016 04 27 xaml_4.xaml
+-rw-r--r-- 1 telecom admsis  24303 2016 04 27 zoom.htm
+drwxr-xr-x 13 telecom admsis 4096 2017 06 22 Administracion
+drwxr-xr-x  7 telecom admsis 4096 2016 08 29 Agencias
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Abril
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Agosto
+drwxr-xr-x 4 telecom admsis 4096 2017 06 22 DICIEMBRE
+drwxr-xr-x 2 telecom admsis 4096 2016 08 29 Julio
+drwxr-xr-x 2 telecom admsis 4096 2016 07 12 Junio
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 marzo
+drwxr-xr-x 2 telecom admsis 4096 2016 06 07 Mayo
+drwxr-xr-x 4 telecom admsis 4096 2017 06 22 NOTAS 2017
+drwxr-xr-x 4 telecom admsis 4096 2017 06 22 Noviembre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Octubre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Septiembre
+-rw-r--r-- 1 telecom admsis 197330 2016 04 20 300326_ Sherlin Quiroa.pdf
+-rw-r--r-- 1 telecom admsis  53481 2016 04 20 300600_ Raquel Jimenez.pdf
+-rw-r--r-- 1 telecom admsis 450015 2016 04 20 301120_Estefany Monroy.pdf
+-rw-r--r-- 1 telecom admsis 643012 2016 04 20 301793_Heather Merida.pdf
+-rw-r--r-- 1 telecom admsis 612897 2016 04 20 301794_Clemente Pet.pdf
+-rw-r--r-- 1 telecom admsis 984380 2016 04 20 302779_Miguel Rios.pdf
+-rw-r--r-- 1 telecom admsis 984380 2016 04 20 302780_Rosa Castillo.pdf
+-rw-r--r-- 1 telecom admsis  89009 2016 04 20 303467_Cristian Josue Chij Amezquita.pdf
+-rw-r--r-- 1 telecom admsis  90609 2016 04 20 303485_Andrea Reyna Elisa Chen Salvatierra.pdf
+-rw-r--r-- 1 telecom admsis 320771 2017 06 22 1753_001.pdf
+-rw-r--r-- 1 telecom admsis 642881 2017 06 22 300215_ Ana Flores.pdf
+-rw-r--r-- 1 telecom admsis 234428 2017 06 22 300328_ Silvia Navidad.pdf
+-rw-r--r-- 1 telecom admsis 235771 2017 06 22 300602_ Brenda Contreras.pdf
+-rw-r--r-- 1 telecom admsis 108035 2017 06 22 300664_ Ingrid Solares.pdf
+-rw-r--r-- 1 telecom admsis 727502 2017 06 22 301164_ Reyma Rivas.pdf
+-rw-r--r-- 1 telecom admsis 399626 2017 06 22 301536_Vilma Roxana Lopez.pdf
+-rw-r--r-- 1 telecom admsis 249367 2017 06 22 301744_Fernando Rodas.pdf
+-rw-r--r-- 1 telecom admsis 588430 2017 06 22 301788_ Mirna Perez.pdf
+-rw-r--r-- 1 telecom admsis 612404 2017 06 22 302070_Flor de Maria Gonzalez.pdf
+-rw-r--r-- 1 telecom admsis 106227 2017 06 22 302078_Telma Mijangos.pdf
+-rw-r--r-- 1 telecom admsis 117672 2017 06 22 302256_ Walther Lopez.pdf
+-rw-r--r-- 1 telecom admsis 118733 2017 06 22 302631_ Hugo Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 118032 2017 06 22 302681_Hilary Urizar.pdf
+-rw-r--r-- 1 telecom admsis 112938 2017 06 22 303011_ Alejandra Recinos.pdf
+-rw-r--r-- 1 telecom admsis 647918 2017 06 22 303029_Jonathan Vargas.pdf
+-rw-r--r-- 1 telecom admsis 117790 2017 06 22 303090_ Jaqueline Vicente.pdf
+-rw-r--r-- 1 telecom admsis 551736 2017 06 22 304052_Bessie Varrera.pdf
+-rw-r--r-- 1 telecom admsis 537950 2017 06 22 304058_Josue Arrieta.pdf
+-rw-r--r-- 1 telecom admsis 534319 2017 06 22 304059_ Alex Perla.pdf
+-rw-r--r-- 1 telecom admsis 123604 2017 06 22 304088_Sharin Suzel Donis.pdf
+-rw-r--r-- 1 telecom admsis 127572 2017 06 22 304092_ Kimberly Mazariegos.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Cambios de nombre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 TELEFONOS NUEVOS
+-rw-r--r-- 1 telecom admsis  751095 2017 06 22 300310_Gudalupe Garcia.pdf
+-rw-r--r-- 1 telecom admsis  920783 2017 06 22 300612_Jeanneth Garcia.jpg
+-rw-r--r-- 1 telecom admsis  457782 2017 06 22 300614_Edgar Valenzuela.jpg
+-rw-r--r-- 1 telecom admsis 2125275 2017 06 22 300665_Norma Barrientos.jpg
+-rw-r--r-- 1 telecom admsis  459047 2017 06 22 300670_Rosa Gomez.jpg
+-rw-r--r-- 1 telecom admsis 1340595 2017 06 22 301102_Giovanni Morales.pdf
+-rw-r--r-- 1 telecom admsis  937808 2017 06 22 301122_Cindy Figueroa.jpg
+-rw-r--r-- 1 telecom admsis   70201 2017 06 22 301122  CINDY FIGUEROA.pdf.docx
+-rw-r--r-- 1 telecom admsis  104545 2017 06 22 301504_Brayan Hernandez.pdf
+-rw-r--r-- 1 telecom admsis  690341 2017 06 22 302039_Carlos Carranza, 302037_Daniela Guerra, 302048_Evelyn Catalan.pdf
+-rw-r--r-- 1 telecom admsis  628853 2017 06 22 302146_Cesar Molina.pdf
+-rw-r--r-- 1 telecom admsis  596420 2017 06 22 302430_Hugo Cruz.pdf
+-rw-r--r-- 1 telecom admsis   68549 2017 06 22 302482_Cecilia Gomez.pdf
+-rw-r--r-- 1 telecom admsis  625123 2017 06 22 302490_Edgar Bucaro.pdf
+-rw-r--r-- 1 telecom admsis  645285 2017 06 22 302514_Erika Vargas.pdf
+-rw-r--r-- 1 telecom admsis 3527600 2017 06 22 302636_Anderson Morales, 302641_Brandon Duarte.pdf
+-rw-r--r-- 1 telecom admsis  655482 2017 06 22 302727_Wilson Camey.pdf
+-rw-r--r-- 1 telecom admsis  620823 2017 06 22 303414_Mayra Torres.pdf
+-rw-r--r-- 1 telecom admsis  149304 2017 06 22 303472_Henry Estrada.pdf
+-rw-r--r-- 1 telecom admsis   82748 2017 06 22 303481_Flor Lopez.pdf
+-rw-r--r-- 1 telecom admsis   97160 2017 06 22 303624_Patricia Gomez.pdf
+-rw-r--r-- 1 telecom admsis  619114 2017 06 22 304219_Debora Pineda.pdf
+-rw-r--r-- 1 telecom admsis 136718 2017 06 22 301122  CINDY FIGUEROA.pdf
+-rw-r--r-- 1 telecom admsis 654397 2017 06 22 301806_Luisa Castro.pdf
+-rw-r--r-- 1 telecom admsis 662590 2017 06 22 301807_Delmy Pineda.pdf
+-rw-r--r-- 1 telecom admsis 629849 2017 06 22 302042_Belen Gomez.pdf
+-rw-r--r-- 1 telecom admsis 626671 2017 06 22 302118_Raquel Martin.pdf
+-rw-r--r-- 1 telecom admsis 620545 2017 06 22 302525_Gladis Cordova.pdf
+-rw-r--r-- 1 telecom admsis 623026 2017 06 22 302526_Alexander Cardenas.pdf
+-rw-r--r-- 1 telecom admsis 630577 2017 06 22 303043_Roberto Montufar.pdf
+-rw-r--r-- 1 telecom admsis 628663 2017 06 22 303417_Douglas Maradiaga.pdf
+-rw-r--r-- 1 telecom admsis 621183 2017 06 22 303491_Marylyn Giron.pdf
+-rw-r--r-- 1 telecom admsis 653567 2017 06 22 304018_Jorge Herrera.pdf
+-rw-r--r-- 1 telecom admsis 631003 2017 06 22 304024_Pablo Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 624371 2017 06 22 304025_Jesus Castillo.pdf
+-rw-r--r-- 1 telecom admsis 653703 2017 06 22 304160_Byron Lemus.pdf
+-rw-r--r-- 1 telecom admsis 404577 2016 08 29 301804 - 301805 Hector Lopez y Eric Archila.pdf
+-rw-r--r-- 1 telecom admsis 117674 2016 08 29 302256_ Walther Lopex.pdf
+-rw-r--r-- 1 telecom admsis 586616 2016 08 29 302712_Sayda Xiquin.pdf
+-rw-r--r-- 1 telecom admsis 111429 2016 08 29 302721_Ramiro Reyes.pdf
+-rw-r--r-- 1 telecom admsis 126226 2016 08 29 302764_ Kimberly Garcia.pdf
+-rw-r--r-- 1 telecom admsis 137010 2016 08 29 303267_Glendy Ruíz.pdf
+-rw-r--r-- 1 telecom admsis  72560 2016 08 29 303810_Vindya Yadira MacDonald.pdf
+-rw-r--r-- 1 telecom admsis  264611 2016 07 12 301515_NORMA CORDOVA CAMBIO DE NOMBRE.pdf
+-rw-r--r-- 1 telecom admsis 1250757 2016 07 12 301744-301748-301799-301801-301802_PCL IVONNE PAREDES.pdf
+-rw-r--r-- 1 telecom admsis  115730 2016 07 12 302150_DIEGO DE LEON.pdf
+-rw-r--r-- 1 telecom admsis  633884 2016 07 12 302166_ Francela Guerra.pdf
+-rw-r--r-- 1 telecom admsis  715559 2016 07 12 302274_Luis Perez 5330e.pdf
+-rw-r--r-- 1 telecom admsis   68768 2016 07 12 302479_ Alejandro Aldana.pdf
+-rw-r--r-- 1 telecom admsis  550065 2016 07 12 302611_CRISTEL ABIGAIL VASQUEZ RUIZ CN.pdf
+-rw-r--r-- 1 telecom admsis  599351 2016 07 12 302755_Dalin Yuliza Pacheco.pdf
+-rw-r--r-- 1 telecom admsis  130429 2016 07 12 302757_FLOR GARCIA.pdf
+-rw-r--r-- 1 telecom admsis   60152 2016 07 12 302856_DIEGO JAVIER ROMERO CAMBIO DE NOMBRE.pdf
+-rw-r--r-- 1 telecom admsis  158991 2016 07 12 303229_Dinorah Garcia Cambio de nombre.pdf
+-rw-r--r-- 1 telecom admsis   72558 2016 07 12 303810_VINDHYA YADIRA  CAMBIO DE NOMBRE.pdf
+-rw-r--r-- 1 telecom admsis  568992 2016 07 12 304007_HUGO ESTUARDO PALACIOS.pdf
+-rw-r--r-- 1 telecom admsis       0 2016 07 12 Junio
+-rw-r--r-- 1 telecom admsis 693286 2016 04 20 301390_Daniel Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 778707 2016 04 20 301743_ Yadira Garcia.pdf
+-rw-r--r-- 1 telecom admsis 664271 2016 04 20 301758_Javier Gonzalez.pdf
+-rw-r--r-- 1 telecom admsis 420922 2016 04 20 303002_Astrid Rodas.pdf
+-rw-r--r-- 1 telecom admsis 269842 2016 04 20 303259_Ruth Dias.pdf
+-rw-r--r-- 1 telecom admsis 635462 2016 06 07 300639_Heber Gomez.pdf
+-rw-r--r-- 1 telecom admsis  53977 2016 06 07 301560_Julio Lima cambio de nombre.jpg
+-rw-r--r-- 1 telecom admsis 211271 2016 06 07 301568_Ingrid Gamez.pdf
+-rw-r--r-- 1 telecom admsis 694258 2016 06 07 301796-301797_sarai Lopez y Luis Garcia.PDF
+-rw-r--r-- 1 telecom admsis  17268 2016 06 07 301798_ Jose Joaquin Piche.pdf
+-rw-r--r-- 1 telecom admsis  37812 2016 06 07 302031_ARIEL MENDEZ CAMBIO DE NOMBRE.pdf
+-rw-r--r-- 1 telecom admsis 103270 2016 06 07 302033_ Josue Saucedo Cambio de nombre.pdf
+-rw-r--r-- 1 telecom admsis  31076 2016 06 07 302047_DAVID ANTONIO DAVILA BAUTISTA.pdf
+-rw-r--r-- 1 telecom admsis 565078 2016 06 07 302075_Elder Barrientos Cambio de Nombre.pdf
+-rw-r--r-- 1 telecom admsis 127530 2016 06 07 302158_Marisol Raxon Cambio de nombre.pdf
+-rw-r--r-- 1 telecom admsis 190258 2016 06 07 302496_Mayra Lorena Morales Cambio de nombre.PDF
+-rw-r--r-- 1 telecom admsis  34067 2016 06 07 302739_Silvana Xar cambio de N.pdf
+-rw-r--r-- 1 telecom admsis 621240 2016 06 07 302754_Maria Ramos.pdf
+-rw-r--r-- 1 telecom admsis 597830 2016 06 07 302782_Vidaurre Juarez Jeferson Joseluis.pdf
+-rw-r--r-- 1 telecom admsis 585450 2016 06 07 302783_Ortiz Duarte Analucia.pdf
+-rw-r--r-- 1 telecom admsis 223556 2016 06 07 302892_Erick Rivera Silueta.pdf
+-rw-r--r-- 1 telecom admsis 118012 2016 06 07 303053_Kevyn Leonel Lopez  Cambio de nombre..pdf
+-rw-r--r-- 1 telecom admsis 119941 2016 06 07 303103_Andrtes Cano Cambio de nombre.pdf
+-rw-r--r-- 1 telecom admsis 599704 2016 06 07 303283_Astrid Mayte Osorio.pdf
+-rw-r--r-- 1 telecom admsis 582710 2016 06 07 303288_Kimberly Jannethe Matheu.pdf
+-rw-r--r-- 1 telecom admsis 611350 2016 06 07 303317_Flavio Alejandro de la Rosa.pdf
+-rw-r--r-- 1 telecom admsis 594596 2016 06 07 303631_Victor  Rafael GironCastillo.pdf
+-rw-r--r-- 1 telecom admsis 101703 2016 06 07 304136_ Brenda Hernandez Cambio de telefono.pdf
+-rw-r--r-- 1 telecom admsis 434738 2016 06 07 304154_Noe David Bautista Fuentes Cambio de nombre.pdf
+drwxr-xr-x 8 telecom admsis 4096 2017 06 22 ADMINISTRACION
+drwxr-xr-x 8 telecom admsis 4096 2017 06 22 AGENCIAS
+drwxr-xr-x 5 telecom admsis 4096 2017 06 22 ABRIL
+drwxr-xr-x 4 telecom admsis 4096 2017 06 22 ENERO
+drwxr-xr-x 5 telecom admsis 4096 2017 06 22 FEBRERO
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 JUNIO
+drwxr-xr-x 5 telecom admsis 4096 2017 06 22 MARZO
+drwxr-xr-x 5 telecom admsis 4096 2017 06 22 MAYO
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Cambios de nombre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Diademas nuevas
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Telefonos nuevos
+-rw-r--r-- 1 telecom admsis  509271 2017 06 22 302209_Tania Ajanel.pdf
+-rw-r--r-- 1 telecom admsis 1011321 2017 06 22 302223_Magdiel Ac y 302321_Jenifer Monzon.pdf
+-rw-r--r-- 1 telecom admsis  488206 2017 06 22 302234_Araceli Yoc.pdf
+-rw-r--r-- 1 telecom admsis   99354 2017 06 22 302493_Adolfo Garcia.pdf
+-rw-r--r-- 1 telecom admsis  638538 2017 06 22 302680_Sven Resenhoeft.pdf
+-rw-r--r-- 1 telecom admsis  490311 2017 06 22 302702_Rocio Najarro.pdf
+-rw-r--r-- 1 telecom admsis  131420 2017 06 22 303040_Estela Garcia.pdf
+-rw-r--r-- 1 telecom admsis  564790 2017 06 22 304122_Angel Guzman.pdf
+-rw-r--r-- 1 telecom admsis  551518 2017 06 22 304126_Maynor Morales.pdf
+-rw-r--r-- 1 telecom admsis 441305 2017 06 22 302086_Jorge Pos.pdf
+-rw-r--r-- 1 telecom admsis 453170 2017 06 22 302089_Josue Contreras.pdf
+-rw-r--r-- 1 telecom admsis 451129 2017 06 22 302090_Delmer Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 449350 2017 06 22 302092_Jorge Bermudez.pdf
+-rw-r--r-- 1 telecom admsis 446406 2017 06 22 302093_Erica Sutuj.pdf
+-rw-r--r-- 1 telecom admsis 453257 2017 06 22 302095_Liliana de Trigueros.pdf
+-rw-r--r-- 1 telecom admsis 446609 2017 06 22 302096_Isibelt Suchite.pdf
+-rw-r--r-- 1 telecom admsis 439927 2017 06 22 302097_Veronica Aguilar.pdf
+-rw-r--r-- 1 telecom admsis 463898 2017 06 22 302104_Jeffefer Franco.pdf
+-rw-r--r-- 1 telecom admsis 437987 2017 06 22 302105_Karen Chumil.pdf
+-rw-r--r-- 1 telecom admsis 448385 2017 06 22 302106_Mishell Palacios.pdf
+-rw-r--r-- 1 telecom admsis 452995 2017 06 22 302107_Juana Lopez.pdf
+-rw-r--r-- 1 telecom admsis 460716 2017 06 22 302108_Carol Siquibache.pdf
+-rw-r--r-- 1 telecom admsis 450321 2017 06 22 302109_Marisela Lobos.pdf
+-rw-r--r-- 1 telecom admsis 448859 2017 06 22 302110_Greys Ceron.pdf
+-rw-r--r-- 1 telecom admsis 449665 2017 06 22 302111_Guillermo Garcia.pdf
+-rw-r--r-- 1 telecom admsis 477163 2017 06 22 302611_Cristel Vasquez.pdf
+-rw-r--r-- 1 telecom admsis 6158716 2017 06 22 300367-300369 JOSE SIERRA AGE 1006.pdf
+-rw-r--r-- 1 telecom admsis  656917 2017 06 22 301165_Hector Rosales.pdf
+-rw-r--r-- 1 telecom admsis   26110 2017 06 22 301523_Hector Martinez.pdf
+-rw-r--r-- 1 telecom admsis   26112 2017 06 22 301523 HECTOR MARTINEZ.pdf
+-rw-r--r-- 1 telecom admsis  474819 2017 06 22 301524_Sergio Montenegro.pdf
+-rw-r--r-- 1 telecom admsis  474823 2017 06 22 301524 SERGIO MONTENEGRO.pdf
+-rw-r--r-- 1 telecom admsis  637304 2017 06 22 301556_Ana Lopez.pdf
+-rw-r--r-- 1 telecom admsis  637309 2017 06 22 301556 ANA LOPEZ.pdf
+-rw-r--r-- 1 telecom admsis  622760 2017 06 22 302478_Fernando Jacome.pdf
+-rw-r--r-- 1 telecom admsis  617851 2017 06 22 302789_Evelyn Paiz.pdf
+-rw-r--r-- 1 telecom admsis  607384 2017 06 22 302790_Evelyn Muñoz.pdf
+-rw-r--r-- 1 telecom admsis  623438 2017 06 22 303673_Sara Morales.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Cambio de nombre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Equipo nuevo
+-rw-r--r-- 1 telecom admsis  622514 2017 06 22 301115_Eddy Orellana.pdf
+-rw-r--r-- 1 telecom admsis   61150 2017 06 22 301205_Brenda Mendez.pdf
+-rw-r--r-- 1 telecom admsis   40358 2017 06 22 301389_Abner Medrano.pdf
+-rw-r--r-- 1 telecom admsis 1024092 2017 06 22 301511_Dinna Argueta.pdf
+-rw-r--r-- 1 telecom admsis   48496 2017 06 22 301535_Uber Cardona.pdf
+-rw-r--r-- 1 telecom admsis  827621 2017 06 22 301592 Cesar Mazariegos y 301593 Brandon Gomez.pdf
+-rw-r--r-- 1 telecom admsis  621283 2017 06 22 301739_Oscar Hernandez 08000F79D04B.pdf
+-rw-r--r-- 1 telecom admsis  233084 2017 06 22 301741_Mario Sanchez.pdf
+-rw-r--r-- 1 telecom admsis   53146 2017 06 22 301777_Erik Benites.pdf
+-rw-r--r-- 1 telecom admsis  137450 2017 06 22 302011_Lesly Hernandez.pdf
+-rw-r--r-- 1 telecom admsis  142714 2017 06 22 302023_Oscar Moscoso.pdf
+-rw-r--r-- 1 telecom admsis  242231 2017 06 22 302655_Yoel Lopez.tif
+-rw-r--r-- 1 telecom admsis  618048 2017 06 22 302677_Orfa Castillo.pdf
+-rw-r--r-- 1 telecom admsis  163026 2017 06 22 302716_Melany Martinez.pdf
+-rw-r--r-- 1 telecom admsis  596064 2017 06 22 302776_Mayra Acajabon.pdf
+-rw-r--r-- 1 telecom admsis 1237123 2017 06 22 302786_Luz Rodas.pdf
+-rw-r--r-- 1 telecom admsis  494886 2017 06 22 303001_Lizbeth Recinos.pdf
+-rw-r--r-- 1 telecom admsis  543055 2017 06 22 303217_Alva Cuyan.jpg
+-rw-r--r-- 1 telecom admsis  657304 2017 06 22 303237_Marvin Velasquez.pdf
+-rw-r--r-- 1 telecom admsis  644263 2017 06 22 303284_Melissa Garcia.pdf
+-rw-r--r-- 1 telecom admsis  648138 2017 06 22 303314_Wendy Ramos.pdf
+-rw-r--r-- 1 telecom admsis  668790 2017 06 22 303315_Rafael Gabriel.pdf
+-rw-r--r-- 1 telecom admsis  576879 2017 06 22 303463_Leonardo Menendez.pdf
+-rw-r--r-- 1 telecom admsis  133315 2017 06 22 303672_Lourdes Vasquez.pdf
+-rw-r--r-- 1 telecom admsis  138818 2017 06 22 304004_Hugo Palacios.pdf
+-rw-r--r-- 1 telecom admsis  137102 2017 06 22 304007_Ana Garcia.pdf
+-rw-r--r-- 1 telecom admsis  643896 2017 06 22 304022_Antonia Cortez.pdf
+-rw-r--r-- 1 telecom admsis  146094 2017 06 22 304042_Carlos Reyes.pdf
+-rw-r--r-- 1 telecom admsis  151941 2017 06 22 304046_Tannia Alonzo.pdf
+-rw-r--r-- 1 telecom admsis   91938 2017 06 22 304047_Walder Diagut.pdf
+-rw-r--r-- 1 telecom admsis  151786 2017 06 22 304242_Josue Castillo.pdf
+-rw-r--r-- 1 telecom admsis 622051 2017 06 22 300653_Wendy Vicente.pdf
+-rw-r--r-- 1 telecom admsis 692436 2017 06 22 301168_Brenda Saban.pdf
+-rw-r--r-- 1 telecom admsis 375354 2017 06 22 301396_Oscar Pineda.pdf
+-rw-r--r-- 1 telecom admsis 336404 2017 06 22 301397_Ana Beatriz Cruz.pdf
+-rw-r--r-- 1 telecom admsis 370403 2017 06 22 301398_Jennifer Barascout.pdf
+-rw-r--r-- 1 telecom admsis 376526 2017 06 22 301399_Ana Barrios.pdf
+-rw-r--r-- 1 telecom admsis 616652 2017 06 22 301494 RAMIRO RAMIREZ Age 33.pdf
+-rw-r--r-- 1 telecom admsis 610531 2017 06 22 301496_ Ruben Lopez.pdf
+-rw-r--r-- 1 telecom admsis 707353 2017 06 22 301498_Manuel Dionicio.pdf
+-rw-r--r-- 1 telecom admsis 612101 2017 06 22 302651_Monica Fajardo.pdf
+-rw-r--r-- 1 telecom admsis 612603 2017 06 22 302653_Yoselin Martinez.pdf
+-rw-r--r-- 1 telecom admsis 624044 2017 06 22 302828_Delia Guevara.pdf
+-rw-r--r-- 1 telecom admsis 623499 2017 06 22 302836_Oliver Pontaza.pdf
+-rw-r--r-- 1 telecom admsis 623042 2017 06 22 303226_Andrea Llamas.pdf
+-rw-r--r-- 1 telecom admsis 622143 2017 06 22 303492_Carlos Mejia.pdf
+-rw-r--r-- 1 telecom admsis 622145 2017 06 22 303666_Suzely Pineda.pdf
+-rw-r--r-- 1 telecom admsis 623036 2017 06 22 304037_Rene Castañeda.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Cambios de nombre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Diademas
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Telefonos
+-rw-r--r-- 1 telecom admsis  544662 2017 06 22 300655_Alan Chavez.pdf
+-rw-r--r-- 1 telecom admsis  719956 2017 06 22 301584_Alexander Lopez.pdf
+-rw-r--r-- 1 telecom admsis 1031250 2017 06 22 302012_Carmen Soto 302019_Anelis Pivaral.pdf
+-rw-r--r-- 1 telecom admsis  629913 2017 06 22 302073_Pablo Castellanos.pdf
+-rw-r--r-- 1 telecom admsis 1207823 2017 06 22 302332_Rebeca Zuñiga.pdf
+-rw-r--r-- 1 telecom admsis 1127167 2017 06 22 302658_Veronica Sajvin 302657_Veronica Sajvin.pdf
+-rw-r--r-- 1 telecom admsis  144627 2017 06 22 302676_Luis Sanchez.pdf
+-rw-r--r-- 1 telecom admsis  228252 2017 06 22 302753_Mario Recinos.pdf
+-rw-r--r-- 1 telecom admsis  863072 2017 06 22 303056_Ana Garcia.jpg
+-rw-r--r-- 1 telecom admsis  144408 2017 06 22 303694_Diego Rojas.pdf
+-rw-r--r-- 1 telecom admsis  612008 2017 06 22 304094_Mynor Escobar.pdf
+-rw-r--r-- 1 telecom admsis 500017 2017 06 22 301511_Dinna Argueta.pdf
+-rw-r--r-- 1 telecom admsis 476425 2017 06 22 301517_Joselyn Vasquez.pdf
+-rw-r--r-- 1 telecom admsis 468708 2017 06 22 301522_Brendi Sojuel.pdf
+-rw-r--r-- 1 telecom admsis 496347 2017 06 22 301537_Monica Rabanales.pdf
+-rw-r--r-- 1 telecom admsis 492360 2017 06 22 301798_Andree Montenegro.pdf
+-rw-r--r-- 1 telecom admsis 439485 2017 06 22 301903_Gladis Corado.pdf
+-rw-r--r-- 1 telecom admsis 432462 2017 06 22 302046_Sherilyn Abigail.pdf
+-rw-r--r-- 1 telecom admsis 437599 2017 06 22 302117_Jacqueline Castillo.pdf
+-rw-r--r-- 1 telecom admsis 447349 2017 06 22 302154_Maira Higueros.pdf
+-rw-r--r-- 1 telecom admsis 465974 2017 06 22 302156_Maira Ruano.pdf
+-rw-r--r-- 1 telecom admsis 450564 2017 06 22 302158_Yaquelin Raxon.pdf
+-rw-r--r-- 1 telecom admsis 452601 2017 06 22 302160_Yanet Natareno.pdf
+-rw-r--r-- 1 telecom admsis 444659 2017 06 22 302162_Heidi de la Cruz.pdf
+-rw-r--r-- 1 telecom admsis 484759 2017 06 22 302163_Leida Lima.pdf
+-rw-r--r-- 1 telecom admsis 486348 2017 06 22 302165_Delmy Figueroa.pdf
+-rw-r--r-- 1 telecom admsis 460709 2017 06 22 302482_Ester Gomez.pdf
+-rw-r--r-- 1 telecom admsis 465418 2017 06 22 302692_Stepanie Paniagua.pdf
+-rw-r--r-- 1 telecom admsis 447110 2017 06 22 302695_Mirna Perez.pdf
+-rw-r--r-- 1 telecom admsis 447540 2017 06 22 302766_Claudia Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 440519 2017 06 22 304001_Claudia Cabrera.pdf
+-rw-r--r-- 1 telecom admsis 448905 2017 06 22 304005_Christian Escobar.pdf
+-rw-r--r-- 1 telecom admsis 432510 2017 06 22 304006_Elisa Arias.pdf
+-rw-r--r-- 1 telecom admsis 528389 2017 06 22 304017_Williams Colay.pdf
+-rw-r--r-- 1 telecom admsis 452004 2017 06 22 304024_Pablo Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 439814 2017 06 22 304025_Jesus Castillo.pdf
+-rw-r--r-- 1 telecom admsis 447022 2017 06 22 304037_David Castañeda.pdf
+-rw-r--r-- 1 telecom admsis 442336 2017 06 22 304052_Hector Barillas.pdf
+-rw-r--r-- 1 telecom admsis 442782 2017 06 22 304057_Jorge Mendez.pdf
+-rw-r--r-- 1 telecom admsis 437614 2017 06 22 304058_Josue Arrieta.pdf
+-rw-r--r-- 1 telecom admsis 438911 2017 06 22 304059_Alex Perla.pdf
+-rw-r--r-- 1 telecom admsis  527470 2017 06 22 301517_ Joselyn Vasquez.pdf
+-rw-r--r-- 1 telecom admsis  673395 2017 06 22 301517_Joselyn Vasquez.pdf
+-rw-r--r-- 1 telecom admsis  526213 2017 06 22 301522_ Brendi Sojuel.pdf
+-rw-r--r-- 1 telecom admsis  656267 2017 06 22 301522_Brendi Sojuel.pdf
+-rw-r--r-- 1 telecom admsis   74414 2017 06 22 301533_IVAN PAIZ.pdf
+-rw-r--r-- 1 telecom admsis   71927 2017 06 22 301539 Carlos Sanchez.pdf
+-rw-r--r-- 1 telecom admsis 3955185 2017 06 22 302063-302064-301427-301555-301428-301491-301202-301554-301360  CAMBIOS CUMPLIMIENTO.pdf
+-rw-r--r-- 1 telecom admsis  623410 2017 06 22 302874_Edwin Catu.pdf
+-rw-r--r-- 1 telecom admsis  647915 2017 06 22 302877_David Rodriguez.pdf
+-rw-r--r-- 1 telecom admsis  657141 2017 06 22 304141_Amilcar Vasquez.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Cambios de nombre
+drwxr-xr-x 3 telecom admsis 4096 2017 06 22 Diademas
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 TELEFONOS NUEVOS
+-rw-r--r-- 1 telecom admsis  148690 2017 06 22 301167_Ingrid Rodriguez.pdf
+-rw-r--r-- 1 telecom admsis  150396 2017 06 22 301178_Maria Gudiel.pdf
+-rw-r--r-- 1 telecom admsis  150031 2017 06 22 301193_Haroldo Rodas.pdf
+-rw-r--r-- 1 telecom admsis  146300 2017 06 22 301206_Virginia Barrios.pdf
+-rw-r--r-- 1 telecom admsis  505715 2017 06 22 301408_Javier Fuentes.pdf
+-rw-r--r-- 1 telecom admsis 3731620 2017 06 22 301413_Cyndi Ramirez.jpg
+-rw-r--r-- 1 telecom admsis  130840 2017 06 22 301509_Haroldo Rodas.pdf
+-rw-r--r-- 1 telecom admsis  559763 2017 06 22 301575_Angel Avila.pdf
+-rw-r--r-- 1 telecom admsis  627636 2017 06 22 302131_Madelin Ruiz.pdf
+-rw-r--r-- 1 telecom admsis  131487 2017 06 22 302147_Evelin Marroquin.pdf
+-rw-r--r-- 1 telecom admsis  631319 2017 06 22 302479_Alejandro Aldana.pdf
+-rw-r--r-- 1 telecom admsis  520756 2017 06 22 303001_Jeanneth Gomez.pdf
+-rw-r--r-- 1 telecom admsis  136817 2017 06 22 303011_Fabiola Rivas.pdf
+-rw-r--r-- 1 telecom admsis  126819 2017 06 22 303014_Valeska Barquero.pdf
+-rw-r--r-- 1 telecom admsis  138117 2017 06 22 303030_Jacqueline Alvarez.pdf
+-rw-r--r-- 1 telecom admsis  128351 2017 06 22 303064_Glenda Barrientos.pdf
+-rw-r--r-- 1 telecom admsis  134473 2017 06 22 303091_Margarita Bautista.pdf
+-rw-r--r-- 1 telecom admsis  127750 2017 06 22 303101_Estuardo Cojulun.pdf
+-rw-r--r-- 1 telecom admsis   59522 2017 06 22 303222_Jorge Santos.pdf
+-rw-r--r-- 1 telecom admsis   95497 2017 06 22 303241_Julio Juarez.pdf
+-rw-r--r-- 1 telecom admsis 1813613 2017 06 22 303306_Jose Contreras y 303308_Antonio Ortiz.pdf
+-rw-r--r-- 1 telecom admsis  145203 2017 06 22 303626_Lourdes Vasquez.pdf
+-rw-r--r-- 1 telecom admsis  133075 2017 06 22 303672_Walter Arana.pdf
+-rw-r--r-- 1 telecom admsis  643297 2017 06 22 303684_Pedro Fernandez.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Diademas
+-rw-r--r-- 1 telecom admsis 490532 2017 06 22 302085_Mariza Escobar.pdf
+-rw-r--r-- 1 telecom admsis 451429 2017 06 22 302330_Manuel Chavez.pdf
+-rw-r--r-- 1 telecom admsis 465366 2017 06 22 302332_Rebeca Zuñiga.pdf
+-rw-r--r-- 1 telecom admsis 442391 2017 06 22 302336_Marleny Oliva.pdf
+-rw-r--r-- 1 telecom admsis 439203 2017 06 22 302338_Catherine Mendez.pdf
+-rw-r--r-- 1 telecom admsis 437109 2017 06 22 302339_Paolo Palacios.pdf
+-rw-r--r-- 1 telecom admsis 438910 2017 06 22 302346_Hellen Merida.pdf
+-rw-r--r-- 1 telecom admsis 440913 2017 06 22 302367_Nidia Lopez.pdf
+-rw-r--r-- 1 telecom admsis 460033 2017 06 22 304526_Patricia Rodriguez.pdf
+-rw-r--r-- 1 telecom admsis 447801 2017 06 22 304529_Jackelyn Melgar.pdf
+-rw-r--r-- 1 telecom admsis 564005 2017 06 22 3 diademas_Flor Gonzalez.pdf
+-rw-r--r-- 1 telecom admsis 574283 2017 06 22 6 diademas_Juan Bonilla.pdf
+-rw-r--r-- 1 telecom admsis   66805 2017 06 22 300243 OLIVER LOPEZ.pdf
+-rw-r--r-- 1 telecom admsis  531669 2017 06 22 300364 Evelin Toledo.pdf
+-rw-r--r-- 1 telecom admsis  613830 2017 06 22 300365 Evelyn Toledo.pdf
+-rw-r--r-- 1 telecom admsis  175955 2017 06 22 300366 NOEL ARANA.pdf
+-rw-r--r-- 1 telecom admsis  267684 2017 06 22 300685 JULISSA GODOY.pdf
+-rw-r--r-- 1 telecom admsis  687203 2017 06 22 301379_Kimberly Catalan.pdf
+-rw-r--r-- 1 telecom admsis 1771013 2017 06 22 301455-301460 Lilian Muñoz - Caterin Hernandez.pdf
+-rw-r--r-- 1 telecom admsis  484150 2017 06 22 301557 VIRGINIA BARRIOS.pdf
+-rw-r--r-- 1 telecom admsis  654569 2017 06 22 302113_302114_Flor Gonzalez.pdf
+-rw-r--r-- 1 telecom admsis  646071 2017 06 22 302497_Oscar Pineda.pdf
+-rw-r--r-- 1 telecom admsis  639562 2017 06 22 303044_Marilyn Castillo.pdf
+-rw-r--r-- 1 telecom admsis  507059 2017 06 22 304154 NOE BAUTISTA.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Cambios de nombre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Diademas nuevas
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Telefonos nuevos
+-rw-r--r-- 1 telecom admsis 859742 2017 06 22 300274_Jose Menendez.jpg
+-rw-r--r-- 1 telecom admsis 224161 2017 06 22 301433_Santos Perez.pdf
+-rw-r--r-- 1 telecom admsis 215512 2017 06 22 301573_Lester Valencia.pdf
+-rw-r--r-- 1 telecom admsis 668265 2017 06 22 302481_Eric Archila.pdf
+-rw-r--r-- 1 telecom admsis 139410 2017 06 22 302671_Claudia Cabrera.pdf
+-rw-r--r-- 1 telecom admsis 140157 2017 06 22 302733_Nilda Corado.pdf
+-rw-r--r-- 1 telecom admsis 617881 2017 06 22 302738_Aura Tavico.pdf
+-rw-r--r-- 1 telecom admsis 532141 2017 06 22 302780_Gloria Chitay.pdf
+-rw-r--r-- 1 telecom admsis 142025 2017 06 22 302783_Jose Padilla.pdf
+-rw-r--r-- 1 telecom admsis 613460 2017 06 22 303095_Zulema Reyes.pdf
+-rw-r--r-- 1 telecom admsis 645284 2017 06 22 303096_Mirna Illescas.pdf
+-rw-r--r-- 1 telecom admsis 129286 2017 06 22 303408_Amarilis Osorio.pdf
+-rw-r--r-- 1 telecom admsis 570493 2017 06 22 303427_Floridalma Lopez.pdf
+-rw-r--r-- 1 telecom admsis 636511 2017 06 22 304214_Flor Muralles.pdf
+-rw-r--r-- 1 telecom admsis 265142 2017 06 22 304268_Otoniel Matias.pdf
+-rw-r--r-- 1 telecom admsis 260568 2017 06 22 304270_Viviana Arevalo.pdf
+-rw-r--r-- 1 telecom admsis 260830 2017 06 22 304272_Luis Minera.pdf
+-rw-r--r-- 1 telecom admsis 308017 2017 06 22 301557_Virginia Barrios.pdf
+-rw-r--r-- 1 telecom admsis 456094 2017 06 22 302629_Andrea Ramirez.pdf
+-rw-r--r-- 1 telecom admsis 465035 2017 06 22 302699_Glenda Asturias.pdf
+-rw-r--r-- 1 telecom admsis  625532 2017 06 22 300269 MARCO ANTONIO MORALES.pdf
+-rw-r--r-- 1 telecom admsis 1517933 2017 06 22 300369-300370 YESENIA CAMPOSECO MACROREGIONAL NORTE AGE 32.pdf
+-rw-r--r-- 1 telecom admsis  564846 2017 06 22 300371 - 300372 Melany armas y Roxana Mendoza.pdf
+-rw-r--r-- 1 telecom admsis 1495874 2017 06 22 301503_Yesmi Taque, 301507_Paola Quiñonez y 301506_Claudia Guzman.pdf
+-rw-r--r-- 1 telecom admsis  483865 2017 06 22 301557_Virginia Barrios.pdf
+-rw-r--r-- 1 telecom admsis  484151 2017 06 22 301557 VIRGINIA BARRIOS.pdf
+-rw-r--r-- 1 telecom admsis  650416 2017 06 22 301817_Maria Menchu.pdf
+-rw-r--r-- 1 telecom admsis  661052 2017 06 22 301820_Yefri Miranda.pdf
+-rw-r--r-- 1 telecom admsis  622533 2017 06 22 301821_Alejandro Sojuel.pdf
+-rw-r--r-- 1 telecom admsis  725227 2017 06 22 301822_Sthella Hernandez.pdf
+-rw-r--r-- 1 telecom admsis  638729 2017 06 22 302619_Darwin Avila.pdf
+-rw-r--r-- 1 telecom admsis  629784 2017 06 22 302791_Gabriela Carreño.pdf
+-rw-r--r-- 1 telecom admsis  616081 2017 06 22 303695_Walter Fuentes.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 ABRIL
+drwxr-xr-x 3 telecom admsis 4096 2017 06 22 ENERO
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 FEBRERO
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 JUNIO
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 MARZO
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 MAYO
+-rw-r--r-- 1 telecom admsis 482036 2017 06 22 000523 -000523 AGE 5 LUDWIN PORTILLO.pdf
+-rw-r--r-- 1 telecom admsis 207332 2017 06 22 023722 Dayrin Estrada Age 237.pdf
+-rw-r--r-- 1 telecom admsis 201310 2017 06 22 027511 KARINA PALMA AGE 275.pdf
+-rw-r--r-- 1 telecom admsis 550900 2017 06 22 033321 Paola Revolorio Age 333.pdf
+-rw-r--r-- 1 telecom admsis 149244 2017 06 22 043012  AGE 430 JESUS ELIAS.pdf
+-rw-r--r-- 1 telecom admsis 149246 2017 06 22 043022 - 043012  JESUS ELIAS.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 AGENCIAS
+-rw-r--r-- 1 telecom admsis  195734 2017 06 22 005222_ Age 52 Ciriaco Lopez.pdf
+-rw-r--r-- 1 telecom admsis  195733 2017 06 22 005222 CIRIACO LOPEZ AGE 52.pdf
+-rw-r--r-- 1 telecom admsis  176059 2017 06 22 018622_  Age 186 Aura Chavac.pdf
+-rw-r--r-- 1 telecom admsis  449334 2017 06 22 020222 Eduardo Gramajo Age202.jpg
+-rw-r--r-- 1 telecom admsis 1202627 2017 06 22 036112-036122 Luis Tista Age 361.pdf
+-rw-r--r-- 1 telecom admsis  566887 2017 06 22 071330 Daniel Oliva Age 731.pdf
+-rw-r--r-- 1 telecom admsis  566888 2017 06 22 073130_ Age 731 Daniel Oliva.pdf
+-rw-r--r-- 1 telecom admsis  130209 2017 06 22 001722 ANA QUEJ AGE 17.pdf
+-rw-r--r-- 1 telecom admsis  287929 2017 06 22 003722 DENIS MARIN .pdf
+-rw-r--r-- 1 telecom admsis  322092 2017 06 22 004822 Age 48 Jose Cardona.pdf
+-rw-r--r-- 1 telecom admsis  586594 2017 06 22 013322_Age133 Alex Saquil.pdf
+-rw-r--r-- 1 telecom admsis 2069860 2017 06 22 013723-013724-013725 Age 137 Francsico Villatoro.pdf
+-rw-r--r-- 1 telecom admsis  296950 2017 06 22 020222_Age 202 Eduardo Gramajo.pdf
+-rw-r--r-- 1 telecom admsis   97015 2017 06 22 027522 Age 275 MIRSA PALMA.pdf
+-rw-r--r-- 1 telecom admsis   63733 2017 06 22 028522 MIRLETH MARELLY SALAZAR ESCOBEDO AGE 285.pdf
+-rw-r--r-- 1 telecom admsis  654449 2017 06 22 030922_ Werner Chajon.pdf
+-rw-r--r-- 1 telecom admsis 1202624 2017 06 22 036122 _  036112 Age 361 Luis Tista.pdf
+-rw-r--r-- 1 telecom admsis   88216 2017 06 22 043031 AGE430 DIEGO SALGUERO.pdf
+-rw-r--r-- 1 telecom admsis  618865 2017 06 22 059721_Age 597 Cesar Lajpop.pdf
+-rw-r--r-- 1 telecom admsis  255285 2017 06 22 068821_Age 688 Eddy jimenez.pdf
+-rw-r--r-- 1 telecom admsis 1135972 2017 06 22 080622-080623 Age 806  Karen Barreno.pdf
+-rw-r--r-- 1 telecom admsis  244442 2017 06 22 081112_ Age 811 Victor Martinez.pdf
+-rw-r--r-- 1 telecom admsis  278286 2017 06 22 102911 Age 1029 Vivian Garcia.pdf
+-rw-r--r-- 1 telecom admsis  274549 2017 06 22 102921 Age 1029 Vivian Garcia.pdf
+-rw-r--r-- 1 telecom admsis  197256 2017 06 22 24822 Age 248 Juan quiak.pdf
+-rw-r--r-- 1 telecom admsis   51803 2017 06 22 300361-300362 Age 428 Sirian Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 584689 2017 06 22 024622 Ingrid Puac.pdf
+-rw-r--r-- 1 telecom admsis  234290 2017 06 22 008222 Claudia Paz.pdf
+-rw-r--r-- 1 telecom admsis   84871 2017 06 22 008822_ Age88 Donaldo Cordon.pdf
+-rw-r--r-- 1 telecom admsis 1315385 2017 06 22 020422 Casilda Tale Age 204.pdf
+-rw-r--r-- 1 telecom admsis  228517 2017 06 22 024812 JUAN RIQUIAC AGE 248.pdf
+-rw-r--r-- 1 telecom admsis  167628 2017 06 22 031222 Age 312 Yuliana Orellana.pdf
+-rw-r--r-- 1 telecom admsis  615788 2017 06 22 032222 AGE 322 HECTOR BOCH.pdf
+-rw-r--r-- 1 telecom admsis  250655 2017 06 22 034322 AGE 323 MARIA NICOLAS.pdf
+-rw-r--r-- 1 telecom admsis 1753896 2017 06 22 037822 Daysi Moran Age 378.pdf
+-rw-r--r-- 1 telecom admsis  650594 2017 06 22 039822 Daysi Gomez.pdf
+-rw-r--r-- 1 telecom admsis  749727 2017 06 22 070512 Elcias Galvez Age 705.pdf
+-rw-r--r-- 1 telecom admsis  721753 2017 06 22 070522 Elcias Galvez Age 705.pdf
+-rw-r--r-- 1 telecom admsis  172445 2017 06 22 072411 Age 724 Sandra Guerra.pdf
+-rw-r--r-- 1 telecom admsis  476367 2017 06 22 080522 Reyna Rosa.pdf
+-rw-r--r-- 1 telecom admsis  703603 2017 06 22 085922 Alina Rivera age 859.pdf
+-rw-r--r-- 1 telecom admsis 832376 2017 06 22 003123 Virgilio Zapeta.pdf
+-rw-r--r-- 1 telecom admsis 311613 2017 06 22 004022 Oscar Coronado.pdf
+-rw-r--r-- 1 telecom admsis 600812 2017 06 22 014941 HEIDY ESTACUY.pdf
+-rw-r--r-- 1 telecom admsis 593435 2017 06 22 015512 Age 155 Jose Fernandez.pdf
+-rw-r--r-- 1 telecom admsis 655082 2017 06 22 018222 JOSE DOMINGO.pdf
+-rw-r--r-- 1 telecom admsis  63736 2017 06 22 028522 AGE285 MIRLET SALAZAR.pdf
+-rw-r--r-- 1 telecom admsis 552766 2017 06 22 032422 AGE 324 KARLA AMADOR.pdf
+-rw-r--r-- 1 telecom admsis  90219 2017 06 22 040622 AGE406 SANDRA POCON.pdf
+-rw-r--r-- 1 telecom admsis 228481 2017 06 22 043622 LEVIN DE LA CRUZ AGE436.pdf
+-rw-r--r-- 1 telecom admsis 568785 2017 06 22 300256 MIRZA RODAS.pdf
+-rw-r--r-- 1 telecom admsis 466004 2017 06 22 302699_Glenda Asturias.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Cambios de nombre
+drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Telefonos nuevos
+-rw-r--r-- 1 telecom admsis  564255 2017 06 22 300326_Carla Lopez.pdf
+-rw-r--r-- 1 telecom admsis   41348 2017 06 22 300600_Jenifer Saavedra.pdf
+-rw-r--r-- 1 telecom admsis  505689 2017 06 22 300635_Marcela Garcia.pdf
+-rw-r--r-- 1 telecom admsis  303542 2017 06 22 300664_Karina Giron.pdf
+-rw-r--r-- 1 telecom admsis 1274798 2017 06 22 301237_Ana Merida, 301513_Alberto Cabrera.pdf
+-rw-r--r-- 1 telecom admsis  240815 2017 06 22 301519_Cesar Guerrero.pdf
+-rw-r--r-- 1 telecom admsis  593718 2017 06 22 301903_Gladis Corado.pdf
+-rw-r--r-- 1 telecom admsis 1462585 2017 06 22 302041_Joanna Marroquin, 302037_Belen Gomez, 302149_Andrea Rivas y 302048_Evelyn Catalan.pdf
+-rw-r--r-- 1 telecom admsis   85071 2017 06 22 302046_Sherilyn Esquivel.pdf
+-rw-r--r-- 1 telecom admsis  755855 2017 06 22 302068_Wualter de León.pdf
+-rw-r--r-- 1 telecom admsis  104958 2017 06 22 302117_Jaqueline Castillo.pdf
+-rw-r--r-- 1 telecom admsis   63680 2017 06 22 302420_Juan Morales.pdf
+-rw-r--r-- 1 telecom admsis  633417 2017 06 22 302435_Mario Caniche.pdf
+-rw-r--r-- 1 telecom admsis   89446 2017 06 22 302448_Mario Molina.pdf
+-rw-r--r-- 1 telecom admsis   90905 2017 06 22 302461_Emilio Hernández.pdf
+-rw-r--r-- 1 telecom admsis  611874 2017 06 22 302815_Juan Cano.pdf
+-rw-r--r-- 1 telecom admsis  647506 2017 06 22 302817_Raul Mijangos.pdf
+-rw-r--r-- 1 telecom admsis  162412 2017 06 22 302866_Luis Jimenez.pdf
+-rw-r--r-- 1 telecom admsis  516435 2017 06 22 303037_Carlos Xitimul.pdf
+-rw-r--r-- 1 telecom admsis   68193 2017 06 22 303054_Fabiola Rivas.pdf
+-rw-r--r-- 1 telecom admsis 2105359 2017 06 22 303334_Sergio Gonzalez.jpg
+-rw-r--r-- 1 telecom admsis  469522 2017 06 22 304120_David Morales.pdf
+-rw-r--r-- 1 telecom admsis  504030 2017 06 22 304124_Limny Calderon.pdf
+-rw-r--r-- 1 telecom admsis  504290 2017 06 22 304125_Carlos Moto.pdf
+-rw-r--r-- 1 telecom admsis  485356 2017 06 22 304126_Williams Marcos.pdf
+-rw-r--r-- 1 telecom admsis  650147 2017 06 22 304170_Luis Bembez.pdf
+-rw-r--r-- 1 telecom admsis  466044 2017 06 22 304171_Luis Castillo.pdf
+-rw-r--r-- 1 telecom admsis  131043 2017 06 22 304221_Manuel Ascuc.pdf
+-rw-r--r-- 1 telecom admsis 2022292 2017 06 22 007324_Nelly Barrondo.jpg
+-rw-r--r-- 1 telecom admsis   94745 2017 06 22 302429_Juan Brol.pdf
+-rw-r--r-- 1 telecom admsis  639045 2017 06 22 302679_Ignacio Lopez.pdf
+-rw-r--r-- 1 telecom admsis  631057 2017 06 22 302845_Carlos Valladares.pdf
+-rw-r--r-- 1 telecom admsis  623850 2017 06 22 302848_Kevin Cruz.pdf
+-rw-r--r-- 1 telecom admsis   81904 2017 06 22 304156_Rolando Pineda.pdf
+-rw-r--r-- 1 telecom admsis  660688 2017 06 22 304159_Marlon Choc.pdf
+-rw-r--r-- 1 telecom admsis 120939 2017 06 22 300603_ Monica Mijangos.pdf
+-rw-r--r-- 1 telecom admsis 248080 2017 06 22 300636_ Katerim Ramirez.pdf
+-rw-r--r-- 1 telecom admsis 293639 2017 06 22 300637Maria Caseres.pdf
+-rw-r--r-- 1 telecom admsis 127050 2017 06 22 300638 Mónica Cabrera (2).pdf
+-rw-r--r-- 1 telecom admsis  230189 2017 06 22 300230_David Rosal.pdf
+-rw-r--r-- 1 telecom admsis  277597 2017 06 22 300234_Jose Enrique Garcia.pdf
+-rw-r--r-- 1 telecom admsis  707888 2017 06 22 300254_Erick Ajtun.pdf
+-rw-r--r-- 1 telecom admsis  567355 2017 06 22 300271_Roberto Mendez.pdf
+-rw-r--r-- 1 telecom admsis  342268 2017 06 22 300290_SELFIDO VILLAFUERTE.pdf
+-rw-r--r-- 1 telecom admsis 1623462 2017 06 22 300359_MARIO RAMIREZ.pdf
+-rw-r--r-- 1 telecom admsis  109644 2017 06 22 302073_ Sandra Sandoval.pdf
+-rw-r--r-- 1 telecom admsis   95654 2017 06 22 302271_Estrella alvarez.pdf
+-rw-r--r-- 1 telecom admsis  127999 2017 06 22 302691-Heidy Mendez.pdf
+-rw-r--r-- 1 telecom admsis  601062 2017 06 22 302787_Lesly Arevalo.pdf
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 ABRIL
+drwxr-xr-x 2 telecom admsis 4096 2016 08 29 JULIO
+drwxr-xr-x 2 telecom admsis 4096 2016 07 12 JUNIO
+drwxr-xr-x 2 telecom admsis 4096 2016 04 20 MARZO
+drwxr-xr-x 2 telecom admsis 4096 2016 06 07 MAYO
+-rw-r--r-- 1 telecom admsis 548645 2016 04 20 300634_ Yadira Castellanos.pdf
+-rw-r--r-- 1 telecom admsis 199221 2016 08 29 057835_ Cony Castellanos.pdf
+-rw-r--r-- 1 telecom admsis 631772 2016 08 29 300228_ AGE 744 Marlen Mendez.pdf
+-rw-r--r-- 1 telecom admsis 260208 2016 07 12 016212_BILSAN ISAI MORALES MERIDA.pdf
+-rw-r--r-- 1 telecom admsis 427891 2016 07 12 017822-017832 Merecedes Fuentes Age 178.pdf
+-rw-r--r-- 1 telecom admsis 712810 2016 07 12 032022_ Sandra Tec Maaz.pdf
+-rw-r--r-- 1 telecom admsis 724468 2016 07 12 042422_Guisela Paz.pdf
+-rw-r--r-- 1 telecom admsis 253122 2016 07 12 300298_MARLEN HERRERA.pdf
+-rw-r--r-- 1 telecom admsis 190255 2016 04 20 Age 442 Ext 44225.pdf
+-rw-r--r-- 1 telecom admsis 453388 2016 04 20 Age56 ext  005612 y 005622.pdf
+-rw-r--r-- 1 telecom admsis 265805 2016 06 07 005825_ Irma YOlanda Monjaraz Age 0058.pdf
+-rw-r--r-- 1 telecom admsis 616995 2016 06 07 014230_ Nelson Alfredo Zetino Age0142 llamadas externas.pdf
+-rw-r--r-- 1 telecom admsis 645955 2016 06 07 032012_ Patricia Rossana Cardona Age 0320.pdf
+-rw-r--r-- 1 telecom admsis 255654 2016 06 07 034121_Jorge Mario Marroquin.pdf
+-rw-r--r-- 1 telecom admsis 191215 2016 06 07 044225_ Gaspar MAton Age 0442.pdf
+-rw-r--r-- 1 telecom admsis 313047 2016 06 07 063422_ Emelin Perez Age 634.pdf
+-rw-r--r-- 1 telecom admsis 569460 2016 06 07 063911_ Nota por reemplazo de cargador.pdf
+-rw-r--r-- 1 telecom admsis  80805 2016 06 07 065621_Beberly Dennise Garcia Age 0656 Cambio de nombre.pdf
+-rw-r--r-- 1 telecom admsis 308018 2016 06 07 101411 _Elmer Montenegro Age 1014.pdf
+-rw-r--r-- 1 telecom admsis 295807 2016 06 07 101421_Elmer Montenegro Ramirez.pdf
+-rw-r--r-- 1 telecom admsis 502512 2016 06 07 49911_Remplazo de cargador.pdf
+-rw-r--r-- 1 telecom admsis 223186944 2016 04 20 ClientComponentPack.msi
+drwxr-xr-x 2 telecom admsis      4096 2016 04 20 Oaisys
+-rw-r--r-- 1 telecom admsis 100798464 2016 04 20 directxpackage.exe
+-rwxrwxrwx 1 nagios nagios 514811 2008 09 24 Bdr_NetDiagram_200808.jpg
+-rwxrwxrwx 1 nagios nagios   9997 2008 07 18 conf_internet.htm
+-rwxrwxrwx 1 nagios nagios 164331 2007 10 29 conf_salidainternet26082008.jpg
+-rwxrwxrwx 1 nagios nagios   2188 2013 10 18 dc-netscaler.html
+-rwxrwxrwx 1 nagios nagios  11508 2008 08 26 Internet_General.htm_20090416
+-rwxrwxrwx 1 nagios nagios  28287 2012 12 27 Internet_General.htm_20121227
+-rwxrwxrwx 1 nagios nagios  30097 2013 04 11 Internet_General.htm_20130411.html
+-rwxrwxrwx 1 nagios nagios  57195 2009 01 30 Partners-CCLA.JPG
+-rwxrwxrwx 1 nagios nagios 1069192 2008 12 24 dscf1821.jpg
+-rwxrwxrwx 1 nagios nagios 1039089 2008 12 24 dscf1822.jpg
+-rwxrwxrwx 1 nagios nagios 1035053 2008 12 24 dscf1823.jpg
+drwxrwxrwx 2 nagios  nagios 4096 2015 11 16 2014
+drwxrwxrwx 2 nagios  nagios 4096 2016 01 26 2015
+drwxrwxrwx 2 nagios  nagios 4096 2017 01 04 2016
+drwxrwxrwx 2 nagios  nagios 4096 2017 10 02 2017
+drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
+-rwxrwxrwx 1 nagios nagios 417569 2014 03 04 ReporteAgencias-201402.pdf
+-rwxrwxrwx 1 nagios nagios 358166 2014 04 01 ReporteAgencias-201403.pdf
+-rwxrwxrwx 1 nagios nagios  70587 2014 05 02 ReporteAgencias-201404.pdf
+-rwxrwxrwx 1 nagios nagios  84600 2014 06 04 ReporteAgencias-201405.pdf
+-rwxrwxrwx 1 nagios nagios  71013 2014 07 02 ReporteAgencias-201406.pdf
+-rwxrwxrwx 1 nagios nagios  89408 2014 08 01 ReporteAgencias-201407.pdf
+-rwxrwxrwx 1 nagios nagios  77737 2014 09 01 ReporteAgencias-201408.pdf
+-rwxrwxrwx 1 nagios nagios  78474 2014 10 02 ReporteAgencias-201409.pdf
+-rwxrwxrwx 1 nagios nagios  76971 2014 11 03 ReporteAgencias-201410.pdf
+-rwxrwxrwx 1 nagios nagios  77940 2014 12 01 ReporteAgencias-201411.pdf
+-rwxrwxrwx 1 nagios nagios  82481 2015 01 05 ReporteAgencias-201412.pdf
+-rwxrwxrwx 1 nagios nagios   82286 2015 02 02 ReporteAgencias-201501.pdf
+-rwxrwxrwx 1 nagios nagios  356664 2015 03 03 ReporteAgencias-201502.pdf
+-rwxrwxrwx 1 nagios nagios   75980 2015 04 01 ReporteAgencias-201503.pdf
+-rwxrwxrwx 1 nagios nagios   60719 2015 05 04 ReporteAgencias-201504.pdf
+-rwxrwxrwx 1 nagios nagios 1025270 2015 06 01 ReporteAgencias-201505.pdf
+-rwxrwxrwx 1 nagios nagios   75954 2015 07 01 ReporteAgencias-201506.pdf
+-rwxrwxrwx 1 nagios nagios  218976 2015 09 07 ReporteAgencias-201508.pdf
+-rwxrwxrwx 1 nagios nagios  206447 2015 10 01 ReporteAgencias-201509.pdf
+-rwxrwxrwx 1 nagios nagios  151211 2015 12 17 ReporteAgencias-201510.pdf
+-rwxrwxrwx 1 nagios nagios  284763 2015 12 17 ReporteAgencias-201511.pdf
+-rwxrwxrwx 1 nagios nagios  220567 2016 01 26 ReporteAgencias-201512.pdf
+-rw-r--r-- 1 root root 180216 2016 02 02 ReporteAgencias-201601.pdf
+-rw-r--r-- 1 root root 270271 2016 03 08 ReporteAgencias-201602.pdf
+-rw-r--r-- 1 root root 215727 2016 04 01 ReporteAgencias-201603.pdf
+-rw-r--r-- 1 root root 225820 2016 05 02 ReporteAgencias-201604.pdf
+-rw-r--r-- 1 root root 220839 2016 06 01 ReporteAgencias-201605.pdf
+-rw-r--r-- 1 root root 216545 2016 07 02 ReporteAgencias-201606.pdf
+-rw-r--r-- 1 root root 282797 2016 10 03 ReporteAgencias-201609.pdf
+-rw-r--r-- 1 root root 198799 2016 11 02 ReporteAgencias-201610.pdf
+-rw-r--r-- 1 root root 242152 2016 12 01 ReporteAgencias-201611.pdf
+-rw-r--r-- 1 root root 249968 2017 01 04 ReporteAgencias-201612.pdf
+-rw-r--r-- 1 root    root   235383 2017 02 01 ReporteAgencias-201701.pdf
+-rw-r--r-- 1 root    root   229918 2017 03 02 ReporteAgencias-201702.pdf
+-rw-r--r-- 1 root    root   233429 2017 04 03 ReporteAgencias-201703.pdf
+-rw-r--r-- 1 root    root   184724 2017 05 02 ReporteAgencias-201704.pdf
+-rw-r--r-- 1 root    root   225076 2017 06 01 ReporteAgencias-201705.pdf
+-rw-r--r-- 1 root    root   223366 2017 07 05 ReporteAgencias-201706.pdf
+-rw-r--r-- 1 root    root   231066 2017 08 01 ReporteAgencias-201707.pdf
+-rw-r--r-- 1 root    root   214091 2017 09 01 ReporteAgencias.201708.pdf
+-rw-r--r-- 1 telecom admsis 214046 2017 10 02 ReporteAgencias-201709.pdf
+-rw-r--r-- 1 telecom admsis 704324 2016 05 23 InformePruebaAgenciasColumbus.pdf
+-rwxrwxrwx 1 nagios nagios  4340 2013 04 16 dbcon.php
+-rwxrwxrwx 1 nagios nagios   900 2011 09 08 home.html
+-rwxrwxrwx 1 nagios nagios   614 2011 09 08 index.html
+-rwxrwxrwx 1 nagios nagios  1668 2011 09 06 Left.html
+-rwxrwxrwx 1 nagios nagios  3223 2011 09 06 Left_original.html
+-rwxrwxrwx 1 nagios nagios  8261 2013 06 11 logo.jpg
+-rwxrwxrwx 1 nagios nagios   315 2011 09 08 menu.html
+-rwxrwxrwx 1 nagios nagios 15776 2011 09 09 reporte_usuario.php
+-rwxrwxrwx 1 nagios nagios 142052 2008 09 24 aeronauticaCivil.JPG
+-rwxrwxrwx 1 nagios nagios  34415 2008 09 24 ci_muni_guate_app.jpg
+-rwxrwxrwx 1 nagios nagios  10398 2014 07 17 ci_muni_guate.htm
+-rwxrwxrwx 1 nagios nagios  41398 2008 09 24 ci_muni_guate_net.jpg
+-rwxrwxrwx 1 nagios nagios 297549 2008 10 27 conexion_BCG_Swift.jpg
+-rwxrwxrwx 1 nagios nagios 189971 2008 09 24 Conf_ClusterSun.JPG
+-rwxrwxrwx 1 nagios nagios 212360 2008 09 24 Conf_Email_BDR.jpg
+-rwxrwxrwx 1 nagios nagios 104437 2008 09 24 conf_iggs.jpg
+-rwxrwxrwx 1 nagios nagios  69493 2011 06 20 Conf_prop_muni_Chimal.jpg
+-rwxrwxrwx 1 nagios nagios  77851 2009 06 16 Conf_prop_Muni_VC.jpg
+-rwxrwxrwx 1 nagios nagios 107266 2009 06 16 Conf_prop_portQuetzal.jpg
+-rwxrwxrwx 1 nagios nagios 241541 2008 09 24 Conf_Telgua.JPG
+-rwxrwxrwx 1 nagios nagios 184246 2008 09 24 Conf_UnionFenosa.jpg
+-rwxrwxrwx 1 nagios nagios 337373 2008 09 24 Conf_Uniteller.JPG
+-rwxrwxrwx 1 nagios nagios 119157 2009 11 16 Diagrama_Muni_Mixco.jpg
+-rwxrwxrwx 1 nagios nagios  92673 2009 01 14 Partners-5b.JPG
+-rwxrwxrwx 1 nagios nagios 331085 2008 09 24 Partners-ACH.JPG
+-rwxrwxrwx 1 nagios nagios  70453 2009 08 24 Partners-Agexpront.JPG
+-rwxrwxrwx 1 nagios nagios  59257 2009 02 16 Partners-Bancomercio.JPG
+-rwxrwxrwx 1 nagios nagios  69960 2012 02 21 Partners-BTS.JPG
+-rwxrwxrwx 1 nagios nagios  71639 2010 08 10 Partners-Comcel.JPG
+-rwxrwxrwx 1 nagios nagios  58631 2010 08 16 Partners-Corfina.JPG
+-rwxrwxrwx 1 nagios nagios  56852 2009 01 22 Partners-Dolex.JPG
+-rwxrwxrwx 1 nagios nagios  91956 2009 01 23 Partners-Eegsa.JPG
+-rwxrwxrwx 1 nagios nagios  61910 2009 02 06 Partners-Fenosa.JPG
+-rwxrwxrwx 1 nagios nagios  71301 2009 08 24 Partners-Forstand.JPG
+-rwxrwxrwx 1 nagios nagios  84631 2010 06 07 Partners-GBM.JPG
+-rwxrwxrwx 1 nagios nagios  71900 2009 08 24 Partners-GrupoExpress.JPG
+-rwxrwxrwx 1 nagios nagios 129296 2009 01 14 Partners-ICG.JPG
+-rwxrwxrwx 1 nagios nagios 104296 2009 07 03 Partners-Igss.JPG
+-rwxrwxrwx 1 nagios nagios 843646 2013 02 27 Partners-Intecap.JPG
+-rwxrwxrwx 1 nagios nagios  76743 2010 02 23 Partners-IPM.JPG
+-rwxrwxrwx 1 nagios nagios  58716 2009 01 22 Partners-MiPueblo.JPG
+-rwxrwxrwx 1 nagios nagios  59689 2009 01 22 Partners-MoneyGram.JPG
+-rwxrwxrwx 1 nagios nagios  71518 2009 01 13 Partners-OJ.JPG
+-rwxrwxrwx 1 nagios nagios  60438 2009 01 22 Partners-OrderExpress.JPG
+-rwxrwxrwx 1 nagios nagios  70245 2009 01 14 Partners-Oriflame.JPG
+-rwxrwxrwx 1 nagios nagios  58960 2008 10 27 Partners-Paynexus.JPG
+-rwxrwxrwx 1 nagios nagios  77994 2009 02 02 Partners-Portuaria.JPG
+-rwxrwxrwx 1 nagios nagios  92348 2009 02 03 Partners-PTC.JPG
+-rwxrwxrwx 1 nagios nagios  58438 2011 03 10 Partners-RegProp.JPG
+-rwxrwxrwx 1 nagios nagios  41032 2008 10 27 Partners-Renap-WebService.JPG
+-rwxrwxrwx 1 nagios nagios 170724 2013 09 27 Partners-SAT-FTP.jpg
+-rwxrwxrwx 1 nagios nagios  90344 2009 01 14 Partners-SAT.JPG
+-rwxrwxrwx 1 nagios nagios  96082 2011 05 19 Partners-SAT-Navega.JPG
+-rwxrwxrwx 1 nagios nagios 154872 2008 09 24 Partners-SIAF.JPG
+-rwxrwxrwx 1 nagios nagios  63419 2009 01 14 Partners-SIB.JPG
+-rwxrwxrwx 1 nagios nagios  68514 2009 08 24 Partners-Sigue.JPG
+-rwxrwxrwx 1 nagios nagios  71301 2009 01 15 Partners-Telefonica.JPG
+-rwxrwxrwx 1 nagios nagios  77197 2009 01 13 Partners-Telgua.JPG
+-rwxrwxrwx 1 nagios nagios 175350 2008 09 24 Partners-UnionFenosa.JPG
+-rwxrwxrwx 1 nagios nagios  79986 2009 01 22 Partners-Uniteler.JPG
+-rwxrwxrwx 1 nagios nagios  71593 2009 08 24 Partners-UnitelYego.JPG
+-rwxrwxrwx 1 nagios nagios  65780 2009 02 03 Partners-USAC.JPG
+-rwxrwxrwx 1 nagios nagios  58930 2009 01 22 Partners-Viamericas.JPG
+-rwxrwxrwx 1 nagios nagios  74724 2010 02 23 Partners-Visanet.JPG
+-rwxrwxrwx 1 nagios nagios 393733 2008 09 24 ReferenciasSIB.JPG
+-rwxrwxrwx 1 nagios nagios  41904 2008 10 27 VPN_Sigue.JPG

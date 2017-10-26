@@ -1,0 +1,26 @@
+#MIN =  Minute 0-60
+#    HOUR = Hour [24-hour clock] 0-23
+#       MDAY = Day of Month 1-31
+#          MON = Month 1-12 OR jan,feb,mar,apr ...
+#              DOW =  Day of Week 0-6 OR 0 sun,1 mon,2 tue,3 wed, 4 thu,5 fri,6 sat
+#                    User
+#                               COMMAND = Command to be run Any valid command-line
+
+ 0   *  *  *  *      root      /usr/lib/nagios/plugins/check_proveedor_his.sh
+ 15  *  *  *  *      root      /usr/lib/nagios/plugins/check_proveedor_his.sh
+ 30  *  *  *  *      root      /usr/lib/nagios/plugins/check_proveedor_his.sh
+ 45  *  *  *  *      root      /usr/lib/nagios/plugins/check_proveedor_his.sh
+
+# 0   *  *  *  *     www-data     php  /srv/var/www/html/enlace/enlaces_down_simple.php 2 1 Email > /dev/null 2>&1
+# 30  *  *  *  *     www-data     php  /srv/var/www/html/enlace/enlaces_down_simple.php 2 1 Email > /dev/null 2>&1
+ 5   3  *  *  2,5   www-data     php  /srv/var/www/html/enlace/enlaces_consulta_solicitados_xregion.php> /dev/null 2>&1
+
+# 00  3  *  *  1     root       /etc/procs/nagios_backup.sh
+# 30  3  *  *  *     root       /etc/procs/nagios_db_backup.sh
+# 00  4  *  *  *     root       /etc/procs/nagios_db_comments.sh
+# 30  4  *  *  1     root       /etc/procs/mailcount_add.sh
+30  4  1  *  *     root       /etc/procs/gen_stats.sh
+30  4  1  *  *     root       /etc/procs/gensla/genrepsla.sh
+
+# 00  5  1  *  *     root       /etc/procs/carga_trans/ejecutacarga.sh
+#30  2  *  *  1     root       /etc/procs/delmysqlbin.sh

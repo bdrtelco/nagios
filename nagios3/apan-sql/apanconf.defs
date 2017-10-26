@@ -1,0 +1,70 @@
+#Base-directory for nagios:
+NAGIOSDIR=/etc/nagios3
+
+#The directory where apan is installed
+APANDIR=$NAGIOSDIR/apan-sql
+
+# User/Group that Nagios runs as
+NAGIOSUSERGROUP=nagios:nagios
+
+# File with Apan's serviceextinfo-definitions
+EXTINFOFILE=$NAGIOSDIR/objects/apan_ext.cfg
+
+#Base-URL for Nagios cgi's
+CGIURL=/nagios3/cgi-bin
+
+#Base-catalogue for RRD-files
+#RRDDIR=$NAGIOSDIR/rrd
+
+#Default heartbeat, min/max values, step and drawingtype for datasets in new rrd-files
+RRDDSHB=900
+RRDDSMIN=0
+RRDDSMAX=U
+RRDSTEP=60
+RRDDRAWTYPE=LINE2
+#Default round-robin archives for new rrd-files
+RRAS="RRA:AVERAGE:0.5:1:50400 RRA:AVERAGE:0.5:60:43800"
+
+# Set this to the number of rows you want to have in the hints in apanconf
+# 0 will disable the feature
+HINTS=8
+
+#Set this to 1 if you want to use colors in apanconf
+COLOR=1
+
+# End of configuration.
+
+if [ $COLOR != 0 ]; then
+	SETNORM="\\033[0m"
+	SETBOLD="\\033[1m"
+	SETUL="\\033[4m"
+	SETBLINK="\\033[5m"
+	SETREVERSE="\\033[7m"
+	SETINVISIBLE="\\033[8m"
+	CLEARSCR="\\033[2J"
+	CLEARTOEL="\\033[K"
+	GOTOTOP="\\033[0;0H"
+	
+	SETBLACK="\\033[30m"
+	SETRED="\\033[31m"
+	SETGREEN="\\033[32m"
+	SETYELLOW="\\033[33m"
+	SETBLUE="\\033[34m"
+	SETPURPLE="\\033[35m"
+	SETCYAN="\\033[36m"
+	SETGREY="\\033[37m"
+	SETDEFCOLOR="\\033[39m"
+
+	SETWHITE="$SETGREY$SETBOLD"
+
+	SETBLACKBG="\\033[40m"
+        SETREDBG="\\033[41m"
+        SETGREENBG="\\033[42m"
+        SETYELLOWBG="\\033[43m"
+        SETBLUEBG="\\033[44m"
+        SETPURPLEBG="\\033[45m"
+        SETCYANBG="\\033[46m"
+        SETGREYBG="\\033[47m"
+        SETDEFCOLORBG="\\033[0;49m"
+
+fi

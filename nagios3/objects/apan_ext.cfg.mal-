@@ -1,0 +1,1980 @@
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              bl9sybiq
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=bl9sybiq&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              fw-zona4
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fw-zona4&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              fwz1
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fwz1&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              fwz11
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fwz11&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw-branch
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw-branch&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_agencias
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_agencias&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_munimixco_cc_montserrat
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_munimixco_cc_montserrat&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_munimixco_nmontserrat
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_munimixco_nmontserrat&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_munimixco_san_francisco
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_munimixco_san_francisco&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_amatitlan
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_amatitlan&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_atescatempa
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_atescatempa&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_chimaltenango
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_chimaltenango&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_paseo_los_campeones
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_paseo_los_campeones&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_quetzaltenango
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_quetzaltenango&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+#define serviceextinfo  {
+#host_name              gw_muni_quiche
+#service_description    apan_linux_cpu
+#notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_quiche&service=apan_linux_cpu
+#icon_image             ./bdr/graph.png
+#icon_image_alt         Ver Apan-graphs
+#                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_sanjuan_sacatepequez
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_sanjuan_sacatepequez&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_san_pedro_sacatepequez
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_san_pedro_sacatepequez&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_muni_san_vicente_pacaya
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_san_vicente_pacaya&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_portuaria
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_portuaria&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_san_cristobal
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_san_cristobal&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_sascim
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_sascim&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_tarjetas
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_tarjetas&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_torre
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_torre&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              gw_vnc
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_vnc&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              mailarchive
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mailarchive&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              mailexterno
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mailexterno&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              mailprivado
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mailprivado&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              mail_financiera
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mail_financiera&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              mail_seguros
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mail_seguros&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              natserver
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=natserver&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              proxy
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=proxy&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              proxy-adm
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=proxy-adm&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              proxy-age02
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=proxy-age02&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              referencias
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=referencias&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              segurosd
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=segurosd&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              segurosp
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=segurosp&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_cpu
+define serviceextinfo  {
+host_name              vpnsrv
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vpnsrv&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              fw-zona4
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fw-zona4&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              fwz11
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fwz11&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_munimixco_cc_montserrat
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_munimixco_cc_montserrat&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_munimixco_nmontserrat
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_munimixco_nmontserrat&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_munimixco_san_francisco
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_munimixco_san_francisco&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_muni_amatitlan
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_amatitlan&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_muni_chimaltenango
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_chimaltenango&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_muni_paseo_los_campeones
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_paseo_los_campeones&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_muni_quetzaltenango
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_quetzaltenango&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_muni_sanjuan_sacatepequez
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_sanjuan_sacatepequez&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_muni_san_vicente_pacaya
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_muni_san_vicente_pacaya&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_san_cristobal
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_san_cristobal&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_linux_mem
+define serviceextinfo  {
+host_name              gw_vnc
+service_description    apan_linux_mem
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=gw_vnc&service=apan_linux_mem
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              Abmsrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=Abmsrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              AdmonDCR
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=AdmonDCR&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              backupsrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=backupsrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              compe1
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=compe1&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              elearning
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=elearning&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              fep_db
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fep_db&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              fep_desa
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fep_desa&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              fep_desa_db
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fep_desa_db&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              fep_test
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fep_test&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              fep_test_db
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fep_test_db&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              ivr
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=ivr&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              ivrfax
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=ivrfax&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              municipalidad
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=municipalidad&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              NVABancaVirtual
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=NVABancaVirtual&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              plus_acrm_db
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=plus_acrm_db&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              qapp_desa
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=qapp_desa&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              qapp_prod
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=qapp_prod&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              qapp_prod2
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=qapp_prod2&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              qdb_prod
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=qdb_prod&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              rrhhweb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=rrhhweb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              sasolap
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=sasolap&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              segurosweb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=segurosweb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              sgfag0115dcf002
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=sgfag0115dcf002&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              SGFAG0115RSG164
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=SGFAG0115RSG164&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              sifag0115dcf003
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=sifag0115dcf003&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              siniestro
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=siniestro&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              torre01srv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=torre01srv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              torre02srv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=torre02srv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vgfag0033dcf001
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vgfag0033dcf001&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vgfag0115dcf004
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vgfag0115dcf004&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vgfag0445dcf003
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vgfag0445dcf003&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vifag0033dcf001
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vifag0033dcf001&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vifag0445dcf002
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vifag0445dcf002&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMACH
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMACH&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMActivosfijos
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMActivosfijos&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMAdmonDC
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMAdmonDC&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMAlertast
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMAlertast&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMAperWeb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMAperWeb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMAsistenciaApp
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMAsistenciaApp&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMAsistenciaDB
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMAsistenciaDB&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMBBES
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMBBES&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMBVDesa
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMBVDesa&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMBVInterna
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMBVInterna&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCA-ITCM-01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCA-ITCM-01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCA-ITCM-02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCA-ITCM-02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCapaSrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCapaSrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmcargas
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmcargas&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCAS
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCAS&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis03
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis03&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis04
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis04&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis05
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis05&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis06
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis06&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis07
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis07&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis08
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis08&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis10
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis10&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis14
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis14&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCobis15
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis15&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmcobisbrch
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmcobisbrch&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMColasWeb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMColasWeb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMCompeOld
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCompeOld&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmcrea01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmcrea01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmcrea02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmcrea02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmcreadb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmcreadb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMDatos
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMDatos&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMDatosDB
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMDatosDB&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMDatosLight
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMDatosLight&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMDatosWeb02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMDatosWeb02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMDBProd12
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMDBProd12&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMDBProduccion
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMDBProduccion&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMEchatProd
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMEchatProd&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMEstadosDeCuenta
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMEstadosDeCuenta&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmExchCAS01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmExchCAS01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmffws
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmffws&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmffws2
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmffws2&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMFFwww1
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMFFwww1&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMFFwww2
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMFFwww2&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMFHA
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMFHA&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMFTP
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMFTP&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMFTPMunis
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMFTPMunis&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMGestionRiesgo
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMGestionRiesgo&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMImageDB
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMImageDB&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmImageProc
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmImageProc&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMImageSRV
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMImageSRV&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMImageWebSrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMImageWebSrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMIntranet
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMIntranet&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmMonitorCoreAlarma
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmMonitorCoreAlarma&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmMonitorCoreAnaliza01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmMonitorCoreAnaliza01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmMonitorCoreAnaliza02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmMonitorCoreAnaliza02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmMonitorCoreColector
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmMonitorCoreColector&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmMonitorCoreDB
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmMonitorCoreDB&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmmsgbrk
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmmsgbrk&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmmsqapp01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmmsqapp01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmmsqapp02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmmsqapp02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMNetDesa
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMNetDesa&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmnod32
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmnod32&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMPayCorp
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMPayCorp&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMPlusACRMalertas
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMPlusACRMalertas&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMPlusACRManls01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMPlusACRManls01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMPlusACRManls02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMPlusACRManls02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMPlusACRMworkflow
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMPlusACRMworkflow&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMPresupuestos
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMPresupuestos&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMPTCsrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMPTCsrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMQlickView
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMQlickView&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMQlickView64
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMQlickView64&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMRepoDigital
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMRepoDigital&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMRiesgos
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMRiesgos&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmrrhh2000
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmrrhh2000&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMRRHHSEL
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMRRHHSEL&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMrti
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMrti&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmsasdb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmsasdb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSDAppSrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSDAppSrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSDBoxiSrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSDBoxiSrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSDmdbSrv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSDmdbSrv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmsegdc2
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmsegdc2&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmsegemgr
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmsegemgr&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSegSitio
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSegSitio&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSeguros-DC
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSeguros-DC&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSegurosSP
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSegurosSP&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMServiciosWeb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMServiciosWeb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSharePoint
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSharePoint&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSourceSafe
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSourceSafe&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSqlDesa
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSqlDesa&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmsqlinfra
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmsqlinfra&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmsqlinfra12
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmsqlinfra12&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSQRSRV
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSQRSRV&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSuministros2
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSuministros2&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMSWIFT
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSWIFT&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmwatches
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmwatches&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMWebServicios
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMWebServicios&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMWinPHP
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMWinPHP&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmwservices
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmwservices&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              vmwservices02
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmwservices02&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMYotta
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMYotta&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              VMYottaWeb
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMYottaWeb&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# apan_win_cpu
+define serviceextinfo  {
+host_name              web_bv4
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=web_bv4&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# cobis_queue
+define serviceextinfo  {
+host_name              bilbo
+service_description    cobis_queue
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=bilbo&service=cobis_queue
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# cp_use_apan
+define serviceextinfo  {
+host_name              Command-view
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=Command-view&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# cp_use_apan
+define serviceextinfo  {
+host_name              CrmApp01
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=CrmApp01&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# mailqueue
+define serviceextinfo  {
+host_name              mailarchive
+service_description    mailqueue
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mailarchive&service=mailqueue
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# mailqueue
+define serviceextinfo  {
+host_name              mailexterno
+service_description    mailqueue
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mailexterno&service=mailqueue
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# mailqueue
+define serviceextinfo  {
+host_name              mailprivado
+service_description    mailqueue
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mailprivado&service=mailqueue
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# mailqueue
+define serviceextinfo  {
+host_name              mail_financiera
+service_description    mailqueue
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mail_financiera&service=mailqueue
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# mailqueue
+define serviceextinfo  {
+host_name              mail_seguros
+service_description    mailqueue
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=mail_seguros&service=mailqueue
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# salud_prov_cesa
+define serviceextinfo  {
+host_name              nagios
+service_description    salud_prov_cesa
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=nagios&service=salud_prov_cesa
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# salud_prov_muni
+define serviceextinfo  {
+host_name              nagios
+service_description    salud_prov_muni
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=nagios&service=salud_prov_muni
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# salud_prov_navega
+define serviceextinfo  {
+host_name              nagios
+service_description    salud_prov_navega
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=nagios&service=salud_prov_navega
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# salud_prov_telered
+define serviceextinfo  {
+host_name              nagios
+service_description    salud_prov_telered
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=nagios&service=salud_prov_telered
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# salud_prov_telnor
+define serviceextinfo  {
+host_name              nagios
+service_description    salud_prov_telnor
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=nagios&service=salud_prov_telnor
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# salud_prov_todos
+define serviceextinfo  {
+host_name              nagios
+service_description    salud_prov_todos
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=nagios&service=salud_prov_todos
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# trans_diarias
+define serviceextinfo  {
+host_name              bilbo
+service_description    trans_diarias
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=bilbo&service=trans_diarias
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacio de CPU
+define serviceextinfo  {
+host_name              web_bv2
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=web_bv2&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              age33srv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=age33srv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              banca_amigo
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=banca_amigo&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              db_bv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=db_bv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              fep
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=fep&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              nagios
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=nagios&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              TorreDC
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=TorreDC&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              VMCobis09
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis09&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              VMCobis11
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis11&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              VMCobis12
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis12&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              VMCobis13
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMCobis13&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              vmctlm
+service_description    apan_linux_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmctlm&service=apan_linux_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# Utilizacion de CPU
+define serviceextinfo  {
+host_name              web_bv
+service_description    apan_win_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=web_bv&service=apan_win_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# win_apan_cpu
+define serviceextinfo  {
+host_name              vmExchCas02
+service_description    win_apan_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmExchCas02&service=win_apan_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# win_apan_cpu
+define serviceextinfo  {
+host_name              vmExchMlbx01
+service_description    win_apan_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmExchMlbx01&service=win_apan_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# win_apan_cpu
+define serviceextinfo  {
+host_name              vmExchMlbx02
+service_description    win_apan_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmExchMlbx02&service=win_apan_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# win_apan_cpu
+define serviceextinfo  {
+host_name              vmffws
+service_description    win_apan_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=vmffws&service=win_apan_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+
+# win_apan_cpu
+define serviceextinfo  {
+host_name              VMSDmdbSrv
+service_description    win_apan_cpu
+notes_url             /nagios/cgi-bin/apan-sql.cgi?host=VMSDmdbSrv&service=win_apan_cpu
+icon_image             ./bdr/graph.png
+icon_image_alt         Ver Apan-graphs
+                       }
+

@@ -1,0 +1,481 @@
+-rwxrwxrw- 1 root   root   287 May  3 13:01 checkdoc.sh
+-rw-r--r-- 1 root   root 26095 May  3 13:02 k.txt
+
+/srv/www/manuales/:
+total 22880
+-rw-r--r-- 1 wwwrun www     110 Jun  3  2009 .htaccess
+-rw-r--r-- 1 wwwrun www   82872 Aug 18  2009 Agencias_Backup.pdf
+-rw-r--r-- 1 wwwrun www 4106181 Jan  1  2008 Extreme-Summit300-48User.pdf
+-rw-r--r-- 1 wwwrun www 8350528 Jan  1  2008 Extreme-WareCommandRef75.pdf
+-rw-r--r-- 1 wwwrun www 7547498 Jan  1  2008 Extreme-WareXOSCommandRef11_3.pdf
+-rw-r--r-- 1 wwwrun www  775808 Nov 17  2009 I-DE-61 Manual de Instalación de Cliente Monitor Plus 2.pdf
+-rw------- 1 wwwrun www  328405 Sep  1  2011 Manual_Cambio_Rutas_Torre.pdf
+-rw-r--r-- 1 wwwrun www  221841 Sep 23  2009 Manual_creaacion_cuentas_correo_ADMON.pdf
+-rw-r--r-- 1 wwwrun www   38729 Jan  4  2010 PROCESOS_GW_BRANCH.pdf
+-rw-r--r-- 1 wwwrun www  203859 Jul  3  2009 Telecom-Age-Esquema_IP.pdf
+-rw-r--r-- 1 wwwrun www  172881 Sep  1  2007 Telecom-Email-ComoBuscarThunder.pdf
+-rw-r--r-- 1 wwwrun www  177200 Sep  1  2007 Telecom-Email-Vacaciones.pdf
+-rw-r--r-- 1 wwwrun www    5431 Sep 24  2008 Telecom-Email-WebMail_Interfaz.pdf
+-rw-r--r-- 1 wwwrun www   42258 Sep  1  2007 Telecom-Messenger-Inst_Pandion.pdf
+-rw-r--r-- 1 wwwrun www  361970 Sep 24  2008 Telecom-Nagios-Manual_InterfazGrafica.pdf
+-rw-r--r-- 1 wwwrun www   78821 Sep  1  2007 Telecom-Telered-Diagnostico_Equipo.pdf
+-rw-r--r-- 1 wwwrun www  165313 Jul  3  2009 Telecom_TCPIP_IP_ARP.pdf
+-rw------- 1 wwwrun www   13553 Feb 18  2011 VPN-SitioCliente.xlsx
+-rw------- 1 wwwrun www   12322 Feb 18  2011 VPN-SitioSitio.xlsx
+-rw------- 1 wwwrun www  275097 Mar 10  2011 VPN_Instalacion_Cliente_CheckPoint.pdf
+-rw-r--r-- 1 wwwrun www  132776 May  7  2009 VPN_Manual_Conexion_Directores.pdf
+-rw------- 1 wwwrun www   40448 Oct 27  2010 WirelessNetView.exe
+drwxr-xr-x 2 wwwrun www    4096 May  7  2009 fuentes
+-rw-r--r-- 1 wwwrun www  224682 Sep 23  2009 manual_vi_espanol.pdf
+-rw------- 1 wwwrun www     120 Feb 21  2011 nagios.tar.gz
+drwxr-xr-x 2 wwwrun www    4096 Jul  3  2009 old
+
+/srv/www/manuales/fuentes:
+total 2644
+-rw-r--r-- 1 wwwrun www 1219584 Jun 10  2008 LECTURA DE INDICADORAS DE LOS MODEMS NEWBRIDGE Y MARTIS.doc
+-rw-r--r-- 1 wwwrun www   64577 May  7  2009 Telecom-Age-Esquema_IP.docx
+-rw-r--r-- 1 wwwrun www  306688 Jun 10  2008 Telecom-Email-ComoBuscarThunder.doc
+-rw-r--r-- 1 wwwrun www   30720 Jun 10  2008 Telecom-Email-WebMail_Interfaz.doc
+-rw-r--r-- 1 wwwrun www   58368 Jun 10  2008 Telecom-IM-Instalacion_Pandion.doc
+-rw-r--r-- 1 wwwrun www  608768 Jun 10  2008 Telecom-Nagios-ManualInterfazGrafica.doc
+-rw-r--r-- 1 wwwrun www   49465 May  7  2009 Telecom_TCPIP_conceptos.docx
+-rw-r--r-- 1 wwwrun www  354816 Jun 10  2008 VPN_Cliente_CheckPoint.doc
+
+/srv/www/manuales/old:
+total 948
+-rw-r--r-- 1 wwwrun www  78268 Jun 10  2008 SIS_DistribucionFisica.pdf
+-rw-r--r-- 1 wwwrun www 448698 Sep  1  2007 Telecom-Manual_Operador.pdf
+-rw-r--r-- 1 wwwrun www 274883 Jun 10  2008 VPN_Cliente_CheckPoint.pdf
+-rw-r--r-- 1 wwwrun www 159494 Dec 29  2008 telecom-esquema_agencias_ip_nombres.pdf
+-rwxrwxrw-  1 root   root   287 May  3 13:01 checkdoc.sh
+-rw-r--r--  1 root   root 26095 May  3 13:02 k.txt
+-rw-r--r--  1 root   root  3060 May  3 13:02 k1.txt
+
+/srv/www/esquemas/:
+total 15888
+-rw-r--r-- 1 wwwrun  www      110 Jan 28  2011 .htaccess
+drwxr-xr-x 5 wwwrun  www     4096 Apr 24  2012 2
+-rw-rw-r-- 1 wwwrun  www    52573 Aug 16  2010 Admon_SitioAlterno.JPG
+-rw-rw-r-- 1 wwwrun  www    53605 Oct 27  2008 Admon_zona1.JPG
+-rw-rw-r-- 1 wwwrun  www    56003 Oct 27  2008 Admon_zona11.JPG
+-rw-rw-r-- 1 wwwrun  www  1104651 Jan 25  2011 Bdr-NetDiagram-Fisico-201007-probema.JPG
+-rw-rw-r-- 1 wwwrun  www   305668 Jan 25  2011 Bdr-NetDiagram-Fisico-201007.JPG
+-rw-r--r-- 1 root    root   18461 May 20  2011 Bdr-tyt.htm
+-rw-rw-r-- 1 wwwrun  www   165217 Jan 25  2011 Bdr_DCPropuesta2011.JPG
+-rw-rw-r-- 1 wwwrun  www  1225773 Jan 25  2011 Bdr_NetDiagram_200100712-problema.JPG
+-rw-rw-r-- 1 wwwrun  www   806860 Aug  6  2009 Bdr_NetDiagram_200908.jpg
+-rw-rw-r-- 1 wwwrun  www   255414 Jan 25  2011 Bdr_NetDiagram_SitioB_15Sept.JPG
+-rw-rw-r-- 1 wwwrun  www   299980 Jan 25  2011 Bdr_NetDiagram_SitioB_Managers_201009.JPG
+-rw-rw-r-- 1 wwwrun  www   959228 Mar 15  2011 Cat6-1.jpg
+-rw-rw-r-- 1 wwwrun  www   925540 Mar 15  2011 Cat6-2.jpg
+drwxrwxrwx 2 wwwrun  www     4096 Oct  6  2011 Cobit
+-rw-rw-r-- 1 wwwrun  www   189971 Sep 24  2008 Conf_ClusterSun.JPG
+-rw-rw-r-- 1 wwwrun  www   212360 Sep 24  2008 Conf_Email_BDR.jpg
+-rw-rw-r-- 1 wwwrun  www   241541 Sep 24  2008 Conf_Telgua.JPG
+-rw-rw-r-- 1 wwwrun  www   337373 Sep 24  2008 Conf_Uniteller.JPG
+-rw-rw-r-- 1 wwwrun  www  1017677 Sep 24  2008 Diagrama_AsRural.JPG
+-rw-rw-r-- 1 wwwrun  www    50714 Sep 24  2008 Diagrama_IVR.JPG
+-rw-rw-r-- 1 wwwrun  www   119157 Nov 16  2009 Diagrama_Muni_Mixco.jpg
+-rw-rw-r-- 1 wwwrun  www   107266 Jun 16  2009 Diagrama_Propuesto.jpg
+-rw-rw-r-- 1 wwwrun  www    77851 Jun 16  2009 Diagrama_Propuesto_VC.jpg
+-rw-rw-r-- 1 wwwrun  www   183791 Sep 24  2008 Diagrama_TarjetaCreditoPTC.JPG
+-rw-r--r-- 1 wwwrun  www    69493 Jun 20  2011 Diagrama_conexion_muniChimaltenango.jpg
+-rw-rw-r-- 1 wwwrun  www   132314 Sep 24  2008 Email1.jpg
+-rw-rw-r-- 1 wwwrun  www   184246 Sep 24  2008 EsquemaEtapa2_UF.JPG
+-rw-rw-r-- 1 wwwrun  www   159156 Sep 24  2008 EsquemaZona1.jpg
+-rw-rw-r-- 1 wwwrun  www   228265 Sep 24  2008 EsquenaRedundancia.JPG
+drwxr-xr-x 3 wwwrun  www     4096 Mar  6  2012 GateWays
+-rw-rw-r-- 1 wwwrun  www    92234 Oct 27  2008 Internet_CheckPoint.JPG
+-rw-rw-r-- 1 wwwrun  www    75946 Mar 17  2010 Internet_CheckPoint_2.JPG
+-rw-rw-r-- 1 wwwrun  www     3275 Dec  4  2009 Internet_CheckPoint_2.html
+-rw-rw-r-- 1 wwwrun  www   101269 May  7  2009 Internet_Clientes_VPN.JPG
+-rw-rw-r-- 1 wwwrun  www    25002 Apr 11 13:29 Internet_General.htm
+-rw-rw-r-- 1 wwwrun  www   106692 Oct 27  2008 Internet_LinkProof.JPG
+drwxr-xr-x 3 wwwrun  www     4096 Jan 28  2011 Mapas
+drwxr-xr-x 2 wwwrun  www     4096 Apr 11 12:04 Old
+-rw-rw-r-- 1 wwwrun  www   186956 Oct 27  2008 ProcesoDeReporteFallas.JPG
+-rw-rw-r-- 1 wwwrun  www   393733 Sep 24  2008 ReferenciasSIB.JPG
+-rw-rw-r-- 1 wwwrun  www   671598 Sep 24  2008 Remesas.JPG
+-rw-rw-r-- 1 wwwrun  www   646252 Sep 24  2008 Remesas_Noip.JPG
+-rw-rw-r-- 1 wwwrun  www    40617 Dec  4  2009 Switch_BayStack1.JPG
+-rw-rw-r-- 1 wwwrun  www     2011 Dec  4  2009 Switch_BayStack1.htm
+-rw-r--r-- 1 root    root    3247 Aug 23  2011 Switch_Xtreme_Dist.htm
+-rw-rw-r-- 1 wwwrun  www      498 Dec  4  2009 Untitled-1.htm
+-rw-rw-r-- 1 wwwrun  www     5181 Dec  4  2009 UntitledFrame-2.htm
+-rw-rw-r-- 1 wwwrun  www      535 Dec  4  2009 UntitledFrame-3.htm
+drwxr-xr-x 2 root    root    4096 Apr  3 18:49 VPN_Docs
+-rw-rw-r-- 1 wwwrun  www    41904 Oct 27  2008 VPN_Sigue.JPG
+-rw-rw-r-- 1 wwwrun  www   142052 Sep 24  2008 aeronauticaCivil.JPG
+drwx------ 2 website root    4096 Jul 19  2012 age-diagramas
+drwxr-xr-x 2 wwwrun  www     4096 Mar  5 10:19 agencias
+-rw-r--r-- 1 root    root   20512 Dec 18 14:29 ap_banrural.htm
+-rw-rw-r-- 1 wwwrun  www    10408 Jun 13  2007 ci_muni_guate.htm
+-rw-rw-r-- 1 wwwrun  www    34415 Sep 24  2008 ci_muni_guate_app.jpg
+-rw-rw-r-- 1 wwwrun  www    41398 Sep 24  2008 ci_muni_guate_net.jpg
+-rw-rw-r-- 1 wwwrun  www   297549 Oct 27  2008 conexion_BCG_Swift.jpg
+-rw-rw-r-- 1 wwwrun  www   104437 Sep 24  2008 conf_iggs.jpg
+-rw-rw-r-- 1 wwwrun  www   368854 Sep 24  2008 conf_salidainternet.jpg
+-rw-rw-r-- 1 wwwrun  www  1069192 Dec 24  2008 dscf1821.jpg
+-rw-rw-r-- 1 wwwrun  www  1039089 Dec 24  2008 dscf1822.jpg
+-rw-rw-r-- 1 wwwrun  www  1035053 Dec 24  2008 dscf1823.jpg
+drwxr-xr-x 3 wwwrun  www     4096 Jan 28  2011 fuentes
+drwxr-xr-x 2 wwwrun  www     4096 Aug 23  2011 images
+drwxr-xr-x 2 root    root    4096 Apr 16 19:04 mitel
+drwxr-xr-x 2 wwwrun  www     4096 Feb 27 11:21 socios
+
+/srv/www/esquemas/2:
+total 68
+-rwxr-x--- 1 wwwrun www  1434 Nov 22  2010 config.cfg
+-rwxr-x--- 1 wwwrun www 12079 Feb 17  2010 copyright
+drwxr-x--- 2 wwwrun www  4096 Feb 24  2010 cron
+-rwxr-x--- 1 wwwrun www  3929 Nov 22  2010 functions.php
+-rwxr-x--- 1 wwwrun www  3867 Nov 22  2010 index.php
+drwxr-x--- 2 wwwrun www  4096 Apr 24  2012 inst
+-rwxr-x--- 1 wwwrun www  5786 Nov 22  2010 pic.php
+-rwxr-x--- 1 wwwrun www  3547 Nov 22  2010 print.css
+-rwxr-x--- 1 wwwrun www  2035 Mar  8  2011 print.php
+-rwxr-x--- 1 wwwrun www  1645 Nov 22  2010 readme
+-rwxr----- 1 wwwrun www  2060 Mar  8  2011 release
+drwxr-x--- 2 wwwrun www  4096 Aug 31  2010 report
+-rwxr-x--- 1 wwwrun www  4292 Nov 22  2010 style.css
+
+/srv/www/esquemas/2/cron:
+total 4
+-rwxr-x--- 1 wwwrun www 3368 Nov 22  2010 ping.php
+
+/srv/www/esquemas/2/inst:
+total 4
+-rwxr-x--- 1 wwwrun www 808 Feb 25  2010 db_ping.sql
+
+/srv/www/esquemas/2/report:
+total 0
+
+/srv/www/esquemas/Cobit:
+total 75212
+-r-xr-xr-x 1 wwwrun www 12603188 Oct  6  2011 Curso de COBIT (1ª Parte).mp4
+-r-xr-xr-x 1 wwwrun www  4552958 Oct  6  2011 Curso de COBIT (2ª Parte).mp4
+-r-xr-xr-x 1 wwwrun www 12442378 Oct  6  2011 Curso de COBIT (3ª Parte).mp4
+-r-xr-xr-x 1 wwwrun www 15886745 Oct  6  2011 Curso de COBIT (4ª Parte).mp4
+-r-xr-xr-x 1 wwwrun www  7558447 Oct  6  2011 Curso de COBIT (5ª Parte)..mp4
+-r-xr-xr-x 1 wwwrun www 17182384 Oct  6  2011 Curso de COBIT (6ª Parte)..mp4
+-r-xr-xr-x 1 wwwrun www  6782582 Oct  6  2011 Curso de COBIT (7ª Parte)..mp4
+
+/srv/www/esquemas/GateWays:
+total 516
+-rw-rw-r-- 1 wwwrun www  69132 Jan 27  2011 Check_Point.jpg
+-rw-r--r-- 1 wwwrun www    288 Mar 18  2010 Extreme1.htm
+-rw-r--r-- 1 wwwrun www    244 Mar  3  2010 Extreme2.htm
+-rw-rw-r-- 1 wwwrun www  81785 Jan 27  2011 GW_Agencias.jpg
+-rw-r--r-- 1 wwwrun www   2472 Aug 23  2011 GW_Branch.htm
+-rw-rw-rw- 1 wwwrun www  69280 Oct 27  2008 Gw_Cesa.JPG
+-rw-rw-rw- 1 wwwrun www  80719 Jan 16  2009 Gw_Navega.JPG
+-rw-rw-rw- 1 wwwrun www  76579 Jan 16  2009 Gw_Telered.JPG
+-rw-r--r-- 1 root   root  3542 Mar  6  2012 Gw_TorreBanrural.html
+-rw-r--r-- 1 wwwrun www  15649 Feb 15  2010 conexion_admon_z1.htm
+-rw-r--r-- 1 wwwrun www  14735 Feb 16  2010 conexion_fw_renap.htm
+drwxr-xr-x 2 wwwrun www   4096 Mar  6  2012 images
+-rw-r--r-- 1 wwwrun www   8882 Feb  2  2010 muni_mixco.htm
+-rw-r--r-- 1 wwwrun www   8242 Feb 15  2010 muni_villa_canales.htm
+-rw-r--r-- 1 wwwrun www   8155 Feb  2  2010 portuaria_quetzal.htm
+-rw-r--r-- 1 root   root 13579 Jun 17  2011 switches_torre.htm
+-rw-r--r-- 1 wwwrun www  13818 Feb  2  2010 tcredito_ptc.htm
+-rw-r--r-- 1 wwwrun www  27365 Feb 15  2010 torre_bdr.htm
+
+/srv/www/esquemas/GateWays/images:
+total 1828
+-rw-rw-rw- 1 wwwrun www 349526 Sep 24  2008 Conexion_Banrural_Renap_Torre.JPG
+-rw-rw-rw- 1 wwwrun www 228624 Sep 24  2008 Conexion_Banrural_Tower.JPG
+-rw------- 1 wwwrun www  73392 Oct 19  2011 GW_Branch.JPG
+-rw------- 1 wwwrun www  89788 Mar  6  2012 Gw_TorreBanrural.JPG
+-rw-r--r-- 1 wwwrun www  92120 Jun 17  2011 diagrama_switches_torre.jpg
+-rw-r--r-- 1 wwwrun www  74070 Feb 15  2010 gw_torre.jpg
+-rw-r--r-- 1 wwwrun www 170204 Feb 15  2010 net_admon_zona1.jpg
+-rw-r--r-- 1 wwwrun www 174722 Feb  2  2010 net_muni_mixco.jpg
+-rw-r--r-- 1 wwwrun www 195803 Feb  2  2010 net_mvc.jpg
+-rw-r--r-- 1 wwwrun www 171117 Feb  2  2010 net_portuaria_quetzal.jpg
+-rw-r--r-- 1 wwwrun www 235202 Feb  2  2010 net_ptc_tc.jpg
+
+/srv/www/esquemas/Mapas:
+total 4
+drwxrwxr-x 5 wwwrun www 4096 Nov 16  2007 Anexo Zona 9
+
+/srv/www/esquemas/Mapas/Anexo Zona 9:
+total 12
+drwxrwxr-x 2 wwwrun www 4096 Dec 10  2007 Modulo 1
+drwxrwxr-x 2 wwwrun www 4096 Dec 10  2007 Modulo 2
+drwxrwxr-x 2 wwwrun www 4096 Nov 16  2007 Modulo 3
+
+/srv/www/esquemas/Mapas/Anexo Zona 9/Modulo 1:
+total 1992
+-rwxrwxr-x 1 wwwrun www 1224457 Dec 10  2007 cobros_1N.jpg
+-rwxrwxr-x 1 wwwrun www  812895 Nov 16  2007 conta_2N.jpg
+
+/srv/www/esquemas/Mapas/Anexo Zona 9/Modulo 2:
+total 2992
+-rwxrwxr-x 1 wwwrun www 1047705 Dec 10  2007 Fideicomisos_2N.jpg
+-rwxrwxr-x 1 wwwrun www 1040016 Dec 10  2007 UCC_3N.jpg
+-rwxrwxr-x 1 wwwrun www  971940 Nov 16  2007 cca_depo.jpg
+
+/srv/www/esquemas/Mapas/Anexo Zona 9/Modulo 3:
+total 2332
+-rwxrwxr-x 1 wwwrun www 767602 Nov 16  2007 Int_3erN.jpg
+-rwxrwxr-x 1 wwwrun www 969283 Nov 16  2007 cart_2doN.jpg
+-rwxrwxr-x 1 wwwrun www 646020 Nov 16  2007 depo_1erN.jpg
+
+/srv/www/esquemas/Old:
+total 808
+-rw-rw-rw- 1 wwwrun www  514811 Sep 24  2008 Bdr_NetDiagram_200808.jpg
+-rwxrwxr-x 1 wwwrun www   11508 Aug 26  2008 Internet_General.htm_20090416
+-rw-r--r-- 1 root   root  28287 Dec 27 10:53 Internet_General.htm_20121227
+-rw-r--r-- 1 root   root  30097 Apr 11 12:04 Internet_General.htm_20130411.html
+-rw-r--r-- 1 wwwrun www   57195 Jan 30  2009 Partners-CCLA.JPG
+-rwxrwxr-x 1 wwwrun www    9997 Jul 18  2008 conf_internet.htm
+-rwxrwxr-x 1 wwwrun www  164331 Oct 29  2007 conf_salidainternet26082008.jpg
+
+/srv/www/esquemas/VPN_Docs:
+total 0
+
+/srv/www/esquemas/age-diagramas:
+total 0
+
+/srv/www/esquemas/agencias:
+total 81488
+-rw-r--r-- 1 wwwrun www 1513450 Feb 18 13:46 Banrural Agencia 001 Antigua Guatemala.pdf
+-rw-r--r-- 1 wwwrun www 1508962 Feb 18 13:46 Banrural Agencia 002 Barberena.pdf
+-rw-r--r-- 1 wwwrun www 1485348 Feb 18 13:46 Banrural Agencia 004 Jutiapa.pdf
+-rw-r--r-- 1 wwwrun www 1497289 Feb 18 13:45 Banrural Agencia 015 Coatepeque.pdf
+-rw-r--r-- 1 wwwrun www 1388488 Feb 18 13:45 Banrural Agencia 022 SololÂ .pdf
+-rw-r--r-- 1 wwwrun www 1275522 Feb 18 13:45 Banrural Agencia 032 Huehuetenango.pdf
+-rw-r--r-- 1 wwwrun www 1298237 Feb 18 13:45 Banrural Agencia 062 San Luis PetÂ‚n.pdf
+-rw-r--r-- 1 wwwrun www 1536651 Feb 18 13:45 Banrural Agencia 124 Coban.pdf
+-rw-r--r-- 1 wwwrun www 1438819 Feb 18 13:45 Banrural Agencia 148 Antigua Guatemala.pdf
+-rw-r--r-- 1 wwwrun www 1547355 Feb 18 13:45 Banrural Agencia 152 El Progreso Jutiapa.pdf
+-rw-r--r-- 1 wwwrun www 1521595 Feb 18 13:45 Banrural Agencia 160 Esquipulas km 171.5.pdf
+-rw-r--r-- 1 wwwrun www 1370184 Feb 18 13:45 Banrural Agencia 162 la Democracia, Huehuetenango.pdf
+-rw-r--r-- 1 wwwrun www 1300032 Feb 18 13:45 Banrural Agencia 189 Zona 6, Guatemala.pdf
+-rw-r--r-- 1 wwwrun www 1285597 Feb 18 13:45 Banrural Agencia 275 Mazatenango.pdf
+-rw-r--r-- 1 wwwrun www 1288542 Feb 18 13:45 Banrural Agencia 309 Zona 1, Guatemala.pdf
+-rw-r--r-- 1 wwwrun www 1268634 Feb 18 13:45 Banrural Agencia 329 Coatepeque.pdf
+-rw-r--r-- 1 wwwrun www 1390468 Feb 18 13:45 Banrural Agencia 384 C. C. Montufar.pdf
+-rw-r--r-- 1 wwwrun www 1504090 Feb 18 13:45 Banrural Agencia 406, 20 Calle zona 10, Guatemala.pdf
+-rw-r--r-- 1 wwwrun www 1391468 Feb 18 13:46 Banrural Agencia 428 SalamÂ .pdf
+-rw-r--r-- 1 wwwrun www 1314058 Feb 18 13:46 Banrural Agencia 430 Santa Elena, PetÂ‚n.pdf
+-rw-r--r-- 1 wwwrun www 1429739 Feb 18 13:46 Banrural Agencia 477 Aldea la Ruidosa, Puerto Barrios.pdf
+-rw-r--r-- 1 wwwrun www 1327365 Feb 18 13:46 Banrural Agencia 530 Chimaltenango.pdf
+-rw-r--r-- 1 wwwrun www 1261488 Feb 18 13:46 Banrural Agencia 669 Quetzaltenango.pdf
+-rw-r--r-- 1 wwwrun www 1516415 Feb 18 13:46 Banrural Agencia 721 Santa  Cruz del Quiche.pdf
+-rw-r--r-- 1 wwwrun www 1439161 Feb 18 13:46 Banrural Agencia 777 San Marcos.pdf
+-rw-r--r-- 1 wwwrun www 1475234 Feb 18 13:46 Banrural Agencia 887 TotonicapÂ n.pdf
+-rw------- 1 wwwrun www  116178 Jul 19  2012 age006.pdf
+-rw------- 1 wwwrun www  364146 Jul 19  2012 age019.pdf
+-rw------- 1 wwwrun www  330975 Jul 19  2012 age023.pdf
+-rw------- 1 wwwrun www  597592 Jul 19  2012 age025.pdf
+-rw------- 1 wwwrun www  713420 Jul 19  2012 age027.pdf
+-rw------- 1 wwwrun www  547955 Jul 19  2012 age039.pdf
+-rw------- 1 wwwrun www  610382 Jul 19  2012 age063.pdf
+-rw------- 1 wwwrun www  114672 Jul 19  2012 age065.pdf
+-rw------- 1 wwwrun www  541935 Jul 19  2012 age072.pdf
+-rw------- 1 wwwrun www   85219 Jul 19  2012 age090.pdf
+-rw------- 1 wwwrun www  250191 Jul 19  2012 age090b.pdf
+-rw------- 1 wwwrun www  653617 Jul 19  2012 age102.pdf
+-rw------- 1 wwwrun www  884121 Jul 19  2012 age137.pdf
+-rw------- 1 wwwrun www  788238 Jul 19  2012 age141.pdf
+-rw------- 1 wwwrun www  614335 Jul 19  2012 age143.pdf
+-rw------- 1 wwwrun www  190670 Jul 19  2012 age147.pdf
+-rw------- 1 wwwrun www  458915 Jul 19  2012 age164.pdf
+-rw------- 1 wwwrun www  200739 Jul 19  2012 age166.pdf
+-rw------- 1 wwwrun www   95743 Jul 19  2012 age171.pdf
+-rw------- 1 wwwrun www  616849 Jul 19  2012 age186.pdf
+-rw------- 1 wwwrun www  473072 Jul 19  2012 age193.pdf
+-rw------- 1 wwwrun www  162541 Jul 19  2012 age196.pdf
+-rw------- 1 wwwrun www  310735 Jun 15  2011 age212.pdf
+-rw------- 1 wwwrun www  651723 Jul 19  2012 age221.pdf
+-rw------- 1 wwwrun www  571362 Jul 19  2012 age237.pdf
+-rw------- 1 wwwrun www 1701593 Jul 19  2012 age247.pdf
+-rw------- 1 wwwrun www  469096 Jul 19  2012 age265.pdf
+-rw------- 1 wwwrun www   30768 Jul 19  2012 age275.pdf
+-rw------- 1 wwwrun www  506204 Jul 19  2012 age276.pdf
+-rw------- 1 wwwrun www 1281194 Jul 19  2012 age283.pdf
+-rw------- 1 wwwrun www   86471 Jul 19  2012 age287.pdf
+-rw------- 1 wwwrun www  625819 Jul 19  2012 age291.pdf
+-rw------- 1 wwwrun www  810161 Jul 19  2012 age296.pdf
+-rw------- 1 wwwrun www  417046 Jul 19  2012 age296b.pdf
+-rw------- 1 wwwrun www  187620 Jul 19  2012 age306.pdf
+-rw------- 1 wwwrun www  919640 Jun 15  2011 age316.pdf
+-rw------- 1 wwwrun www  814342 Jul 19  2012 age319.pdf
+-rw------- 1 wwwrun www  423908 Jul 19  2012 age326.pdf
+-rw------- 1 wwwrun www  334541 Jun 15  2011 age339.pdf
+-rw------- 1 wwwrun www  446361 Jul 19  2012 age341.pdf
+-rw------- 1 wwwrun www  728941 Jul 19  2012 age360.pdf
+-rw------- 1 wwwrun www  246488 Jul 19  2012 age361.pdf
+-rw------- 1 wwwrun www  553312 Jul 19  2012 age382.pdf
+-rw------- 1 wwwrun www  857378 Jul 19  2012 age390.pdf
+-rw------- 1 wwwrun www  689641 Jul 19  2012 age415.pdf
+-rw------- 1 wwwrun www   98284 Jul 19  2012 age424.pdf
+-rw------- 1 wwwrun www  769383 Jul 19  2012 age425.pdf
+-rw------- 1 wwwrun www  722319 Jul 19  2012 age426.pdf
+-rw------- 1 wwwrun www  619319 Jul 19  2012 age431.pdf
+-rw------- 1 wwwrun www  433217 Jul 19  2012 age458.pdf
+-rw------- 1 wwwrun www   74195 Jul 19  2012 age459.pdf
+-rw------- 1 wwwrun www   71743 Jul 19  2012 age474.pdf
+-rw------- 1 wwwrun www  655681 Jul 19  2012 age477.pdf
+-rw------- 1 wwwrun www  242610 Jul 19  2012 age479.pdf
+-rw------- 1 wwwrun www  542290 Jul 19  2012 age486.pdf
+-rw------- 1 wwwrun www  458587 Jul 19  2012 age491.pdf
+-rw------- 1 wwwrun www  302182 Jul 19  2012 age493.pdf
+-rw------- 1 wwwrun www 2727235 Jul 19  2012 age518.pdf
+-rw------- 1 wwwrun www   95649 Jul 19  2012 age525.pdf
+-rw------- 1 wwwrun www  358730 Jul 19  2012 age537.pdf
+-rw------- 1 wwwrun www  958333 Jul 19  2012 age539.pdf
+-rw------- 1 wwwrun www 1000820 Jul 19  2012 age556.pdf
+-rw------- 1 wwwrun www  834827 Jul 19  2012 age568.pdf
+-rw------- 1 wwwrun www   74656 Jul 19  2012 age573.pdf
+-rw------- 1 wwwrun www  489787 Jul 19  2012 age578.pdf
+-rw------- 1 wwwrun www  333406 Jun 15  2011 age590.pdf
+-rw------- 1 wwwrun www  733432 Jul 19  2012 age605.pdf
+-rw------- 1 wwwrun www   76397 Jul 19  2012 age613.pdf
+-rw------- 1 wwwrun www  571241 Jul 19  2012 age623.pdf
+-rw------- 1 wwwrun www  560549 Jul 19  2012 age624.pdf
+-rw------- 1 wwwrun www  493304 Jul 19  2012 age631.pdf
+-rw------- 1 wwwrun www  363373 Jul 19  2012 age636.pdf
+-rw------- 1 wwwrun www  713731 Jul 19  2012 age650.pdf
+-rw------- 1 wwwrun www  320877 Jul 19  2012 age661.pdf
+-rw------- 1 wwwrun www  386384 Jul 19  2012 age669.pdf
+-rw------- 1 wwwrun www  618271 Jul 19  2012 age679.pdf
+-rw------- 1 wwwrun www  944555 Jul 19  2012 age684.pdf
+-rw------- 1 wwwrun www  114346 Jul 19  2012 age686.pdf
+-rw------- 1 wwwrun www  284555 Jul 19  2012 age694.pdf
+-rw------- 1 wwwrun www  751803 Jul 19  2012 age697.pdf
+-rw------- 1 wwwrun www  691276 Jul 19  2012 age704.pdf
+-rw------- 1 wwwrun www   75816 Jul 19  2012 age705.pdf
+-rw------- 1 wwwrun www   85268 Jul 19  2012 age717.pdf
+-rw------- 1 wwwrun www  375874 Jun 15  2011 age723.pdf
+-rw------- 1 wwwrun www  473091 Jul 19  2012 age750.pdf
+-rw------- 1 wwwrun www  715646 Jun 15  2011 age758.pdf
+-rw------- 1 wwwrun www  434672 Jun 15  2011 age760.pdf
+-rw------- 1 wwwrun www 1930577 Jun 15  2011 age769.pdf
+
+/srv/www/esquemas/fuentes:
+total 48428
+-rwxrwxr-x 1 wwwrun www  492019 Jan  1  2008 BanruralSimple.edg
+-rwxrwxr-x 1 wwwrun www  531249 Oct 27  2008 Bdr_NetDiagram_200808.edg
+-rw-r--r-- 1 wwwrun www  534488 Aug  6  2009 Bdr_NetDiagram_200908.edg
+-rwxrwxr-x 1 wwwrun www 1241090 Jan  1  2008 Bdr_Online.edg
+-rwxrwxr-x 1 wwwrun www  505280 Jan  1  2008 Big_diagrama.edg
+-rwxrwxr-x 1 wwwrun www  531809 Oct 27  2008 Conexion_BCG_Swift.edg
+-rwxrwxr-x 1 wwwrun www 1218920 Jan  1  2008 Conexion_Banrural_Renap_Torre.edg
+-rwxrwxr-x 1 wwwrun www  443404 Jan  1  2008 Conexion_GBM.edg
+-rwxrwxr-x 1 wwwrun www  488143 Jan  1  2008 Conexion_IGSS.edg
+-rwxrwxr-x 1 wwwrun www  469434 Jan  1  2008 Conexion_Multi_5b.edg
+-rwxrwxr-x 1 wwwrun www 1219065 Jan  1  2008 Conexion_SIAF.edg
+-rwxrwxr-x 1 wwwrun www  453288 Jan  1  2008 Conexión_General.edg
+-rwxrwxr-x 1 wwwrun www  450976 Jan  1  2008 Conf_ClusterSun.edg
+-rwxrwxr-x 1 wwwrun www 1151844 Jan  1  2008 Conf_Email_BDR.edg
+-rw-r--r-- 1 wwwrun www 1242613 Apr 16  2009 Conf_SalidaInternetNow.edg
+-rwxrwxr-x 1 wwwrun www 1219225 Jan  1  2008 Conf_Telgua.edg
+-rwxrwxr-x 1 wwwrun www 1227765 Jan  1  2008 Conf_Uniteller.edg
+-rwxrwxr-x 1 wwwrun www 1204613 Jan  1  2008 Conf_seguridad_interna.edg
+-rwxrwxr-x 1 wwwrun www 1207978 Oct 27  2008 DIAGRAMA_ACH.edg
+-rwxrwxr-x 1 wwwrun www 1200204 Jan  1  2008 Diag_PTC.edg
+-rwxrwxr-x 1 wwwrun www 1228592 Jan  1  2008 DiagramaMqSeries.edg
+-rwxrwxr-x 1 wwwrun www 1264304 Jan  1  2008 Diagrama_AsRural.edg
+-rwxrwxr-x 1 wwwrun www 1205165 Jan  1  2008 Diagrama_IVR.edg
+-rwxrwxr-x 1 wwwrun www 1215279 Jan  1  2008 Diagrama_NavegaRedundancia.edg
+-rwxrwxr-x 1 wwwrun www  462929 Jan  1  2008 Diagrama_TarjetaCreditoPTC.edg
+-rwxrwxr-x 1 wwwrun www  454224 Jan  1  2008 Digrama2.edg
+-rwxrwxr-x 1 wwwrun www 1205593 Jan  1  2008 DigramaRecibaOptional.edg
+-rwxrwxr-x 1 wwwrun www 1246471 Jan  1  2008 Digrama_Isercosa_bdr.edg
+-rwxrwxr-x 1 wwwrun www   56754 Jan  1  2008 DigramadeFlujoBDRcolas.edg
+-rwxrwxr-x 1 wwwrun www 1272488 Jan  1  2008 EdificioB_Reorganizacion.edg
+-rwxrwxr-x 1 wwwrun www  489700 Jan  1  2008 Email1.edg
+-rwxrwxr-x 1 wwwrun www  526434 Jan  1  2008 EsquemaEtapa2_UF.edg
+-rwxrwxr-x 1 wwwrun www 1210589 Jan  1  2008 EsquemaZona1.edg
+-rwxrwxr-x 1 wwwrun www 1240827 Jan  1  2008 EsquenaRedundancia.edg
+-rwxrwxr-x 1 wwwrun www   48747 Jan  1  2008 FlujoBDRcolas_Remoto.edg
+-rwxrwxr-x 1 wwwrun www  451274 Jan  1  2008 MqSockDiagram.edg
+-rwxrwxr-x 1 wwwrun www 1261797 Jan  1  2008 MultiCredit5bBanrural.edg
+-rwxrwxr-x 1 wwwrun www 1221282 Jan  1  2008 MuniGuatemala.edg
+-rwxrwxr-x 1 wwwrun www 1200350 Jan  1  2008 Partners-Oriflame.edg
+-rwxrwxr-x 1 wwwrun www 1200114 Jan  1  2008 Partners-Paynexus.edg
+-rwxrwxr-x 1 wwwrun www 1199924 Jan  1  2008 Partners-Renap-WebService.edg
+-rwxrwxr-x 1 wwwrun www 1199836 Jan  1  2008 Partners-USAC.edg
+-rwxrwxr-x 1 wwwrun www   44727 Jan  1  2008 Procs_Nueva_Agencia.edg
+-rwxrwxr-x 1 wwwrun www 1200362 Jan  1  2008 RedyTec.edg
+-rwxrwxr-x 1 wwwrun www 1215217 Jan  1  2008 ReferenciasSIB.edg
+-rwxrwxr-x 1 wwwrun www 1228075 Jan  1  2008 Remesas.edg
+-rwxrwxr-x 1 wwwrun www 1195479 Oct 27  2008 Socio_OJ.edg
+-rwxrwxr-x 1 wwwrun www 1216052 Jan  1  2008 Socio_UnionFenosa.edg
+-rwxrwxr-x 1 wwwrun www 1193422 Oct 27  2008 VPN_Sigue.edg
+-rwxrwxr-x 1 wwwrun www  485548 Jan  1  2008 WebDiagram.edg
+-rwxrwxr-x 1 wwwrun www  456890 Jan  1  2008 agencia.edg
+-rwxrwxr-x 1 wwwrun www 1200007 Jan  1  2008 conf iggs.edg
+-rwxrwxr-x 1 wwwrun www  485166 Jan  1  2008 diagrama.edg
+-rwxrwxr-x 1 wwwrun www 1204955 Jan  1  2008 diagramaRedytec.edg
+-rwxrwxr-x 1 wwwrun www  455523 Jan  1  2008 diagramas.edg
+drwxrwxr-x 2 wwwrun www    4096 Apr 16  2009 old
+
+/srv/www/esquemas/fuentes/old:
+total 2424
+-rwxrwxr-x 1 wwwrun www 1241430 Aug 26  2008 Conf_SalidaInternetNow_20090416.edg
+-rwxrwxr-x 1 wwwrun www 1235499 Jan  1  2008 Conf_SalidaInternetNow_26082008.edg
+
+/srv/www/esquemas/images:
+total 1164
+-rw------- 1 wwwrun www  84444 May 20  2011 Bdr-tyt.JPG
+-rw------- 1 wwwrun www  84284 May 20  2011 Bdr-tyt.jpg
+-rw-r--r-- 1 wwwrun www 161039 Mar 18  2010 Extreme1.jpg
+-rw-r--r-- 1 wwwrun www  83162 Mar  3  2010 Extreme2.JPG
+-rw-r--r-- 1 wwwrun www  72961 Jan  4  2010 GW_Branch.JPG
+-rw-r--r-- 1 wwwrun www 174230 Apr 16  2009 Internet_General.jpg
+-rw------- 1 wwwrun www  64679 Aug 23  2011 Switch_Xtreme_Dist.JPG
+-rwxrwxr-x 1 wwwrun www  34415 Nov 20  2006 ci_muni_guate_app.jpg
+-rwxrwxr-x 1 wwwrun www  41398 Nov 20  2006 ci_muni_guate_net.jpg
+-rwxrwxr-x 1 wwwrun www 368854 Feb 15  2008 conf_salidainternet.jpg
+
+/srv/www/esquemas/mitel:
+total 32
+-rwxr-xr-x 1 root root  1612 Apr 16 18:42 configuracion-switch.html
+-rw-r--r-- 1 root root 25901 Apr 16 19:02 telefonos_consulta.php
+
+/srv/www/esquemas/socios:
+total 4132
+-rw-rw-rw- 1 wwwrun www  92673 Jan 14  2009 Partners-5b.JPG
+-rw-rw-rw- 1 wwwrun www 331085 Sep 24  2008 Partners-ACH.JPG
+-rw-r--r-- 1 wwwrun www  70453 Aug 24  2009 Partners-Agexpront.JPG
+-rw------- 1 wwwrun www  69960 Feb 21  2012 Partners-BTS.JPG
+-rw-rw-rw- 1 wwwrun www  59257 Feb 16  2009 Partners-Bancomercio.JPG
+-rw------- 1 wwwrun www  71639 Aug 10  2010 Partners-Comcel.JPG
+-rw------- 1 wwwrun www  58631 Aug 16  2010 Partners-Corfina.JPG
+-rw-rw-rw- 1 wwwrun www  56852 Jan 22  2009 Partners-Dolex.JPG
+-rw-rw-rw- 1 wwwrun www  91956 Jan 23  2009 Partners-Eegsa.JPG
+-rw-rw-rw- 1 wwwrun www  61910 Feb  6  2009 Partners-Fenosa.JPG
+-rw-r--r-- 1 wwwrun www  71301 Aug 24  2009 Partners-Forstand.JPG
+-rw------- 1 wwwrun www  84631 Jun  7  2010 Partners-GBM.JPG
+-rw-r--r-- 1 wwwrun www  71900 Aug 24  2009 Partners-GrupoExpress.JPG
+-rw-rw-rw- 1 wwwrun www 129296 Jan 14  2009 Partners-ICG.JPG
+-rw-rw-rw- 1 wwwrun www  76743 Feb 23  2010 Partners-IPM.JPG
+-rw-rw-rw- 1 wwwrun www 104296 Jul  3  2009 Partners-Igss.JPG
+-rw------- 1 wwwrun www 843646 Feb 27 11:21 Partners-Intecap.JPG
+-rw-rw-rw- 1 wwwrun www  58716 Jan 22  2009 Partners-MiPueblo.JPG
+-rw-rw-rw- 1 wwwrun www  59689 Jan 22  2009 Partners-MoneyGram.JPG
+-rw-rw-rw- 1 wwwrun www  71518 Jan 13  2009 Partners-OJ.JPG
+-rw-rw-rw- 1 wwwrun www  60438 Jan 22  2009 Partners-OrderExpress.JPG
+-rw-rw-rw- 1 wwwrun www  70245 Jan 14  2009 Partners-Oriflame.JPG
+-rw-rw-rw- 1 wwwrun www  92348 Feb  3  2009 Partners-PTC.JPG
+-rw-rw-rw- 1 wwwrun www  58960 Oct 27  2008 Partners-Paynexus.JPG
+-rw-rw-rw- 1 wwwrun www  77994 Feb  2  2009 Partners-Portuaria.JPG
+-rw------- 1 wwwrun www  58438 Mar 10  2011 Partners-RegProp.JPG
+-rw-rw-rw- 1 wwwrun www  41032 Oct 27  2008 Partners-Renap-WebService.JPG
+-rw------- 1 wwwrun www  96082 May 19  2011 Partners-SAT-Navega.JPG
+-rw-rw-rw- 1 wwwrun www  90344 Jan 14  2009 Partners-SAT.JPG
+-rw-rw-rw- 1 wwwrun www 154872 Sep 24  2008 Partners-SIAF.JPG
+-rw-rw-rw- 1 wwwrun www  63419 Jan 14  2009 Partners-SIB.JPG
+-rw-r--r-- 1 wwwrun www  68514 Aug 24  2009 Partners-Sigue.JPG
+-rw-rw-rw- 1 wwwrun www  71301 Jan 15  2009 Partners-Telefonica.JPG
+-rw-rw-rw- 1 wwwrun www  77197 Jan 13  2009 Partners-Telgua.JPG
+-rw-rw-rw- 1 wwwrun www  65780 Feb  3  2009 Partners-USAC.JPG
+-rw-rw-rw- 1 wwwrun www 175350 Sep 24  2008 Partners-UnionFenosa.JPG
+-rw-r--r-- 1 wwwrun www  71593 Aug 24  2009 Partners-UnitelYego.JPG
+-rw-rw-rw- 1 wwwrun www  79986 Jan 22  2009 Partners-Uniteler.JPG
+-rw-rw-rw- 1 wwwrun www  58930 Jan 22  2009 Partners-Viamericas.JPG
+-rw-rw-rw- 1 wwwrun www  74724 Feb 23  2010 Partners-Visanet.JPG

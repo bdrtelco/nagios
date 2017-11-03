@@ -6,5 +6,5 @@ select  rs_proveedor, rs_codigo_proveedor,
  from nagios_stats.remoto_sla, enlaces.remoto r 
  where rs_remoto = rm_remoto 
   and  rs_anio = 2017 
- and  rs_mes = 09  
+ and  rs_mes = 10  
  and rs_porc_credito > 0  order by rs_proveedor, rs_codigo_proveedor ; 

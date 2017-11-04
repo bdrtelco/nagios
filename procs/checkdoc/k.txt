@@ -3,7 +3,7 @@ drwxr-xr-x 2 nagios nagios 4096 2015 11 16 agencias
 drwxr-xr-x 3 nagios nagios 4096 2016 04 19 Bdr_network
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 cambios_en_proceso
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 Cobit
-drwxrwxrwx 5 nagios nagios 4096 2017 09 11 diagramas
+drwxrwxrwx 5 nagios nagios 4096 2017 10 31 diagramas
 drwxr-xr-x 3 nagios nagios 4096 2016 10 12 fuentes
 drwxr-xr-x 3 nagios nagios 4096 2015 11 16 GateWays
 drwxr-xr-x 2 nagios nagios 4096 2016 10 12 images
@@ -217,6 +217,13 @@ drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
 -rwxrwxrwx 1 nagios nagios    2285 2013 07 10 age-telnor.html
 -rwxrwxrwx 1 nagios nagios    1553 2013 11 05 age-tigo.html
 -rwxrwxrwx 1 nagios nagios   88344 2014 05 02 Anillo-Zona1-4.JPG
+-rw-r--r-- 1 root   root    106521 2017 10 31 BalanceoRuteoMikrotik.JPG
+-rw-r--r-- 1 root   root    101498 2017 10 31 Capture1.JPG
+-rw-r--r-- 1 root   root    115344 2017 10 31 Capture.htm
+-rw-r--r-- 1 root   root    115344 2017 10 31 Capture.html
+-rw-r--r-- 1 root   root    115344 2017 10 31 Capture.jpeg
+-rw-r--r-- 1 root   root    115344 2017 10 31 Capture.jpg
+-rw-r--r-- 1 root   root    115344 2017 10 31 Capture.MHT
 -rwxrwxrwx 1 nagios nagios    1911 2016 04 25 dc-anillo-fibra-edificios.html
 -rwxrwxrwx 1 nagios nagios     185 2016 04 25 dc-anillo-fibra-edificios.html-orig
 -rwxrwxrwx 1 nagios nagios    2097 2014 08 05 dc-ascenlinkBK
@@ -234,16 +241,21 @@ drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
 -rwxrwxrwx 1 nagios nagios      87 2015 11 04 dc-seguridad-age115.html
 -rwxrwxrwx 1 root   root     87450 2017 09 11 diagramaAgenciasClaroHA.jpg
 -rwxrwxrwx 1 root   root     90004 2017 09 11 diagramaAgenciasTigoHA.jpg
+-rw-r--r-- 1 root   root     69384 2017 10 31 DiagramaNS.JPG
 -rwxrwxrwx 1 nagios nagios   11723 2014 06 17 Display.pdf
 drwxr-xr-x 2 nagios nagios    4096 2017 07 04 documentos
 -rwxr-xr-x 1 root   root      2575 2017 03 07 exinda.html
-drwxrwxrwx 3 nagios nagios    4096 2016 09 06 fuentes
-drwxrwxrwx 2 nagios nagios    4096 2017 09 06 images
+drwxrwxrwx 3 nagios nagios    4096 2017 10 27 fuentes
+-rw-r--r-- 1 root   root     18622 2017 10 31 Gateway Agencias en data centers.htm
+-rw-r--r-- 1 root   root    190545 2017 10 27 Gw_age_dc.jpg
+-rw-r--r-- 1 root   root    101498 2017 10 31 GwAgeDc.JPG
+drwxrwxrwx 2 nagios nagios    4096 2017 10 27 images
 -rwxrwxrwx 1 nagios nagios     629 2014 08 05 index.html
+-rw-r--r-- 1 root   root     73732 2017 10 31 InterconexionRedytec.JPG
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint01.html
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint02.html
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint03.html
--rwxrwxrwx 1 nagios nagios   12049 2017 09 11 Left.html
+-rwxrwxrwx 1 nagios nagios   12588 2017 10 31 Left.html
 -rwxrwxrwx 1 nagios nagios     401 2013 07 10 menu.html
 -rwxrwxrwx 1 nagios nagios   59904 2017 02 10 Redytec3g.jpg
 -rwxrwxrwx 1 nagios nagios     111 2015 06 15 socios-allied.html
@@ -273,6 +285,9 @@ drwxrwxrwx 2 nagios nagios    4096 2017 09 06 images
 -rwxrwxrwx 1 nagios nagios    5621 2016 03 30 socios-tyt.html
 -rwxrwxrwx 1 nagios nagios     123 2014 09 12 socios-widefense.html
 -rwxrwxrwx 1 nagios nagios     483 2016 02 12 Ubicacion-AP.html
+-rw-r--r-- 1 root   root    112347 2017 10 31 VrrpClaro.JPG
+-rw-r--r-- 1 root   root    119473 2017 10 31 VrrpTelnor.JPG
+-rw-r--r-- 1 root   root    116446 2017 10 31 VrrpTigo.JPG
 -rwxrwxrwx 1 nagios nagios  735004 2016 08 09 Wifi_Age115.jpg
 -rwxrwxrwx 1 nagios nagios  280277 2016 08 10 Wifi_Age33.jpg
 -rwxrwxrwx 1 nagios nagios  806081 2016 06 15 Wifi_Datos.jpg
@@ -1201,7 +1216,7 @@ drwxr-xr-x 2 telecom admsis      4096 2016 04 20 Oaisys
 drwxrwxrwx 2 nagios  nagios 4096 2015 11 16 2014
 drwxrwxrwx 2 nagios  nagios 4096 2016 01 26 2015
 drwxrwxrwx 2 nagios  nagios 4096 2017 01 04 2016
-drwxrwxrwx 2 nagios  nagios 4096 2017 10 02 2017
+drwxrwxrwx 2 nagios  nagios 4096 2017 11 02 2017
 drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rwxrwxrwx 1 nagios nagios 417569 2014 03 04 ReporteAgencias-201402.pdf
 -rwxrwxrwx 1 nagios nagios 358166 2014 04 01 ReporteAgencias-201403.pdf
@@ -1242,8 +1257,9 @@ drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rw-r--r-- 1 root    root   225076 2017 06 01 ReporteAgencias-201705.pdf
 -rw-r--r-- 1 root    root   223366 2017 07 05 ReporteAgencias-201706.pdf
 -rw-r--r-- 1 root    root   231066 2017 08 01 ReporteAgencias-201707.pdf
--rw-r--r-- 1 root    root   214091 2017 09 01 ReporteAgencias.201708.pdf
+-rw-r--r-- 1 root    root   214091 2017 09 01 ReporteAgencias-201708.pdf
 -rw-r--r-- 1 telecom admsis 214046 2017 10 02 ReporteAgencias-201709.pdf
+-rw-r--r-- 1 telecom admsis 210201 2017 11 02 ReporteAgencias-201710.pdf
 -rw-r--r-- 1 telecom admsis 704324 2016 05 23 InformePruebaAgenciasColumbus.pdf
 -rwxrwxrwx 1 nagios nagios  4340 2013 04 16 dbcon.php
 -rwxrwxrwx 1 nagios nagios   900 2011 09 08 home.html

@@ -10,6 +10,6 @@ from nagios.nagios_statehistory s, nagios.nagios_hosts n, enlaces.enlace
 where s.object_id= n.host_object_id 
  and state_change = 1 and state = 0 and last_state = 1 
  and year(state_time)  = 2017 
- and month(state_time) = 10  
+ and month(state_time) = 11  
  and en_nagios = display_name 
  and en_estado = 7 and en_tipo_enlace = 'PRI';

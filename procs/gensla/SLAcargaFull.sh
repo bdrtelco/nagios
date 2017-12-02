@@ -10,8 +10,8 @@ URL="http://127.0.0.1/nagios3/cgi-bin/avail.cgi?show_log_entries=&host=all&timep
 
 FILENAME="uptime-$ANIO$MESANT.txt"
 
-#lynx -auth=nagiosadmin:nagj00d34df00 -verbose -dump -width=1500 "$URL" > $FILENAME
-lynx -auth=karl:koolaky41m -verbose -dump -width=1500 "$URL" > $FILENAME
+lynx -auth=nagiosadmin:N4Gj00d34df00 -verbose -dump -width=1500 "$URL" > $FILENAME
+#lynx -auth=karl:koolaky41m -verbose -dump -width=1500 "$URL" > $FILENAME
 
 sed '1d' $FILENAME  > $FILENAME.2
 sed '/^$/d' $FILENAME.2  > $FILENAME

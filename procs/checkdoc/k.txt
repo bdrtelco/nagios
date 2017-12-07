@@ -3,7 +3,7 @@ drwxr-xr-x 2 nagios nagios 4096 2015 11 16 agencias
 drwxr-xr-x 3 nagios nagios 4096 2016 04 19 Bdr_network
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 cambios_en_proceso
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 Cobit
-drwxrwxrwx 5 nagios nagios 4096 2017 10 31 diagramas
+drwxrwxrwx 6 nagios nagios 4096 2017 11 23 diagramas
 drwxr-xr-x 3 nagios nagios 4096 2016 10 12 fuentes
 drwxr-xr-x 3 nagios nagios 4096 2015 11 16 GateWays
 drwxr-xr-x 2 nagios nagios 4096 2016 10 12 images
@@ -14,6 +14,7 @@ drwxr-xr-x 2 nagios nagios 4096 2015 11 16 pictures
 drwxr-xr-x 7 nagios nagios 4096 2017 09 22 reporte_agencias
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 servicios
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 socios
+drwxrwxrwx 2 nagios nagios 4096 2017 11 23 TorreDesarrollo
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 VPN_Docs
 -rwxrwxrwx 1 nagios nagios  1434 2010 11 22 config.cfg
 -rwxrwxrwx 1 nagios nagios 12079 2010 02 17 copyright
@@ -243,6 +244,8 @@ drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
 -rwxrwxrwx 1 root   root     90004 2017 09 11 diagramaAgenciasTigoHA.jpg
 -rw-r--r-- 1 root   root     69384 2017 10 31 DiagramaNS.JPG
 -rwxrwxrwx 1 nagios nagios   11723 2014 06 17 Display.pdf
+drwxrwxrwx 2 nagios nagios   20480 2017 11 22 Documentacion_Munis_BDR_files
+-rwxrwxrwx 1 nagios nagios   20835 2017 11 22 Documentacion_Munis_BDR.htm
 drwxr-xr-x 2 nagios nagios    4096 2017 07 04 documentos
 -rwxr-xr-x 1 root   root      2575 2017 03 07 exinda.html
 drwxrwxrwx 3 nagios nagios    4096 2017 10 27 fuentes
@@ -255,7 +258,7 @@ drwxrwxrwx 2 nagios nagios    4096 2017 10 27 images
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint01.html
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint02.html
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint03.html
--rwxrwxrwx 1 nagios nagios   12588 2017 10 31 Left.html
+-rwxrwxrwx 1 nagios nagios   12744 2017 11 22 Left.html
 -rwxrwxrwx 1 nagios nagios     401 2013 07 10 menu.html
 -rwxrwxrwx 1 nagios nagios   59904 2017 02 10 Redytec3g.jpg
 -rwxrwxrwx 1 nagios nagios     111 2015 06 15 socios-allied.html
@@ -299,6 +302,287 @@ drwxrwxrwx 2 nagios nagios    4096 2017 10 27 images
 -rwxrwxrwx 1 nagios nagios     113 2015 10 30 www-cp02.html
 -rwxrwxrwx 1 nagios nagios     113 2015 10 30 www-cp03.html
 -rwxrwxrwx 1 nagios nagios     114 2016 04 28 www-cp04.html
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 028D7643-FFCF-44CC-9424-099AF50E1BC3.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 05FDE512-CDD4-4938-A9D2-2461FBC90C74.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 06C4EDDC-DAED-4558-B179-AD82459F633C.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 092B1EA6-EF35-4240-A1BB-93B6FD1CEE15.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 099AC789-7E0B-420B-B198-0A23C67C8FBE.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 0AB113C5-61F3-4085-A256-85169F19188B.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 0E341411-E786-41AF-A2EB-A02603196113.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 0E5722EC-37E0-4872-84B3-4B3515D21891.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 110BEF0C-C11B-4898-97F9-1484D4493A5A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 134114DC-8735-4CED-A5A8-63C4A0B07964.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 16552841-2EDD-4351-AD2B-BB623AC28D99.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 16998021-BE81-4F4A-B98A-D6E7DA9DA7A6.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 1922A6BF-9006-4026-BADC-8EBEF20BB6A5.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 1A66138C-23C9-45E9-9AF1-169DB61A0D8D.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 1BC29373-C160-4302-81D0-542938D005E9.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 1BFD42C5-D223-41D7-A1FF-1B0DD52915F8.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 1C528D55-40B7-4188-B8AF-969EE0C5C585.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 1C8C3845-089F-484D-892A-28D2A03D5B81.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 1CD8D09B-EC54-46B6-BF1B-F613D81B4A52.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 20FE8CF5-457D-44A6-BC4F-520311905DC1.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 22222DC9-B55F-49EC-85D7-FB74CBA68BED.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 241A4AF6-6E08-4C3B-A860-58903A146573.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 24A9725F-9698-47A8-9B80-3BCD375379B8.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 25E90E5F-A2B9-4BC6-A9C2-1585B07117E8.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 264EF69E-7B76-4CBA-8735-B6A8EF784320.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 285F4893-FFA3-467E-8445-217439DDF8B6.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 28BDFFDC-040E-4AFC-9D2D-E5C8891E2D4B.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 291C565B-BCFF-4583-8FD5-657C22F8BDAF.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 2A312109-074A-4165-99C8-3C4B26F78ACD.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 2C48EE7F-9CC5-4091-9289-1913FB70D50E.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 2F62B2D8-27D5-414A-B984-32B2130FDB4D.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 307606A5-0C41-42D2-BA3E-6A32CE3FB66B.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 3164BD1A-031A-4E74-B62A-3ED39F9C554F.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 318195DE-79BF-4645-A452-EB2D316FB151.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 32066BCB-B9D3-4654-AD6F-56292C72A87F.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 32D711B9-B619-49EF-8CCD-15B8ADD7AE21.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 32DE5B5A-7D14-489A-8BDB-C9FF3991BDB0.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 345B23F0-B0F5-4E78-B515-F7420FDEBA72.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 348A1080-94BE-481E-833C-D611D0B06638.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 353552A8-AF8A-4301-A52E-D6ACADA2105A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 35A59AC7-7E31-4CB2-A8E9-5C61C508DD7F.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 35EBED24-80DE-48F3-A80D-4E6622493271.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 37D1FFDC-EED9-4FA8-AA27-4E944869A288.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 3AE90623-2719-4BF6-9833-ED1F135B1BA9.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 3BE9DB1A-7656-4044-A211-AA36CD166B0E.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 3D685931-8A10-4128-859E-F2D8FB7E0E3C.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 3E2ADE4B-A632-49CF-9381-F295BA2B7122.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 3EDF4596-558A-4B65-AA3B-60B01D855C4B.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 3F32E94E-E83A-4306-B4D0-08FAA3841970.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 46F80E9A-11B0-4149-8B59-49C910C81F26.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 47CE0AFA-C212-439C-8550-DF2D9DC1CDC9.jpg
+-rw-r--r-- 1 telecom admsis 192384 2017 11 22 494A7F4F-0677-4402-D718-E86B39502C54.odttf
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 49B81175-F5EB-4CA9-9F3E-62A1134B2692.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 49C22A39-5D17-4CC7-A278-978EC4C74FF5.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 4A737879-D645-410B-AD75-D6D4E943D237.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 4C5FE1A9-A3C4-4023-BC2D-8D807B43E38F.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 4F3DBB73-A1AD-43F8-980C-DFA01681196A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 4FA87FE7-5B3C-429B-AE72-EA202AAD7F67.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 50B09827-E45D-4EFD-ACBA-170BCFA37931.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 51A4AB90-E861-4D56-9326-06245D691794.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 51AE1C29-1679-41A4-A8CE-7CFDAF28F70B.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 5509E8B5-7571-43EF-B43C-74DCFDD9A03A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 55EDBFA2-2965-4B69-B87D-7C5C1D400541.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 566CD73E-6CDB-4BC6-B7FE-68A21BC25291.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 57A737EE-FE26-43F9-804E-78149DA4E2BC.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 5BFD4FC6-BAB9-4CC0-A141-9612B5E59F81.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 5C0BA00A-396B-41FF-8C95-FACBE54161E1.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 5C2851F6-37E0-482D-B283-F180CFC3C800.jpg
+-rw-r--r-- 1 telecom admsis 192384 2017 11 22 5C6760BF-3CD6-0FBF-142F-D66A7E042D42.odttf
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 5D0C1B53-B6AC-4F26-A90D-3D5B4D74D256.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 5EA54470-6FEF-4CE7-9DAD-643F56382807.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 60F15548-82BF-4398-9AB2-56F6C60D0CBB.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 63BDE080-ED1B-4A8D-951A-03221F047780.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 640B9EEB-E040-4472-9517-5FD1B0D7979D.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 64B21B1A-371C-4754-AA1A-54DDD4802AEF.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 650D0B7D-7B15-4F78-BF02-DD3B34C15B9A.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 658FA1F1-15B8-445F-8616-965CF8A13ED4.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 672B8E48-4B90-4467-B114-7DA66BFC9337.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 68F97142-6F07-45F8-8755-E3B2140675A8.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 6AB46C64-08B6-49A0-9CB0-46442425F5AD.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 6B1BACB9-4DBB-45BE-945D-FA3DBF2652BC.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 6B462A13-D335-489C-B0EF-1E25B7EB4522.jpg
+-rw-r--r-- 1 telecom admsis 192384 2017 11 22 6B941C18-7F61-5CA7-805C-E6300E27F95C.odttf
+-rw-r--r-- 1 telecom admsis 192384 2017 11 22 6BFC63CB-7F96-7FF5-454E-3B3213220D26.odttf
+-rw-r--r-- 1 telecom admsis 192384 2017 11 22 6C1F7E97-7141-29DB-7B54-00123531745C.odttf
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 6E867B29-6CB3-48D1-9B6D-FBDA47CD72F8.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 6F59237C-9769-40ED-B25F-33E9DAE9B9EB.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 70A6741F-6C80-4E15-91B1-6BC6B9A62F52.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 74F808F8-0EED-431F-A8E4-FBEA8CD4316B.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 75FDE643-659E-45B5-86A1-3C43F5E526A5.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 76446911-CF8C-4F6F-96AF-9A414DCC6372.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 77B467F8-3FB0-4DFB-A811-BAD95457EC51.jpg
+-rw-r--r-- 1 telecom admsis 192384 2017 11 22 7A5D2139-5C9A-3C15-7D5D-66023A5E4679.odttf
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 7AADB78B-FC84-4E9B-9B05-E9FA7BD8333D.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 7C038DA2-BA03-4AC6-8582-4A9A340075C7.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 7E51E8F7-DC8C-4812-AFAB-797C4B8CDAF7.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 82D4BB3E-42E7-4B0C-B247-3D62D91F636A.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 83931915-4954-41EB-88DA-997C8948A54C.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 84925BAC-1EAB-4C18-AF32-4725F721ACBD.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 8694A4D1-226A-4BBC-BE37-FE22AD416BAB.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 87186A5F-EA33-4907-9A27-E16BEB110E09.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 871FAD10-11C6-47C5-932F-EE295974811B.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 874F13EC-DD0D-4456-936C-202FF925E333.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 88668164-0162-4F7E-B260-FD50ABC96757.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 8B0A5B57-D5AB-407D-A92B-669A4B7B5422.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 8BBE84CB-2CCB-4058-AD75-BD9C74D2440C.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 8C4A9ED9-AB64-44CE-BADE-B05DE43C8E05.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 8D2F9076-835B-4F99-A0A7-48BB94CAD92C.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 96018CEA-C768-4174-A9DD-057FCDE2DD00.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 960CC7B2-0DAF-46F5-96B2-35B0B1F99E6E.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 960E5A0A-1D57-45BB-AE74-0AA962E0EE4D.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 96646E81-44B5-46ED-A637-2AF863383F90.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 97C512C5-C154-458C-805A-30D0FBE15D20.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 999C423A-74FB-4DB0-BD91-4687A94461E2.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 9B172561-47D0-4349-9E57-EA10DB92831D.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 9B431B05-6692-44C5-9930-26B5734C9FC1.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 9C04E146-1AA4-4A65-89D1-72C46F52120E.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 9E086507-6E2A-4C9A-AE5E-2CA886BEC026.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 9E0F8727-CEB4-4E95-915D-D767C0744249.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 9F52B867-4018-42D6-8E10-AE8DEEFD1020.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 A022ECA9-9D24-4F2F-8522-45ECD9FAAF41.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 A07FEAD4-C298-47C4-A701-6C2C69510287.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 A0CF9C6F-9A89-4ACB-9D2D-98FC669BF9CB.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 A224AC2E-3855-49D1-A445-4B1EDEBA23BE.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 A579CF97-14DD-4993-B086-00353699C292.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 A5E62899-B529-4D76-9DEA-734C57A3F00E.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 A681AA4D-0E01-4FC8-B1A6-36A86514FC81.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 A79D9435-3C75-4C54-9E87-520908EFBF1E.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 AD03D256-B733-4CC4-8A6A-6F0A6B86C974.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 ADCF680E-4657-470F-BB3F-067234650F8F.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 AF358ECC-181D-46BB-AD4F-B89602C8A07B.jpg
+-rw-r--r-- 1 telecom admsis   1499 2017 11 22 arrow.png
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 B0D5680A-E943-4E5F-8BC6-449C89E455CF.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 B2C67B7E-8576-4CA6-AA00-E8E15A338F74.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 B350446D-AA0A-427C-A91D-5E9CD47D3C6F.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 BD7E788E-36BC-4205-A82F-A9EBD1D5507F.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 BE4566E8-148C-480B-8FAF-2F606FA70584.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 C2050FD3-E78F-48FA-AAAC-1CBEFF609C52.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 C244AB1D-8DF7-457E-8BC0-7D8F3E3D8ECD.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 C2C3AC50-80C8-43FD-A8A8-04EDFE901EA9.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 C3087F51-4AA6-4DC9-9CFE-15403589E654.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 C5216E80-C165-4A3B-86DF-A8825AA13907.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 C63F3859-F1C1-42EB-A771-42A3B0EA9C66.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 C9C7FF32-7EF0-4FC7-B007-20838B3C7367.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 CB43BDF8-D5B4-4D0E-A460-92B8A5F8674E.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 CB55B44A-DE31-4B95-A7B9-0E48981EAFA7.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 CB6DBD71-6896-4F32-9DBF-91F7980F5C40.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 CBCD6842-E35B-4DA5-8AE7-D8810E9B838E.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 CBD61B97-D97E-4B70-9590-D314195B4F1A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 CC5F137A-8BCD-41B5-A2AC-23B893C55F98.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 CF26840D-58B5-4D79-BFF0-2FC3D192ADEF.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 CFCE51C3-198D-47EA-BEDE-65864B28B68B.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 D0DFBCF7-A029-4336-9C5A-12537EC08FAA.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 D0F16458-0047-4BA9-A32B-08B0736F8F5E.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 D63E05D2-FACD-44B1-930C-B377BF70CE90.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 D699D165-26F3-4201-B114-015C70DEA66D.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 D8E076F2-A255-476C-A2C5-CFE4BE5A1365.jpg
+-rw-r--r-- 1 telecom admsis 569451 2017 11 22 data.xml
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 DE42FEE6-25FF-4C8F-84CD-44BB72EFC828.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 DE5068AA-649F-47D2-8AC2-DB98A74C60B9.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 E25605A0-3F2F-40D9-BE98-F6E4722B5B0A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 E267C93C-D33B-437E-81FA-1A751E5C0AB8.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 E2FB2BE0-01EA-4FDC-A90A-4DD4126518F8.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 E47359C1-5FA0-45F3-A2C4-7B1072835C72.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 E56413D6-7ED0-4EE1-87FF-5BB44D4E6628.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 E7B9452D-9311-4BF9-BC96-CEF46B84D414.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 EC3967F2-BA38-45CF-AC72-F2EB888D498A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 EF778037-17A9-43F5-ACAE-DCB96AECF2E1.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 EF9C307E-E41F-47E2-A39B-FE09EE6E04A8.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F0549084-1ED6-4747-B45B-655C17CE4278.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 F05C4FDB-734F-4D2A-B130-0CEEF919499C.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F22EBBE0-2F9B-4D5E-AF7D-5D2DE9901A85.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F33A2686-701A-4F9E-928E-2823421D4499.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 F3A2DBC2-B6BD-40E8-A8CC-05A6B8821874.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F438CB27-538B-47D0-B96C-9983B2E909FE.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 F5C683DC-3EA0-44ED-AB74-ED528D6C9140.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F5DEA81A-2AAB-4BD9-A8D5-0FE85D26F77F.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F63DFB26-DFA8-4C64-A905-5FC21A4CFBC2.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F6A767EC-F756-4D37-8AA4-D4B6738C2597.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F70415F0-EC76-4BE8-B820-34B5C570060E.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 F7DE89CA-4322-4948-A57B-06E1C307BC9D.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 F958613D-3245-4CBE-AFF2-6FA02DA59047.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 F96D5364-186A-4E2A-A63C-ADDB3154B789.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 FA616DB7-F829-477A-B2F6-4112040BE68C.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 FD26F5FE-97FD-48F0-901D-D460E82818C7.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 FE2CEE54-7F45-4161-98A4-528516DC7054.jpg
+-rw-r--r-- 1 telecom admsis   5052 2017 11 22 FF3CFCBA-2096-43C7-88BA-F09F274C063A.jpg
+-rw-r--r-- 1 telecom admsis  12776 2017 11 22 FFBAA55A-62AD-43AA-A0DF-B75148273F33.jpg
+-rw-r--r-- 1 telecom admsis   4497 2017 11 22 filelist.xml
+-rw-r--r-- 1 telecom admsis  14681 2017 11 22 find.js
+-rw-r--r-- 1 telecom admsis  16211 2017 11 22 frameset.js
+-rw-r--r-- 1 telecom admsis    263 2017 11 22 fullpage.gif
+-rw-r--r-- 1 telecom admsis    474 2017 11 22 go.gif
+-rw-r--r-- 1 telecom admsis    799 2017 11 22 keys.js
+-rw-r--r-- 1 telecom admsis     66 2017 11 22 maximize.gif
+-rw-r--r-- 1 telecom admsis     65 2017 11 22 minimize.gif
+-rw-r--r-- 1 telecom admsis     63 2017 11 22 minus.gif
+-rw-r--r-- 1 telecom admsis    391 2017 11 22 panminus.gif
+-rw-r--r-- 1 telecom admsis    401 2017 11 22 panplus.gif
+-rw-r--r-- 1 telecom admsis     64 2017 11 22 plus.gif
+-rw-r--r-- 1 telecom admsis  48901 2017 11 22 png_10.htm
+-rw-r--r-- 1 telecom admsis  91212 2017 11 22 png_10.png
+-rw-r--r-- 1 telecom admsis  48898 2017 11 22 png_11.htm
+-rw-r--r-- 1 telecom admsis  91187 2017 11 22 png_11.png
+-rw-r--r-- 1 telecom admsis  47450 2017 11 22 png_12.htm
+-rw-r--r-- 1 telecom admsis  86784 2017 11 22 png_12.png
+-rw-r--r-- 1 telecom admsis  52301 2017 11 22 png_13.htm
+-rw-r--r-- 1 telecom admsis  90960 2017 11 22 png_13.png
+-rw-r--r-- 1 telecom admsis  52389 2017 11 22 png_14.htm
+-rw-r--r-- 1 telecom admsis  92528 2017 11 22 png_14.png
+-rw-r--r-- 1 telecom admsis  47449 2017 11 22 png_15.htm
+-rw-r--r-- 1 telecom admsis  85854 2017 11 22 png_15.png
+-rw-r--r-- 1 telecom admsis   3763 2017 11 22 png_16.htm
+-rw-r--r-- 1 telecom admsis   3971 2017 11 22 png_16.png
+-rw-r--r-- 1 telecom admsis  52396 2017 11 22 png_1.htm
+-rw-r--r-- 1 telecom admsis   2006 2017 11 22 png_1.js
+-rw-r--r-- 1 telecom admsis  92847 2017 11 22 png_1.png
+-rw-r--r-- 1 telecom admsis  52391 2017 11 22 png_2.htm
+-rw-r--r-- 1 telecom admsis  92739 2017 11 22 png_2.png
+-rw-r--r-- 1 telecom admsis  33208 2017 11 22 png_3.htm
+-rw-r--r-- 1 telecom admsis  75263 2017 11 22 png_3.png
+-rw-r--r-- 1 telecom admsis  42545 2017 11 22 png_4.htm
+-rw-r--r-- 1 telecom admsis  82810 2017 11 22 png_4.png
+-rw-r--r-- 1 telecom admsis  42552 2017 11 22 png_5.htm
+-rw-r--r-- 1 telecom admsis  84681 2017 11 22 png_5.png
+-rw-r--r-- 1 telecom admsis  38433 2017 11 22 png_6.htm
+-rw-r--r-- 1 telecom admsis  80157 2017 11 22 png_6.png
+-rw-r--r-- 1 telecom admsis  39156 2017 11 22 png_7.htm
+-rw-r--r-- 1 telecom admsis  83792 2017 11 22 png_7.png
+-rw-r--r-- 1 telecom admsis  33212 2017 11 22 png_8.htm
+-rw-r--r-- 1 telecom admsis  74480 2017 11 22 png_8.png
+-rw-r--r-- 1 telecom admsis  52394 2017 11 22 png_9.htm
+-rw-r--r-- 1 telecom admsis  92619 2017 11 22 png_9.png
+-rw-r--r-- 1 telecom admsis   1898 2017 11 22 PRpt000.htm
+-rw-r--r-- 1 telecom admsis  48036 2017 11 22 PRpt001.htm
+-rw-r--r-- 1 telecom admsis  13135 2017 11 22 PRpt002.htm
+-rw-r--r-- 1 telecom admsis  70409 2017 11 22 PRpt003.htm
+-rw-r--r-- 1 telecom admsis  27987 2017 11 22 Silverlight.js
+-rw-r--r-- 1 telecom admsis   4390 2017 11 22 Silverlight.supportedUserAgent.js
+-rw-r--r-- 1 telecom admsis    129 2017 11 22 tick-foc.gif
+-rw-r--r-- 1 telecom admsis     79 2017 11 22 tick-off.gif
+-rw-r--r-- 1 telecom admsis     99 2017 11 22 tick-on.gif
+-rw-r--r-- 1 telecom admsis    110 2017 11 22 toc2.gif
+-rw-r--r-- 1 telecom admsis    108 2017 11 22 toc.gif
+-rw-r--r-- 1 telecom admsis   1962 2017 11 22 toolbar.htm
+-rw-r--r-- 1 telecom admsis   3187 2017 11 22 visio.css
+-rw-r--r-- 1 telecom admsis  17765 2017 11 22 widgets.htm
+-rw-r--r-- 1 telecom admsis   4366 2017 11 22 xaml_10.htm
+-rw-r--r-- 1 telecom admsis 273243 2017 11 22 xaml_10.xaml
+-rw-r--r-- 1 telecom admsis   4366 2017 11 22 xaml_11.htm
+-rw-r--r-- 1 telecom admsis 273224 2017 11 22 xaml_11.xaml
+-rw-r--r-- 1 telecom admsis   4366 2017 11 22 xaml_12.htm
+-rw-r--r-- 1 telecom admsis 210771 2017 11 22 xaml_12.xaml
+-rw-r--r-- 1 telecom admsis   4366 2017 11 22 xaml_13.htm
+-rw-r--r-- 1 telecom admsis 270295 2017 11 22 xaml_13.xaml
+-rw-r--r-- 1 telecom admsis   4365 2017 11 22 xaml_14.htm
+-rw-r--r-- 1 telecom admsis 295004 2017 11 22 xaml_14.xaml
+-rw-r--r-- 1 telecom admsis   4366 2017 11 22 xaml_15.htm
+-rw-r--r-- 1 telecom admsis 206067 2017 11 22 xaml_15.xaml
+-rw-r--r-- 1 telecom admsis   4365 2017 11 22 xaml_16.htm
+-rw-r--r-- 1 telecom admsis    291 2017 11 22 xaml_16.xaml
+-rw-r--r-- 1 telecom admsis   4363 2017 11 22 xaml_1.htm
+-rw-r--r-- 1 telecom admsis  21693 2017 11 22 xaml_1.js
+-rw-r--r-- 1 telecom admsis 298005 2017 11 22 xaml_1.xaml
+-rw-r--r-- 1 telecom admsis   4363 2017 11 22 xaml_2.htm
+-rw-r--r-- 1 telecom admsis 296512 2017 11 22 xaml_2.xaml
+-rw-r--r-- 1 telecom admsis   4363 2017 11 22 xaml_3.htm
+-rw-r--r-- 1 telecom admsis 167636 2017 11 22 xaml_3.xaml
+-rw-r--r-- 1 telecom admsis   4364 2017 11 22 xaml_4.htm
+-rw-r--r-- 1 telecom admsis 258076 2017 11 22 xaml_4.xaml
+-rw-r--r-- 1 telecom admsis   4364 2017 11 22 xaml_5.htm
+-rw-r--r-- 1 telecom admsis 270185 2017 11 22 xaml_5.xaml
+-rw-r--r-- 1 telecom admsis   4364 2017 11 22 xaml_6.htm
+-rw-r--r-- 1 telecom admsis 220984 2017 11 22 xaml_6.xaml
+-rw-r--r-- 1 telecom admsis   4364 2017 11 22 xaml_7.htm
+-rw-r--r-- 1 telecom admsis 263371 2017 11 22 xaml_7.xaml
+-rw-r--r-- 1 telecom admsis   4363 2017 11 22 xaml_8.htm
+-rw-r--r-- 1 telecom admsis 159687 2017 11 22 xaml_8.xaml
+-rw-r--r-- 1 telecom admsis   4363 2017 11 22 xaml_9.htm
+-rw-r--r-- 1 telecom admsis 291225 2017 11 22 xaml_9.xaml
+-rw-r--r-- 1 telecom admsis  23309 2017 11 22 zoom.htm
 -rw-rw-r-- 1 admsis admsis 23268 2017 07 04 dc-netscaler-instancias.xlsx
 -rwxrwxrwx 1 nagios  nagios 1201398 2016 02 18 admon-gw-torre.edg
 -rwxrwxrwx 1 nagios  nagios 1207722 2016 07 27 admon-gw-zona1.edg
@@ -520,7 +804,7 @@ drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 3
 -rwxrwxrwx 1 nagios nagios 767602 2007 11 16 Int_3erN.jpg
 -rwxrwxrwx 1 nagios  nagios  1612 2013 04 16 configuracion-switch.html
 drwxr-xr-x 5 telecom admsis  4096 2016 05 11 Documentacion
-drwxr-xr-x 4 telecom admsis  4096 2016 04 20 NotasResponsabilidad
+drwxr-xr-x 5 telecom admsis  4096 2017 11 29 NotasResponsabilidad
 drwxr-xr-x 3 telecom admsis  4096 2016 04 20 Software
 -rwxrwxrwx 1 nagios  nagios 25901 2013 04 16 telefonos_consulta.php
 -rw-r--r-- 1 telecom admsis 68995 2016 05 11 5330e_QRG_SPE.pdf
@@ -686,6 +970,7 @@ drwxr-xr-x 2 telecom admsis    4096 2016 04 27 InterconexionAlliedGlobal_files
 -rw-r--r-- 1 telecom admsis  24303 2016 04 27 zoom.htm
 drwxr-xr-x 13 telecom admsis 4096 2017 06 22 Administracion
 drwxr-xr-x  7 telecom admsis 4096 2016 08 29 Agencias
+drwxr-xr-x  4 telecom admsis 4096 2017 11 29 Headset
 drwxr-xr-x 2 telecom admsis 4096 2016 04 20 Abril
 drwxr-xr-x 2 telecom admsis 4096 2017 06 22 Agosto
 drwxr-xr-x 4 telecom admsis 4096 2017 06 22 DICIEMBRE
@@ -1199,6 +1484,87 @@ drwxr-xr-x 2 telecom admsis 4096 2016 06 07 MAYO
 -rw-r--r-- 1 telecom admsis 308018 2016 06 07 101411 _Elmer Montenegro Age 1014.pdf
 -rw-r--r-- 1 telecom admsis 295807 2016 06 07 101421_Elmer Montenegro Ramirez.pdf
 -rw-r--r-- 1 telecom admsis 502512 2016 06 07 49911_Remplazo de cargador.pdf
+drwxr-xr-x 7 telecom admsis 4096 2017 11 30 Administracion
+drwxr-xr-x 2 telecom admsis 4096 2017 11 29 Agencias
+drwxr-xr-x 2 telecom admsis  4096 2017 11 30 Diademas ABRIL
+drwxr-xr-x 2 telecom admsis  4096 2017 11 30 Diademas FEBRERO
+drwxr-xr-x 3 telecom admsis  4096 2017 11 30 Diademas MARZO
+drwxr-xr-x 2 telecom admsis  4096 2017 11 30 Diademas MAYO
+drwxr-xr-x 2 telecom admsis  4096 2017 11 30 Diademas NOVIEMBRE
+-rw-r--r-- 1 telecom admsis 23710 2017 11 30 Inventario de Headset entregados.xlsx
+-rw-r--r-- 1 telecom admsis 441305 2017 11 30 302086_Jorge Pos.pdf
+-rw-r--r-- 1 telecom admsis 453170 2017 11 30 302089_Josue Contreras.pdf
+-rw-r--r-- 1 telecom admsis 451129 2017 11 30 302090_Delmer Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 449350 2017 11 30 302092_Jorge Bermudez.pdf
+-rw-r--r-- 1 telecom admsis 446406 2017 11 30 302093_Erica Sutuj.pdf
+-rw-r--r-- 1 telecom admsis 453257 2017 11 30 302095_Liliana de Trigueros.pdf
+-rw-r--r-- 1 telecom admsis 446609 2017 11 30 302096_Isibelt Suchite.pdf
+-rw-r--r-- 1 telecom admsis 439927 2017 11 30 302097_Veronica Aguilar.pdf
+-rw-r--r-- 1 telecom admsis 463898 2017 11 30 302104_Jeffefer Franco.pdf
+-rw-r--r-- 1 telecom admsis 437987 2017 11 30 302105_Karen Chumil.pdf
+-rw-r--r-- 1 telecom admsis 448385 2017 11 30 302106_Mishell Palacios.pdf
+-rw-r--r-- 1 telecom admsis 452995 2017 11 30 302107_Juana Lopez.pdf
+-rw-r--r-- 1 telecom admsis 460716 2017 11 30 302108_Carol Siquibache.pdf
+-rw-r--r-- 1 telecom admsis 450321 2017 11 30 302109_Marisela Lobos.pdf
+-rw-r--r-- 1 telecom admsis 448859 2017 11 30 302110_Greys Ceron.pdf
+-rw-r--r-- 1 telecom admsis 449665 2017 11 30 302111_Guillermo Garcia.pdf
+-rw-r--r-- 1 telecom admsis 477163 2017 11 30 302611_Cristel Vasquez.pdf
+-rw-r--r-- 1 telecom admsis 500017 2017 11 30 301511_Dinna Argueta.pdf
+-rw-r--r-- 1 telecom admsis 476425 2017 11 30 301517_Joselyn Vasquez.pdf
+-rw-r--r-- 1 telecom admsis 468708 2017 11 30 301522_Brendi Sojuel.pdf
+-rw-r--r-- 1 telecom admsis 496347 2017 11 30 301537_Monica Rabanales.pdf
+-rw-r--r-- 1 telecom admsis 492360 2017 11 30 301798_Andree Montenegro.pdf
+-rw-r--r-- 1 telecom admsis 439485 2017 11 30 301903_Gladis Corado.pdf
+-rw-r--r-- 1 telecom admsis 432462 2017 11 30 302046_Sherilyn Abigail.pdf
+-rw-r--r-- 1 telecom admsis 437599 2017 11 30 302117_Jacqueline Castillo.pdf
+-rw-r--r-- 1 telecom admsis 447349 2017 11 30 302154_Maira Higueros.pdf
+-rw-r--r-- 1 telecom admsis 465974 2017 11 30 302156_Maira Ruano.pdf
+-rw-r--r-- 1 telecom admsis 450564 2017 11 30 302158_Yaquelin Raxon.pdf
+-rw-r--r-- 1 telecom admsis 452601 2017 11 30 302160_Yanet Natareno.pdf
+-rw-r--r-- 1 telecom admsis 444659 2017 11 30 302162_Heidi de la Cruz.pdf
+-rw-r--r-- 1 telecom admsis 484759 2017 11 30 302163_Leida Lima.pdf
+-rw-r--r-- 1 telecom admsis 486348 2017 11 30 302165_Delmy Figueroa.pdf
+-rw-r--r-- 1 telecom admsis 460709 2017 11 30 302482_Ester Gomez.pdf
+-rw-r--r-- 1 telecom admsis 465418 2017 11 30 302692_Stepanie Paniagua.pdf
+-rw-r--r-- 1 telecom admsis 447110 2017 11 30 302695_Mirna Perez.pdf
+-rw-r--r-- 1 telecom admsis 447540 2017 11 30 302766_Claudia Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 440519 2017 11 30 304001_Claudia Cabrera.pdf
+-rw-r--r-- 1 telecom admsis 448905 2017 11 30 304005_Christian Escobar.pdf
+-rw-r--r-- 1 telecom admsis 432510 2017 11 30 304006_Elisa Arias.pdf
+-rw-r--r-- 1 telecom admsis 528389 2017 11 30 304017_Williams Colay.pdf
+-rw-r--r-- 1 telecom admsis 452004 2017 11 30 304024_Pablo Hernandez.pdf
+-rw-r--r-- 1 telecom admsis 439814 2017 11 30 304025_Jesus Castillo.pdf
+-rw-r--r-- 1 telecom admsis 447022 2017 11 30 304037_David Castañeda.pdf
+-rw-r--r-- 1 telecom admsis 442336 2017 11 30 304052_Hector Barillas.pdf
+-rw-r--r-- 1 telecom admsis 442782 2017 11 30 304057_Jorge Mendez.pdf
+-rw-r--r-- 1 telecom admsis 437614 2017 11 30 304058_Josue Arrieta.pdf
+-rw-r--r-- 1 telecom admsis 438911 2017 11 30 304059_Alex Perla.pdf
+drwxr-xr-x 2 telecom admsis 4096 2017 11 30 Diademas
+-rw-r--r-- 1 telecom admsis 490532 2017 11 30 302085_Mariza Escobar.pdf
+-rw-r--r-- 1 telecom admsis 451429 2017 11 30 302330_Manuel Chavez.pdf
+-rw-r--r-- 1 telecom admsis 465366 2017 11 30 302332_Rebeca Zuñiga.pdf
+-rw-r--r-- 1 telecom admsis 442391 2017 11 30 302336_Marleny Oliva.pdf
+-rw-r--r-- 1 telecom admsis 439203 2017 11 30 302338_Catherine Mendez.pdf
+-rw-r--r-- 1 telecom admsis 437109 2017 11 30 302339_Paolo Palacios.pdf
+-rw-r--r-- 1 telecom admsis 438910 2017 11 30 302346_Hellen Merida.pdf
+-rw-r--r-- 1 telecom admsis 440913 2017 11 30 302367_Nidia Lopez.pdf
+-rw-r--r-- 1 telecom admsis 460033 2017 11 30 304526_Patricia Rodriguez.pdf
+-rw-r--r-- 1 telecom admsis 447801 2017 11 30 304529_Jackelyn Melgar.pdf
+-rw-r--r-- 1 telecom admsis 564005 2017 11 30 3 diademas_Flor Gonzalez.pdf
+-rw-r--r-- 1 telecom admsis 574283 2017 11 30 6 diademas_Juan Bonilla.pdf
+-rw-r--r-- 1 telecom admsis 308017 2017 11 30 301557_Virginia Barrios.pdf
+-rw-r--r-- 1 telecom admsis 447274 2017 11 30 302244_Miriam Bustamante.pdf
+-rw-r--r-- 1 telecom admsis 444470 2017 11 30 302246_Vicente Armas.pdf
+-rw-r--r-- 1 telecom admsis 450231 2017 11 30 302247_Alvaro Reyes.pdf
+-rw-r--r-- 1 telecom admsis 454111 2017 11 30 302248_Bertha Lopez.pdf
+-rw-r--r-- 1 telecom admsis 442785 2017 11 30 302249_Luis Gomez.pdf
+-rw-r--r-- 1 telecom admsis 452317 2017 11 30 302250_Norma Molina.pdf
+-rw-r--r-- 1 telecom admsis 438682 2017 11 30 302251_Claudia Castro.pdf
+-rw-r--r-- 1 telecom admsis 435714 2017 11 30 302252_Vero Ortiz.pdf
+-rw-r--r-- 1 telecom admsis 435368 2017 11 30 302253_Fredy Perez.pdf
+-rw-r--r-- 1 telecom admsis 456094 2017 11 30 302629_Andrea Ramirez.pdf
+-rw-r--r-- 1 telecom admsis 465035 2017 11 30 302699_Glenda Asturias.pdf
+-rw-r--r-- 1 telecom admsis 244540 2017 11 30 301630 HERBERTH SCHWARTS.pdf
 -rw-r--r-- 1 telecom admsis 223186944 2016 04 20 ClientComponentPack.msi
 drwxr-xr-x 2 telecom admsis      4096 2016 04 20 Oaisys
 -rw-r--r-- 1 telecom admsis 100798464 2016 04 20 directxpackage.exe
@@ -1216,7 +1582,7 @@ drwxr-xr-x 2 telecom admsis      4096 2016 04 20 Oaisys
 drwxrwxrwx 2 nagios  nagios 4096 2015 11 16 2014
 drwxrwxrwx 2 nagios  nagios 4096 2016 01 26 2015
 drwxrwxrwx 2 nagios  nagios 4096 2017 01 04 2016
-drwxrwxrwx 2 nagios  nagios 4096 2017 11 02 2017
+drwxrwxrwx 2 nagios  nagios 4096 2017 12 01 2017
 drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rwxrwxrwx 1 nagios nagios 417569 2014 03 04 ReporteAgencias-201402.pdf
 -rwxrwxrwx 1 nagios nagios 358166 2014 04 01 ReporteAgencias-201403.pdf
@@ -1260,6 +1626,7 @@ drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rw-r--r-- 1 root    root   214091 2017 09 01 ReporteAgencias-201708.pdf
 -rw-r--r-- 1 telecom admsis 214046 2017 10 02 ReporteAgencias-201709.pdf
 -rw-r--r-- 1 telecom admsis 210201 2017 11 02 ReporteAgencias-201710.pdf
+-rw-r--r-- 1 telecom admsis 221314 2017 12 01 ReporteAgencias-201711.pdf
 -rw-r--r-- 1 telecom admsis 704324 2016 05 23 InformePruebaAgenciasColumbus.pdf
 -rwxrwxrwx 1 nagios nagios  4340 2013 04 16 dbcon.php
 -rwxrwxrwx 1 nagios nagios   900 2011 09 08 home.html
@@ -1327,3 +1694,13 @@ drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rwxrwxrwx 1 nagios nagios  74724 2010 02 23 Partners-Visanet.JPG
 -rwxrwxrwx 1 nagios nagios 393733 2008 09 24 ReferenciasSIB.JPG
 -rwxrwxrwx 1 nagios nagios  41904 2008 10 27 VPN_Sigue.JPG
+-rw-r--r-- 1 nagios nagios  143954 2017 11 23 ConfiguracionSwitchesTorreDesa.xlsx
+-rw-r--r-- 1 nagios nagios 1734736 2017 11 23 Dist.deAccessPoint-BANRURALN2.pdf
+-rw-r--r-- 1 nagios nagios  609275 2017 11 23 Dist.deAccessPoint-BANRURALN3.pdf
+-rw-r--r-- 1 nagios nagios 1690972 2017 11 23 Dist.deAccessPoint-BANRURALN4.pdf
+-rw-r--r-- 1 nagios nagios 2455796 2017 11 23 Dist.deAccessPoint-BANRURALN5.pdf
+-rw-r--r-- 1 nagios nagios 1730732 2017 11 23 Dist.deAccessPoint-BANRURALN6.pdf
+-rw-r--r-- 1 nagios nagios 1913824 2017 11 23 Dist.deAccessPoint-BANRURALN7.pdf
+-rw-r--r-- 1 nagios nagios 1718788 2017 11 23 Dist.deAccessPoint-BANRURALN8.pdf
+-rw-r--r-- 1 nagios nagios 1745729 2017 11 23 Dist.deAccessPoint-BANRURALN9.pdf
+-rw-r--r-- 1 nagios nagios  102909 2017 11 23 InformeTorreDesaBanrural.xlsx

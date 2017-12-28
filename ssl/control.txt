@@ -37,4 +37,4 @@ Serial  nombre dominio          		Paswd/challege
 034	www.banrural.com.gt			w3bj00d34df00 pfx: w3bj00d34df00
 035	servicios.banrural.com.hn		servhnj00d34df00 pfx: servhnj00d34df00
 036	bancamovil.banrural.com.gt		bancaj00d34df00 pfx: bancaj00d34df00
-
+037	capa2cm.bdr				capa2cmj00d34df00 pfx: capa2cmj00d34df00

@@ -41,6 +41,8 @@ echo "                   siafsag "
 echo "                   oj "
 echo "                   5b "
 echo "                   yego "
+echo "                   regmercantil "
+echo "                   pingregmercantil "
 echo ""
 echo "          Desarrollado por:   Telecomunicaciones "
 
@@ -159,6 +161,14 @@ if [ "$#" -eq 2 ]; then
     fi
    if [ "$SERVICIO" = "declaraguate" ]; then
         comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.201.1 -c check_https_declaraguate"
+        VALIDO="1";
+    fi
+   if [ "$SERVICIO" = "regmercantil" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.201.1 -c check_http_regmercantil"
+        VALIDO="1";
+    fi
+   if [ "$SERVICIO" = "pingregmercantil" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 140.254.1.82 -c check_ping_regmercantil"
         VALIDO="1";
     fi
 

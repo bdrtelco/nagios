@@ -104,7 +104,7 @@ if [ "$#" -eq 2 ]; then
 	VALIDO="1";
     fi
     if [ "$SERVICIO" = "renap" ]; then
-	comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.201.1 -c check_ping_renap"
+	comando="/usr/lib/nagios/plugins/check_nrpe -H 140.254.1.82 -c check_ping_renap"
 	VALIDO="1";
     fi
     if [ "$SERVICIO" = "renap-ws" ]; then

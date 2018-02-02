@@ -10,14 +10,14 @@ select  rs_proveedor, rs_codigo_proveedor,
  (select mu_descripcion from enlaces.municipio where mu_codigo = r.rm_municipio ) as municipio 
  from nagios_stats.remoto_sla, enlaces.remoto r 
  where rs_remoto = rm_remoto 
-  and  rs_anio = 2017 
- and  rs_mes = 12  
+  and  rs_anio = 2018 
+ and  rs_mes = 01  
  and rs_porc_credito > 0  order by rs_proveedor, rs_codigo_proveedor ; 
 \nGenerando Fork, para cargar Informe de Caidas \n
 1. gencaidas.sh :: Generando Informe de Caidas
-Tue Jan  2 07:47:06 CST 2018
+Thu Feb  1 12:44:04 CST 2018
 2. Cargando Informacion de Multas.. Update... 
-Tue Jan  2 07:47:06 CST 2018
-Tue Jan  2 07:47:06 CST 2018
+Thu Feb  1 15:49:37 CST 2018
+Thu Feb  1 15:49:59 CST 2018
 3. Update Informacion de Multas.. Update... 
-Tue Jan  2 07:47:08 CST 2018
+Thu Feb  1 15:50:02 CST 2018

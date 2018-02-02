@@ -5,6 +5,6 @@ select  rs_proveedor, rs_codigo_proveedor,
  (select mu_descripcion from enlaces.municipio where mu_codigo = r.rm_municipio ) as municipio 
  from nagios_stats.remoto_sla, enlaces.remoto r 
  where rs_remoto = rm_remoto 
-  and  rs_anio = 2017 
- and  rs_mes = 12  
+  and  rs_anio = 2018 
+ and  rs_mes = 01  
  and rs_porc_credito > 0  order by rs_proveedor, rs_codigo_proveedor ; 

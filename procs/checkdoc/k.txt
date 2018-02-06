@@ -3,7 +3,7 @@ drwxr-xr-x 2 nagios nagios 4096 2015 11 16 agencias
 drwxr-xr-x 3 nagios nagios 4096 2016 04 19 Bdr_network
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 cambios_en_proceso
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 Cobit
-drwxrwxrwx 6 nagios nagios 4096 2017 11 23 diagramas
+drwxrwxrwx 6 nagios nagios 4096 2018 01 30 diagramas
 drwxr-xr-x 3 nagios nagios 4096 2016 10 12 fuentes
 drwxr-xr-x 3 nagios nagios 4096 2015 11 16 GateWays
 drwxr-xr-x 2 nagios nagios 4096 2016 10 12 images
@@ -225,7 +225,7 @@ drwxrwxrwx 2 nagios nagios    4096 2015 11 16 old
 -rw-r--r-- 1 root   root    115344 2017 10 31 Capture.jpeg
 -rw-r--r-- 1 root   root    115344 2017 10 31 Capture.jpg
 -rw-r--r-- 1 root   root    115344 2017 10 31 Capture.MHT
--rwxrwxrwx 1 nagios nagios    1911 2016 04 25 dc-anillo-fibra-edificios.html
+-rwxrwxrwx 1 nagios nagios    1853 2018 01 30 dc-anillo-fibra-edificios.html
 -rwxrwxrwx 1 nagios nagios     185 2016 04 25 dc-anillo-fibra-edificios.html-orig
 -rwxrwxrwx 1 nagios nagios    2097 2014 08 05 dc-ascenlinkBK
 -rwxrwxrwx 1 nagios nagios    2293 2014 08 26 dc-ascenlink.html
@@ -252,7 +252,7 @@ drwxrwxrwx 3 nagios nagios    4096 2017 10 27 fuentes
 -rw-r--r-- 1 root   root     18622 2017 10 31 Gateway Agencias en data centers.htm
 -rw-r--r-- 1 root   root    190545 2017 10 27 Gw_age_dc.jpg
 -rw-r--r-- 1 root   root    101498 2017 10 31 GwAgeDc.JPG
-drwxrwxrwx 2 nagios nagios    4096 2017 10 27 images
+drwxrwxrwx 2 nagios nagios    4096 2018 01 30 images
 -rwxrwxrwx 1 nagios nagios     629 2014 08 05 index.html
 -rw-r--r-- 1 root   root     73732 2017 10 31 InterconexionRedytec.JPG
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint01.html
@@ -637,10 +637,9 @@ drwxrwxrwx 2 nagios  nagios    4096 2016 08 09 old
 -rwxrwxrwx 1 nagios  nagios   74696 2014 04 15 ASCENLINK_DC_Z11.JPG
 -rwxrwxrwx 1 nagios  nagios   74615 2014 04 15 ASCENLINK_DC_Z9.JPG
 -rwxrwxrwx 1 nagios  nagios  545324 2016 10 17 bdr-global.jpg
--rwxrwxrwx 1 nagios  nagios   85425 2016 02 16 dc-anillo-edificios1.jpg
 -rwxrwxrwx 1 nagios  nagios  102933 2013 12 16 dc-anillo-fibra-wireless2.jpg
 -rwxrwxrwx 1 nagios  nagios   99211 2013 12 16 dc-anillo-fibra-wireless.jpg
--rwxrwxrwx 1 nagios  nagios  113015 2016 02 16 dc-anillo-switches.jpg
+-rwxrwxrwx 1 nagios  nagios  113015 2018 01 30 dc-anillo-switchesfull.jpg
 -rwxrwxrwx 1 nagios  nagios  115578 2016 08 09 dc-netscaler.jpg
 -rwxrwxrwx 1 nagios  nagios  102620 2016 04 22 dc-netscaler-old.jpg
 -rwxrwxrwx 1 nagios  nagios  294106 2015 11 03 dc-seg-age115.jpg
@@ -1583,7 +1582,7 @@ drwxrwxrwx 2 nagios  nagios 4096 2015 11 16 2014
 drwxrwxrwx 2 nagios  nagios 4096 2016 01 26 2015
 drwxrwxrwx 2 nagios  nagios 4096 2017 01 04 2016
 drwxrwxrwx 2 nagios  nagios 4096 2017 12 01 2017
-drwxrwxrwx 2 nagios  nagios 4096 2018 01 02 2018
+drwxrwxrwx 2 nagios  nagios 4096 2018 02 01 2018
 drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rwxrwxrwx 1 nagios nagios 417569 2014 03 04 ReporteAgencias-201402.pdf
 -rwxrwxrwx 1 nagios nagios 358166 2014 04 01 ReporteAgencias-201403.pdf
@@ -1629,6 +1628,7 @@ drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rw-r--r-- 1 telecom admsis 210201 2017 11 02 ReporteAgencias-201710.pdf
 -rw-r--r-- 1 telecom admsis 221314 2017 12 01 ReporteAgencias-201711.pdf
 -rw-r--r-- 1 telecom admsis 217004 2018 01 02 ReporteAgencias-201801.pdf
+-rw-r--r-- 1 telecom admsis 205403 2018 02 01 ReporteAgencias-201802.pdf
 -rw-r--r-- 1 telecom admsis 704324 2016 05 23 InformePruebaAgenciasColumbus.pdf
 -rwxrwxrwx 1 nagios nagios  4340 2013 04 16 dbcon.php
 -rwxrwxrwx 1 nagios nagios   900 2011 09 08 home.html

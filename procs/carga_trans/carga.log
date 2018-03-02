@@ -1,6 +1,6 @@
- tsql -S 10.161.206.17:4100 -U nagios -PP@ssw0rdN4g10s -o qfh < sybsql.sql > datos201703.txt ::: to execute
-se genero datos201703.txt
-Procesando fecha 2017 03
+ tsql -S 10.161.206.17:4100 -U nagios -PP@ssw0rdN4g10s -o qfh < sybsql.sql > datos201802.txt ::: to execute
+se genero datos201802.txt
+Procesando fecha 2018 02
 Modificando Datos....
  Modifica_trans.sh: Generando datos a modificar...
 Se generaron ...

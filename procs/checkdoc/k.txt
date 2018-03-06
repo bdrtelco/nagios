@@ -3,12 +3,12 @@ drwxr-xr-x 2 nagios nagios 4096 2015 11 16 agencias
 drwxr-xr-x 3 nagios nagios 4096 2016 04 19 Bdr_network
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 cambios_en_proceso
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 Cobit
-drwxrwxrwx 6 nagios nagios 4096 2018 01 30 diagramas
+drwxrwxrwx 6 nagios nagios 4096 2018 02 07 diagramas
 drwxr-xr-x 3 nagios nagios 4096 2016 10 12 fuentes
 drwxr-xr-x 3 nagios nagios 4096 2015 11 16 GateWays
 drwxr-xr-x 2 nagios nagios 4096 2016 10 12 images
 drwxr-xr-x 3 nagios nagios 4096 2015 11 16 Mapas
-drwxr-xr-x 5 nagios nagios 4096 2016 04 20 mitel
+drwxr-xr-x 5 nagios nagios 4096 2018 02 12 mitel
 drwxr-xr-x 2 nagios nagios 4096 2016 07 11 Old
 drwxr-xr-x 2 nagios nagios 4096 2015 11 16 pictures
 drwxr-xr-x 8 nagios nagios 4096 2018 01 02 reporte_agencias
@@ -252,7 +252,7 @@ drwxrwxrwx 3 nagios nagios    4096 2017 10 27 fuentes
 -rw-r--r-- 1 root   root     18622 2017 10 31 Gateway Agencias en data centers.htm
 -rw-r--r-- 1 root   root    190545 2017 10 27 Gw_age_dc.jpg
 -rw-r--r-- 1 root   root    101498 2017 10 31 GwAgeDc.JPG
-drwxrwxrwx 2 nagios nagios    4096 2018 01 30 images
+drwxrwxrwx 2 nagios nagios    4096 2018 02 07 images
 -rwxrwxrwx 1 nagios nagios     629 2014 08 05 index.html
 -rw-r--r-- 1 root   root     73732 2017 10 31 InterconexionRedytec.JPG
 -rwxrwxrwx 1 nagios nagios     126 2015 10 30 internet-ckeckpoint01.html
@@ -285,7 +285,7 @@ drwxrwxrwx 2 nagios nagios    4096 2018 01 30 images
 -rwxrwxrwx 1 nagios nagios    1449 2015 07 03 socios-sib-nat.html
 -rwxrwxrwx 1 root   root       926 2016 07 28 socios-swift.html
 -rwxrwxrwx 1 nagios nagios    1714 2013 07 10 socios-terceros-tigo.html
--rwxrwxrwx 1 nagios nagios    5621 2016 03 30 socios-tyt.html
+-rwxrwxrwx 1 nagios nagios    5664 2018 02 07 socios-tyt.html
 -rwxrwxrwx 1 nagios nagios     123 2014 09 12 socios-widefense.html
 -rwxrwxrwx 1 nagios nagios     483 2016 02 12 Ubicacion-AP.html
 -rw-r--r-- 1 root   root    112347 2017 10 31 VrrpClaro.JPG
@@ -630,6 +630,8 @@ drwxrwxrwx 2 nagios  nagios    4096 2016 08 09 old
 -rwxrwxrwx 1 nagios  nagios   64376 2013 06 12 age-columbus.jpg
 -rwxrwxrwx 1 nagios  nagios   98319 2016 06 15 age-gw-agencias.jpg
 -rwxrwxrwx 1 nagios  nagios  110545 2015 03 16 age-gw-agencias-sitio-alterno.jpg
+-rw-r--r-- 1 root    root   1202082 2018 02 07 age-gw-torre.edg
+-rw-r--r-- 1 root    root     61072 2018 02 07 age-gw-torre.jpg
 -rwxrwxrwx 1 nagios  nagios  112235 2014 10 14 age-muni-gualan.jpg
 -rwxrwxrwx 1 nagios  nagios   96671 2013 06 11 age-telnor.jpg
 -rwxrwxrwx 1 nagios  nagios   91775 2013 10 31 age-tigo.jpg
@@ -681,6 +683,7 @@ drwxrwxrwx 2 nagios  nagios    4096 2016 08 09 old
 -rwxrwxrwx 1 nagios  nagios   78706 2015 07 03 socios-sib-nat.jpg
 -rwxrwxrwx 1 nagios  nagios   77167 2016 07 28 socios-swift.jpg
 -rwxrwxrwx 1 nagios  nagios   81762 2013 06 17 socios-terceros-tigo.jpg
+-rw-r--r-- 1 root    root    283473 2018 02 07 socios-tyt2.jpg
 -rwxrwxrwx 1 nagios  nagios  104794 2016 09 06 socios-tyt.jpg
 -rwxrwxrwx 1 nagios  nagios   89126 2014 09 12 socios-widefense.jpg
 -rwxrwxrwx 1 nagios  nagios   72877 2014 08 05 srv_proxy_adm.JPG
@@ -801,11 +804,12 @@ drwxrwxrwx 2 nagios nagios 4096 2015 11 16 Modulo 3
 -rwxrwxrwx 1 nagios nagios 969283 2007 11 16 cart_2doN.jpg
 -rwxrwxrwx 1 nagios nagios 646020 2007 11 16 depo_1erN.jpg
 -rwxrwxrwx 1 nagios nagios 767602 2007 11 16 Int_3erN.jpg
--rwxrwxrwx 1 nagios  nagios  1612 2013 04 16 configuracion-switch.html
-drwxr-xr-x 5 telecom admsis  4096 2016 05 11 Documentacion
-drwxr-xr-x 5 telecom admsis  4096 2017 11 29 NotasResponsabilidad
-drwxr-xr-x 3 telecom admsis  4096 2016 04 20 Software
--rwxrwxrwx 1 nagios  nagios 25901 2013 04 16 telefonos_consulta.php
+-rwxrwxrwx 1 nagios  nagios    1612 2013 04 16 configuracion-switch.html
+drwxr-xr-x 5 telecom admsis    4096 2016 05 11 Documentacion
+-rw-r--r-- 1 root    root   4453898 2018 02 12 DocumentoTecnicoImplementacionMitel.pdf
+drwxr-xr-x 5 telecom admsis    4096 2017 11 29 NotasResponsabilidad
+drwxr-xr-x 3 telecom admsis    4096 2016 04 20 Software
+-rwxrwxrwx 1 nagios  nagios   25901 2013 04 16 telefonos_consulta.php
 -rw-r--r-- 1 telecom admsis 68995 2016 05 11 5330e_QRG_SPE.pdf
 drwxr-xr-x 9 telecom admsis  4096 2016 05 12 BaseConocimientos
 drwxr-xr-x 2 telecom admsis  4096 2016 04 21 Procedimientos
@@ -1582,7 +1586,7 @@ drwxrwxrwx 2 nagios  nagios 4096 2015 11 16 2014
 drwxrwxrwx 2 nagios  nagios 4096 2016 01 26 2015
 drwxrwxrwx 2 nagios  nagios 4096 2017 01 04 2016
 drwxrwxrwx 2 nagios  nagios 4096 2017 12 01 2017
-drwxrwxrwx 2 nagios  nagios 4096 2018 02 01 2018
+drwxrwxrwx 2 nagios  nagios 4096 2018 03 01 2018
 drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rwxrwxrwx 1 nagios nagios 417569 2014 03 04 ReporteAgencias-201402.pdf
 -rwxrwxrwx 1 nagios nagios 358166 2014 04 01 ReporteAgencias-201403.pdf
@@ -1629,6 +1633,7 @@ drwxr-xr-x 2 telecom admsis 4096 2016 05 23 TestLastMile
 -rw-r--r-- 1 telecom admsis 221314 2017 12 01 ReporteAgencias-201711.pdf
 -rw-r--r-- 1 telecom admsis 217004 2018 01 02 ReporteAgencias-201801.pdf
 -rw-r--r-- 1 telecom admsis 205403 2018 02 01 ReporteAgencias-201802.pdf
+-rw-r--r-- 1 telecom admsis 204237 2018 03 01 ReporteAgencias-201803.pdf
 -rw-r--r-- 1 telecom admsis 704324 2016 05 23 InformePruebaAgenciasColumbus.pdf
 -rwxrwxrwx 1 nagios nagios  4340 2013 04 16 dbcon.php
 -rwxrwxrwx 1 nagios nagios   900 2011 09 08 home.html

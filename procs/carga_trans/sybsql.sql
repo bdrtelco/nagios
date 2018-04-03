@@ -5,8 +5,8 @@ ce_oficina, ",", ce_region, ",",    datepart (yy, ce_fecha ),  ",", datepart (mm
 convert(money,sum(ce_efectivo + ce_chq_propios  + ce_chq_locales  +  ce_chq_ot_plaza)) monto, ");"
 from cob_datawarehouse..cj_caja_estadistico_his
 where ce_oficina < 2000
-and ce_fecha >= '02/01/2018'
-and ce_fecha < '03/01/2018'
+and ce_fecha >= '03/01/2018'
+and ce_fecha < '04/01/2018'
 and ce_moneda >= 0
 and ce_transaccion >= 0
 and ce_operador not in ('sa', 'reentry')

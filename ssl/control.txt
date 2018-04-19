@@ -39,3 +39,4 @@ Serial  nombre dominio          		Paswd/challege
 036	bancamovil.banrural.com.gt		bancaj00d34df00 pfx: bancaj00d34df00
 037	capa2cm.bdr				capa2cmj00d34df00 pfx: capa2cmj00d34df00
 038	vmrdpswift				rdpswj00d34df00 pfx: rdpswj00d34df00
+039	vmas.banrural.com.gt			vmasj00d34df00 pfx: vmasj00d34df00

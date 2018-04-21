@@ -1,5 +1,5 @@
 /etc/procs/genera_facturacion CLARO -m
-/etc/procs/genera_facturacion NAVEGA -m
+/etc/procs/genera_facturacion TIGO -m
 /etc/procs/genera_facturacion TELNOR -m
 /etc/procs/genera_facturacion REDYTEC -m
 /etc/procs/genera_facturacion COLUMBUS -m

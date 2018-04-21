@@ -30,7 +30,7 @@ echo "		<-m>:		si desea enviar por mail la informacion generada"
 echo "		<-l>:		si desea guardar unicamente de modo local la informacion generada"
 echo "		"
 echo "          Los proveedores validos son :"
-echo "                   NAVEGA"
+echo "                   TIGO"
 echo "                   CLARO"
 echo "                   TELNOR"
 echo "                   CESA"
@@ -61,7 +61,7 @@ if [ "$PROVEEDOR" = "CLARO" ]; then
 	PROVSUBJECT="CLARO"
 	PROVBODY="Se Adjunta Facturacion de CLARO"
 fi
-if [ "$PROVEEDOR" = "NAVEGA" ]; then
+if [ "$PROVEEDOR" = "TIGO" ]; then
 	PROVSUBJECT="TIGO"
 	PROVBODY="Se Adjunta Facturacion de TIGO"
 fi

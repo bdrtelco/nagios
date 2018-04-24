@@ -45,6 +45,7 @@ echo "                   regmercantil "
 echo "                   pingregmercantil "
 echo "                   declaraguate"
 echo "                   pingdeclaraguate"
+echo "                   fenosa"
 echo ""
 echo "          Desarrollado por:   Telecomunicaciones "
 
@@ -175,6 +176,10 @@ if [ "$#" -eq 2 ]; then
     fi
    if [ "$SERVICIO" = "pingregmercantil" ]; then
         comando="/usr/lib/nagios/plugins/check_nrpe -H 140.254.1.82 -c check_ping_regmercantil"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "fenosa" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 140.254.1.3 -c check_pto_fenosa"
         VALIDO="1";
     fi
 

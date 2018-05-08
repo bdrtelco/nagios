@@ -123,7 +123,7 @@ if [ "$#" -eq 2 ]; then
 	VALIDO="1";
     fi
     if [ "$SERVICIO" = "sib" ]; then
-	comando="/usr/lib/nagios/plugins/check_nrpe -H 140.254.1.3 -c check_https_sib"
+	comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.239.1 -c check_https_sib"
 	VALIDO="1";
     fi
     if [ "$SERVICIO" = "migracion" ]; then

@@ -40,3 +40,4 @@ Serial  nombre dominio          		Paswd/challege
 037	capa2cm.bdr				capa2cmj00d34df00 pfx: capa2cmj00d34df00
 038	vmrdpswift				rdpswj00d34df00 pfx: rdpswj00d34df00
 039	vmas.banrural.com.gt			vmasj00d34df00 pfx: vmasj00d34df00
+040	servicios.banrural.com.hn		servhnj00d34df00 pfx: servhnj00d34df00

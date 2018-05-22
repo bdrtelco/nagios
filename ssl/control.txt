@@ -34,7 +34,7 @@ Serial  nombre dominio          		Paswd/challege
 031	ides.gfbanrural.com.gt			idesj00d34df00 pfx: GFB@4nrur2020!
 032	servicios.banrural.com.gt		servj00d34df00
 033	remesas.banrural.com.gt			remej00d34df00 pfx: remj00d34df00
-034	www.banrural.com.gt			w3bj00d34df00 pfx: w3bj00d34df00
+034	www.banrural.com.gt			w3bj00d34df00 pfx: wwwj00d34df00
 035	servicios.banrural.com.hn		servhnj00d34df00 pfx: servhnj00d34df00
 036	bancamovil.banrural.com.gt		bancaj00d34df00 pfx: bancaj00d34df00
 037	capa2cm.bdr				capa2cmj00d34df00 pfx: capa2cmj00d34df00

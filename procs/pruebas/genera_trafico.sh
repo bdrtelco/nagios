@@ -47,6 +47,8 @@ echo "                   declaraguate"
 echo "                   pingdeclaraguate"
 echo "                   fenosa"
 echo "                   icgftp"
+echo "                   swift5"
+echo "                   swift6"
 echo ""
 echo "          Desarrollado por:   Telecomunicaciones "
 
@@ -185,6 +187,14 @@ if [ "$#" -eq 2 ]; then
     fi
     if [ "$SERVICIO" = "icgftp" ]; then
         comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.255.52 -c check_sftp_icg"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "swift5" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.102.10 -c check_https_swift5"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "swift6" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.102.10 -c check_https_swift6"
         VALIDO="1";
     fi
 

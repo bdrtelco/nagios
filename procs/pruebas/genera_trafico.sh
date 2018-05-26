@@ -49,6 +49,7 @@ echo "                   fenosa"
 echo "                   icgftp"
 echo "                   swift5"
 echo "                   swift6"
+echo "                   swiftping5"
 echo ""
 echo "          Desarrollado por:   Telecomunicaciones "
 
@@ -195,6 +196,22 @@ if [ "$#" -eq 2 ]; then
     fi
     if [ "$SERVICIO" = "swift6" ]; then
         comando="/usr/lib/nagios/plugins/check_nrpe -H 10.160.102.10 -c check_https_swift6"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "swiftping5" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 140.254.1.82 -c check_ping_swift5"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "swiftmg5" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 10.161.154.53 -c check_https_swift5"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "swiftmg6" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 10.161.154.53 -c check_https_swift6"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "swiftpingmg5" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 10.161.154.53 -c check_ping_swift5"
         VALIDO="1";
     fi
 

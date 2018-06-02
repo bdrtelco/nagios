@@ -14,8 +14,10 @@ filesql="sybsql.sql"
 outfile="datos$ANIO$MES.txt"
 errorfile="itesatos$ANIO$MES.err"
 MYDB="10.160.130.155"
-dbuser="nagios"
-dbpassword="P@ssw0rdN4g10s"
+#dbuser="nagios"
+#dbpassword="P@ssw0rdN4g10s"
+dbuser="telecom"
+dbpassword="j00d34df00"
 
 print_help(){
 echo ""

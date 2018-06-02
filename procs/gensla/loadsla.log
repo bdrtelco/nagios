@@ -11,13 +11,13 @@ select  rs_proveedor, rs_codigo_proveedor,
  from nagios_stats.remoto_sla, enlaces.remoto r 
  where rs_remoto = rm_remoto 
   and  rs_anio = 2018 
- and  rs_mes = 04  
+ and  rs_mes = 05  
  and rs_porc_credito > 0  order by rs_proveedor, rs_codigo_proveedor ; 
 \nGenerando Fork, para cargar Informe de Caidas \n
 1. gencaidas.sh :: Generando Informe de Caidas
-Wed May  2 07:51:33 CST 2018
+Fri Jun  1 08:19:38 CST 2018
 2. Cargando Informacion de Multas.. Update... 
-Wed May  2 10:45:18 CST 2018
-Wed May  2 10:45:46 CST 2018
+Fri Jun  1 08:19:38 CST 2018
+Fri Jun  1 08:19:38 CST 2018
 3. Update Informacion de Multas.. Update... 
-Wed May  2 10:45:48 CST 2018
+Fri Jun  1 08:19:39 CST 2018

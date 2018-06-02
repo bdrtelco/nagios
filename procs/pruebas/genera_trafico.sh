@@ -50,6 +50,7 @@ echo "                   icgftp"
 echo "                   swift5"
 echo "                   swift6"
 echo "                   swiftping5"
+echo "                   lbtr"
 echo ""
 echo "          Desarrollado por:   Telecomunicaciones "
 
@@ -212,6 +213,10 @@ if [ "$#" -eq 2 ]; then
     fi
     if [ "$SERVICIO" = "swiftpingmg5" ]; then
         comando="/usr/lib/nagios/plugins/check_nrpe -H 10.161.154.53 -c check_ping_swift5"
+        VALIDO="1";
+    fi
+    if [ "$SERVICIO" = "lbtr" ]; then
+        comando="/usr/lib/nagios/plugins/check_nrpe -H 10.161.154.53 -c check_https_lbtr"
         VALIDO="1";
     fi
 
